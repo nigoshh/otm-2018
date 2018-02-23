@@ -9,13 +9,10 @@
 - [kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
 - ohjeita
-  - [JUnit](https://github.com/mluukkai/OTM2016/wiki/JUnit-ohje) EI AJANTASALLA
+  - [JUnit](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) EI AJANTASALLA
 - tehtävät
-  - [cli](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-kotitehtavat) EI AJANTASALLA
-  - [git, osa 1](https://github.com/mluukkai/OTM2016/wiki/Viikon-3-paikanpaalla-tehtavat) EI AJANTASALLA
-  - [git, osa 2](https://github.com/mluukkai/OTM2016/wiki/Viikon-5-paikanpaalla-tehtavat) EI AJANTASALLA
-  - [JUnit, osa 1](https://github.com/mluukkai/OTM2016/wiki/Viikon-1-paikanpaalla-tehtavat) EI AJANTASALLA
-  - [JUnit, osa 2](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-paikanpaalla-tehtavat) EI AJANTASALLA
+  - [viikko 1](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) EI AJANTASALLA
+  - [viikko 2](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) EI AJANTASALLA
 
 - labtool
 
