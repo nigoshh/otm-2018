@@ -130,11 +130,33 @@ Tämän kurssin harjoitustyö pyritään tekemään osittain ketterien menetelmi
 
 # Työkaluja
 
-## Komentorivi
+Tarvitsemme ohejlmisokehityksessä suuren joukon käytännön työkaluja. 
 
-## Versionhallinta
+## Komentorivi ja Versionhallinta
+
+Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionohallintaa. 
+Molemmat ovat aiheena viikon 1 [tehtävissä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
 
 ## Maven
+
+Olet todennäköisesti ohjelmoinut Javaa suurimmaksi osaksi NetBeansilla ja luottanut siihen että kaikki hoituu valitsemalla sopivia toimintoja valikoista ja painamalla "vihreää nappia".
+
+Alamme tämän kurssin myötä hieman tutkimaan miten Javalla tehdyn ohjelmiston hallinnointi (esim. koodin kääntäminen, koodin sekä tiestien suorittaminen ja koodin paketoiminen NetBeansin ulkopuolella suoritettavissa olevaksi jar-paketiksi) tapahtuu NetBeansin "ulkopuolella".
+
+Java-projektien hallinnointiin on olemassa muutamakin vaihtoehto. Käytämme tällä kurssilla _mavenia_, joka lienee jo useimmille osittain tuttu esim. Tietokantojen perusteista.
+
+[Ohje](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
+Mavenin käytön aloittamiseen.
+
+## JUnit
+
+Ohjelmistojen testaus tapahtuu nykyään ainakin yksikkö- ja integraatiotestien osalta automatisoitujen testityökalujen toimesta. Java-maailmassa testausta dominoi lähes yksinvaltiaan tavoin JUnit. Tulet kurssin ja myöhempienkin opintojesi aikana kirjoittamaan paljon JUnit-testejä. 
+
+JUnitiin tutustumme viikon 2 [tehtävissä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
+
+## JavaDoc
+
+## Checkstyle
 
 ## UML
 
