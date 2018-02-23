@@ -20,7 +20,7 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 - [kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
 - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) EI AJANTASALLA
-- [labtool](http://tktl-labtool.herokuapp.com/)
+- [labtool](https://tktl-labtool.herokuapp.com/)
 
 ## Aikataulu
 
