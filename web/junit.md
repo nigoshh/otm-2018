@@ -1,3 +1,5 @@
+# EI AJANTASALLA, lukeminen omalla vastuulla
+
 ## JUnit-ohje NetBeansin käyttäjille
 
 Tutustutaan yksikkötestien tekemiseen JUnit-testauskehyksen avulla. Yksikkötesteissä testauksen kohteena ovat ohjelman pienimmät rakenneosaset eli yksittäiset oliot ja niiden metodit.

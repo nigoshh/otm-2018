@@ -1,3 +1,5 @@
+# EI AJANTASALLA, lukeminen omalla vastuulla
+
 # Viikon 1 tehtävät
 
 ## Komentorivin harjoittelua

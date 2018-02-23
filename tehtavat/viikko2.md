@@ -1,3 +1,5 @@
+# EI AJANTASALLA, lukeminen omalla vastuulla
+
 # Viikon 2 tehtävät
 
 ## 1 
