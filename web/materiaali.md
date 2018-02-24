@@ -334,12 +334,118 @@ Vastaavasti pakkaus _todoapp.domain_ riippuu pakkauksesta _todoapp.dao_ sillä d
 
 Pakkauskaavioihin on myös mahdollista merkitä pakkausten siältönä olevia luokkia normaalin luokkakaaviosyntaksin mukaan:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png)
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png)
 
 Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
 
 ### Sekvenssikaaviot
 
+Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta. Ohjelman toimita ei kuitenkaan tule niistä ilmi millään tavalla. Tietokantojen perusteiden [viikolla 4](https://materiaalit.github.io/tikape-k18/part4/) on lyhyt maininta sekvenssikaavioista. 
+
+Sekvenssikaaviot on alunperin kehitetty kuvaamaan verkossa olevien ohjelmien keskinäisen kommunikoinnin etenemistä. Sekvenssikaaviot sopivat kohtuullisen hyvin kuvaamaan myös sitä miten ohjelman oliot kutsuvat toistensa metodeja suorituksen aikana. 
+
+Tarkastellaan seuraavaa ohjelmaa.
+
+```java
+public class Henkilo {
+    private String nimi;
+    private int palkka;
+    private String tilinumero;
+
+    public Henkilo(String nimi, int palkka, String tilinumero) {
+        this.nimi = nimi;
+        this.palkka = palkka;
+        this.tilinumero = tilinumero;
+    }
+    
+    public void setPalkka(int palkka) {
+        this.palkka = palkka;
+    }
+
+    public int getPalkka() {
+        return palkka;
+    }
+
+    public String getTilinumero() {
+        return tilinumero;
+    }       
+}
+
+
+public class Henkilostorekisteri {
+    private Map<String, Henkilo> henkilot;
+    private PankkiRajapinta pankki;
+
+    public Henkilostorekisteri() {
+        henkilot = new HashMap<String, Henkilo>();
+        pankki = new PankkiRajapinta();
+    }        
+    
+    public void lisaa(Henkilo henkilo){
+        henkilot.set(henkilo, henkilo);
+    }
+    
+    public void suoritaPalkanmaksu(){
+        for (Henkilo henkilo : henkilot.values()) {
+            String tiliNro = henkilo.getTilinumero();
+            int palkka = henkilo.getPalkka();
+            pankki.maksaPalkka(tiliNro, palkka);
+        }
+    }
+
+    public void asetaPalkka(String nimi, int uusiPalkka){
+        Henkilo h = hekilot.get(nimi);
+				h.setPalkka(uusiPalkka);            
+    }
+
+}
+
+
+public class PankkiRajapinta {
+
+    public void maksaPalkka(String tilinumero, int summa) {
+        // suorittaa maksun verkkopankin internet-rajapinnan avulla
+        // yksityiskohdat piilotettu
+    }
+}
+```
+
+Sekvenssikaaviot kuvaavat yksittäisten suoritusskenaarioiden aikana tapahtuvia asioita. Kuvataan nyt seuraavan pääohjelman aikaansaamat tapahtumat:
+
+```java
+public static void main(String[] args) {
+		Henkilostorekisteri rekisteri = new Henkilostorekisteri();
+		
+		Henkilo arto = new Henkilo("Hellas", 1500, "1234-12345");
+		rekisteri.lisaa(arto);
+		Henkilo sasu = new Henkilo("Tarkoma", 6500, "4455-123123");
+		rekisteri.lisaa(sasu);      
+		
+		rekisteri.asetaPalkka("Hellas", 3500);   
+		
+		rekisteri.suoritaPalkanmaksu();
+}
+```
+
+Sekvenssikaavio on seuraavassa:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-13.png)
+ 
+Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee viiva alaspäin. Kaavio alkaa tilanteesta, jossa _Henkilostorekisteri_ on jo luotu. Kaaviossa aika etenee alaspäin, eli alussa olemassa olevat laatikot _main_, _rekisteri_ ja _pankki_ on piirretty kaavion yläosaan.
+
+Toiminta alkaa siitä kun pääohjelma eli main luo hebkilön nimeltä arto. Seuraavaksi main kutsuu rekisterin metodia _lisaa_ ja antaa parametriksi luodun henkilöolion.
+
+Vastaava toistuu kun main luo uuden henkilön ja lisää sen rekisteriin.
+
+Seuraavana toimenpiteenä main kasvattaa arton palkkaa kutsumalla rekisterin metodia _asetaPalkka_.  Tämä saa aikaan sen, että _rekisteri_ kutsuu _arto_-olion metodia _setPalkka_. Rekisterin viivaan on merkitty paksunnus, joka korostaa, että sen metodin on kutsuttu.
+
+Viimeinen ja monimutkaisin toiminnoista käynnistyy kun main kutsuu rekisterin metodia _suoritaPalkanmaksu_. Rekisteri kysyy ensin arton tilinumeroa ja palkkaa ja kutsuu paluuarvoina olevilla tiedoilla pankin metodia _maksaPalkka_ ja sama toistuu sasun kohdalla.
+
+Sekvenssikkaaviot eivät ole optimaalinen tapa ohjelman suorituslogiikan kuvaamiseen. Ne sopivat jossain määrin olio-ohjelmien toiminnan kuvaamiseen, mutta esim. funktionaalisella tyylillä tehtyjen ohjelmien kuvaamisessa ne ovat varsin heikkoja.
+
+Tietynlaisten tilanteiden kuvaamiseen ohjelmoinnin perusteissakin käsitellyt [vuokaaviot](https://materiaalit.github.io/ohjelmointi-18/part2/) voivat sopia paremmin.
+
+Voit halutessasi lukea lisää kurssin vanhan version [materiaalista](https://github.com/mluukkai/OTM2016/blob/master/luennot/luento5.pdf).
 
 # Lisää ohjelmiston suunnittelusta
 
