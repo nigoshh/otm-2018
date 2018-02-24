@@ -387,7 +387,6 @@ public class Henkilo {
     }       
 }
 
-
 public class Henkilostorekisteri {
     private Map<String, Henkilo> henkilot;
     private PankkiRajapinta pankki;
@@ -465,115 +464,23 @@ Voit halutessasi lukea lisää kurssin vanhan version [materiaalista](https://gi
 
 # Lisää ohjelmiston suunnittelusta
 
-### Todo-sovelluksen suunnittelu
+## Kerrosarkkitehtuuri
 
-Todo-sovelluksen arkkitehtuurikuvaus
-[täällä]https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md).
+Kuten jo mainittiin, todosovellus noudattaa kerrosarkkitehtuuria. Koodin tasolla kerrosrakenne näkyy siinä miten sovelluksen koodi jakautuu pakkauksiin 
 
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-10.png)
 
-Ohjelmiston {\em arkkitehtuurilla} tarkoitetaan\footnote{Arkkitehtuurin käsite on laaja ja hieman monisyisempi kun tässä esitetty. Arkkitehtuurin käsitettä tarkennetaan 2. vuoden kevään kurssilla Ohjelmistotuotanto sekä Ohjelmistojärjestelmien linjan syventävissä opinnoissa kurssilla Ohjelmistoarkkitehtuurit.} karkeasti ottaen ohjelmiston korkean tason rakennetta, sen jakautumista erillisiin komponentteihin ja näiden rakennekomponenttien suhteita. 
+ja minkälaisia riippuvuuksia pakkausten välisillä luokilla on. Riippuvuudet kuvaava pakkauskaavio havainnollistaa koodin rakenteen kerroksellisuuden
 
-Komponentilla tässä tarkoitetaan yleensä kokoelmaa toisiinsa loogisesti liittyviä olioita, jotka suorittavat jotain tiettyä tehtävää ohjelmassa, esim. käyttöliittymän voitaisiin ajatella olevan yksi komponentti. Toisaalta ison komponentin voidaan ajatella koostuvan useista alikomponenteista, esim. sovelluslogiikkakomponetti voisi sisältää komponentin, joka huolehtii sovelluksen alustamisesta ja yhden komponentin kutakin järjestelmän toimintokokonaisuutta varten. Toisaalta komponenttijako voi perustua myös tietosisältöihin, esim. kirjastojärjestelmässä voisi olla omat komponentit lainaajia, lainoja ja kirjakokoelmaa varten.
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png)
 
-Jos ajatellaan pelkkää ohjelman jakautumista komponenteiksi, puhutaan {\em loogisesta arkkitehtuurista}. Looginen arkkitehtuuri ei ota kantaa siihen miten eri komponentit sijoitellaan, eli toimiiko esim. käyttöliittymä samassa koneessa kuin sovelluksen käyttämä tietokanta.
+Kerrosarkkitehtuurissa ylimpänä on käyttöliittymästä vastaava kerros. Käyttöliittymäkerroksen vastuulla on muodostaa sovelluksen käyttöliittymä ja reagoida käyttäjän syötteisiin.
 
-Sovelluksen loogisen arkkitehtuurin kuvaamiseen sopivat UML:n {\em pakkauskaaviot} (engl. package diagram). Kuvassa \ref{fig:kirja6} esitetään kirjastojärjestelmän karkean tason arkkitehtuuria\footnote{Puhuttaessa arkkitehtuurista, tarkoitetaan tässä luvussa usein nimenomaan loogista arkkitehtuuria eli ei oteta kantaa komponenttien sijoittelusta fyysisille tietokoneille.} vastaava UML:n pakkauskaavio.
+Sovelluslogiikka, eliesim. käyttäjän kirjautumisesta huolehtiminen, todojen luominen ja niiden tehdyksi merkkaaminen on käyttöliittymän alapuolella olevan sovelluslogiikkakerroksen vastuulla. Sovelluslogiikkakerroksen koodi on pakkauksessa nimeltään _todoapp.doman_. 
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=25mm]{kirja6}
-    \caption{Kirjastojärjestelmän looginen arkkitehtuuri}
-    \label{fig:kirja6} 
-\end{figure}
+Sovelluslogiikan alapuolella on datan tallennuksesta vastaava kerros, jonka käytännössä muodostavat DAO-suunnittelumallin (ks.Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
 
-Kirjastojärjestelmän rakenne noudattaa ns. {\em kerrosarkkitehtuuria} (engl. layered architecture), joka on yksi hyvin tunnettu {\em arkkitehtuurinen malli} (engl. architecture pattern), eli periaate, jonka mukaan tietynlaisia ohjelmia kannattaa pyrkiä rakentamaan. Kerros on kokoelma toisiinsa liittyviä olioita tai alikomponentteja, jotka muodostavat esim. toiminnallisuuden suhteen loogisen kokonaisuuden ohjelmistosta. Kerrosarkkitehtuurissa on pyrkimyksenä järjestellä komponentit siten, että {\em ylempänä oleva kerros käyttää ainoastaan alempana olevien kerroksien tarjoamia palveluita}. Ylimpänä kerroksista on käyttöliittymäkerros, sen alapuolella sovelluslogiikka ja alimpana tallennuspalveluiden kerros, eli esimerkiksi tietokanta, jonne sovelluksen olioita voidaan tarvittaessa tallentaa.
-
-Pakkauskaaviossa yksi komponentti kuvataan {\em pakkaussymbolilla}, eli laatikolla, jonka vasemmassa ylänurkassa on pieni laatikko. Pakkauksen nimi on joko kuvan \ref{fig:kirja6} tapaan keskellä pakkaussymbolia tai ylänurkan pienemmässä laatikossa. \label{sec:pakkaus}
-
-Pakkausten välillä olevat riippuvuudet ilmaistaan katkoviivalla, joka suuntautuu pakkaukseen, johon riippuvuus kohdistuu. Kerrosarkkitehtuurissa siis on pyrkimyksenä, että riippuvuuksia on ainoastaan alapuolella oleviin kerroksiin. Kirjastojärjestelmän käyttöliittymäkerros siis riippuu sovelluslogiikkakerroksesta. Riippuvuus tarkoittaa käytännössä sitä,  että käyttöliittymän oliot kutsuvat sovelluslogiikan olioiden metodeja. Sovelluslogiikkakerros taas on riippuvainen tallennuspavelukerroksesta.
-
-Pakkauksen sisältö on mahdollista piirtää pakkaussymbolin sisään, kuten kuvassa \ref{fig:kirja7} on tehty.  Kuva \ref{fig:kirja7}  esittää kirjastojärjestelmän arkkitehtuurin hieman tarkemman version. Pakkauksen sisällä voi olla muutakin kuin alipakkauksia, kuten esim. luokkia.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=100mm]{kirja7}
-    \caption{Kirjastojärjestelmän looginen arkkitehtuuri tarkemmin}
-    \label{fig:kirja7} 
-\end{figure} 
-
-Sovelluslogiikkapakkauksen sisään on piirretty osa sovelluslogiikan luokista. Kuvassa ei siis näytetä kaikkia luokkia ja se tulee tarkentumaan myöhemmin. Käyttöliittymäpakkaus koostuu kahdesta alipakkauksesta, joista toinen on graafinen käyttöliittymä ja toinen testauskäyttöön tarkoitettu tekstipohjainen konsolikäyttöliittymä. Käyttöliittymäpakkaus on riippuvainen sovelluslogiikkapakkauksesta ja sovelluslogiikkapakkaus tallennuspalvelupakkauksesta. Kuvasta ilmenee myös se, että konsolikäyttöliittymän toteuttava pakkaus käyttää suoraan tallennuspalvelupakkauksen loki-tiedostoon kirjoittamisen toteuttavaa alipakkausta. Kysessä on alipakkauksien keskinäinen riippuvuus, graafisen käyttöliittymän toteuttava pakkaus ei siis ole riippuvainen tallennuspalveluista.
-
-Pakkausten yhteydessä voidaan käyttää nimeämiskäytäntöä, jossa komponentin (esim. alipakkauksen) nimi on useampiosainen, esim. {\em Kayttoliittyma::Konsoli} viittaa pakkauksen Kayttoliittyma sisällä olevaan Konsoli-nimiseen komponenttiin.
-
-UML:n pakkaussymbolilla voidaan ryhmitellä mitä tahansa UML-komponentteja, eli pakkauksia, luokkia, olioita, käyttötapauksia, \ldots. Kirjastojärjestelmän käyttötapaukset voitaisiin esim. jakaa ylläpidon helpottamiseksi tai dokumentoinnin selkeyttämiseksi neljään eri pakkaukseen kuten kuvassa \ref{fig:kirja1b}, jossa ainoastaan kahden pakkauksen sisältö on näkyvillä. 
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=100mm]{kirja1b}
-    \caption{Kirjastojärjestelmän käyttötapausten jakautuminen pakkauksiin}
-    \label{fig:kirja1b} 
-\end{figure} 
-
-Jos pakkauksessa on paljon sisältöä, voi sisällön näyttäminen piirtämällä sisältyvät komponentit pakkauksen sisäpuolelle olla joskus ongelmallista. Tällöin voidaan käyttää vaihtoehtoista tapaa, jossa pakkaukseen sisältyvät komponentit piirretään pakkauksen ulkopuolelle mutta liitetään ne sisältävään
-pakkaukseen käyttämällä kuvassa \ref{fig:kirja7b} esiteltyä merkintää, sisältyvyysrelaatiota. Kuvassa \ref{fig:kirja7b} on esitetty kirjastojärjestelmän arkkitehtuuri yleistasolla. Tallennuspalvelupakkauksen sisältö on näytetty käyttäen sisältyvyysrelaatiota.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=50mm]{kirja7b}
-    \caption{Vaihtoehtoinen tapa näyttää pakkauksen sisältö}
-    \label{fig:kirja7b} 
-\end{figure} 
-
-
-\subsubsection{Kerrosarkkitehtuurin etuja} \label{sec:kerrosark}
-
-Kerrosarkkitehtuurilla on monia etuja. Kerroksittaisuus helpottaa ylläpitoa, sillä jos tietyn kerroksen palvelurajapintaan (eli muille kerroksille näkyvään osaan) tehdään muutoksia, aiheuttavat muutokset ylläpitotoimenpiteitä ainoastaan ylemmän kerroksen riippuvuuksia omaavissa pakkauksessa. Esim. käyttöliittymän muutokset eivät vaikuta sovelluslogiikkaan tai tallennuspalveluihin.
-%\footnote{Palaamme myöhemmin tarkemmin siihen, miten sovelluslogiikka saadaan riippumattomaksi käyttöliittymästä.} 
-Sovelluslogiikan riippumattomuus käyttöliittymästä helpottaa ohjelman siirtämistä uusille alustoille, esim. toimimaan www-selaimen kautta. Alimpien kerroksien palveluja, kuten lokitiedostoon kirjoitusta tai tietokantayhteyksiä voidaan uusiokäyttää mahdollisesti myös muissa sovelluksissa. 
-
-Myös kerrosten sisällä ohjelman loogisesti toisiinsa liittyvät komponentit kannattaa ryhmitellä omiksi pakkauksiksi\footnote{Parempi termi kuin pakkaus tälläisestä mahdollisimman itsenäisestä osajärjestelmästä olisi esim. komponentti, käytetään kuitenkin nyt termiä pakkaus koska komponenttijako kuvataan pakkauskaavioiden avulla. Kurssilla ohjelmistoarkkitehtuurit käsitellään UML:n komponenttikaavio, joka oikeastaan sopii pakkauskaaviota paremmin paremmin ohjelman arkkitehtuurin kuvaamiseen.}. Yksittäisistä pakkauksista kannattaa tehdä mahdollisimman yhtenäisiä toiminnallisuudeltaan, eli sellaisia, joiden osat kytkeytyvät tiiviisti toisiinsa ja palvelevat ainoastaan yhtä selkeästi eroteltua tehtäväkokonaisuutta. Samalla pyrkimyksenä on, että erilliset pakkaukset ovat mahdollisimman löyhästi toisiinsa kytkettyjä, eli pakkausten välisiä riippuvuuksia pyritään minimoimaan.
-
-Ohjelman selkeä jakautuminen mahdollisimman riippumattomiin pakkauksiin eristää koodiin ja suunnitelmaan tehtävien muutosten vaikutukset mahdollisimman pienelle alueelle, eli ainoastaan riippuvuuden omaaviin pakkauksiin. Tämä helpottaa ohjelman ylläpitoa ja tekee sen laajentamisen helpommaksi. Selkeä jakautuminen pakkauksiin myös helpottaa työn jakamista suunnittelu- ja ohjelmointivaiheessa. 
-
-Pelkkä kerroksittaisuus ei tee ohjelman arkkitehtuurista automaattisesti hyvää. Kuvassa \ref{fig:kirja8} tilanne, missä kerroksen $n+1$ kolmella alipaketilla on kullakin paljon riippuvuuksia kerroksen $n$ sisäisiin komponenttiin (tässä esimerkissä yksittäisiä luokkia). Esim. muutos kerroksen $n$ luokkaan 1 aiheuttaa nyt muutoksen hyvin moneen ylemmän kerroksen pakettiin. 
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=70mm]{kirja8}
-    \caption{Kerroksella ei selkeää rajapintaa}
-    \label{fig:kirja8} 
-\end{figure} 
-
-Mahdollinen ratkaisu ongelmaan on määritellä kerrosten välille selkeä {\em rajapinta}. Yksi tapa toteuttaa rajapinta on luoda kerroksen sisälle erillinen rajapintaolio, jonka kautta ulkoiset yhteydet tapahtuvat. Tätä periaatetta sanotaan  {\em fasaadimalliksi} (engl. Facade pattern). Kuvassa \ref{fig:kirja9} on luotu rajapintaolio kerrokselle $n$. Kaikki kommunikointi kerroksen kanssa tapahtuu rajapinnan kautta, eli ylemmän kerroksen riippuvuudet kohdistuvat ainoastaan rajapintaolioon. Nyt muutos esim. luokkaan 1 ei vaikuta kerroksen $n+1$ komponentteihin millään tavalla. Ainoat muutokset on tehtävä rajapintaolion sisäiseen toteutukseen.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=70mm]{kirja9}
-    \caption{Kerroksella hyvin määritelty rajapinta}
-    \label{fig:kirja9} 
-\end{figure} 
-
-Kerrosarkkitehtuurin lisäksi on olemassa monia erilaisia arkkitehtuurimalleja eli hyväksi havaittuja tapoja jakaa järjestelmä kokonaisuuksiin, ks. esim \cite{arch}.
-
-\subsubsection{Sovelluslogiikan ja Käyttöliittymän erottaminen} 
-\label{sec:MVC}
-
-Ennen oliosuunnitteluun siirtymistä on syytä vielä nostaa esille yksi kerrosarkkitehtuuriin liittyvä tärkeä seikka. Kerrosarkkitehtuurin ylimpänä kerroksena on yleensä käyttöliittymä. Yleensä pidetään järkevänä, että ohjelman sovelluslogiikka on täysin erotettu käyttöliittymästä. Käytännössä tämä tarkoittaa kahta asiaa:
-
-\begin{itemize} \addtolength{\itemsep}{-0.5\baselineskip}
-\item Sovelluksen palveluja toteuttavilla olioilla (mitkä suunnitellaan seuraavassa luvussa) ei ole suoraa yhteyttä käyttöliittymän olioihin, joita ovat esim. Java-ohjelmissa Swing-komponentit, kuten menut, painikkeet ja tekstikentät. Eli sovelluslogiikan oliot eivät esim. suoraan kirjoita mitään ruudulle.
-\item Käyttöliittymän toteuttavat oliot eivät sisällä ollenkaan ohjelman sovelluslogiikkaa. Käyttöliittymäoliot ainoastaan piirtävät käyttöliittymäkomponentit ruudulle ja välittävät käyttäjän komennot eteenpäin sovelluslogiikalle.  
-\end{itemize}
-
-Käytännössä erottelu tehdään liittämällä käyttöliittymän ja sovellusalueen olioiden väliin erillisiä komponentteja, jotka koordinoivat käyttäjän komentojen aiheuttamien toimenpiteiden suoritusta sovelluslogiikassa. Erottelun pohjana on Ivar Jacobsonin \cite{Objectory} kehittämä idea oliotyyppien jaottelusta kolmeen osaan, {\em rajapintaolioihin, ohjausolioihin} ja {\em sisältöolioihin}. Käyttöliittymän (eli rajapintaolioiden) ja sovelluslogiikan (eli sisältöolioiden) yhdistävät {\em ohjausoliot} (engl. control objects). Käyttöliittymä ei siis ole suoraan yhteydessä sovelluslogiikkaan luokkiin, vaan ainoastaan välittää käyttäjien komentoja ohjausolioille, jotka huolehtivat sovelluslogiikan olioiden hyödyntämisestä. Seuraavassa luvussa esiteltävä Larmanin \cite{Larman} {\em ohjausperiaate} on hyvin lähellä Jacobsonin ideaa\footnote{Sovelluslogiikan ja käyttöliittymien erottelun yhteydessä puhutaan usein MVC-mallista \cite{arch}. MVC:tä tunteville tarkennettakoon, että Jacobsonin ja Larmanin ohjausoliot eivät ole tarkalleen ottaen aivan sama asia kuin MVC-mallin kontrolleri, ainakaan siinä mielessä kun MVC:tä ajatellaan esim. Javalla tapahtuvan käyttöliittymäohjelmoinnin yhteydessä \cite{JavaEE}. Javan kontrolleri on Jacobsonin ajattelussa rajapintaolio. Koska MVC-mallin mielekäs käsittely vaatii käyttöliittymäohjelmoinnin tuntemista, tutustutaan periaatteeseen vasta myöhemmillä kursseilla.}. 
-
-%Käytännössä erottelu tapahtuu ns. {\em MVC (Model, View, Controller) -mallia hyödyntäen}. MVC-mallissa käyttöliittymän (View) ja sovelluslogiikan (Model) välille tulee ohjainkerros (Controller), joka huolehtii sovelluslogiikan palvelujen kutsumisesta. Käyttöliittymä ainoastaan {\em delegoi} eli siirtää käyttäjän tekemät komennot ohjaimelle, joka pyytää sovelluslogiikkaa suorittamaan vaadittavat toimenpiteet.
-
-Sovellusalueen dataan tulevat muutokset tulee kyetä näyttämään myös käyttöliittymässä. Jyrkässä kerrosarkkitehtuuriperiaatteessahan palvelupyyntöjen pitäisi aina kulkea ylhäältä alaspäin, eli muuttuneiden tietojen välitys käyttöliittymälle aiheuttaa hankaluuksia kerroksellisuuden suhteen. Sovellusalueen tietojen muutosten välittäminen käyttöliittymälle hoidetaan oikeaoppisesti käyttäen ns. {\em tarkkailija}-periaatetta (engl. observer pattern)\footnote{Tarkkailijaperiaateessa käyttöliittymän komponentit rekisteröivät itsensä sovelluslogiikalle odottamaan päivityskäskyjä. Käyttöliittymän komponentit eivät kuitenkaan rekisteröi itseään suoraan vaan ainoastaan ns. tarkkailurajapinnan kautta. Sovelluslogiikka tunteekin ainoastaan joukon sitä tarkkailevia rajapintoja, konkreettisia käyttöliittymän komponentteja jotka toteuttavat tarkkailurajapinnat ei sovelluslogiikka tunne \cite{GOF}.}
-
-Sovelluslogiikan erottaminen käyttöliittymästä mahdollistaa myös sen, että samasta sovellusalueen datasta voi olla olemassa useita erilaisia näkymiä yhtäaikaa. Eli sama data pystytään näyttämään eri tavoin käyttäjän tarpeista riippuen, esim. joko tekstuaalisessa muodossa tai graafisena diagrammina.
-
-# Toteutukseen ja suunnitteluun liittyviä asioita
+Kerroksell
 
 ## Single responsibility -periaate
 
