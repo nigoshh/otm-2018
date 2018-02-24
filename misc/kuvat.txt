@@ -1,0 +1,9 @@
+Luokkakaaviot
+
+[User|name:string;username:string|getName();getUsername()]1-*[Todo|id:integer;content;string;done:boolean|getId();getContent();getUser();isDone();setDone();]
+
+[TodoService] -.-> [ToDo]
+[TodoService] 1-1 [ToDoDao]
+[TodoService] 0..1-loggedIn-1 [User]
+[User] 1-* [Todo]
+[TodoDao] 1-* [Todo]

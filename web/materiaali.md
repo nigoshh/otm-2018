@@ -156,15 +156,190 @@ JUnitiin tutustumme viikon 2 [tehtävissä](https://github.com/mluukkai/otm-2018
 
 ## JavaDoc
 
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-7.png)
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-8.png)
+
 ## Checkstyle
 
 ## UML
 
-## Luokkakaaviot
+Ohjelmistojen dokumentoinnissa ja sovelluksen suunnittelun yhteydessä on usein tapana visualisoida ohjelman rakennetta tai toimintaperiaatetta UML-kaavioilla. UML tarjoaa lukuisia erilaisia kaaviotyyppejä, hyödynnämme kurssilla kuitenkin näistä ainoastaan kolmea.
 
-## Sekvenssikaaviot
+### Luokkakaaviot
 
-## Pakkauskaavio
+Kurssilla [Tietokantojen perusteet](https://materiaalit.github.io/tikape-k18/) olet jo tutustunut luokkakaavioiden käyttöön. 
+
+Luokkakaavioiden käyttötarkoitus on ohjelman luokkien ja niiden välisten suhteiden kuvailu. Todosovelluksen oleellista tietosisältöä edustavat käyttäjää vastaava luokka _User_ : 
+
+```java 
+public class User {
+    private String name;
+    private String username;
+
+    public User(String username, String name) {
+        this.name = name;
+        this.username = username;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getUsername() {
+        return username;
+    }              
+}
+```
+
+ja tehtävää vastaava luokka _Todo_:
+
+```java 
+package todoapp.domain;
+
+public class Todo {
+
+    private int id;
+    private String content;
+    private boolean done;
+    private User user;
+
+    public Todo(int id, String content, boolean done, User user) {
+        this.id = id;
+        this.content = content;
+        this.done = done;
+        this.user = user;
+    }
+    
+    public String getContent() {
+        return content;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public boolean isDone() {
+        return done;
+    }
+
+    public void setDone() {
+        done = true;
+    }
+}
+```
+
+Jokaiseen todoon liittyy yksi käyttäjä, ja yksittäiseen käyttäjään liittyviä todoja voi olla useita. Tilannetta kuvaa seuraava luokkakaavio
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-3.png)
+
+Luokkakaavioon on nyt merkitty molempien luokkien attriuubuutit eli oliomuuttujat sekä metodit. 
+
+Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavihin riittää merkitä luokan nimi
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-4.png)
+
+Luokkien tarkemmat detaljit selviävät koodia katsomalla tai JavaDoc:ista.
+
+#### riippuvuus
+
+UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä pysyvää yhteyttä. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli  _riippiipuvuus_.
+
+Todosovelluksen soveluslogiikasta vastaa luokka _TodoService_ jonka koodi hieman lyhennettynä näyttää seuraavalta:
+
+```java
+public class TodoService {
+    private TodoDao todoDao;
+    private User loggedIn;
+    
+    public void createTodo(String content, User user) {
+        Todo todo = new Todo(content, user);
+        todoDao.create(todo);   
+    }
+    
+    public List<Todo> getUndone() {
+        if (loggedIn==null) {
+            return new ArrayList<>();
+        }
+        
+        return todoDao.getAll()
+                .stream()
+                .filter(t->{
+                    return t.getUser().equals(loggedIn);
+                })
+                .filter(t->!t.isDone())
+                .collect(Collectors.toList());
+    }
+    
+		// ...
+}
+```
+
+Sovelluslogiikaa hoitava olio tuntee kirjautuneen käyttäjän, mutta pääsee käsiksi kirjautuneen käyttäjän todoihin ainoastaan _todoDao_-olion välityksellä. Tämän takia luokalla ei ole yhteyttä luokkaan _Todo_, luokkien välillä on kuitenkin _riippuvuus_. Asia voidaan merkitä luokkakaavioon seuraavasti:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-5.png)
+
+Riippuvuus siis kuvataan _katkoviivallisena nuolena_ joka kohdistuu siihen luokkaan mistä ollaan riippuvaisia. Riippuvuuteen ei merkitä numeroa toisin kuin yhteyteen.
+
+#### rajapinta ja perintä
+
+TodoService siis tuntee _TodoDao_-olion (jos unohdit mikä on DAO kertaa Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)), jonka avulla se pääsee _todo_-olioihin. _TodoDao_ ei ole itseasiassa luokka vaan _rajapinta_: 
+
+```java
+public interface TodoDao {
+    void create(Todo todo);
+    List<Todo> getAll();
+    void setDone(int id);
+}
+```
+
+TodoDaosta voi olla olemassa useita eri toteutuksia. Tällä hetkellä ohjelmassa on _todo_-oliot tiedostoon tallettava _FileTodoDao_
+
+```java
+public class FileTodoDao implements TodoDao {
+    public List<Todo> todos;
+    private String file;
+
+		// ...
+}
+```
+
+sekä testien käyttämä _FakeTodoDao_. Jos ohjelmaa halutaan laajentaa siten, että tiedot talletetaan tiedostojen sijaan tietokantaan, voidaan tarkoitusta varten tehdä uusi toteutus rajapinnasta _SqlTodoDao_. 
+
+Rajapinta ja sen toteuttavat luokat kuvataan luokkakaaviossa seuraavasti:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png)
+
+Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos todosovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_ merkattaisiin se luokkakaavioon seuraavasti:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png)
+
+### Pakkauskaavio
+
+Todosovelluksen koodi on jaoiteltu _pakkausten_ avulla seuraavasti:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-10.png)
+
+Pakkausrakenne voidaan kuvata UML:ssä pakkauskaaviolla:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png)
+
+Pakkauste välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _todoapp.ui_ riippuu pakkauksesta _todoapp.domain_ sillä _ui_:n luokka _Main_ käyttää _domain_-pakkauksen luokkia _Todo_ ja _TodoService_.
+
+Vastaavasti pakkaus _todoapp.domain_ riippuu pakkauksesta _todoapp.dao_ sillä domainin luokka _TodoService_ käyttää _dao_-pakkauksen rajapintoja _TodoDao_ ja UserDao.
+
+Pakkauskaavioihin on myös mahdollista merkitä pakkausten siältönä olevia luokkia normaalin luokkakaaviosyntaksin mukaan:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png)
+
+Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
+
+### Sekvenssikaaviot
+
 
 # Lisää ohjelmiston suunnittelusta
 
