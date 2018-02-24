@@ -156,11 +156,27 @@ JUnitiin tutustumme viikon 2 [tehtävissä](https://github.com/mluukkai/otm-2018
 
 ## JavaDoc
 
+Osa ohjelmiston dokumentointia on lähdekoodin API:n eli käytännössä luokkien julkisten metodien kuvaus. Javassa lähdekoodi dokumentoidaan käyttäen JavaDoc-työkalua. Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja sopivia avainsanoja käyttämiä kommentteja.
+
+Sovelluksen JavaDocia voi tarkastella selaimen avulla
+
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-7.png)
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-8.png)
 
+Myös NetBeans osaa näyttää ohjelmoidessa koodiin määritellyn javadocin:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-14.png)
+
 ## Checkstyle
+
+Automaattisten testien lisäksi koodille voidaan määritellä erilaisia automaattisesti tarkastettavia koodin tyylillisiä sääntöjä, joiden avulla on mahdollista ylläpitää koodin luettavuutta ja varmistaa että joka puolella koodia noudatetaan samoja tyylillisiä konventioita.
+
+Käytämme kurssilla tarkoitukseen [Checkstyle](http://checkstyle.sourceforge.net)-nimistä työkalua:
+
+>Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. It automates the process of checking Java code to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
+
+[Ohje](https://github.com/mluukkai/otm-2018/blob/master/web/chekstyle.md) checkstylen konfiguroimiseen.
 
 ## UML
 
@@ -170,7 +186,7 @@ Ohjelmistojen dokumentoinnissa ja sovelluksen suunnittelun yhteydessä on usein 
 
 Kurssilla [Tietokantojen perusteet](https://materiaalit.github.io/tikape-k18/) olet jo tutustunut luokkakaavioiden käyttöön. 
 
-Luokkakaavioiden käyttötarkoitus on ohjelman luokkien ja niiden välisten suhteiden kuvailu. Todosovelluksen oleellista tietosisältöä edustavat käyttäjää vastaava luokka _User_ : 
+Luokkakaavioiden käyttötarkoitus on ohjelman luokkien ja niiden välisten suhteiden kuvailu. Todosovelluksen oleellista tietosisältöä edustavat käyttäjää vastaava luokka _User_: 
 
 ```java 
 public class User {
