@@ -356,11 +356,29 @@ Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. As
 
 ### Sekvenssikaaviot
 
-Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta. Ohjelman toimita ei kuitenkaan tule niistä ilmi millään tavalla. Tietokantojen perusteiden [viikolla 4](https://materiaalit.github.io/tikape-k18/part4/) on lyhyt maininta sekvenssikaavioista. 
+Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta. Ohjelman toimita ei kuitenkaan tule niistä ilmi millään tavalla. 
+
+Esim. ohjelmoinnin perusteista tuttua Unicafe-tehtävää kuvaava luokkakaavio näyttää seuraavalta:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png)
+
+Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka, esim. mitä tapahtuu kun kortilla ostataan edullinen lounas, selviä kaaviosta millään tavalla.
+
+Tietokantojen perusteiden [viikolla 4](https://materiaalit.github.io/tikape-k18/part4/) on lyhyt maininta sekvenssikaavioista. 
 
 Sekvenssikaaviot on alunperin kehitetty kuvaamaan verkossa olevien ohjelmien keskinäisen kommunikoinnin etenemistä. Sekvenssikaaviot sopivat kohtuullisen hyvin kuvaamaan myös sitä miten ohjelman oliot kutsuvat toistensa metodeja suorituksen aikana. 
 
-Tarkastellaan seuraavaa ohjelmaa.
+Mallivastauksesta näemme, että lounaan maksaminen tapahtuu siten, että ensin kassapääte kysyy kortin saldoa ja jos se on riittävä, vähentää kassapääte lounaan hinnan kortilta ja palauttaa _true_. Sekvenssikaaviona kuvattuna tilanne näyttää seuraavalta:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png)
+
+Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutstujan ja kutsutun elämänlangat. Paluuarvo merkitään katkoviivalla.
+
+Jos saldo ei riitä, etenee suoritus seuraavan sekvenssikaavion tapaan:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-17.png)
+
+Tarkastellaan hieman monimutkaisempaa tapausta, yrityksen palkanhallinnasta vastaavaa ohjelmaa:
 
 ```java
 public class Henkilo {
@@ -425,7 +443,7 @@ public class PankkiRajapinta {
 }
 ```
 
-Sekvenssikaaviot kuvaavat yksittäisten suoritusskenaarioiden aikana tapahtuvia asioita. Kuvataan nyt seuraavan pääohjelman aikaansaamat tapahtumat:
+Sekvenssikaaviot siis kuvaavat yksittäisten suoritusskenaarioiden aikana tapahtuvia asioita. Kuvataan nyt seuraavan pääohjelman aikaansaamat tapahtumat:
 
 ```java
 public static void main(String[] args) {
@@ -446,15 +464,15 @@ Sekvenssikaavio on seuraavassa:
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-13.png)
  
-Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee viiva alaspäin. Kaavio alkaa tilanteesta, jossa _Henkilostorekisteri_ on jo luotu. Kaaviossa aika etenee alaspäin, eli alussa olemassa olevat laatikot _main_, _rekisteri_ ja _pankki_ on piirretty kaavion yläosaan.
+Kaavio alkaa tilanteesta, jossa _Henkilostorekisteri_ on jo luotu mutta henkilöolioita ei vielä ole olemassa.
 
-Toiminta alkaa siitä kun pääohjelma eli main luo hebkilön nimeltä arto. Seuraavaksi main kutsuu rekisterin metodia _lisaa_ ja antaa parametriksi luodun henkilöolion.
+Toiminta alkaa siitä kun pääohjelma eli main luo hebkilön nimeltä _arto_. Seuraavaksi main kutsuu rekisterin metodia _lisaa_ ja antaa parametriksi luodun henkilöolion.
 
 Vastaava toistuu kun main luo uuden henkilön ja lisää sen rekisteriin.
 
 Seuraavana toimenpiteenä main kasvattaa arton palkkaa kutsumalla rekisterin metodia _asetaPalkka_.  Tämä saa aikaan sen, että _rekisteri_ kutsuu _arto_-olion metodia _setPalkka_. Rekisterin viivaan on merkitty paksunnus, joka korostaa, että sen metodin on kutsuttu.
 
-Viimeinen ja monimutkaisin toiminnoista käynnistyy kun main kutsuu rekisterin metodia _suoritaPalkanmaksu_. Rekisteri kysyy ensin arton tilinumeroa ja palkkaa ja kutsuu paluuarvoina olevilla tiedoilla pankin metodia _maksaPalkka_ ja sama toistuu sasun kohdalla.
+Viimeinen ja monimutkaisin toiminnoista käynnistyy kun main kutsuu rekisterin metodia _suoritaPalkanmaksu_. Rekisteri kysyy ensin arton tilinumeroa ja palkkaa ja kutsuu paluuarvoina olevilla tiedoilla pankin metodia _maksaPalkka_ ja sama toistuu _sasun_ kohdalla.
 
 Sekvenssikkaaviot eivät ole optimaalinen tapa ohjelman suorituslogiikan kuvaamiseen. Ne sopivat jossain määrin olio-ohjelmien toiminnan kuvaamiseen, mutta esim. funktionaalisella tyylillä tehtyjen ohjelmien kuvaamisessa ne ovat varsin heikkoja.
 
