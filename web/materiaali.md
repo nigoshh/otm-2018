@@ -531,7 +531,7 @@ Sovelluslogiikka, eli esim. käyttäjän kirjautumisesta huolehtiminen, todojen 
 
 Sovelluslogiikan alapuolella on _datan tallennuksesta vastaava kerros_, jonka käytännössä muodostavat DAO-suunnittelumallin (ks. Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
 
-[Kerrosarkkitehtuuri](https://en.wikipedia.org/wiki/Multitier_architecture) (engl. layered architecture tai multitier architecture) on ehkä eniten käytetty ohjelmistojen [arkkitehtuurimalli](https://en.wikipedia.org/wiki/Software_Architecture_styles_and_patterns), eli tavanomainen tapa ohjelmiston komponenttien strukturointiin. Käytännössä lähes jokainen ohjelmisto noudattaa ainakin jossain määrin kerroksellisuuden periaatetta. On olemassa lukuisia arkkitehtuurimalleja joihin tutustutaan tarkemmin kursseilla Ohjelmistotuotanto ja Ohjelmistoarkkitehtuurit.
+[Kerrosarkkitehtuuri](https://en.wikipedia.org/wiki/Multitier_architecture) (engl. layered architecture tai multitier architecture) on ehkä eniten käytetty ohjelmistojen [arkkitehtuurimalli](https://en.wikipedia.org/wiki/Software_Architecture_styles_and_patterns), eli yleisesti käytetty tapa ohjelmiston rakenteen strukturointiin. Käytännössä lähes jokainen ohjelmisto noudattaa ainakin jossain määrin kerroksellisuuden periaatetta. On olemassa lukuisia arkkitehtuurimalleja joihin tutustutaan tarkemmin kursseilla Ohjelmistotuotanto ja Ohjelmistoarkkitehtuurit.
 
 ## Oliosuunnittelun periaatteita
 
@@ -543,7 +543,7 @@ Jo Ohjelmoinnin perusteissa aloittelevaa ohjelmoijaa varoitellaan copy pasten va
 
 > Every piece of knowledge must have a single, unambiguous, authoritative representation within a system
 
-Periaate yleistää toisteettomuuden koskevan koodin lisäksi muitakin ohjelmistoon liittyviä asioita, esim. dokumentaatiota. Luokkien dokumentoiminen JavaDoc:in avulla ilmentää osin tätä periaatetta.
+Periaate yleistää toisteettomuuden koskemaan koodin lisäksi muitakin ohjelmistoon liittyviä asioita, esim. dokumentaatiota. Luokkien dokumentoiminen JavaDoc:in avulla ilmentää osin tätä periaatetta.
 
 ### Single responsibility principle
 	
@@ -565,9 +565,9 @@ _Program to an interface, not to an Implementation_, eli _ohjelmoi käyttämäll
 - Parempi on tuntea vain rajapintoja (tai abstrakteja luokkia) ja olla tietämätön siitä mitä rajapinnan takana on
 - Tämä mahdollistaa myös rajapinnan takana olevan luokan korvaamisen kokonaan uudella luokalla
 
-Todo-sovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita, se tuntee ainoastaan rajapinnan, ja tämä taas mahdollistaa konkreettisen toteutuksen vaihtamisen esim. testeissä tai tulevaisuudessa ohjelman laajennuksen yhteydessä:
+Todo-sovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita, se tuntee ainoastaan rajapinnat, ja tämä taas mahdollistaa konkreettisen toteutuksen vaihtamisen esim. testeissä tai tulevaisuudessa ohjelman laajennuksen yhteydessä:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="600">
 
 ### Riippuvuuksien minimointi
 	
@@ -592,7 +592,7 @@ public class TodoService {
         this.todoDao = todoDao;
     }
 
-		// ...
+    // ...
 }
 ```    
 
@@ -602,7 +602,7 @@ eli kun sovelluksen alustava metodi _init_ luo ensin sopivat DAO-oliot ja antaa 
 public class Main extends Application {
     private TodoService todoService;
     
-		// ...
+    // ...
     
     @Override
     public void init(){
@@ -611,12 +611,14 @@ public class Main extends Application {
         todoService = new TodoService(todoDao, userDao);
     }
 
-		// ...
+    // ...
 
 }
 ``` 		
 
 Tekniikasta, missä oliolle annetaan sen riippuvuudet ulkopuolelta joko konstruktorin parametrina, erillisten metodien avulla tai jollain muulla tekniikalla, käytetään nimitystä _riippuvuuksien injektointi_ (engl. [dependency injection](http://www.jamesshore.com/Blog/Dependency-Injection-Demystified.html).)
+
+## Riippuvuuksien injektointi ja testaus
 
 Riippuvuuksien injektointi helpottaa erityiseti testaamista, sillä se mahdollistaa, että luokille annetaan niiden normaalien riippuvuuksien sijaan testausta varten luotuja _valekomponentteja_.
 
@@ -630,7 +632,7 @@ public class FakeUserDao implements UserDao {
         users.add(new User("testertester", "Teppo Testaaja"));
     }
 
-		// ...
+    // ...
 }
 ```
 
@@ -667,7 +669,7 @@ public class TodoServiceUserTest {
         assertEquals("Teppo Testaaja", loggedIn.getName() );
     }
 
-		// ...		
+    // ...		
 }
 ```
 
