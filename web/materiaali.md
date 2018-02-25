@@ -15,6 +15,26 @@ Kurssin suoritusmuoto poikkeaa radikaalisti aiemmasta viikoittaiset luennot ja l
 
 Kurssin ensimmäisen kolmen viikon aikana harjoitellaan versionhallintaa, yksikkötestausta sekä UML-kaavioiden tekemistä. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole.
 
+# Kirjoitusvirheitä materiaalissa
+
+Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GihHubiin, paina sivulla olevaa kynä-symbolia:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-1.png)
+
+korjaa virhe ja ehdota muutosta (nappi sivun alalaidassa):
+
+![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-4.png)
+
+luo pullrequest:
+
+![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-5.png)
+
+ja varmista vielä:
+
+![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-6.png)
+
+Korjausehdotuksesta tulee nyt pullrequest ja se päivittyy siinä vaiheessa sivulle kun joku kurssihenkilökunnasta hyväksyy sen.
+
 # Ohjelmistotuotanto
 
 Kun tehdään pientä ohjelmaa omaan käyttöön ei työskentelymenetelmillä ole suurta merkitystä. Kun ohjelmiston koko on suurempi ja erityisesti jos sitä tehdään useamman ihmisen toimesta ulkoiselle käyttäjälle tai tilaajalle ei pelkkä häkkeröinti enää tuota optimaalista tulosta. Tarvitaankin jonkinlainen systemaattinen menetelmä ohjaamaan ohjelmistokehittäjien toimintaa ja varmistamaan, että ohjelmistosta tulee käyttäjien käyttötarkoitukseen sopiva.
