@@ -111,11 +111,11 @@ Vesiputousmallin heikkoudet ovat johtaneet viime vuosina yleistyneiden _ketterie
 
 Ketterissä menetelmistä lähdetään oletuksesta, että vaatimuksia ei voi tyhjentävästi määritellä ohjelmistokehitysprosessin alussa. Koska näin ei voida tehdä, ei sitä edes yritetä vaan pyritään toimimaan niin, että asiakkaan vaatimukset saadaan tarkennettua pikkuhiljaa ohjelmiston kehitysprosessin aikana ja lopputuloksesta saadaan sitä kautta mahdollisimmann halutun kaltainen.
 
-Ketterä ohjelmistokehitys etenee yleensä siten, että ensin kartoitetaan pääpiirteissään ohjelman vaatimuksia ja ehkä hahmotellaan järjestelmän alustava arkkitehtuuri. Tämän jälkeen suoritetaan useita _iteraatioita_ (joista käytetään yleisesti myös nimitystä sprintti), joiden aikana ohjelmaa rakennetaan pala palalta eteenpäin. Kussakin iteraatiossa suunnitellaan ja toteutetaan pieni osa ohjelman vaatimuksista. Vaatimukset voivat myös tarkentua koko prosessin ajan.
+Ketterä ohjelmistokehitys etenee yleensä siten, että ensin kartoitetaan pääpiirteissään ohjelman vaatimuksia ja ehkä hahmotellaan järjestelmän alustava arkkitehtuuri. Tämän jälkeen suoritetaan useita _iteraatioita_ (joista käytetään yleisesti myös nimitystä sprintti), joiden aikana ohjelmaa rakennetaan pala palalta eteenpäin. Kussakin iteraatiossa suunnitellaan ja toteutetaan valmiiksi pieni osa ohjelman vaatimuksista. Vaatimukset voivat myös tarkentua koko prosessin ajan.
 
 Yksittäinen iteraatio, joka on kestoltaan tyypillisesti 1-4 viikkoa, siis lisää järjestelmään pienen osan koko järjestelmän toivotusta toiminnallisuudesta. Tyypillisesti tärkeimmät ja toteutuksen kannalta haasteellisimmat ja riskialttiimmat toiminnallisuudet toteutetaan ensimmäisillä iteraatioilla. Yksi iteraatio sisältää toteutettavaksi valittujen vaatimusten tarkennuksen, suunnittelun, toteutuksen sekä testauksen. 
 
-Jokainen iteraatio tuottaa toimivan ja toteutettujen ominaisuuksien kannalta testatun järjestelmän. Asiakas pääsee testaamaan järjestelmää jokaisen iteraation jälkeen. Tällöin voidaan jo aikaisessa vaiheessa todeta, onko kehitystyö etenemässä oikeaan suuntaan ja vaatimuksia voidaan tarvittaessa tarkentaa ja lisätä.
+Jokainen iteraatio tuottaa toimivan ja toteutettujen ominaisuuksien kannalta testatun järjestelmän. Asiakas pääsee kokeilemaan järjestelmää jokaisen iteraation jälkeen. Tällöin voidaan jo aikaisessa vaiheessa todeta, onko kehitystyö etenemässä oikeaan suuntaan ja vaatimuksia voidaan tarvittaessa tarkentaa ja lisätä.
 
 Jokainen iteraatio siis sisältää määrittelyä, suunnittelua, ohjelmointia ja testausta ja jokaisen iteraation jälkeen saadaan asiakkaalta palautetta siitä, onko kehitystyö etenemässä oikeaan suuntaan:
 
@@ -123,7 +123,7 @@ Jokainen iteraatio siis sisältää määrittelyä, suunnittelua, ohjelmointia j
 
 Ketterässä ohjelmistokehityksessä dokumentointi ei ole yleensä niin keskeisessä osassa kuin perinteisissä menetelmissä.
 
-Vähäisemmän dokumentaation sijaan testauksella ja ns. jatkuvalla integroinnilla on hyvin suuri merkitys. Yleensä pyritään siihen, että järjestelmään lisättävät uudet komponentit testataan välittömästi ja pyritään heti integroimaan kokonaisuuteen, tästä työskentelytavasta käytetään nimitystä _jatkuva integrointi_ (engl. continuous integration). Näin uusia versioita järjestelmästä syntyy jopa päivittäin iteraatioiden toteutusvaiheiden aikana.
+Vähäisemmän dokumentaation sijaan testauksella ja ns. jatkuvalla integroinnilla on hyvin suuri merkitys. Yleensä pyritään siihen, että järjestelmään lisättävät uudet komponentit testataan välittömästi ja pyritään heti integroimaan kokonaisuuteen, tästä työskentelytavasta käytetään nimitystä _jatkuva integrointi_ (engl. continuous integration). Näin uusia versioita järjestelmästä syntyy jopa päivittäin.
 
 Uusien komponenttien toimiminen pyritään varmistamaan perinpohjaisella automaattisella testauksella. Joskus jopa "testataan ensin", eli jo ennen ennen uuden komponentin toteuttamista ohjelmoidaan komponentin toimintaa testaavat testitapaukset. Testitapausten valmistuttua toteutetaan komponentti ja siinä vaiheessa kun komponentti läpäisee testitapaukset, se integroidaan muuhun kokonaisuuteen.
 
@@ -139,14 +139,13 @@ Tarvitsemme ohejlmisokehityksessä suuren joukon käytännön työkaluja.
 
 ## Komentorivi ja Versionhallinta
 
-Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionohallintaa. 
-Molemmat ovat aiheena viikon 1 [tehtävissä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
+Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionohallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md). 
 
 ## Maven
 
 Olet todennäköisesti ohjelmoinut Javaa suurimmaksi osaksi NetBeansilla ja luottanut siihen että kaikki hoituu valitsemalla sopivia toimintoja valikoista ja painamalla "vihreää nappia".
 
-Alamme tämän kurssin myötä hieman tutkimaan miten Javalla tehdyn ohjelmiston hallinnointi (esim. koodin kääntäminen, koodin sekä tiestien suorittaminen ja koodin paketoiminen NetBeansin ulkopuolella suoritettavissa olevaksi jar-paketiksi) tapahtuu NetBeansin "ulkopuolella".
+Alamme tämän kurssin myötä hieman tutkimaan miten Javalla tehdyn ohjelmiston hallinnointi (esim. koodin kääntäminen, koodin sekä testin suorittaminen ja koodin paketoiminen NetBeansin ulkopuolella suoritettavissa olevaksi jar-paketiksi) tapahtuu NetBeansin "ulkopuolella".
 
 Java-projektien hallinnointiin on olemassa muutamakin vaihtoehto. Käytämme tällä kurssilla _mavenia_, joka lienee jo useimmille osittain tuttu esim. Tietokantojen perusteista.
 
@@ -157,17 +156,16 @@ Mavenin käytön aloittamiseen.
 
 Ohjelmistojen testaus tapahtuu nykyään ainakin yksikkö- ja integraatiotestien osalta automatisoitujen testityökalujen toimesta. Java-maailmassa testausta dominoi lähes yksinvaltiaan tavoin JUnit. Tulet kurssin ja myöhempienkin opintojesi aikana kirjoittamaan paljon JUnit-testejä. 
 
-JUnitiin tutustumme viikon 2 [tehtävissä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
+JUnitiin tutustumme viikon 2 [tehtävissä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md).
 
 ## JavaDoc
 
-Osa ohjelmiston dokumentointia on lähdekoodin API:n eli käytännössä luokkien julkisten metodien kuvaus. Javassa lähdekoodi dokumentoidaan käyttäen JavaDoc-työkalua. Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja sopivia avainsanoja käyttämiä kommentteja.
+Osa ohjelmiston dokumentointia on lähdekoodin API:n eli käytännössä luokkien julkisten metodien kuvaus. Javassa lähdekoodi dokumentoidaan käyttäen JavaDoc-työkalua. Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja  kommentteja.
 
 Sovelluksen JavaDocia voi tarkastella selaimen avulla
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-7.png)
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-8.png)
 
 Myös NetBeans osaa näyttää ohjelmoidessa koodiin määritellyn javadocin:
 
@@ -175,7 +173,7 @@ Myös NetBeans osaa näyttää ohjelmoidessa koodiin määritellyn javadocin:
 
 ## Checkstyle
 
-Automaattisten testien lisäksi koodille voidaan määritellä erilaisia automaattisesti tarkastettavia koodin tyylillisiä sääntöjä, joiden avulla on mahdollista ylläpitää koodin luettavuutta ja varmistaa että joka puolella koodia noudatetaan samoja tyylillisiä konventioita.
+Automaattisten testien lisäksi koodille voidaan määritellä erilaisia automaattisesti tarkastettavia tyylillisiä sääntöjä, joiden avulla on mahdollista ylläpitää koodin luettavuutta ja varmistaa että joka puolella koodia noudatetaan samoja tyylillisiä konventioita.
 
 Käytämme kurssilla tarkoitukseen [Checkstyle](http://checkstyle.sourceforge.net)-nimistä työkalua:
 
@@ -185,7 +183,9 @@ Käytämme kurssilla tarkoitukseen [Checkstyle](http://checkstyle.sourceforge.ne
 
 ## UML
 
-Ohjelmistojen dokumentoinnissa ja sovelluksen suunnittelun yhteydessä on usein tapana visualisoida ohjelman rakennetta tai toimintaperiaatetta UML-kaavioilla. UML tarjoaa lukuisia erilaisia kaaviotyyppejä, hyödynnämme kurssilla kuitenkin näistä ainoastaan kolmea.
+Ohjelmistojen dokumentoinnissa ja sovelluksen suunnittelun yhteydessä on usein tapana visualisoida ohjelman rakennetta ja toimintaa [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)-kaavioilla. 
+
+UML tarjoaa lukuisia erilaisia kaaviotyyppejä, hyödynnämme kurssilla kuitenkin näistä ainoastaan kolmea.
 
 ### Luokkakaaviot
 
@@ -256,13 +256,13 @@ public class Todo {
 
 Jokaiseen todoon liittyy yksi käyttäjä, ja yksittäiseen käyttäjään liittyviä todoja voi olla useita. Tilannetta kuvaa seuraava luokkakaavio
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-3.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-3.png" width="450">
 
 Luokkakaavioon on nyt merkitty molempien luokkien attriuubuutit eli oliomuuttujat sekä metodit. 
 
 Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavihin riittää merkitä luokan nimi
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-4.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-4.png" width="300">
 
 Luokkien tarkemmat detaljit selviävät koodia katsomalla tai JavaDoc:ista.
 
