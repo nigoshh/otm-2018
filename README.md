@@ -24,14 +24,20 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 - [kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
 - [labtool](https://tktl-labtool.herokuapp.com/)
-- ohjeita
-  - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) EI AJANTASALLA
+- ohjeita (**ohjeet eivät ole vielä ajantasalla!**)
+  - [aiheideoita ja oheita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/aiheideoita.md)
+  - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) 
+  - [maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
+  - [checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
+  - [javadoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
 - työkaluja kaavioiden piirtoon
   - <http://yuml.me/> luokkakaaviot
   - <https://www.websequencediagrams.com/> sekvenssikaavioihin
   - <https://draw.io/> kaikki kaaviot
 
-## Aikataulu
+## Aikataulu 
+
+**aikataulu on vielä keskeneräinen!**
 
 ### viikko 1
 

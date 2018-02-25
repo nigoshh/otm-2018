@@ -1,5 +1,3 @@
-# KESKEN, lukeminen omalla vastuulla
-
 # Ohjelmistotekniikan menetelmät kevät 2018
 
 Keväästä 2018 alkaen Ohjelmistotekniikan menetelmät (eli OTM) siirtyy aineopintoihin. Kurssin esitietoina on Ohjelmoinnin jatkokurssi sekä Tietokantojen perusteet. Oletuksena on, että molemmista kursseista on käyty suhteellisen tuore versio ja että molempien aihepiiri on vielä hyvin mielessä.
