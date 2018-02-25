@@ -288,15 +288,15 @@ public class TodoService {
         }
         
         return todoDao.getAll()
-					.stream()
-					.filter(t->{
-							return t.getUser().equals(loggedIn);
-					})
-					.filter(t->!t.isDone())
-					.collect(Collectors.toList());
+            .stream()
+            .filter(t->{
+                return t.getUser().equals(loggedIn);
+					  })
+            .filter(t->!t.isDone())
+            .collect(Collectors.toList());
     }
 
-		// ...
+    // ...
 }
 ```
 
