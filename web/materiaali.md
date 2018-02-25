@@ -357,9 +357,9 @@ Pakkauste välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _todoapp.ui
 
 Vastaavasti pakkaus _todoapp.domain_ riippuu pakkauksesta _todoapp.dao_ sillä domainin luokka _TodoService_ käyttää _dao_-pakkauksen rajapintoja _TodoDao_ ja UserDao.
 
-Pakkauskaavioihin on myös mahdollista merkitä pakkausten siältönä olevia luokkia normaalin luokkakaaviosyntaksin mukaan:
+Pakkauskaavioihin on myös mahdollista merkitä pakkausten sisältönä olevia luokkia normaalin luokkakaaviosyntaksin mukaan:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png" width="450">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png" width="400">
 
 Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
 
@@ -369,23 +369,44 @@ Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta. Ohjelman toimita ei kuit
 
 Esim. ohjelmoinnin perusteista tuttua Unicafe-tehtävää kuvaava luokkakaavio näyttää seuraavalta:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png" width="450">
 
 Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka, esim. mitä tapahtuu kun kortilla ostataan edullinen lounas, selviä kaaviosta millään tavalla.
 
 Tietokantojen perusteiden [viikolla 4](https://materiaalit.github.io/tikape-k18/part4/) on lyhyt maininta sekvenssikaavioista. 
 
-Sekvenssikaaviot on alunperin kehitetty kuvaamaan verkossa olevien ohjelmien keskinäisen kommunikoinnin etenemistä. Sekvenssikaaviot sopivat kohtuullisen hyvin kuvaamaan myös sitä miten ohjelman oliot kutsuvat toistensa metodeja suorituksen aikana. 
+Sekvenssikaaviot on alunperin kehitetty kuvaamaan verkossa olevien ohjelmien keskinäisen kommunikoinnin etenemistä. Sekvenssikaaviot sopivat kohtuullisen hyvin kuvaamaan myös sitä, miten ohjelman oliot kutsuvat toistensa metodeja suorituksen aikana. 
 
-Mallivastauksesta näemme, että lounaan maksaminen tapahtuu siten, että ensin kassapääte kysyy kortin saldoa ja jos se on riittävä, vähentää kassapääte lounaan hinnan kortilta ja palauttaa _true_. Sekvenssikaaviona kuvattuna tilanne näyttää seuraavalta:
+Unicafetehtävän ,allivastauksesta näemme, että lounaan maksaminen tapahtuu siten, että ensin kassapääte kysyy kortin saldoa ja jos se on riittävä, vähentää kassapääte lounaan hinnan kortilta ja palauttaa _true_: 
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png" width="400">
+```java
+public class Kassapaate {
+    private static final double EDULLISEN_HINTA = 2.5;
+    // ...
 
-Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutstujan ja kutsutun elämänlangat. Paluuarvo merkitään katkoviivalla.
+    public boolean syoEdullisesti(Maksukortti kortti) {
+        if (kortti.saldo() < EDULLISEN_HINTA) {
+            return false;
+        }
+ 
+        kortti.otaRahaa(EDULLISEN_HINTA);
+        this.edulliset++;
+        return true;
+    }
+
+    //...
+}
+```
+
+Sekvenssikaaviona kuvattuna tilanne näyttää seuraavalta:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png" width="500">
+
+Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutstujan ja kutsutun olion elämänlangat. Paluuarvo merkitään katkoviivalla.
 
 Jos saldo ei riitä, etenee suoritus seuraavan sekvenssikaavion tapaan:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-17.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-17.png" width="500">
 
 Tarkastellaan hieman monimutkaisempaa tapausta, yrityksen palkanhallinnasta vastaavaa ohjelmaa:
 
