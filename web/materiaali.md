@@ -458,7 +458,7 @@ public class Henkilostorekisteri {
 
     public void asetaPalkka(String nimi, int uusiPalkka){
         Henkilo h = hekilot.get(nimi);
-				h.setPalkka(uusiPalkka);            
+        h.setPalkka(uusiPalkka);            
     }
 
 }
@@ -477,16 +477,16 @@ Sekvenssikaaviot siis kuvaavat yksittäisten suoritusskenaarioiden aikana tapaht
 
 ```java
 public static void main(String[] args) {
-		Henkilostorekisteri rekisteri = new Henkilostorekisteri();
+    Henkilostorekisteri rekisteri = new Henkilostorekisteri();
 		
-		Henkilo arto = new Henkilo("Hellas", 1500, "1234-12345");
-		rekisteri.lisaa(arto);
-		Henkilo sasu = new Henkilo("Tarkoma", 6500, "4455-123123");
-		rekisteri.lisaa(sasu);      
+    Henkilo arto = new Henkilo("Hellas", 1500, "1234-12345");
+    rekisteri.lisaa(arto);
+    Henkilo sasu = new Henkilo("Tarkoma", 6500, "4455-123123");
+    rekisteri.lisaa(sasu);      
 		
-		rekisteri.asetaPalkka("Hellas", 3500);   
+    rekisteri.asetaPalkka("Hellas", 3500);   
 		
-		rekisteri.suoritaPalkanmaksu();
+    rekisteri.suoritaPalkanmaksu();
 }
 ```
 
@@ -494,21 +494,21 @@ Sekvenssikaavio on seuraavassa:
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-13.png)
  
-Kaavio alkaa tilanteesta, jossa _Henkilostorekisteri_ on jo luotu mutta henkilöolioita ei vielä ole olemassa.
+Kaavio alkaa tilanteesta, jossa _Henkilostorekisteri_ on jo luotu, mutta henkilöolioita ei vielä ole olemassa.
 
-Toiminta alkaa siitä kun pääohjelma eli main luo hebkilön nimeltä _arto_. Seuraavaksi main kutsuu rekisterin metodia _lisaa_ ja antaa parametriksi luodun henkilöolion.
+Toiminta alkaa siitä kun pääohjelma eli main luo henkilön nimeltä _arto_. Seuraavaksi _main_ kutsuu rekisterin metodia _lisaa_ ja antaa parametriksi luodun henkilöolion.
 
 Vastaava toistuu kun main luo uuden henkilön ja lisää sen rekisteriin.
 
 Seuraavana toimenpiteenä main kasvattaa arton palkkaa kutsumalla rekisterin metodia _asetaPalkka_.  Tämä saa aikaan sen, että _rekisteri_ kutsuu _arto_-olion metodia _setPalkka_. Rekisterin viivaan on merkitty paksunnus, joka korostaa, että sen metodin on kutsuttu.
 
-Viimeinen ja monimutkaisin toiminnoista käynnistyy kun main kutsuu rekisterin metodia _suoritaPalkanmaksu_. Rekisteri kysyy ensin arton tilinumeroa ja palkkaa ja kutsuu paluuarvoina olevilla tiedoilla pankin metodia _maksaPalkka_ ja sama toistuu _sasun_ kohdalla.
+Viimeinen ja monimutkaisin toiminnoista käynnistyy, kun main kutsuu rekisterin metodia _suoritaPalkanmaksu_. Rekisteri kysyy ensin arton tilinumeroa ja palkkaa ja kutsuu paluuarvoina olevilla tiedoilla pankin metodia _maksaPalkka_ ja sama toistuu _sasun_ kohdalla.
 
 Sekvenssikkaaviot eivät ole optimaalinen tapa ohjelman suorituslogiikan kuvaamiseen. Ne sopivat jossain määrin olio-ohjelmien toiminnan kuvaamiseen, mutta esim. funktionaalisella tyylillä tehtyjen ohjelmien kuvaamisessa ne ovat varsin heikkoja.
 
 Tietynlaisten tilanteiden kuvaamiseen ohjelmoinnin perusteissakin käsitellyt [vuokaaviot](https://materiaalit.github.io/ohjelmointi-18/part2/) voivat sopia paremmin.
 
-Voit halutessasi lukea lisää kurssin vanhan version [materiaalista](https://github.com/mluukkai/OTM2016/blob/master/luennot/luento5.pdf).
+Voit halutessasi lukea lisää sekvenssikaavioista kurssin vanhan version [materiaalista](https://github.com/mluukkai/OTM2016/blob/master/luennot/luento5.pdf).
 
 # Lisää ohjelmiston suunnittelusta
 
