@@ -370,7 +370,7 @@ Sekvenssikaaviot on alunperin kehitetty kuvaamaan verkossa olevien ohjelmien kes
 
 Mallivastauksesta näemme, että lounaan maksaminen tapahtuu siten, että ensin kassapääte kysyy kortin saldoa ja jos se on riittävä, vähentää kassapääte lounaan hinnan kortilta ja palauttaa _true_. Sekvenssikaaviona kuvattuna tilanne näyttää seuraavalta:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png" width="400">
 
 Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutstujan ja kutsutun elämänlangat. Paluuarvo merkitään katkoviivalla.
 
