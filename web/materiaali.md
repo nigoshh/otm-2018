@@ -119,7 +119,7 @@ Jokainen iteraatio tuottaa toimivan ja toteutettujen ominaisuuksien kannalta tes
 
 Jokainen iteraatio siis sisältää määrittelyä, suunnittelua, ohjelmointia ja testausta ja jokaisen iteraation jälkeen saadaan asiakkaalta palautetta siitä, onko kehitystyö etenemässä oikeaan suuntaan:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-1.png)
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-2.png)
 
 Ketterässä ohjelmistokehityksessä dokumentointi ei ole yleensä niin keskeisessä osassa kuin perinteisissä menetelmissä.
 
