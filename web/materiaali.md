@@ -19,7 +19,7 @@ Kurssin ensimmäisen kolmen viikon aikana harjoitellaan versionhallintaa, yksikk
 
 Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GihHubiin, paina sivulla olevaa kynä-symbolia:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-1.png)
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-0.png)
 
 korjaa virhe ja ehdota muutosta (nappi sivun alalaidassa):
 
