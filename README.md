@@ -105,7 +105,7 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 
 ## Kurssin suorittaminen ja arvostelu
 
-Kurssilla jaossa 60 pistettä. Pisteet jakautuvat seuraavasti
+Kurssilla jaossa 60 pistettä. Pisteet jakautuvat alustavan suunnitelman mukaan seuraavasti
 
 - Viikkodeadlinet 17p
 - Koodikatselmointi 3p
