@@ -1,6 +1,6 @@
 Luokkakaaviot
 
-[User|name:string;username:string|getName();getUsername()]1-*[Todo|id:integer;content;string;done:boolean|getId();getContent();getUser();isDone();setDone();]
+[User|name:String;username:String|getName();getUsername()]1-*[Todo|id:int;content:String;done:boolean|getId();getContent();getUser();isDone();setDone();]
 
 [TodoService] -.-> [ToDo]
 [TodoService] 1-1 [ToDoDao]

@@ -256,21 +256,21 @@ public class Todo {
 
 Jokaiseen todoon liittyy yksi käyttäjä, ja yksittäiseen käyttäjään liittyviä todoja voi olla useita. Tilannetta kuvaa seuraava luokkakaavio
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-3.png" width="450">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-3a.png" width="500">
 
-Luokkakaavioon on nyt merkitty molempien luokkien attriuubuutit eli oliomuuttujat sekä metodit. 
+Luokkakaavioon on nyt merkitty molempien luokkien  oliomuuttujat sekä metodit. 
 
 Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavihin riittää merkitä luokan nimi
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-4.png" width="300">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-4.png" width="350">
 
 Luokkien tarkemmat detaljit selviävät koodia katsomalla tai JavaDoc:ista.
 
-#### riippuvuus
+#### Riippuvuus
 
 UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä pysyvää yhteyttä. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli  _riippiipuvuus_.
 
-Todosovelluksen soveluslogiikasta vastaa luokka _TodoService_ jonka koodi hieman lyhennettynä näyttää seuraavalta:
+Todosovelluksen soveluslogiikasta vastaa luokka _TodoService_, jonka koodi hieman lyhennettynä näyttää seuraavalta:
 
 ```java
 public class TodoService {
@@ -288,25 +288,29 @@ public class TodoService {
         }
         
         return todoDao.getAll()
-                .stream()
-                .filter(t->{
-                    return t.getUser().equals(loggedIn);
-                })
-                .filter(t->!t.isDone())
-                .collect(Collectors.toList());
+					.stream()
+					.filter(t->{
+							return t.getUser().equals(loggedIn);
+					})
+					.filter(t->!t.isDone())
+					.collect(Collectors.toList());
     }
-    
+
 		// ...
 }
 ```
 
-Sovelluslogiikaa hoitava olio tuntee kirjautuneen käyttäjän, mutta pääsee käsiksi kirjautuneen käyttäjän todoihin ainoastaan _todoDao_-olion välityksellä. Tämän takia luokalla ei ole yhteyttä luokkaan _Todo_, luokkien välillä on kuitenkin _riippuvuus_. Asia voidaan merkitä luokkakaavioon seuraavasti:
+Sovelluslogiikaa hoitava olio tuntee kirjautuneen käyttäjän, mutta pääsee käsiksi kirjautuneen käyttäjän todoihin ainoastaan _todoDao_-olion välityksellä. Tämän takia luokalla ei ole yhteyttä luokkaan _Todo_, luokkien välillä on kuitenkin _riippuvuus_, sillä sovelluslogiikka käsittelee metodeissaan todo-olioita.
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-5.png)
+Asia voidaan merkitä luokkakaavioon seuraavasti:
 
-Riippuvuus siis kuvataan _katkoviivallisena nuolena_ joka kohdistuu siihen luokkaan mistä ollaan riippuvaisia. Riippuvuuteen ei merkitä numeroa toisin kuin yhteyteen.
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-5.png" width="600">
 
-#### rajapinta ja perintä
+Riippuvuus siis kuvataan _katkoviivallisena nuolena_, joka kohdistuu siihen luokkaan mistä ollaan riippuvaisia. Riippuvuuteen ei merkitä numeroa toisin kuin yhteyteen.
+
+Riippuvuuksien merkitseminen luokkakaavioihin ei ole välttämättä kovin oleellinen asia, niitä kannattaa merkitä jos ne tuovat esiille tilanteen kannalta jotain oleellista.
+
+#### Rajapinta ja perintä
 
 TodoService siis tuntee _TodoDao_-olion (jos unohdit mikä on DAO kertaa Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)), jonka avulla se pääsee _todo_-olioihin. _TodoDao_ ei ole itseasiassa luokka vaan _rajapinta_: 
 
@@ -325,7 +329,7 @@ public class FileTodoDao implements TodoDao {
     public List<Todo> todos;
     private String file;
 
-		// ...
+    // ...
 }
 ```
 
@@ -333,11 +337,11 @@ sekä testien käyttämä _FakeTodoDao_. Jos ohjelmaa halutaan laajentaa siten, 
 
 Rajapinta ja sen toteuttavat luokat kuvataan luokkakaaviossa seuraavasti:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="550">
 
 Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos todosovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_ merkattaisiin se luokkakaavioon seuraavasti:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png" width="450">
 
 ### Pakkauskaavio
 
