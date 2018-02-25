@@ -291,7 +291,7 @@ public class TodoService {
             .stream()
             .filter(t->{
                 return t.getUser().equals(loggedIn);
-					  })
+            })
             .filter(t->!t.isDone())
             .collect(Collectors.toList());
     }
@@ -337,21 +337,21 @@ sekä testien käyttämä _FakeTodoDao_. Jos ohjelmaa halutaan laajentaa siten, 
 
 Rajapinta ja sen toteuttavat luokat kuvataan luokkakaaviossa seuraavasti:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="550">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="600">
 
-Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos todosovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_ merkattaisiin se luokkakaavioon seuraavasti:
+Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos todosovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_, merkattaisiin se luokkakaavioon seuraavasti:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png" width="450">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png" width="350">
 
 ### Pakkauskaavio
 
-Todosovelluksen koodi on jaoiteltu _pakkausten_ avulla seuraavasti:
+Todosovelluksen koodi on sijoitettu _pakkauksiin_ seuraavasti:
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-10.png)
 
 Pakkausrakenne voidaan kuvata UML:ssä pakkauskaaviolla:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png" width="350">
 
 Pakkauste välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _todoapp.ui_ riippuu pakkauksesta _todoapp.domain_ sillä _ui_:n luokka _Main_ käyttää _domain_-pakkauksen luokkia _Todo_ ja _TodoService_.
 
@@ -359,7 +359,7 @@ Vastaavasti pakkaus _todoapp.domain_ riippuu pakkauksesta _todoapp.dao_ sillä d
 
 Pakkauskaavioihin on myös mahdollista merkitä pakkausten siältönä olevia luokkia normaalin luokkakaaviosyntaksin mukaan:
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png)
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png" width="700">
 
 Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
 
