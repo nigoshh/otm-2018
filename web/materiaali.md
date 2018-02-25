@@ -351,7 +351,7 @@ Todosovelluksen koodi on sijoitettu _pakkauksiin_ seuraavasti:
 
 Pakkausrakenne voidaan kuvata UML:ssä pakkauskaaviolla:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png" width="200">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png" width="160">
 
 Pakkauste välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _todoapp.ui_ riippuu pakkauksesta _todoapp.domain_ sillä _ui_:n luokka _Main_ käyttää _domain_-pakkauksen luokkia _Todo_ ja _TodoService_.
 
@@ -359,7 +359,7 @@ Vastaavasti pakkaus _todoapp.domain_ riippuu pakkauksesta _todoapp.dao_ sillä d
 
 Pakkauskaavioihin on myös mahdollista merkitä pakkausten siältönä olevia luokkia normaalin luokkakaaviosyntaksin mukaan:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png" width="500">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png" width="450">
 
 Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
 
