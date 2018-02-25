@@ -191,7 +191,7 @@ UML tarjoaa lukuisia erilaisia kaaviotyyppejä, hyödynnämme kurssilla kuitenki
 
 Kurssilla [Tietokantojen perusteet](https://materiaalit.github.io/tikape-k18/) olet jo tutustunut luokkakaavioiden käyttöön. 
 
-Luokkakaavioiden käyttötarkoitus on ohjelman luokkien ja niiden välisten suhteiden kuvailu. Todosovelluksen oleellista tietosisältöä edustavat käyttäjää vastaava luokka _User_: 
+Luokkakaavioiden käyttötarkoitus on ohjelman luokkien ja niiden välisten suhteiden kuvailu. Todo-sovelluksen oleellista tietosisältöä edustavat käyttäjää vastaava luokka _User_: 
 
 ```java 
 public class User {
@@ -270,7 +270,7 @@ Luokkien tarkemmat detaljit selviävät koodia katsomalla tai JavaDoc:ista.
 
 UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä pysyvää yhteyttä. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli  _riippiipuvuus_.
 
-Todosovelluksen soveluslogiikasta vastaa luokka _TodoService_, jonka koodi hieman lyhennettynä näyttää seuraavalta:
+Todo-sovelluksen soveluslogiikasta vastaa luokka _TodoService_, jonka koodi hieman lyhennettynä näyttää seuraavalta:
 
 ```java
 public class TodoService {
@@ -339,13 +339,13 @@ Rajapinta ja sen toteuttavat luokat kuvataan luokkakaaviossa seuraavasti:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="600">
 
-Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos todosovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_, merkattaisiin se luokkakaavioon seuraavasti:
+Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos Todo-sovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_, merkattaisiin se luokkakaavioon seuraavasti:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png" width="350">
 
 ### Pakkauskaavio
 
-Todosovelluksen koodi on sijoitettu _pakkauksiin_ seuraavasti:
+Todo-sovelluksen koodi on sijoitettu _pakkauksiin_ seuraavasti:
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-10.png)
 
@@ -460,7 +460,6 @@ public class Henkilostorekisteri {
         Henkilo h = hekilot.get(nimi);
         h.setPalkka(uusiPalkka);            
     }
-
 }
 
 
@@ -512,23 +511,27 @@ Voit halutessasi lukea lisää sekvenssikaavioista kurssin vanhan version [mater
 
 # Lisää ohjelmiston suunnittelusta
 
-Todo-sovelluksen rakennetta ja suunnittelun periaatteita kuvaava arkkitehtuuridokumentti löytyy[täältä](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md). Katsotaan seuraavassa muutamia sovelluksen suunnittelussa noudatettuja periaatteita.
+Katsotaan seuraavassa muutamia sovelluksen suunnittelussa noudatettuja periaatteita.
 
 ## Kerrosarkkitehtuuri
 
-Kuten jo mainittiin, todo-sovellus noudattaa kerrosarkkitehtuuria. Koodin tasolla kerrosrakenne näkyy siinä miten sovelluksen koodi jakautuu pakkauksiin 
+Kuten jo mainittiin, todo-sovellus noudattaa kerrosarkkitehtuuria. Koodin tasolla kerrosrakenne näkyy siinä, miten sovelluksen koodi jakautuu pakkauksiin 
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-10.png)
 
-ja minkälaisia riippuvuuksia pakkausten välisillä luokilla on. Riippuvuudet kuvaava pakkauskaavio havainnollistaa koodin rakenteen kerroksellisuuden
+ja minkälaisia riippuvuuksia pakkausten välisillä luokilla on. 
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png)
+Riippuvuudet kuvaava pakkauskaavio havainnollistaa koodin rakenteen kerroksellisuuden
 
-Kerrosarkkitehtuurissa ylimpänä on käyttöliittymästä vastaava kerros. Käyttöliittymäkerroksen vastuulla on muodostaa sovelluksen käyttöliittymä ja reagoida käyttäjän syötteisiin.
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png" width="400">
 
-Sovelluslogiikka, eli esim. käyttäjän kirjautumisesta huolehtiminen, todojen luominen ja niiden tehdyksi merkkaaminen on käyttöliittymän alapuolella olevan sovelluslogiikkakerroksen vastuulla. Sovelluslogiikkakerroksen koodi on pakkauksessa nimeltään _todoapp.doman_. 
+Kerrosarkkitehtuurissa ylimpänä on _käyttöliittymästä_ vastaava kerros. Käyttöliittymäkerroksen vastuulla on muodostaa sovelluksen käyttöliittymä ja reagoida käyttäjän syötteisiin.
 
-Sovelluslogiikan alapuolella on datan tallennuksesta vastaava kerros, jonka käytännössä muodostavat DAO-suunnittelumallin (ks. Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
+Sovelluslogiikka, eli esim. käyttäjän kirjautumisesta huolehtiminen, todojen luominen ja niiden tehdyksi merkkaaminen on käyttöliittymän alapuolella olevan _sovelluslogiikkakerroksen_ vastuulla. Sovelluslogiikkakerroksen koodi on pakkauksessa nimeltään _todoapp.doman_. 
+
+Sovelluslogiikan alapuolella on _datan tallennuksesta vastaava kerros_, jonka käytännössä muodostavat DAO-suunnittelumallin (ks. Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
+
+[Kerrosarkkitehtuuri](https://en.wikipedia.org/wiki/Multitier_architecture) (engl. layered architecture tai multitier architecture) on ehkä eniten käytetty ohjelmistojen [arkkitehtuurimalli](https://en.wikipedia.org/wiki/Software_Architecture_styles_and_patterns), eli tavanomainen tapa ohjelmiston komponenttien strukturointiin. Käytännössä lähes jokainen ohjelmisto noudattaa ainakin jossain määrin kerroksellisuuden periaatetta. On olemassa lukuisia arkkitehtuurimalleja joihin tutustutaan tarkemmin kursseilla Ohjelmistotuotanto ja Ohjelmistoarkkitehtuurit.
 
 ## Oliosuunnittelun periaatteita
 
@@ -562,7 +565,7 @@ _Program to an interface, not to an Implementation_, eli _ohjelmoi käyttämäll
 - Parempi on tuntea vain rajapintoja (tai abstrakteja luokkia) ja olla tietämätön siitä mitä rajapinnan takana on
 - Tämä mahdollistaa myös rajapinnan takana olevan luokan korvaamisen kokonaan uudella luokalla
 
-Todosovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita, se tuntee ainoastaan rajapinnan, ja tämä taas mahdollistaa konkreettisen toteutuksen vaihtamisen esim. testeissä tai tulevaisuudessa ohjelman laajennuksen yhteydessä:
+Todo-sovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita, se tuntee ainoastaan rajapinnan, ja tämä taas mahdollistaa konkreettisen toteutuksen vaihtamisen esim. testeissä tai tulevaisuudessa ohjelman laajennuksen yhteydessä:
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png)
 
@@ -617,7 +620,7 @@ Tekniikasta, missä oliolle annetaan sen riippuvuudet ulkopuolelta joko konstruk
 
 Riippuvuuksien injektointi helpottaa erityiseti testaamista, sillä se mahdollistaa, että luokille annetaan niiden normaalien riippuvuuksien sijaan testausta varten luotuja _valekomponentteja_.
 
-Todosovelluksessa on luokkaa _TodoService_ testattu juuri näin. Esim. UserDao:n valekomponentti sisältää alussa yhden käyttäjän:
+Todo-sovelluksessa on luokkaa _TodoService_ testattu juuri näin. Esim. UserDao:n valekomponentti sisältää alussa yhden käyttäjän:
 
 ```java
 public class FakeUserDao implements UserDao {
@@ -670,4 +673,4 @@ public class TodoServiceUserTest {
 
 Toisin kuin todelliset DAO:t, testeissä käytettävät valekomponentit eivät tallenna dataa levylle, tämä tekee testaamisesta helpompaa.
 
-Katso lisää Todo-sovelluksen [testausdokumentista]/https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
+Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md) ja[testausdokumentista]/https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
