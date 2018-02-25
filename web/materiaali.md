@@ -616,7 +616,7 @@ public class Main extends Application {
 }
 ``` 		
 
-Tekniikasta, missä oliolle annetaan sen riippuvuudet ulkopuolelta joko konstruktorin parametrina, erillisten metodien avulla tai jollain muulla tekniikalla, käytetään nimitystä _riippuvuuksien injektointi_ (engl. [dependency injection](http://www.jamesshore.com/Blog/Dependency-Injection-Demystified.html).)
+Tekniikasta, missä oliolle annetaan sen riippuvuudet ulkopuolelta joko konstruktorin parametrina, erillisten metodien avulla tai jollain muulla tekniikalla, käytetään nimitystä _riippuvuuksien injektointi_ (engl. [dependency injection](http://www.jamesshore.com/Blog/Dependency-Injection-Demystified.html)).
 
 ## Riippuvuuksien injektointi ja testaus
 
@@ -675,4 +675,6 @@ public class TodoServiceUserTest {
 
 Toisin kuin todelliset DAO:t, testeissä käytettävät valekomponentit eivät tallenna dataa levylle, tämä tekee testaamisesta helpompaa.
 
-Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md) ja[testausdokumentista]/https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
+Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md) ja
+
+[testausdokumentista](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
