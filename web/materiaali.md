@@ -464,9 +464,11 @@ Voit halutessasi lukea lisää kurssin vanhan version [materiaalista](https://gi
 
 # Lisää ohjelmiston suunnittelusta
 
+Todo-sovelluksen rakennetta ja suunnittelun periaatteita kuvaava arkkitehtuuridokumentti löytyy[täältä](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md). Katsotaan seuraavassa muutamia sovelluksen suunnittelussa noudatettuja periaatteita.
+
 ## Kerrosarkkitehtuuri
 
-Kuten jo mainittiin, todosovellus noudattaa kerrosarkkitehtuuria. Koodin tasolla kerrosrakenne näkyy siinä miten sovelluksen koodi jakautuu pakkauksiin 
+Kuten jo mainittiin, todo-sovellus noudattaa kerrosarkkitehtuuria. Koodin tasolla kerrosrakenne näkyy siinä miten sovelluksen koodi jakautuu pakkauksiin 
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-10.png)
 
@@ -476,69 +478,148 @@ ja minkälaisia riippuvuuksia pakkausten välisillä luokilla on. Riippuvuudet k
 
 Kerrosarkkitehtuurissa ylimpänä on käyttöliittymästä vastaava kerros. Käyttöliittymäkerroksen vastuulla on muodostaa sovelluksen käyttöliittymä ja reagoida käyttäjän syötteisiin.
 
-Sovelluslogiikka, eliesim. käyttäjän kirjautumisesta huolehtiminen, todojen luominen ja niiden tehdyksi merkkaaminen on käyttöliittymän alapuolella olevan sovelluslogiikkakerroksen vastuulla. Sovelluslogiikkakerroksen koodi on pakkauksessa nimeltään _todoapp.doman_. 
+Sovelluslogiikka, eli esim. käyttäjän kirjautumisesta huolehtiminen, todojen luominen ja niiden tehdyksi merkkaaminen on käyttöliittymän alapuolella olevan sovelluslogiikkakerroksen vastuulla. Sovelluslogiikkakerroksen koodi on pakkauksessa nimeltään _todoapp.doman_. 
 
-Sovelluslogiikan alapuolella on datan tallennuksesta vastaava kerros, jonka käytännössä muodostavat DAO-suunnittelumallin (ks.Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
+Sovelluslogiikan alapuolella on datan tallennuksesta vastaava kerros, jonka käytännössä muodostavat DAO-suunnittelumallin (ks. Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
 
-Kerroksell
+## Oliosuunnittelun periaatteita
 
-## Single responsibility -periaate
+Ohjelmistojen suunnitteluun on aikojen saatossa muodostunut joukko periaatteita, joiden noudattamisen on todettu parantavan koodien laatua. 
 
-	\subsection{Single responsibility principle}
+### DRY eli Don't repeat yourself
+
+Jo Ohjelmoinnin perusteissa aloittelevaa ohjelmoijaa varoitellaan copy pasten vaaroista. [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-periaate ilmaisee asian seuraavasti
+
+> Every piece of knowledge must have a single, unambiguous, authoritative representation within a system
+
+Periaate yleistää toisteettomuuden koskevan koodin lisäksi muitakin ohjelmistoon liittyviä asioita, esim. dokumentaatiota. Luokkien dokumentoiminen JavaDoc:in avulla ilmentää osin tätä periaatetta.
+
+### Single responsibility principle
 	
-	\begin{frame}
-		\simpleframetitle
-		
-		\begin{itemize}
-			\item \textbf{Single responsibility} tarkoittaa karkeasti ottaen, että \textbf{oliolla tulee olla vain yksi vastuu} eli yksi asiakokonaisuus, mihin liittyvästä toiminnasta luokan oliot itse huolehtivat
-			\item Robert C. Martin: \\ \textit{”A class should have only one reason to change.”}
-			\pause
-			\item Todo-sovelluksen suunnittelussa periaatetta on noudatettu suhteellisen hyvin
-			 \begin{itemize}
-			 	\item käyttölittymästä on eristetty sovelluslogiikka kokonaan
-			 	\item käyttäjän interaktioon reagoiminen on eriytetty tapahtumankäsittelijöille
-			 	\item sovelluslogiikan suorittamista koordinoi oma luokka
-			 	\item käyttäjä ja tehtävät on talletettu omiin luokkiinsa
-			 	\item todo-apin kanssa kommunikoinnin hoitavat omat luokkansa jotka vielä jaettu kahteen vastuualueeseen
-			 \end{itemize}	
-		\end{itemize}
-	\end{frame}
+Toinen jo [ohjelmoinnin perusteista](https://materiaalit.github.io/ohjelmointi-18/part6/) tuttu periaate _Single responsibility_ tarkoittaa karkeasti ottaen, että _oliolla tulee olla vain yksi vastuu_ eli yksi asiakokonaisuus, mihin liittyvästä toiminnasta luokan oliot itse huolehtivat. Tämän jo vuosikymmeniä vanhan säännön nimen lanseerannut Robert "Uncle Bob" Martin ilmaisee asian seuraavasti _A class should have only one reason to change_.
+
+Kerrosarkkitehtuurin voi ajatella ilmentävän tätä periaatetta laajentaen sen yksittäisten luokkien ja olioiden tasolta sovellusten suurempiin kokonaisuuksiin.
+
+Todo-sovelluksen suunnittelussa periaatetta on noudatettu suhteellisen hyvin
+- käyttölittymästä on eristetty sovelluslogiikka kokonaan
+- käyttäjä ja tehtävät on talletettu omiin luokkiinsa User ja Todo
+- sovelluslogiikan suorittamisesta, eli User- ja Todo-olioiden manipuloinnista vastaa oma oma luokka _TodoService_
+- tietojen talletuksesta levylle vastaavat DAO-oliot, jotka vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
 	
-	\subsection{Program to an interface, not to an Implementation}
+### Program to an interface, not to an Implementation
 	
-	\begin{frame}
-		\simpleframetitle
-		
-		\begin{itemize}
-			\item "\textbf{Program to an interface, not to an Implementation}", eli \ldots ohjelmoi käyttämällä rajapintoja äläkä konkreettisia implementaatioita
-			\item Laajennettavuuden kannalta ei ole hyvä idea olla riippuvainen konkreettisista luokista, sillä ne saattavat muuttua
-			\item Parempi on tuntea vain rajapintoja (tai abstrakteja luokkia) ja olla tietämätön siitä mitä rajapinnan takana on
-			\item Tämä mahdollistaa myös rajapinnan takana olevan luokan korvaamisen kokonaan uudella luokalla
-		\end{itemize}
-	\end{frame}
+_Program to an interface, not to an Implementation_, eli _ohjelmoi käyttämällä rajapintoja äläkä konkreettisia implementaatioita_
 
-	\subsection{Riippuvuuksien minimointi}
+- Laajennettavuuden kannalta ei ole hyvä idea olla riippuvainen konkreettisista luokista, sillä ne saattavat muuttua
+- Parempi on tuntea vain rajapintoja (tai abstrakteja luokkia) ja olla tietämätön siitä mitä rajapinnan takana on
+- Tämä mahdollistaa myös rajapinnan takana olevan luokan korvaamisen kokonaan uudella luokalla
+
+Todosovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita, se tuntee ainoastaan rajapinnan, ja tämä taas mahdollistaa konkreettisen toteutuksen vaihtamisen esim. testeissä tai tulevaisuudessa ohjelman laajennuksen yhteydessä:
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png)
+
+### Riippuvuuksien minimointi
 	
-	\begin{frame}
-		\simpleframetitle
-		
-		\begin{itemize}
-			\item \textbf{Minimoi riippuvuudet}, eli älä tee \textit{spagettikoodia}, jossa kaikki oliot tuntevat toisensa
-			\item Pyri eliminoimaan riippuvuudet siten, että luokat tuntevat mahdollisimman vähän muita luokkia, ja mielellään nekin vain rajapintojen kautta 
-		\end{itemize}
-		\pause
-		~ 
-		\begin{itemize}
-			\item Kerrosarkkitehtuuri tähtää osaltaan riippuvuuksien eliminointiin
-			\item Katsomme ensi viikolla konkreettisesti sitä, miten kerrosten riippuvuuksien hallinta hoidetaan sovelluksessamme siten, että \textbf{turhien riippuvuuksien} eliminoimisen ansiosta saamme sovelluksesta helposti testattavan
-		\end{itemize}		
-	\end{frame}
+Minimoi riippuvuudet , eli älä tee _spagettikoodia_, jossa kaikki oliot tuntevat toisensa. Pyri eliminoimaan riippuvuudet siten, että luokat tuntevat mahdollisimman vähän muita luokkia, ja mielellään nekin vain rajapintojen kautta 
 
-## refaktorointi
+Kerrosarkkitehtuuri tähtää osaltaan riippuvuuksien eliminointiin, esim. käyttöliittymä on nyt riippuvainen ainoastaan sovelluslogiikkakerroksen luokista _TodoService_ ja _Todo_ mutta ei millään tavalla tietojen talletuksesta vastaavista DAO-luokista.
 
-# lisää testauksesta
+## Riippuvuuksien injektointi
 
-### Todo-sovelluksen testaus
+Turhien riippuvuuksien eliminonitiin liittyy läheisesti tapa, miten oliot pääsevät käsiksi riippuvuuksiinsa eli tarvitsemiinsa olioihin.
 
-Todo-sovelluksen testausdokumentti
-[täällä]https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
+Sovelluslogiikasta huolehtiva _TodoService_-olio tarvitsee toimiakseen _TodoDao_- ja _UserDao_-oliot. Se saa oliot konstruktorin parametrina:
+
+```java
+public class TodoService {
+    private TodoDao todoDao;
+    private UserDao userDao;
+    private User loggedIn;
+    
+    public TodoService(TodoDao todoDao, UserDao userDao) {
+        this.userDao = userDao;
+        this.todoDao = todoDao;
+    }
+
+		// ...
+}
+```    
+
+eli kun sovelluksen alustava metodi _init_ luo ensin sopivat DAO-oliot ja antaa ne konstruktorin parametrina luotavalle _TodoService_-oliolle:
+
+```java
+public class Main extends Application {
+    private TodoService todoService;
+    
+		// ...
+    
+    @Override
+    public void init(){
+        FileUserDao userDao = new FileUserDao("users.txt");
+        FileTodoDao todoDao = new FileTodoDao("todos.txt", userDao);
+        todoService = new TodoService(todoDao, userDao);
+    }
+
+		// ...
+
+}
+``` 		
+
+Tekniikasta, missä oliolle annetaan sen riippuvuudet ulkopuolelta joko konstruktorin parametrina, erillisten metodien avulla tai jollain muulla tekniikalla, käytetään nimitystä _riippuvuuksien injektointi_ (engl. [dependency injection](http://www.jamesshore.com/Blog/Dependency-Injection-Demystified.html).)
+
+Riippuvuuksien injektointi helpottaa erityiseti testaamista, sillä se mahdollistaa, että luokille annetaan niiden normaalien riippuvuuksien sijaan testausta varten luotuja _valekomponentteja_.
+
+Todosovelluksessa on luokkaa _TodoService_ testattu juuri näin. Esim. UserDao:n valekomponentti sisältää alussa yhden käyttäjän:
+
+```java
+public class FakeUserDao implements UserDao {
+    List<User> users = new ArrayList<>();
+
+    public FakeUserDao() {
+        users.add(new User("testertester", "Teppo Testaaja"));
+    }
+
+		// ...
+}
+```
+
+DAO:jen valekomponentit injektoidaan testattavalle luokalle:
+
+```java
+public class TodoServiceUserTest {
+    
+    FakeTodoDao todoDao;
+    FakeUserDao userDao;
+    TodoService service;
+    
+    @Before
+    public void setUp() {
+        todoDao = new FakeTodoDao();
+        userDao = new FakeUserDao();
+        service = new TodoService(todoDao, userDao);     
+    }
+    
+    @Test
+    public void nonExistingUserCanLogIn() {
+        boolean result = service.login("nonexisting");
+        assertFalse(result);
+        
+        assertEquals(null, service.getLoggedUser());
+    }    
+    
+    @Test
+    public void existingUserCanLogIn() {
+        boolean result = service.login("testertester");
+        assertTrue(result);
+        
+        User loggedIn = service.getLoggedUser();
+        assertEquals("Teppo Testaaja", loggedIn.getName() );
+    }
+
+		// ...		
+}
+```
+
+Toisin kuin todelliset DAO:t, testeissä käytettävät valekomponentit eivät tallenna dataa levylle, tämä tekee testaamisesta helpompaa.
+
+Katso lisää Todo-sovelluksen [testausdokumentista]/https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
