@@ -14,13 +14,22 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 
 - Ennakkotiedoista poiketen kurssilla on vain yksi luento, ma 12.3. klo 12-14 A111
 - Kurssilla on tarjolla runsaasti ohjausta salissa B221/BK107, ohjausajat selviävät myöhemmin
+- Kurssilla on [Telegram](https://telegram.org/) kanava 
+<https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
+  - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen ilmainen keskustelufoorumisovellus jota on mahollista käyttää selaimella, mobiililaitteilla ja windows/linux/osx-clienteillä
+  -  **Huom:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 
 ## Linkkejä
 
 - [kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
-- [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) EI AJANTASALLA
 - [labtool](https://tktl-labtool.herokuapp.com/)
+- ohjeita
+  - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) EI AJANTASALLA
+- työkaluja kaavioiden piirtoon
+  - <http://yuml.me/> luokkakaaviot
+  - <https://www.websequencediagrams.com/> sekvenssikaavioihin
+  - <https://draw.io/> kaikki kaaviot
 
 ## Aikataulu
 

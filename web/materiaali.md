@@ -1,29 +1,29 @@
-# EI AJANTASALLA, lukeminen omalla vastuulla
+# KESKEN, lukeminen omalla vastuulla
 
 # Ohjelmistotekniikan menetelmät kevät 2018
 
 Keväästä 2018 alkaen Ohjelmistotekniikan menetelmät (eli OTM) siirtyy aineopintoihin. Kurssin esitietoina on Ohjelmoinnin jatkokurssi sekä Tietokantojen perusteet. Oletuksena on, että molemmista kursseista on käyty suhteellisen tuore versio ja että molempien aihepiiri on vielä hyvin mielessä.
 
 Kurssin oppimistavoitteet ovat edelleen suunilleen samat kuin aiemmin. Kurssin suoritettuaan opiskelija
-- Tuntee ohjelmistotuotantoprosessin vaiheet
-- On tietoinen vesiputousmallin ja ketterän ohjelmistotuotannon luonteesta
-- Osaa soveltaa versionhallintaa osana ohjelmistokehitystä
-- Osaa soveltaa UML-mallinnustekniikkaa vaatimusmäärittelyssä ja ohjelmiston suunnittelussa tarkoituksenmukaisella tavalla
-- Tuntee ohjelmiston testauksen eri vaiheet
-- Osaa soveltaa automatisoitua testausta yksinkertaisissa ohjelmistoprojekteissa
-- Tuntee tärkeimpiä ohjelmiston suunnitteluperiaatteita ja osaa soveltaa niitä yksinkertaisissa projekteissa
+- tuntee ohjelmistotuotantoprosessin vaiheet
+- on tietoinen vesiputousmallin ja ketterän ohjelmistotuotannon luonteesta
+- osaa soveltaa versionhallintaa osana ohjelmistokehitystä
+- osaa soveltaa UML-mallinnustekniikkaa ohjelmiston suunnittelussa ja dokumentoinnissa tarkoituksenmukaisella tavalla
+- tuntee ohjelmiston testauksen eri vaiheet
+- osaa soveltaa automatisoitua testausta yksinkertaisissa ohjelmistoprojekteissa
+- tuntee tärkeimpiä ohjelmiston suunnitteluperiaatteita ja osaa soveltaa niitä yksinkertaisissa projekteissa
 
 Kurssin suoritusmuoto poikkeaa radikaalisti aiemmasta viikoittaiset luennot ja laskuharjoitukset sisältävästä kurssista, nykyinen OTM muistuttaakin läheisesti entistä Ohjelmoinnin harjoitustyötä.
 
-Kurssin ensimmäisen kahden viikon aikana harjoitellaan versionhallintaa, yksikkötestausta sekä UML-kaavioiden tekemistä. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen. Koetta kurssilla ei ole.
+Kurssin ensimmäisen kolmen viikon aikana harjoitellaan versionhallintaa, yksikkötestausta sekä UML-kaavioiden tekemistä. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole.
 
 # Ohjelmistotuotanto
 
-Kun tehdään pientä ohjelmaa omaan käyttöön ei työskentelymenetelmillä ole suurta merkitystä. Kun ohjelmiston koko on suurempi ja erityisesti jos sitä tehdään useamman ihmisen toimesta ulkoiselle käyttäjälle tai asiakkaalle ei pelkkä häkkeröinti enää tuota optimaalista tulosta. Tarvitaankin jonkinlainen systemaattinen menetelmä ohjaamaan ohjelmistokehittäjien toimintaa ja varmistamaan, että ohjelmistosta tulee käyttäjien käyttötarkoitukseen sopiva.
+Kun tehdään pientä ohjelmaa omaan käyttöön ei työskentelymenetelmillä ole suurta merkitystä. Kun ohjelmiston koko on suurempi ja erityisesti jos sitä tehdään useamman ihmisen toimesta ulkoiselle käyttäjälle tai tilaajalle ei pelkkä häkkeröinti enää tuota optimaalista tulosta. Tarvitaankin jonkinlainen systemaattinen menetelmä ohjaamaan ohjelmistokehittäjien toimintaa ja varmistamaan, että ohjelmistosta tulee käyttäjien käyttötarkoitukseen sopiva.
 
-Ohjelmiston systemaattinen tekeminen, eli ohjelmistotuotanto (engl. Software engineering) sisältää useita erilaisia aktiviteettejä joiden aikana tekemisen fokus on hieman erilaisissa asioissa. Näitä aktiviteetteja tai vaiheita niinkuin niitä joskus nimitetään ovat seuraavat
+Ohjelmiston systemaattinen tekeminen, eli ohjelmistotuotanto (engl. Software engineering) sisältää useita erilaisia aktiviteettejä, joiden aikana tekemisen fokus on hieman erilaisissa asioissa. Näitä aktiviteetteja tai _vaiheita_ niinkuin niitä joskus nimitetään ovat seuraavat
 
-- _vaatimusmäärittely_ jonka tehtävä on selvittää mitä ohjelmiston halutaan toimivan
+- _vaatimusmäärittely_ jonka tehtävä on selvittää kuinka ohjelmiston halutaan toimivan
 - _suunnittelu_ jonka aikana mietitään miten halutunkaltainen ohjelmisto tulisi rakentaa
 - _toteutusvaiheessa_ määritelty ja suunniteltu ohjelmisto koodataan
 - _testauksen_ tehtävä taas on varmistaa ohjelmiston laatu, että se ei ole liian buginen ja että se toimii kuten vaatimusmäärittely sanoo
@@ -43,7 +43,7 @@ Vaatimusmäärittelyn tuloksena on useimmiten jonkinlainen dokumentti, johon vaa
 
 Esimerkkisovelluksemme on siis klassinen _todoapp_, eli sovellus, jonka avulla käyttäjien on mahdollista pitää kirjaa omista tekemättömistä töistä, eli _todoista_.
 
-Vaatimusmäärittely kannattaa yleensä aloittaa tunnistamalla järjestelmän erityyppiset käyttäjäroolit. Sovelluksellamme ei ole toistaiseksi muuta kuin normaaleja käyttäjiä. Jatkossa sovellukseen saatetaan lisätä myös ylläpitäjän oikeuksilla varustettu käyttäjärooli.
+Vaatimusmäärittely kannattaa yleensä aloittaa tunnistamalla järjestelmän erityyppiset _käyttäjäroolit_. Sovelluksellamme ei ole toistaiseksi muuta kuin normaaleja käyttäjiä. Jatkossa sovellukseen saatetaan lisätä myös ylläpitäjän oikeuksilla varustettu käyttäjärooli.
 
 Kun sovelluksen käyttäjäroolit ovat selvillä, mietitään mitä toiminnallisuuksia kunkin käyttäjäroolin halutaan pystyvät tekemään sovelluksen avulla.
 
@@ -62,21 +62,26 @@ Ylläpitäjän toiminnallisuuksia voisivat olla esim. seuraavat
 
 Ohjelmiston vaatimuksiin kuuluvat myös _toimintaympäristön rajoitteet_. Todo-sovellusta koskevat seuraavat rajoitteet
 - ohjelmiston tulee toimia Linux- ja OSX-käyttöjärjestelmillä varustetuissa koneissa
+- käyttäjien ja todojen tiedot talletetaan paikallisen koneen levylle
 
 Vaatimusmäärittelyn aikana hahmotellaan yleensä myös sovelluksen käyttöliittymä.
 
-Todo-sovelluksen alustava vaatimusmäärittely kokonaisuudessaan
-[täällä](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md).
+Kurssin aiemmissa versioissa käyttäjien vaatimukset dokumentointiin [käyttötapauksina](https://en.wikipedia.org/wiki/Use_case) (engl. use case). Käytämme tällä kurssilla hieman kevyempää tapaa, ja kirjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana listana. Katso tarkemmin Todo-sovelluksen alustavasta  
+[vaatimusmäärittelystä](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md).
+
 
 ## Suunnittelu
 
 Ohjelmiston suunnittelu jakautuu yleensä kahteen erilliseen vaiheeseen.
 
-Arkkitehtuurisuunnittelussa määritellään ohjelman rakenne karkealla tasolla eli mistä suuremmista rakennekomponenteista ohjelma koostuu, iten komponentit yhdistetään, eli minkälaisia komponenttien väliset rajapinnat sekä mitä riippuvuuksia ohjelmalla on esim. tietokantoihin ja ulkoisiin rajapintoihin.
+_Arkkitehtuurisuunnittelussa_ määritellään ohjelman rakenne karkealla tasolla 
+- mistä suuremmista rakennekomponenteista ohjelma koostuu
+- miten komponentit yhdistetään, eli minkälaisia komponenttien väliset rajapinnat
+- mitä riippuvuuksia ohjelmalla on esim. tietokantoihin ja ulkoisiin rajapintoihin.
 
-Arkkitehtuurisuunnittelua tarkentaa oliosuunnittelu, missä mietitään ohjelmiston yksittäisten komponenttien rakennetta,  eli minkälaisisista luokista komponentot koostuvat ja  miten luokat kutsuvat toistensa metodeja sekä mitä apukirjastoja luokat käyttävät.
+Arkkitehtuurisuunnittelua tarkentaa _oliosuunnittelu_, missä mietitään ohjelmiston yksittäisten komponenttien rakennetta,  eli minkälaisisista luokista komponentot koostuvat ja miten luokat kutsuvat toistensa metodeja sekä mitä apukirjastoja luokat käyttävät.
 
-Myös ohjelmiston suunnittelu, erityisesti sen arkkitehtuuri dokumentoidaan usein jollain tavalla. Joskus tosin dokumentaatio on hyvin kevyt tai voi jopa puuttua kokonaan ja ajatellaankin että hyvin muotoiltu koodi voi korvata dokumentoinnin.
+Myös ohjelmiston suunnittelu, erityisesti sen arkkitehtuuri dokumentoidaan usein jollain tavalla. Joskus tosin dokumentaatio on hyvin kevyt, esim. valkotaululle piirretty kaavio tai se voi jopa puuttua kokonaan ja ajatellaankin että hyvin muotoiltu koodi voi korvata dokumentoinnin.
 
 ## Testaus
 
