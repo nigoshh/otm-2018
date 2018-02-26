@@ -14,7 +14,7 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 
 - Ennakkotiedoista poiketen kurssilla on vain yksi luento, ma 12.3. klo 12-14 A111
 - Kurssilla on tarjolla runsaasti ohjausta salissa B221/BK107, ohjausajat selviävät myöhemmin
-- Kurssilla on [Telegram](https://telegram.org/) kanava 
+- Kurssilla on [Telegram](https://telegram.org/)-kanava 
 <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
   - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen ilmainen keskustelufoorumisovellus jota on mahollista käyttää selaimella, mobiililaitteilla ja windows/linux/osx-clienteillä
   -  **Huom:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
