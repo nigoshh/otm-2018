@@ -434,13 +434,13 @@ Internetin johtava paikka etärepositorioiden tallettamiseen on [GitHub](https:/
   * uuden repositorion luomistoiminto löytyy vasemman ylänurkan plus-symboolin alta
 * **Älä laita rastia** kohtaan *Initialize this repository with a README*
 
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-2.png" alt="alt text" width="600">
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-1.png)
 
 Seuraavaksi haluamme liittää GitHubiin luodun repositorion paikallisen koneen repositorin etärepositorioksi.
 * etärepositorion lisääminen onnistuu komennolla _git remote add_
 * varmista, että kohdasta "Quick setup..." on valittu **SSH**
 
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-7.png" alt="alt text" width="600">
+<img src="https://github.com/mluukkai/otm2016/raw/master/images/lh5-7.png" alt="alt text" width="600">
 
 * kopioi GitHubiin avautuneesta näkymästä ylempi rivi kohdasta *...or push an existing repository from the command line*
 * omassa esimerkissäni rivi on
@@ -531,7 +531,6 @@ Branch master set up to track remote branch master from origin.
   * näemme pian tekstin ruudulla muotoiltuna
 * commitoi tiedosto
   * muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi
-
 
 ## Tiedostot GitHubissa
 
@@ -642,8 +641,6 @@ Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepo
 * tee repositorioon jokin muutos, lisää ja committoi
 * push muutokset githubiin
 * varmista GitHubista että muutos menee perille
-
-
 
 ## .gitignore
 
