@@ -260,7 +260,7 @@ Seuraava kuva havainnollistaa sitä, miten tiedoston _tila_ vaihtuu git-komentoj
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/lh3-2.png)
 
-Kun tiedosto luodaan, menee se gitin _working directoryyn_. Komennolla _git add_ tiedosto siirtyy _staging_, alueelle, eli valmiiksi committointia varten. Stagingissa oleva tiedosto viedään (eli "commitoidaan") repositorioon komennolla _git commit_. Kun committoitua tiedostoa taas editoidaan, menevät muutokset jälleen _working directoryyn_.
+Kun tiedosto luodaan, menee se gitin _working directoryyn_. Komennolla _git add_ tiedosto siirtyy _staging_-alueelle, eli valmiiksi committointia varten. Stagingissa oleva tiedosto viedään (eli "commitoidaan") repositorioon komennolla _git commit_. Kun committoitua tiedostoa taas editoidaan, menevät muutokset jälleen _working directoryyn_.
 
 ## git commit
 
@@ -270,13 +270,13 @@ Jokainen komennon _git commit_ suorittaminen siis synnyttää repositorioon uude
 mluukkai@melkinpaasi:~/otm_viikko1$ git log
 commit 50c786fdc41104cdfe3e60845df40820feb33d40
 Author: Matti Luukkainen <mluukkai@iki.fi>
-Date:   Mon Nov 7 18:18:19 2016 +0200
+Date:   Mon Feb 7 18:18:19 2018 +0200
 
     lisäys ja muutos
 
 commit 0e12cfa5de9186eb948ac446c6b3f240ff11189d
 Author: Luukkainen Matti <mluukkai@melkinpaasi.cs.helsinki.fi>
-Date:   Mon Nov 7 16:11:33 2016 +0200
+Date:   Mon Feb 7 16:11:33 2018 +0200
 
     tiedosto.txt luotu
 mluukkai@melkinpaasi:~/otm_viikko1$
@@ -289,8 +289,7 @@ Voit selata logia nuolinäppäimillä. Pääset ulos _git log_:ista painamalla _
 
 ## lisää harjoittelua
 
-Muista käyttää komentoa _git status_ mahdollisimman usein!
-* älä myöskään unohda tab-completea
+Muista käyttää komentoa _git status_ mahdollisimman usein. Älä myöskään unohda tab-completea!
 
 * Luo tiedosto _kolmas.txt_. 
 * Lisää se commitoitavaksi ja commitoi. 
@@ -302,7 +301,7 @@ Muista käyttää komentoa _git status_ mahdollisimman usein!
 
 ## gitk
 
-Giting committeja voi tarkastella myös graafisella _gitk_-komennolla (OSx:lle vastaava työkalu on [gitx](http://gitx.frim.nl)). Suorita komento repositoriossa:
+Giting committeja voi tarkastella myös graafisella _gitk_-komennolla (OSx:lle vastaavia työkaluja ovat [gitx](http://gitx.frim.nl) ja Windowsillakin toimiva [Sourcetree](https://www.sourcetreeapp.com)). Suorita komento repositoriossa:
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/lh3-1.png)
 
@@ -424,65 +423,6 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 * poista tiedosto _file1_ ja uudelleennimeä tiedosto _file2_ tiedostoksi _file22_
 * committoi 
 
-## .gitignore
-
-On tilanteita, joissa emme halua tiedostojen menevän versionhallinnan alaisuuteen. maven-projektien hakemisto _target_, joka sisältää [maven-komentojen aikaansaannokset](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-paikanpaalla-tehtavat#3-maven-projektin-hakemistorakenne), on tyypillisesti hakemisto, jota emme halua versionhallinnan pariin.
-
-Git-repositorion juureen sijoitettavassa [.gitignore](https://www.atlassian.com/git/tutorials/gitignore)-tiedostossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_
-
-* Muuta viime viikon paikanpäällä tehtävässä tekemäsi hakemisto _Unicafe_ git-repositorioksi
-  * komento _git init_
-  * **HUOM:** älä vielä lisää mitään commitoitavaksi!
-  * muista tässäkin myös komennon _git status_ aktiivinen käyttö!
-* Luodaan repositorion juureen tiedosto _.gitignore_ ja määritellään siihen ignoroitavaksi hakemisto _target_ ja tiedosto _nbactions.xml_, eli
-  * luo tiedosto nanolla
-  * tiedoston sisällöksi tulee
-
-<pre>
-target
-nbactions.xml
-</pre>
-
-* kun nyt teet komennon _git status_ pitäisi tuloksen olla seuraava:
-
-<pre>
-mluukkai@melkki:~/Unicafe$ git status
-On branch master
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	.gitignore
-	pom.xml
-	src/
-</pre>
-
-* eli vaikka hakemistossa on tiedosto _nbactions.xml_ sekä alihakemisto _target_, ei git niitä huomioi
-* lisää hakemiston sisältö repositorioon
-* commitoi 
-* tarkasta tilanne komennolla _git status_
-* kokeile nyt suorittaa maven-komentoja, jotka tekevät muutoksia hakemistoon _target_
-  * esim. testien suoritus ja testiraportin generointi
-* tarkasta komennolla _git status_, että git ei välitä muutoksista
-* tee jokin muutos projektin koodiin ja tarkasta että git huomaa tilanteen
-* commitoi muutoset
-
-## kertausta
-
-* Tee uusi hakemisto
-* Tee hakemistosta git-repositorio
-  * muista koko ajan käyttää tärkeää komentoa _git status_
-  * muista myös _git add -p_ muutoksia lisätessäsi
-* Lisää hakemistoon tiedosto nimeltään README.md
-* Kirjoita tiedostoon jotain
-  * käytä nano-editoria
-  * muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen, tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää tummennettuja ja vinonnettuja osuuksia
-  * näemme pian tekstin ruudulla muotoiltuna
-* commitoi tiedosto
-  * muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi
-
 ## Github 
 
 Gitin käytöstä on toki hyötyä jo harjoittelemallammekin tavalla, eli muodostamalla paikallisen koneen hakemistosta repositorio. Pääsemme kuitenkin nauttimaan kertaluokkaa suuremmista hyödyistä liittämällä repositoriomme internetissä olevaan _etärepositorioon_. Etärepositorion kautta repositorion tiedostot on helppo jakaa useiden koneiden tai/ja useiden käyttäjien kesken.
@@ -577,6 +517,21 @@ Branch master set up to track remote branch master from origin.
 ``` 
 
 * nyt kaikki näyttää toimivan
+
+## kertausta
+
+* Tee uusi hakemisto
+* Tee hakemistosta git-repositorio
+  * muista koko ajan käyttää tärkeää komentoa _git status_
+  * muista myös _git add -p_ muutoksia lisätessäsi
+* Lisää hakemistoon tiedosto nimeltään README.md
+* Kirjoita tiedostoon jotain
+  * käytä nano-editoria
+  * muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen, tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää tummennettuja ja vinonnettuja osuuksia
+  * näemme pian tekstin ruudulla muotoiltuna
+* commitoi tiedosto
+  * muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi
+
 
 ## Tiedostot GitHubissa
 
@@ -687,6 +642,54 @@ Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepo
 * tee repositorioon jokin muutos, lisää ja committoi
 * push muutokset githubiin
 * varmista GitHubista että muutos menee perille
+
+
+
+## .gitignore
+
+On tilanteita, joissa emme halua tiedostojen menevän versionhallinnan alaisuuteen. maven-projektien hakemisto _target_, joka sisältää [maven-komentojen aikaansaannokset](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-paikanpaalla-tehtavat#3-maven-projektin-hakemistorakenne), on tyypillisesti hakemisto, jota emme halua versionhallinnan pariin.
+
+Git-repositorion juureen sijoitettavassa [.gitignore](https://www.atlassian.com/git/tutorials/gitignore)-tiedostossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_
+
+* Muuta viime viikon paikanpäällä tehtävässä tekemäsi hakemisto _Unicafe_ git-repositorioksi
+  * komento _git init_
+  * **HUOM:** älä vielä lisää mitään commitoitavaksi!
+  * muista tässäkin myös komennon _git status_ aktiivinen käyttö!
+* Luodaan repositorion juureen tiedosto _.gitignore_ ja määritellään siihen ignoroitavaksi hakemisto _target_ ja tiedosto _nbactions.xml_, eli
+  * luo tiedosto nanolla
+  * tiedoston sisällöksi tulee
+
+<pre>
+target
+nbactions.xml
+</pre>
+
+* kun nyt teet komennon _git status_ pitäisi tuloksen olla seuraava:
+
+<pre>
+mluukkai@melkki:~/Unicafe$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	pom.xml
+	src/
+</pre>
+
+* eli vaikka hakemistossa on tiedosto _nbactions.xml_ sekä alihakemisto _target_, ei git niitä huomioi
+* lisää hakemiston sisältö repositorioon
+* commitoi 
+* tarkasta tilanne komennolla _git status_
+* kokeile nyt suorittaa maven-komentoja, jotka tekevät muutoksia hakemistoon _target_
+  * esim. testien suoritus ja testiraportin generointi
+* tarkasta komennolla _git status_, että git ei välitä muutoksista
+* tee jokin muutos projektin koodiin ja tarkasta että git huomaa tilanteen
+* commitoi muutoset
+
 
 ## lisää gitiä
 
