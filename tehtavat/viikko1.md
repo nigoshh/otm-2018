@@ -552,38 +552,35 @@ Branch master set up to track remote branch master from origin.
   * muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi
 * pushaa koodi githubiin komennolla _git push_
 
-
 ## Tiedostot GitHubissa
 
 * mene GitHub-repositoriosi sivulle
-  * löydät kaikki repositoriosi valitsemalla GitHubin oikeasta yläkulmasta klikkaamalla "your profile" ja avautuvasta näkymästä "repositories"
+  * käytännössä tämä tapahtuu uudelleenlataamalla repositorion luomisen jälkeen avautunut sivu
 * huomaat että tiedostot näkyvät nyt repositorion sivulla. sivulle renderöityy repositorion juuressa olevan README.md:n sisältö markdown-muotoiltuna
-
-* voit editoida repositoriossa olevia tiedostoja suoraan githubin editorilla menemällä tiedoston sivulle ja painamalla kynäsymbolia
-* tee README.md:hen linkki käyttöohjeeseen, eli repositoriossa olevan hakemiston _dokumentointi_ sisältämään tiedostoon _kaytto-ohje.md_
+* voit editoida repositoriossa olevia tiedostoja suoraan GitHubin editorilla menemällä tiedoston sivulle ja painamalla kynäsymbolia
+* tee README.md:hen linkit repositorion hakemistossa _laskarit/viikko1/_ oleviin tiedostoihin _komentorivi.txt_ ja _gitlog.txt_
   * ohje linkin muodostamiseen löytyy [täältä](https://guides.github.com/features/mastering-markdown/)
-  * käyttöohjeen urlin saat navigoimalla GitHubissa tiedostoon ja kopioimalla osoitteen selaimen osoiteriviltä 
-* jos teet kaiken oikein, pääset README.md:ssä olevaa luomaasi linkkiä klikkaamalla käyttöohjeeseen
+  * tiedostojen urlin saat navigoimalla GitHubissa tiedostoon ja kopioimalla osoitteen selaimen osoiteriviltä 
+* Repositoriosi tulee näyttää suunnilleen seuraavalta
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-3.png)
+
+* jos teit kaiken oikein, pääset README.md:ssä olevia linkkejä klikkaamalla näkemään linkitettyjen tiedostojen sisällön
+
+## Paikallisen repositorion ajantasaistaminen
 
 * GitHubissa tekemämme muutokset ovat tehneet etärepositorioon uuden commitin
-* etärepositorio on nyt _edellä_ paikallista repositorioamme
-* saamme tuotua muutokset paikalliselle koneelle komennolla _git pull_
-* kokeile komentoa ja varmista, että muuttunut sisältö on nyt paikallisessa repositoriossa
-
+* Etärepositorio on nyt _edellä_ paikallista repositorioamme
+* Saamme tuotua muutokset paikalliselle koneelle komennolla _git pull_
+* Kokeile komentoa ja varmista, että muuttunut sisältö on nyt paikallisessa repositoriossa
 
 ## lisää githubia
 
 * Tee paikallisella koneella jokin muutos esim. tiedostoon README.md
-* lisää ja committaa muutos
-* vie muutokset githubiin komennolla _git push_
-* varmista GitHubista että muutokset näkyvät
-
+* Lisää ja committaa muutos
+* Vie muutokset githubiin komennolla _git push_
+* Varmista GitHubista että muutokset näkyvät
 * Paikallinen repositoriosi ja GitHubin etärepositorio ovat jälleen samassa tilassa. 
-* Lisää GitHubin avulla hakemistoon _dokumentaatio_ uusi tiedosto, nimeltään *maarittelydokumentti.md*
-  * piirrä [yuml.me](http://yuml.me):lla joku kaavio (valmiit esimerkkikaaviot käyvät)
-  * lisää kaavio kuvaksi määrittelydokumenttiin
-* Tee README.md:sta linkki uuteen tiedostoon
-* pullaa muutokset paikalliselle koneelle
 
 ## paikallisen ja etärepositorion epäsynkrooni
 
@@ -591,16 +588,16 @@ Branch master set up to track remote branch master from origin.
 * luodaan tälläinen tilanne
 * tee paikalliseen repositorioon muutos tiedostoon _README.md_, lisää ja committoi muutos
   * **älä** pushaa muutosta GitHubiin
-* tee GitHubiin muutos johonkin muualle, esim. tiedostoon _kaytto-ohje.md_
-  * editoi siis tiedostoa suoraan GitHubissa
+* tee GitHubiin muutos **johonkin muualle** kun README.md-tiedostoon
+  * editoi siis esim. tiedostoa _gitlog.txt_ hieman suoraan GitHubissa
 * yritä nyt pushata paikallisen repositorion muutokset githubiin
 * seurauksena on virheilmoitus
 
 ``` 
 mluukkai@melkki:~/otm-harjoitustyo$ git push
-To git@github.com:mluukkai-cs/otm2016-viikko5.git
+To git@github.com:mluukkai/otm-harjoitustyo.git
  ! [rejected]        master -> master (fetch first)
-error: failed to push some refs to 'git@github.com:mluukkai-cs/otm2016-viikko5.git'
+error: failed to push some refs to 'git@github.com:mluukkai/otm-harjoitustyo.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -610,9 +607,9 @@ mluukkai@melkki:~/otm-harjoitustyo$
 ``` 
 
 * Tulet törmäämään tähän varmaan useasti jatkossakin.
-* Ongelma ei ole paha. Koska paikalliset ja GitHubin muutokset ovat kohdistuneet eri tiedostoihin selviämme helposti 
+* Ongelma ei ole paha. Koska paikalliset ja GitHubin muutokset ovat kohdistuneet **eri tiedostoihin** selviämme helpolla 
 * ensin pullaamme muutokset paikalliseen repositorioon komennolla _git pull_
-  * pullaaminen synnyttää ns. merge commitin jolle joudumme määrittelemään commit-viestin avautuvaan editoriin
+  * pullaaminen synnyttää ns. merge commitin, jolle joudumme määrittelemään commit-viestin avautuvaan editoriin
   * oletusarvoinen viesti käy, eli riittää että poistut editorista tallentaen muutokset
 * ja pushaamme ne uudelleen githubiin
 * nyt paikallinen ja etärepositorio ovat taas synkroonissa
@@ -625,94 +622,15 @@ Jos muutokset olisivat kohdistuneet samaan tiedostoon, olisi syntynyt hieman vak
 
 Nyrkkisääntönä kannattaa pitää aina sitä, että kun rupeat työskentelemään paikallisessa repositoriossa, pullaa ensin kaikki muutokset etärepositoriosta. Ja kun lopetat työskentelyn, pushaa muutokset etärepositorioon. Näin konflikteja ei yhden ihmisen työskentelyssä todennäköisesti tule.
 
-## GitHubissa olevan repositorion kloonaaminen
+## Labtool
 
-Teimme äsken repositorion ensin paikallisesti ja linkitimme sen GitHubissa olevaan etärepositorioon. Usein tilanne on sellainen, missä haluaisimme GitHubissa jo olevan repositorion omalle koneellemme. Tähän on tarkoitettu gitin komento clone.
+Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://tktl-labtool.herokuapp.com/register)
 
-* Luo GitHubiin uusi repositorio, laita tällä kertaa rasti kohtaan "Initialize this repository with a README"
-* GitHub luo repositorion sisälle README.md:n
-* Lisää githubista repositorioon uusi tiedosto ja tee jotain muutoksia README.md:hen
-* klikkaa kohtaa _clone or download_ ja kopioi kloonausurl
-  * varmista että valittuna on "clone with SSH"
+Labtool kysyy myös harjoitustyön aihetta (=topic). Voit jättää kohdan tyhjäksi jos et ole vielä päättänyt mitä aiot tehdä.
 
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-4.png" alt="alt text" width="400">
+## Lisää gitiä
 
-* mene sopivaan hakemistoon paikallisella koneella
-  * **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
-* anna kloonauskomento, parametrina kloonausurl
-
-``` 
-mluukkai@melkinkari:~$ git clone git@github.com:mluukkai-cs/otm2016-uusi.git
-Cloning into 'otm2016-uusi'...
-remote: Counting objects: 9, done.
-remote: Compressing objects: 100% (5/5), done.
-remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (9/9), done.
-Checking connectivity... done.
-mluukkai@melkinkari:~$
-``` 
-
-Hakemistoosi syntyy uusi hakemisto, esimerkissä nimeltään _otm2016-uusi_, eli oletusarvoisesti nimi päätellään kloonausurlista. Uuden hakemiston nimen voi myös määritellä itse antamalla komennolle lisäparametrin:
-
-``` 
-git clone git@github.com:mluukkai-cs/otm2016-uusi.git hakemiston_nimi
-``` 
-
-Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepositoriossa.
-* tee repositorioon jokin muutos, lisää ja committoi
-* push muutokset githubiin
-* varmista GitHubista että muutos menee perille
-
-## .gitignore
-
-On tilanteita, joissa emme halua tiedostojen menevän versionhallinnan alaisuuteen. maven-projektien hakemisto _target_, joka sisältää [maven-komentojen aikaansaannokset](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-paikanpaalla-tehtavat#3-maven-projektin-hakemistorakenne), on tyypillisesti hakemisto, jota emme halua versionhallinnan pariin.
-
-Git-repositorion juureen sijoitettavassa [.gitignore](https://www.atlassian.com/git/tutorials/gitignore)-tiedostossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_
-
-* Muuta viime viikon paikanpäällä tehtävässä tekemäsi hakemisto _Unicafe_ git-repositorioksi
-  * komento _git init_
-  * **HUOM:** älä vielä lisää mitään commitoitavaksi!
-  * muista tässäkin myös komennon _git status_ aktiivinen käyttö!
-* Luodaan repositorion juureen tiedosto _.gitignore_ ja määritellään siihen ignoroitavaksi hakemisto _target_ ja tiedosto _nbactions.xml_, eli
-  * luo tiedosto nanolla
-  * tiedoston sisällöksi tulee
-
-<pre>
-target
-nbactions.xml
-</pre>
-
-* kun nyt teet komennon _git status_ pitäisi tuloksen olla seuraava:
-
-<pre>
-mluukkai@melkki:~/Unicafe$ git status
-On branch master
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	.gitignore
-	pom.xml
-	src/
-</pre>
-
-* eli vaikka hakemistossa on tiedosto _nbactions.xml_ sekä alihakemisto _target_, ei git niitä huomioi
-* lisää hakemiston sisältö repositorioon
-* commitoi 
-* tarkasta tilanne komennolla _git status_
-* kokeile nyt suorittaa maven-komentoja, jotka tekevät muutoksia hakemistoon _target_
-  * esim. testien suoritus ja testiraportin generointi
-* tarkasta komennolla _git status_, että git ei välitä muutoksista
-* tee jokin muutos projektin koodiin ja tarkasta että git huomaa tilanteen
-* commitoi muutoset
-
-
-## lisää gitiä
-
-Gitin opiskelua kannattaa ilman muuta jatkaa myös omin päin. Internetistä löytyy suuri määrä enemmän tai vähemmän hyviä tutoriaaleja. Seuraavassa muutama linkki
+Gitin peruskäyttö tulee varmasti tutuksi kurssin aikana. Gitin edistyneempien piirteiden opiskelua kannattaa ilman muuta jatkaa myös omin päin. Internetistä löytyy suuri määrä enemmän tai vähemmän hyviä tutoriaaleja. Seuraavassa muutama linkki
 * <https://www.atlassian.com/git/tutorials/>
 * <http://learngitbranching.js.org>
 * <http://ohshitgit.com>
-* valmiita gitignoremäärittelyjä erityyppisille projekteille <https://github.com/github/gitignore>
