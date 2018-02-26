@@ -286,9 +286,85 @@ Luokkien tarkemmat detaljit selviävät koodia katsomalla tai JavaDoc:ista.
 
 #### Riippuvuus
 
-UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä pysyvää yhteyttä. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli  _riippiipuvuus_.
+UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä _pysyvää yhteyttä_. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli  _riippiipuvuus_.
 
-Todo-sovelluksen soveluslogiikasta vastaa luokka _TodoService_, jonka koodi hieman lyhennettynä näyttää seuraavalta:
+Eräs tälläinen tilanne on Ohjelmoinnin perusteiden Unicafe-tehtävän luokkien _Maksukortti_ ja _Kassapääte_ suhde. Maksukortin koodi  on seuraava: 
+
+```java 
+public class Maksukortti {
+    private double saldo;
+ 
+    public Maksukortti(double saldo) {
+        this.saldo = saldo;
+    }
+ 
+    public double saldo() {
+        return this.saldo;
+    }
+ 
+    public void lataaRahaa(double lisays) {
+        this.saldo += lisays;
+    }
+ 
+    public boolean otaRahaa(double maara) {
+        if (this.saldo < maara) {
+            return false;                
+        }
+        
+        this.saldo -= maara;
+        
+        return true;
+    }
+}
+```
+
+kuten huomataan, koodissa ei mainita kassapäätettä millään tavalla. Kassapäätteen hieman lyhennetty koodi on seuraava:
+
+```java
+ 
+public class Kassapaate {
+    private int edulliset;
+    private int maukkaat; 
+    private static final double EDULLISEN_HINTA = 2.5;
+    private static final double MAUKKAAN_HINTA = 4.3;
+ 
+    // käteismyyntiin liittyvät metodit poistettu
+
+    public boolean syoEdullisesti(Maksukortti kortti) {
+        if (kortti.saldo() < EDULLISEN_HINTA) {
+            return false;
+        }
+ 
+        kortti.otaRahaa(EDULLISEN_HINTA);
+        this.edulliset++;
+        return true;
+    }
+ 
+    public boolean syoMaukkaasti(Maksukortti kortti) {
+        // ...
+    }
+ 
+    public void lataaRahaaKortille(Maksukortti kortti, double summa) {
+        if (summa < 0) {
+            return;
+        }
+ 
+        kortti.lataaRahaa(summa);
+        this.rahaa += summa;
+    }
+
+}
+```
+
+Kassapääte käyttää maksukortteja hetkellisesti lounaiden maksamisen ja rahan lataamisen yhteydessä. Kassapääte ei kuitenkaan muista pysyvästi yksittäisiä maksukortteja. Tämän takia kassapäätteellä on riippuvuus matkakortteihin mutta ei kuitenkaan normaalia yhteyttä, UML-kaavioon merkattu yhteyshän viittaa pysyvään, ajallisesti pidempikestoiseen suhteeseen.
+
+Tilannetta kuvaava luokkakaavio on seuraava:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-18.png" width="400">
+
+Riippuvuus siis kuvataan _katkoviivallisena nuolena_, joka kohdistuu siihen luokkaan mistä ollaan riippuvaisia. Riippuvuuteen ei merkitä numeroa toisin kuin yhteyteen.
+
+Tarkastellaan toisena esimerkkinä riippuvuudesta todo-sovelluksen soveluslogiikasta vastaavaa luokkaa _TodoService_, jonka koodi hieman lyhennettynä näyttää seuraavalta:
 
 ```java
 public class TodoService {
@@ -320,11 +396,9 @@ public class TodoService {
 
 Sovelluslogiikaa hoitava olio tuntee kirjautuneen käyttäjän, mutta pääsee käsiksi kirjautuneen käyttäjän todoihin ainoastaan _todoDao_-olion välityksellä. Tämän takia luokalla ei ole yhteyttä luokkaan _Todo_, luokkien välillä on kuitenkin _riippuvuus_, sillä sovelluslogiikka käsittelee metodeissaan todo-olioita.
 
-Asia voidaan merkitä luokkakaavioon seuraavasti:
+Merkitään luokkakaavioon seuraavasti:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-5.png" width="600">
-
-Riippuvuus siis kuvataan _katkoviivallisena nuolena_, joka kohdistuu siihen luokkaan mistä ollaan riippuvaisia. Riippuvuuteen ei merkitä numeroa toisin kuin yhteyteen.
 
 Riippuvuuksien merkitseminen luokkakaavioihin ei ole välttämättä kovin oleellinen asia, niitä kannattaa merkitä jos ne tuovat esiille tilanteen kannalta jotain oleellista.
 
