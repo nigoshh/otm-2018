@@ -429,24 +429,42 @@ Gitin käytöstä on toki hyötyä jo harjoittelemallammekin tavalla, eli muodos
 
 Internetin johtava paikka etärepositorioiden tallettamiseen on [GitHub](https://github.com)
 
-* Luo itsellesi tunnus GitHubiin 
+Ennen GitHubin käytöönottoa, tee uusi git-repositorio paikalliselle koneelle, seuraavassa oletetaan että hakemiston nimi on _otm-harjoitustyo_. 
+
+**HUOM:** älä luo uutta repositorioa aiemmin tekemäsi harjoitusrepositorion sisälle!
+
+Seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _otm-harjoitustyo_, siirtyvät hakemistoon, alustavat sen git-repositorioksi sekä lisäävät ja commitoivat yhden tiedoston repositorioon:
+
+<pre>
+cd ~   
+mkdir otm-harjoitustyo
+cd otm_harjoitustyo
+git init
+touch README.md
+git add .
+git commit -m"initial commit"
+</pre>
+
+Siirrytään sitten GitHubin käyttöön
+
+* Luo itsellesi tunnus GitHubiin (ellei sinulla jo ole tunnusta)
 * Luo uusi repositorio
   * uuden repositorion luomistoiminto löytyy vasemman ylänurkan plus-symboolin alta
 * **Älä laita rastia** kohtaan *Initialize this repository with a README*
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-1.png)
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-1b.png)
 
 Seuraavaksi haluamme liittää GitHubiin luodun repositorion paikallisen koneen repositorin etärepositorioksi.
 * etärepositorion lisääminen onnistuu komennolla _git remote add_
 * varmista, että kohdasta "Quick setup..." on valittu **SSH**
 
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-7.png" alt="alt text" width="600">
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-2.png)
 
 * kopioi GitHubiin avautuneesta näkymästä ylempi rivi kohdasta *...or push an existing repository from the command line*
 * omassa esimerkissäni rivi on
 
 ``` bash 
-git remote add origin git@github.com:mluukkai-cs/otm2016-git-viikko5.git
+git remote add origin git@github.com:mluukkai/otm-harjoitustyo.git
 ```
 
 * pastea rivi komentoriville ja suorita komento painamalla enter
@@ -454,9 +472,9 @@ git remote add origin git@github.com:mluukkai-cs/otm2016-git-viikko5.git
 * tulostus kertoo, että githubin etärepositorio on liitetty paikalliseen repositorioosi nimellä _origin_
 
 ``` bash
-mluukkai@melkki:~/otm_viikko5$ git remote  -v
-origin	git@github.com:mluukkai-cs/otm2016-git-viikko5.git (fetch)
-origin	git@github.com:mluukkai-cs/otm2016-git-viikko5.git (push)
+mluukkai@melkki:~/otm-harjoitustyo$ git remote  -v
+origin	git@github.com:mluukkai/otm-harjoitustyo.git (fetch)
+origin	git@github.com:mluukkai/otm-harjoitustyo.git (push)
 ```
 
 * _origin_ on etärepositorion oletusarvoinen nimi. Nimi voi olla mikä tahansa ja etärepositorioitakin voi olla useita
@@ -465,17 +483,17 @@ origin	git@github.com:mluukkai-cs/otm2016-git-viikko5.git (push)
 * kokeillaan
 
 ```
-mluukkai@melkki:~/otm_viikko5$ git push
+mluukkai@melkki:~/otm-harjoitustyo$ git push
 fatal: The current branch master has no upstream branch.
 To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin master
 ```
 
-Tulee pieni valitus ja git ehdottaa komennon parametrillista versiota. Kokeillaan sitä:
+Tulee pieni valitus ja git (eivät tosin kaikki gitin versiot!) ehdottaa komennon parametrillista versiota. Kokeillaan sitä:
 
 ```
-mluukkai@melkki:~/otm_viikko5$ git push --set-upstream origin master
+mluukkai@melkki:~/otm-harjoitustyo$ git push --set-upstream origin master
 Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
 Permission denied (publickey).
 fatal: Could not read from remote repository.
@@ -505,7 +523,7 @@ Pushaus ei edelleenkään toimi. Nyt kyse on siitä, että git haluaisi suoritta
 * Suorita uudelleen push:
 
 ```
-mluukkai@melkki:~/otm_viikko5$ git push --set-upstream origin master
+mluukkai@melkki:~/otm-harjoitustyo$ git push --set-upstream origin master
 Counting objects: 8, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (4/4), done.
@@ -576,7 +594,7 @@ Branch master set up to track remote branch master from origin.
 * seurauksena on virheilmoitus
 
 ``` 
-mluukkai@melkki:~/otm_viikko5$ git push
+mluukkai@melkki:~/otm-harjoitustyo$ git push
 To git@github.com:mluukkai-cs/otm2016-viikko5.git
  ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'git@github.com:mluukkai-cs/otm2016-viikko5.git'
@@ -585,7 +603,7 @@ hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-mluukkai@melkki:~/otm_viikko5$
+mluukkai@melkki:~/otm-harjoitustyo$
 ``` 
 
 * Tulet törmäämään tähän varmaan useasti jatkossakin.
