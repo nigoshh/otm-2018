@@ -6,7 +6,7 @@ Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palaut
 
 Tehtävät palautetaan Githubin ja Labtoolin avulla. Lisää palautuksesta myöhemmin. Osa tehtävistä ei näy palautuksesta mitenkään. Niiden tekemttä jättäminen näkyy puuttuvana osaamisena ja saattaa aiheuttaa myöhemmin hankaluuksia.
 
-Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen laadun mukaan.
+Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen laadun perusteella.
 
 ## Komentorivin harjoittelua
 
@@ -98,7 +98,7 @@ Nykyään suosituin versionhallintaohjelmisto on [git](https://git-scm.com). Tut
 
 Avaa terminaali. 
 
-Määrittele gitille oma nimesi sekä käyttämäsi email-osoite antamalla komennot:
+Määrittele gitille **oma nimesi** sekä **käyttämäsi email-osoite** antamalla komennot:
 
 ```
  git config --global user.name "Your Name"
@@ -113,8 +113,8 @@ Määritellään vielä git käyttämään sopivia värejä komennolla <code>git
 ### repositorio
 
 Tee nyt sopiva hakemisto gitin harjoittelua varten ja mene hakemistoon, eli anna esim. komennot:
-* mkdir otm_viikko3
-* cd otm_viikko3
+* mkdir otm_viikko1
+* cd otm_viikko1
 
 **HUOM:** varmista nyt että olet luomassasi hakemistossa, eli jos suoritat komennon _ls_, ei hakemistossa pitäisi olla mitään.
 
@@ -123,21 +123,21 @@ Luodaan hakemistosta paikallinen _git-repositorio_ antamalla komento <code>git i
 Git ilmoittaa alustaneensa repositorion:
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko3$ git init
-Initialised empty Git repository in /home/ad/fshome4/u4/m/mluukkai/Linux/otm_viikko3/.git/
+mluukkai@melkinpaasi:~/otm_viikko1$ git init
+Initialised empty Git repository in /home/ad/fshome4/u4/m/mluukkai/Linux/otm_viikko1/.git/
 </pre>
 
 Jos katsot hakemiston sisältöä komennolla <code>ls -la</code> huomaat, että hakemiston sisälle on ilmestynyt hakemisto <code>.git</code>. Git käyttää luotua hakemistoa pitääkseen kirjaa repositorioon talletetuista tiedostoista.
 
 **HUOM** koska hakemiston nimi (_.git_) alkaa pisteellä, ei komento _ls_ näytä sitä oletusarvoisesti. Parametri _a_ näyttää myös pisteellä alkavat tiedostot ja hakemistot. Kokeile, miten _ls -a_ ja _ls -la_ eroavat toisistaan!
 
-Pysy edelleen repositorion sisältävässä hakemistossasi _ otm_viikko3_.
+Pysy edelleen repositorion sisältävässä hakemistossasi _ otm_viikko1_.
 
 Luo hakemistoon tiedosto nimeltään _tiedosto.txt_, esim. komennolla <code>touch</code>. Luotuasi tiedoston, suorita komento <code>git status</code>:
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko3$ touch tiedosto.txt
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+mluukkai@melkinpaasi:~/otm_viikko1$ touch tiedosto.txt
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 
 Initial commit
@@ -148,7 +148,7 @@ Untracked files:
 	tiedosto.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
-mluukkai@melkinpaasi:~/otm_viikko3$
+mluukkai@melkinpaasi:~/otm_viikko1$
 </pre>
 
 Git ilmoittaa, että on olemassa tiedosto, joka on tilassa _untracked_, eli tiedostoa ei ole lisätty versionhallinnan pariin.
@@ -158,8 +158,8 @@ Kuten komennon tuloste kertoo, tiedoston lisääminen gitin alaisuuteen (...to i
 Suorita lisäys ja sen jälkeen komento <code>git status</code>:
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko3$ git add tiedosto.txt
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+mluukkai@melkinpaasi:~/otm_viikko1$ git add tiedosto.txt
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 
 Initial commit
@@ -179,7 +179,7 @@ Commitoimisella tarkoitetaan tiedostojen ja hakemistojen sekä niihin liittyvien
 Suoritetaan commitointi antamalla komento <code>git commit -m"tiedosto.txt luotu"</code>
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko3$ git commit -m"tiedosto.txt luotu"
+mluukkai@melkinpaasi:~/otm_viikko1$ git commit -m"tiedosto.txt luotu"
 [master (root-commit) 0e12cfa] tiedosto.txt luotu
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 tiedosto.txt
@@ -188,7 +188,7 @@ mluukkai@melkinpaasi:~/otm_viikko3$ git commit -m"tiedosto.txt luotu"
 Suorita jälleen komento <code>git status</code>
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 nothing to commit, working directory clean
 </pre>
@@ -209,7 +209,7 @@ Kun teet muutoksia hakemistosi alla oleviin tiedostoihin (tai hakemistoihin), ko
 Suorita jälleen <code>git status</code>
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -231,15 +231,15 @@ Toimitaan ohjeen mukaan eli lisätään muutokset ja uusi tiedosto commitoitavie
 
 Tarkistetaan taas tilanne koennolla <code>git status</code>
 
-<code>
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+<pre>
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
 	modified:   tiedosto.txt
 	new file:   toinen.txt
-</code>
+</pre>
 
 Sekä muutos että uusi tiedosto ovat nyt valmiina committoitavaksi. 
 
@@ -249,7 +249,7 @@ Committointi onnistuu komennolla _git commit_. Kuten edelliselläkin kerralla, a
 
 Tarkasta committoinnin jälkeen jälleen tilanne komennolla _git status_.
 
-**HUOM** jos suoritat commitoinnin vahingossa ilman commit-viestiä, eli parametria _-m_, avaa git tekstieditorin ja olettaa että haluat kirjoittaa commit-viestin editoriin.
+**HUOM** jos suoritat commitoinnin vahingossa ilman commit-viestiä, eli parametria _-m_, avaa git tekstieditorin ja olettaa että haluat kirjoittaa commit-viestin editoriin. Jos et määritellyt alun ohjeen mukaan gitille editoriksi nanoa, avautuu oletusarvoien editori _vim_ ja joudut kenties googlaamaan miten pääset pois editorista.
 
 Tiedostot ja niihin tehdyt muutokset voivat siis olla gitin suhteen _kolmessa eri tilassa_. 
 * Aluksi tiedostot (tai niihin tehdyt muutokset) ovat vain _working directoryssä_ ja git ei noteeraa niitä ennen kun ne lisätään komennolla <code>git add</code>. 
@@ -267,7 +267,7 @@ Kun tiedosto luodaan, menee se gitin _working directoryyn_. Komennolla _git add_
 Jokainen komennon _git commit_ suorittaminen siis synnyttää repositorioon uuden commitin, eli uuden "tilan". Komennolla <code>git log</code> on mahdollista nähdä, mitä committeja repositorio sisältää:
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko3$ git log
+mluukkai@melkinpaasi:~/otm_viikko1$ git log
 commit 50c786fdc41104cdfe3e60845df40820feb33d40
 Author: Matti Luukkainen <mluukkai@iki.fi>
 Date:   Mon Nov 7 18:18:19 2016 +0200
@@ -279,7 +279,7 @@ Author: Luukkainen Matti <mluukkai@melkinpaasi.cs.helsinki.fi>
 Date:   Mon Nov 7 16:11:33 2016 +0200
 
     tiedosto.txt luotu
-mluukkai@melkinpaasi:~/otm_viikko3$
+mluukkai@melkinpaasi:~/otm_viikko1$
 </pre>
 
 Gitin logi kertoo jokaisen commitin ajan, tekijän, viestin ja _tunnisteen_. Tunnisteita käytetään, jos on esim. tarvetta palata johonkin vanhan commitin tilaan. 
@@ -349,7 +349,7 @@ Joskus tiedostoihin tulee tehtyä muutoksia, jotka on tarpeen perua
 * suorita komento *git status*
 
 ```bash
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -365,8 +365,8 @@ Kuten oletettua, git kertoo että olemme tehneet muutoksia jotka eivät ole "sta
 * Kun suoritat uudelleen komennon _git status_ huomaat, että working directory ei enää sisällä muutoksia:
 
 ```bash
-mluukkai@melkinpaasi:~/otm_viikko3$ git checkout -- eka.txt
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+mluukkai@melkinpaasi:~/otm_viikko1$ git checkout -- eka.txt
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 nothing to commit, working directory clean
 ```
@@ -378,14 +378,14 @@ Myös stagingiin viety eli valmiina committoitavaksi oleva muutos voidaan perua.
 * git statuksen pitäisi näyttää seuraavalta
 
 ``` bash
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
 	modified:   kolmas.txt
 
-mluukkai@melkinpaasi:~/otm_viikko3$
+mluukkai@melkinpaasi:~/otm_viikko1$
 ```
 
 Ohje muutoksen perumiseen löytyy git statuksen tulosteesta.
@@ -393,7 +393,7 @@ Ohje muutoksen perumiseen löytyy git statuksen tulosteesta.
 * katsotaan jälleen _git status_
 
 ``` pre
-mluukkai@melkinpaasi:~/otm_viikko3$ git status
+mluukkai@melkinpaasi:~/otm_viikko1$ git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -687,105 +687,6 @@ Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepo
 * tee repositorioon jokin muutos, lisää ja committoi
 * push muutokset githubiin
 * varmista GitHubista että muutos menee perille
-
-## hieman lisää mavenia
-
-* Luo NetBeansilla maven-muotoinen projekti, jonka sijoitat tehtävien alussa tekemäsi _repositoriosi juureen_.
-  * projektin sijainnin pystyt määrittelemään uuden projektin luomisdialogin kohdassa _project location_
-* Jos loit sovelluksen oikeaan paikkaan _git status_ -komennon tuloste on suunilleen seuraavanlainen
-
-``` 
-mluukkai@melkki:~/otm_viikko5$ git status
-On branch master
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	otmtestiappi/
-
-nothing added to commit but untracked files present (use "git add" to track)
-``` 
-
-* lisää ja commitoi sovellus repositorioon
-* tee sovellukselle yksinkertainen pääohjelma, eli luokka jonka sisällä on metodi
-
-``` java
-    public static void main(String[] args) {
-        System.out.println("testing...");
-    }
-``` 
-
-* **ÄLÄ** vielä suorita ohjelmaa
-* lisää ja commitoi sovellus repositorioon
-* kuten muistamme, maven-projektien alle syntyy komentojen suorittamisen seurauksena hakemisto _target_
-* emme halua hakemistoa git-repositorioomme, eli se tulee ignoroida
-* suorita nyt ohjelma
-* huomaat että sovelluksen alle muodostuu hakemisto _target_
-* jos kokeilet mitä _git status_ sanoo, huomaat että yllättäen git ignoroi syntyneen target-hakemiston
-* NetBeans onkin lisännyt automaattisesti hakemiston ignoroitavksi
-* Katso miltä .gitignore näyttää, lisää ja commitoi siihen tullut muutos
-
-Haluamme suorittaa ohjelmamme komentoriviltä ja laittaa ohjelmamme julkisesti saataville, siten että kuka tahasa pystyy käyttämään ohjelmaa. Tämä onnistuu helposti jos paketoimme ohjelmamme [jar-paketiksi](https://en.wikipedia.org/wiki/JAR_(file_format))
-
-Jar-tiedosto on helppo luoda mavenilla. Tarvitsemme hieman konfigurointia.
-* Lisää seuraava tiedoston pom.xml sisälle, esim. juuri ennen viimeistä riviä.
-  * tiedostoa kannattaa editoida NetBeansilla
-
-
-```xml
-    <build> 
-       <plugins>
-           <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>1.6</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>fi.helsinki.cs.otmtestiappi.Main</mainClass>
-                                </transformer>
-                            </transformers>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>        
-``` 
-
-Huomaa, että kohdan _mainClass_ on oltava **täsmälleen sama** kuin pääohjelman sisältävän luokan täydellinen nimi:
-
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-5.png" alt="alt text" width="800">
-
-* Saat nyt luotua jar-tiedoston antamalla komentoriviltä komennon _mvn package_
-* komento luo hakemiston _target_ sisälle kaksi jar-päätteistä tiedostoa, niistä oikea on se, jonka nimessä *ei* ole sanaa original
-* ohjelman voi nyt suorittaa komennolla <code>java -jar jartiedoston_nimi.jar</code>
-* suorita ohjelma komentoriviltä
-
-## Github release
-
-Jar-tiedosto siis generoituu hakemistoon target, eli se ei tallennu repositorioon. Miten saamme levitettyä ohjelmistomme potentiaalisille käyttäjille? 
-
-Yksi mahdollisuus on luoda GitHubiin release, eli julkaistu versio.
-* klikkaa repositorion GitHub-sivulta kohtaa "0 releases"
-* määrittele julkaisun tiedot ja lisää jar-tiedosto klikkaamalla kohtaa "Attach binaries..."
-  * jar-tiedosto kannattaa ehkä uudelleennimetä, mavenin generoima tiedostonimi on hieman ikävä
-
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-6.png" alt="alt text" width="800">
-
-Nyt koodi on kenen tahansa ladattavissa menemällä GitHub-repositorioosi, ja klikkaamalla repositoriosivusi kohtaa "1 release" ja suoritettavissa komennolla <code>java -jar tiedostonnimi.jar</code> olettaen että koneelle on asennettu Javan versio 1.8
-
-Tämän kurssin osalta git-harjoittelumme loppuu tähän. Nyt opittu riittää hyvin yhden ihmisen käyttöön, esim. ohjelmoinnin harjoitustyön yhteydessä.
-
-Gitissä on runsaasti hyödyllisiä ominaisuuksia joihin emme vielä tutustuneet. 
 
 ## lisää gitiä
 
