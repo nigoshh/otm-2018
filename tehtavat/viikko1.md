@@ -413,15 +413,15 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 ## harjoittelua
 
-* luo hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
-* commitoi muutokset
-  * muista miten pystyt lisäämään kokonaisen hakemiston sisällön committoitavaksi yhdellä komennolla
-* muuta tiedoston _file1_ sisältöä ja poista tiedosto _file2_
-* peru muutokset!
-* muuta tiedoston _file3_ sisältöä, lisää commitoitavaksi
-* peru muutokset!
-* poista tiedosto _file1_ ja uudelleennimeä tiedosto _file2_ tiedostoksi _file22_
-* committoi 
+- luo hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
+- commitoi muutokset
+  - muista miten pystyt lisäämään kokonaisen hakemiston sisällön committoitavaksi yhdellä komennolla
+- muuta tiedoston _file1_ sisältöä ja poista tiedosto _file2_
+- peru muutokset!
+- muuta tiedoston _file3_ sisältöä, lisää commitoitavaksi
+- peru muutokset!
+- poista tiedosto _file1_ ja uudelleennimeä tiedosto _file2_ tiedostoksi _file22_
+- committoi 
 
 ## Github 
 
@@ -458,21 +458,21 @@ Siirrytään sitten GitHubin käyttöön
 
 Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikallisen koneen repositorin _otm-harjoitustyo_ etärepositorioksi.
 
-* etärepositorion lisääminen onnistuu GitHubiin luodun repositorion ohjeiden mukaan 
+* etärepositorion lisääminen onnistuu GitHubiin avautuvan näkymän ohjeiden mukaan 
 * varmista, että kohdasta "Quick setup..." on valittu **SSH**
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-2.png)
 
-* kopioi GitHubiin avautuneesta näkymästä ylempi rivi kohdasta *...or push an existing repository from the command line*
-* omassa esimerkissäni rivi on
+- kopioi ylempi rivi kohdasta *...or push an existing repository from the command line*
+- omassa esimerkissäni rivi on
 
 ``` bash 
 git remote add origin git@github.com:mluukkai/otm-harjoitustyo.git
 ```
 
-* pastea rivi komentoriville ja suorita komento painamalla enter
-* suorita komento _git remote -v_
-* tulostus kertoo, että githubin etärepositorio on liitetty paikalliseen repositorioosi nimellä _origin_
+- pastea rivi komentoriville ja suorita komento painamalla enter
+- suorita komento _git remote -v_
+- tulostus kertoo, että githubin etärepositorio on liitetty paikalliseen repositorioosi nimellä _origin_
 
 ``` bash
 mluukkai@melkki:~/otm-harjoitustyo$ git remote  -v
@@ -480,10 +480,10 @@ origin	git@github.com:mluukkai/otm-harjoitustyo.git (fetch)
 origin	git@github.com:mluukkai/otm-harjoitustyo.git (push)
 ```
 
-* _origin_ on etärepositorion oletusarvoinen nimi. Nimi voi olla mikä tahansa ja etärepositorioitakin voi olla useita
+- _origin_ on etärepositorion oletusarvoinen nimi. Nimi voi olla mikä tahansa ja etärepositorioitakin voi olla useita
 
-* voimme siirtää repositoriomme tilan etärepositorioon komennolla _git push_
-* kokeillaan
+- voimme siirtää paikallisen repositoriomme tilan etärepositorioon komennolla _git push_
+- kokeillaan
 
 ```
 mluukkai@melkki:~/otm-harjoitustyo$ git push
@@ -505,7 +505,7 @@ Please make sure you have the correct access rights
 and the repository exists.
 ```
 
-## julkinen avain
+## Julkinen avain
 
 Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#kertausta).
 
