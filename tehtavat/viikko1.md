@@ -8,7 +8,7 @@ Graafisten käyttöliittymien olemassaolosta huolimatta ohjelmistoalalla on edel
 
 ## osa 1
 
-Opettele käyttämään "riittävästi" komentoriviä (ks. alla oleva lista). Opettelu käy ehkä helpoiten tekemällä osoitteessa [https://www.codecademy.com/learn/learn-the-command-line](https://www.codecademy.com/learn/learn-the-command-line) olevan onlinekurssin kaksi ensimmäistä osaa _Navigating the File System_ ja _Viewing and Changing the File System_
+Opettele käyttämään "riittävästi" komentoriviä (ks. alla oleva lista). Opettelu käy ehkä helpoiten tekemällä osoitteessa [https://www.codecademy.com/learn/learn-the-command-line](https://www.codecademy.com/learn/learn-the-command-line) olevan onlinekurssin kaksi ensimmäistä osaa _Navigating the File System_ ja _Viewing and Changing the File System_ (maksullisista pro-episodeista ei kannata välittää).
 
 Tämän tehtävän jälkeen sinun tulisi hallita seuraavat asiat:
 * käsitteet
@@ -31,6 +31,8 @@ Tämän tehtävän jälkeen sinun tulisi hallita seuraavat asiat:
 Tulet tarvitsemaan komentorivin käyttötaitoja tällä kurssilla ja muutenkin opinnoissasi.
 
 ## osa 2
+
+Aktivoi ns. cs-tunnuksesi [täällä](https://www.cs.helsinki.fi/passwd) jos et ole jo sitä aiemmin tehnyt.
 
 Ota ssh-yhteys linuxpalvelimeen _melkki.cs.helsinki.fi_, _melkinpaasi.cs.helsinki.fi_ tai _melkinkari.cs.helsinki.fi_. Linuxilla ja macilla yhteys otetaan komentoriviltä komennolla _ssh kayttajatunnus@palvelimenosoite_. Windowsilla ssh-yhteyden ottaminen onnistuu esimerkiksi [putty:llä](http://www.putty.org).
 
