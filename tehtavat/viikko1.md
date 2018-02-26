@@ -2,6 +2,12 @@
 
 # Viikon 1 tehtävät
 
+Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on ma 19.3. klo 23:59
+
+Tehtävät palautetaan Githubin ja Labtoolin avulla. Lisää palautuksesta myöhemmin. Osa tehtävistä ei näy palautuksesta mitenkään. Niiden tekemttä jättäminen näkyy puuttuvana osaamisena ja saattaa aiheuttaa myöhemmin hankaluuksia.
+
+Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen laadun mukaan.
+
 ## Komentorivin harjoittelua
 
 Graafisten käyttöliittymien olemassaolosta huolimatta ohjelmistoalalla on edelleen erittäin tärkeää hallita komentorivin eli terminaalin käyttö. 
@@ -42,7 +48,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 * ja luomallesi hakemistolle alihakemisto _viikko1_
 * mene kotihakemostoosi ja luo sen alle hakemisto _temp_
 * mene hakemistoon _temp_
-* hae osoitteessa _https://www.cs.helsinki.fi/u/mluukkai/otm2016/Unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
+* hae osoitteessa _https://raw.githubusercontent.com/mluukkai/otm-2018/master/misc/Unicafe.zip_ oleva tiedosto [wget](https://en.wikipedia.org/wiki/Wget)-ohjelmalla
   * wget toimii siten, että sille annetaan ladattava tiedosto parametriksi
 * haettu tiedosto on _zip-paketti_, pura se _unzip_-ohjelmalla
   * myös unzip tomii siten, että sille annetaan purettava tiedosto parametriksi
@@ -54,13 +60,15 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 * suorita komento _mvn clean_
   * jos näen rivien joukossa ilmoituksen _BUILD SUCCESS_ on tehtävä tehty
 
+**Mene tämän jälkeen _kotihakemistoon_ ja anna komento _tree kurssit_. Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin.**
+
 ## tab complete
 
 Komentoriviä käyttäessä kannattaa ehdottomasti totutella _tab-completen_ käyttöön. _Tab_ on näppäin, joka näyttää suunilleen seuraavalta
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/tab.jpg)
 
-Tab:ia painamalla voit komentorivillä täydentää kirjoittamasi komennon nimen tai parametrin. Esim. jos olet siirtymässä hakemistoon nimeltään _ohjelmistotekniikanmenetelmatsyksy2016_, riittää, että kirjoitat <code>cd oh</code> ja painat tabia. Jos hakemistossasi ei ole muita tiedostoja tai hakemistoja, jotka alkavat merkeillä _oh_, nimi täydentyy. Jos on, niin voit joutua kirjoittamaan merkin tai kaksi lisää.
+Tab:ia painamalla voit komentorivillä täydentää kirjoittamasi komennon nimen tai parametrin. Esim. jos olet siirtymässä hakemistoon nimeltään _ohjelmistotekniikan-menetelmat-kevat-2018_, riittää, että kirjoitat <code>cd oh</code> ja painat tabia. Jos hakemistossasi ei ole muita tiedostoja tai hakemistoja, jotka alkavat merkeillä _oh_, nimi täydentyy. Jos on, niin voit joutua kirjoittamaan merkin tai kaksi lisää.
 
 Myös komentojen nimet voi täydentää tab-completella. Esim. haluat avat _chromium-browser_ web-selaimen komentoriviltä, riittää että kirjoitat <code>chro</code> ja painat tabia. Komennon nimi täydentyy.
 
@@ -68,7 +76,7 @@ Ei pidä myöskään unohtaa _nuolta ylöspäin_. Sen avulla voit selata aiemmin
 
 ## yhtäaikaiset terminaalit / terminaalin tabit
 
-Aloitteleva komenton käyttäjä pitää usein ainoastaan yhtä terminaali-ikkunaa kerrallaan auki. Useissa tilanteissa työtehosi moninkertaistuu, jos avaat useita terminaaleja näytöllä tai avaat yhteen terminaaliin useita "tabeja" eli välilehtiä. Uuden tabin saat avautumaan painamalla yhtä aikaa _ctrl_, _shift_ ja _t_ tai sovelluksen valikosta (joka laitoksen Linuxeissa sijaitsee ruudun yläreunassa).
+Aloitteleva komentorivin käyttäjä pitää usein ainoastaan yhtä terminaali-ikkunaa kerrallaan auki. Useimmissa tilanteissa työtehosi moninkertaistuu, jos avaat useita terminaaleja näytöllä tai avaat yhteen terminaaliin useita "tabeja" eli välilehtiä. Uuden tabin saat avautumaan painamalla yhtä aikaa _ctrl_, _shift_ ja _t_ tai sovelluksen valikosta (joka laitoksen Linuxeissa sijaitsee ruudun yläreunassa).
   
 ## Versionhallinta
 
