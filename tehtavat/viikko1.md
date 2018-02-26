@@ -1,4 +1,4 @@
-# EI AJANTASALLA, lukeminen omalla vastuulla
+# MELKEIN VALMIS
 
 # Viikon 1 tehtävät
 
