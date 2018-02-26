@@ -474,18 +474,17 @@ git remote add origin git@github.com:mluukkai/otm-harjoitustyo.git
 - suorita komento _git remote -v_
 - tulostus kertoo, että githubin etärepositorio on liitetty paikalliseen repositorioosi nimellä _origin_
 
-``` bash
+```bash
 mluukkai@melkki:~/otm-harjoitustyo$ git remote  -v
 origin	git@github.com:mluukkai/otm-harjoitustyo.git (fetch)
 origin	git@github.com:mluukkai/otm-harjoitustyo.git (push)
 ```
 
 - _origin_ on etärepositorion oletusarvoinen nimi. Nimi voi olla mikä tahansa ja etärepositorioitakin voi olla useita
-
 - voimme siirtää paikallisen repositoriomme tilan etärepositorioon komennolla _git push_
 - kokeillaan
 
-```
+```bash
 mluukkai@melkki:~/otm-harjoitustyo$ git push
 fatal: The current branch master has no upstream branch.
 To push the current branch and set the remote as upstream, use
@@ -495,7 +494,7 @@ To push the current branch and set the remote as upstream, use
 
 Tulee pieni valitus ja git (eivät tosin kaikki gitin versiot!) ehdottaa komennon parametrillista versiota. Kokeillaan sitä:
 
-```
+```bash
 mluukkai@melkki:~/otm-harjoitustyo$ git push --set-upstream origin master
 Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
 Permission denied (publickey).
@@ -516,13 +515,11 @@ Pushaus ei edelleenkään toimi. Nyt kyse on siitä, että git haluaisi suoritta
 * syntyy kaksi salausavainta, salainen ja julkinen. ne sijoitetaan kotihakemistosi alla olevaan hakemistoon _.ssh_
 * mene hakemistoon ja katso hakemiston sisältöä
 * tiedosto _id_rsa.pub_ sisältää julkisen avaimen, se on tarkoitus kopioida githubiin jotta avaimeen perustuva kirjautuminen onnistuisi
-* näet tiedoston sisällön komennolla _cat id_rsa.pub_
-
+  * näet tiedoston sisällön komennolla _cat id_rsa.pub_
 * mene GitHubin asetussivulle klikkaamalla oikean yläkulman symbolista ja valitsemalla _settings_
 * valitse settingseistä _SSH and GPG keys_
 * luo uusi _SSH-avain_ 
   * anna avaimelle joku _title_ (esim. laitos) ja kopioi tiedoston id_rsa.pub sisältö kohtaan _key_
-
 * Suorita uudelleen push:
 
 ```
