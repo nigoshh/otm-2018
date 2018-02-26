@@ -504,7 +504,7 @@ and the repository exists.
 
 ## julkinen avain
 
-Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](https://github.com/mluukkai/OTM2016/wiki/Viikon-5-paikanpaalla-tehtavat#tiedostot-githubissa).
+Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#kertausta).
 
 Pushaus ei edelleenkään toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen avaimen](https://the.earth.li/~sgtatham/putty/0.55/htmldoc/Chapter8.html) autentikoinnin. Se ei kuitenkaan onnistu koska emme ole kertoneet gitille julkista salausavaintamme.
 
@@ -536,19 +536,22 @@ Branch master set up to track remote branch master from origin.
 
 * nyt kaikki näyttää toimivan
 
-## kertausta
+## lisää tiedostoja
 
-* Tee uusi hakemisto
-* Tee hakemistosta git-repositorio
-  * muista koko ajan käyttää tärkeää komentoa _git status_
-  * muista myös _git add -p_ muutoksia lisätessäsi
-* Lisää hakemistoon tiedosto nimeltään README.md
-* Kirjoita tiedostoon jotain
-  * käytä nano-editoria
-  * muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen, tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää tummennettuja ja vinonnettuja osuuksia
+* tee repositorion sisälle hakemisto _laskarit_
+  * ja sen sisälle hakemisto _viikko1_
+  * Komentorivitehtävien lopussa oli kehoitus :Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
+  * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
+  * Mene edellisen tehtäväsarjan git-harjoitusrepositorioon ja anna siellä  komento _git log --stat | cat_
+  * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne edellisen bulletin komennon tulos
+* Kirjoita jotain teksitä hakemiston juuressa olevaan tiedostoon README.md
+  * muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen
+  * tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää boldattuja ja vinonnettuja osuuksia
   * näemme pian tekstin ruudulla muotoiltuna
-* commitoi tiedosto
+* commitoi muutokset
   * muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi
+* pushaa koodi githubiin komennolla _git push_
+
 
 ## Tiedostot GitHubissa
 
