@@ -16,7 +16,7 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 - Kurssilla on tarjolla runsaasti ohjausta salissa B221/BK107, ohjausajat selviävät myöhemmin
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
 <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
-  - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen ilmainen keskustelufoorumisovellus jota on mahollista käyttää selaimella, mobiililaitteilla ja windows/linux/osx-clienteillä
+  - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen ilmainen keskustelufoorumisovellus jota on mahdollista käyttää selaimella, mobiililaitteilla ja windows/linux/osx-clienteillä
   -  **Huom:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 
 ## Linkkejä
@@ -43,7 +43,7 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 
 - Maanantaina 12.3. klo 12-14 kurssin ainoa luento A111
 - Komentorivi- ja Git-harjoittelu (2p)
-  - Pajassa tehtävät tai omatoimiseset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
+  - Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
 - Tehtävien palautus tapahtuu tekemällä repositorio githubiin ja rekisteröitymällä labtooliin
 
 - Palautuksen deadline ma 19.3. klo 23:59
@@ -52,7 +52,7 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 
 - Oman aiheen alustava määrittelydokumentti (1p)
 - JUnit-harjoittelu (2p)
-  - Pajassa tehtävät tai omatoimiseset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md)
+  - Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md)
 - oman projektin koodaus alkaa
 
 - Palautuksen deadline ma 26.3. klo 23:59
@@ -77,7 +77,7 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 ### viikko 5
 
 - Release 1 (1p)
-  - releasessa oleva suoritettava jar
+  - releasessa oltava suoritettava jar
   - Koodi kasvanut edellisestä viikosta
 - Testejä lisää (1p)
   - Testikattavuusraportti
@@ -89,7 +89,7 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 ### viikko 6
 
 - Release 2 (1p)
-  - releasessa oleva suoritettava jar
+  - releasessa oltava suoritettava jar
   - Koodi kasvanut edellisestä viikosta
 - Testejä lisää (1p)
   - testikattavuusraportti
