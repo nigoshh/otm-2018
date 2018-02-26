@@ -440,7 +440,7 @@ Seuraavaksi haluamme liittää GitHubiin luodun repositorion paikallisen koneen 
 * etärepositorion lisääminen onnistuu komennolla _git remote add_
 * varmista, että kohdasta "Quick setup..." on valittu **SSH**
 
-<img src="https://github.com/mluukkai/otm2016/raw/master/images/lh5-7.png" alt="alt text" width="600">
+<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-7.png" alt="alt text" width="600">
 
 * kopioi GitHubiin avautuneesta näkymästä ylempi rivi kohdasta *...or push an existing repository from the command line*
 * omassa esimerkissäni rivi on
