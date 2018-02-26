@@ -231,7 +231,7 @@ Toimitaan ohjeen mukaan eli lisätään muutokset ja uusi tiedosto commitoitavie
 
 Tarkistetaan taas tilanne koennolla <code>git status</code>
 
-<code>
+<pre>
 mluukkai@melkinpaasi:~/otm_viikko3$ git status
 On branch master
 Changes to be committed:
@@ -239,7 +239,7 @@ Changes to be committed:
 
 	modified:   tiedosto.txt
 	new file:   toinen.txt
-</code>
+</pre>
 
 Sekä muutos että uusi tiedosto ovat nyt valmiina committoitavaksi. 
 
@@ -289,16 +289,15 @@ Voit selata logia nuolinäppäimillä. Pääset ulos _git log_:ista painamalla _
 
 ## lisää harjoittelua
 
-Muista käyttää komentoa _git status_ mahdollisimman usein!
-* älä myöskään unohda tab-completea
+Muista käyttää komentoa _git status_ mahdollisimman usein! Älä myöskään unohda tab-completea
 
-* Luo tiedosto _kolmas.txt_
-* Lisää se commitoitavaksi ja commitoi 
-* Muuta tiedostojen _toinen.txt_ ja _kolmas.txt_ sisältöä ja commitoi muutokset
-* Luo hakemisto _stuff_ ja sen sisälle jokin tiedosto
-* Lisää muutokset committoitavaksi ja committoi 
-  * Huomaa, että hakemiston lisääminen riittää, sen sisältämät tiedostot tulevat automaattisesti lisätyksi
-* Katso miltä git logi näyttää
+- Luo tiedosto _kolmas.txt_
+- Lisää se commitoitavaksi ja commitoi 
+- Muuta tiedostojen _toinen.txt_ ja _kolmas.txt_ sisältöä ja commitoi muutokset
+- Luo hakemisto _stuff_ ja sen sisälle jokin tiedosto
+- Lisää muutokset committoitavaksi ja committoi 
+  - Huomaa, että hakemiston lisääminen riittää, sen sisältämät tiedostot tulevat automaattisesti lisätyksi
+- Katso miltä git logi näyttää
 
 ## gitk
 

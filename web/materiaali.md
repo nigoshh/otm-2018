@@ -318,7 +318,9 @@ public class Maksukortti {
 }
 ```
 
-kuten huomataan, koodissa ei mainita kassapäätettä millään tavalla. Kassapäätteen hieman lyhennetty koodi on seuraava:
+Kuten huomataan, koodissa ei mainita kassapäätettä millään tavalla.
+
+Kassapäätteen hieman lyhennetty koodi on seuraava:
 
 ```java
  
@@ -356,11 +358,11 @@ public class Kassapaate {
 }
 ```
 
-Kassapääte käyttää maksukortteja hetkellisesti lounaiden maksamisen ja rahan lataamisen yhteydessä. Kassapääte ei kuitenkaan muista pysyvästi yksittäisiä maksukortteja. Tämän takia kassapäätteellä on riippuvuus matkakortteihin mutta ei kuitenkaan normaalia yhteyttä, UML-kaavioon merkattu yhteyshän viittaa pysyvään, ajallisesti pidempikestoiseen suhteeseen.
+Kassapääte käyttää maksukortteja hetkellisesti lounaiden maksamisen ja rahan lataamisen yhteydessä. Kassapääte ei kuitenkaan muista pysyvästi yksittäisiä maksukortteja. Tämän takia kassapäätteellä on riippuvuus matkakortteihin mutta ei kuitenkaan normaalia yhteyttä sillä UML-kaavioon merkattu yhteys viittaa pysyvään, ajallisesti pidempikestoiseen suhteeseen.
 
 Tilannetta kuvaava luokkakaavio on seuraava:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-18.png" width="400">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-18.png" width="450">
 
 Riippuvuus siis kuvataan _katkoviivallisena nuolena_, joka kohdistuu siihen luokkaan mistä ollaan riippuvaisia. Riippuvuuteen ei merkitä numeroa toisin kuin yhteyteen.
 
@@ -429,7 +431,7 @@ sekä testien käyttämä _FakeTodoDao_. Jos ohjelmaa halutaan laajentaa siten, 
 
 Rajapinta ja sen toteuttavat luokat kuvataan luokkakaaviossa seuraavasti:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="600">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="650">
 
 Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos Todo-sovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_, merkattaisiin se luokkakaavioon seuraavasti:
 
@@ -459,9 +461,9 @@ Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. As
 
 Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta. Ohjelman toimita ei kuitenkaan tule niistä ilmi millään tavalla. 
 
-Esim. ohjelmoinnin perusteista tuttua Unicafe-tehtävää kuvaava luokkakaavio näyttää seuraavalta:
+Esim. ohjelmoinnin perusteiden Unicafe-tehtävää kuvaava luokkakaavio näyttää seuraavalta:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png" width="450">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png" width="550">
 
 Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka, esim. mitä tapahtuu kun kortilla ostataan edullinen lounas, selviä kaaviosta millään tavalla.
 
@@ -469,7 +471,7 @@ Tietokantojen perusteiden [viikolla 4](https://materiaalit.github.io/tikape-k18/
 
 Sekvenssikaaviot on alunperin kehitetty kuvaamaan verkossa olevien ohjelmien keskinäisen kommunikoinnin etenemistä. Sekvenssikaaviot sopivat kohtuullisen hyvin kuvaamaan myös sitä, miten ohjelman oliot kutsuvat toistensa metodeja suorituksen aikana. 
 
-Unicafetehtävän ,allivastauksesta näemme, että lounaan maksaminen tapahtuu siten, että ensin kassapääte kysyy kortin saldoa ja jos se on riittävä, vähentää kassapääte lounaan hinnan kortilta ja palauttaa _true_: 
+Koodia katsomalla näemme, että lounaan maksaminen tapahtuu siten, että ensin kassapääte kysyy kortin saldoa ja jos se on riittävä, vähentää kassapääte lounaan hinnan kortilta ja palauttaa _true_: 
 
 ```java
 public class Kassapaate {
@@ -492,13 +494,13 @@ public class Kassapaate {
 
 Sekvenssikaaviona kuvattuna tilanne näyttää seuraavalta:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png" width="500">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png" width="450">
 
 Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutstujan ja kutsutun olion elämänlangat. Paluuarvo merkitään katkoviivalla.
 
 Jos saldo ei riitä, etenee suoritus seuraavan sekvenssikaavion tapaan:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-17.png" width="500">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-17.png" width="450">
 
 Tarkastellaan hieman monimutkaisempaa tapausta, yrityksen palkanhallinnasta vastaavaa ohjelmaa:
 
@@ -659,7 +661,7 @@ _Program to an interface, not to an Implementation_, eli _ohjelmoi käyttämäll
 
 Todo-sovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita, se tuntee ainoastaan rajapinnat, ja tämä taas mahdollistaa konkreettisen toteutuksen vaihtamisen esim. testeissä tai tulevaisuudessa ohjelman laajennuksen yhteydessä:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="600">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="650">
 
 ### Riippuvuuksien minimointi
 	
@@ -767,6 +769,4 @@ public class TodoServiceUserTest {
 
 Toisin kuin todelliset DAO:t, testeissä käytettävät valekomponentit eivät tallenna dataa levylle, tämä tekee testaamisesta helpompaa.
 
-Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md) ja
-
-[testausdokumentista](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
+Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md) ja [testausdokumentista](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
