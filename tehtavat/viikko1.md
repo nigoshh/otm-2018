@@ -438,7 +438,7 @@ Seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _otm-h
 <pre>
 cd ~   
 mkdir otm-harjoitustyo
-cd otm_harjoitustyo
+cd otm-harjoitustyo
 git init
 touch README.md
 git add .
@@ -454,8 +454,11 @@ Siirrytään sitten GitHubin käyttöön
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-1b.png)
 
-Seuraavaksi haluamme liittää GitHubiin luodun repositorion paikallisen koneen repositorin etärepositorioksi.
-* etärepositorion lisääminen onnistuu komennolla _git remote add_
+* luo repositorio painamalla vihreää _Create repository_ -nappia
+
+Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikallisen koneen repositorin _otm-harjoitustyo_ etärepositorioksi.
+
+* etärepositorion lisääminen onnistuu GitHubiin luodun repositorion ohjeiden mukaan 
 * varmista, että kohdasta "Quick setup..." on valittu **SSH**
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v1-2.png)
