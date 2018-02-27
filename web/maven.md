@@ -1,6 +1,14 @@
-## maven
+# maven
 
+## projektin aloitus
 
+## Testikattavuus
+
+## JavaDoc
+
+## checkstyle
+
+## jarin generointi
 
 ## hieman lisää mavenia
 

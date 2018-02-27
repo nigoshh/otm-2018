@@ -1,5 +1,3 @@
-# EI AJANTASALLA, lukeminen omalla vastuulla
-
 # Viikon 2 tehtävät
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on ma 26.3. klo 23:59
@@ -301,7 +299,7 @@ _jacoco_ suoritetaan komentoriviltä (projektihakemistossa ollessasi) komennolla
 
 Tulokset tulevat projektihakemistosi alihakemistoon __target/site/jacoco/index.html__. Avaa tulokset web-selaimella:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-4.png" width="600">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-4.png" width="800">
 
 Useilla selaimilla tämä tapahtuu komennolla __open file__. Laitoksen koneella voit myös avata selaimen terminaalissa menemällä ensin projektihakemistoon ja antamalla komennon __chromium-browser target/site/jacoco/index.html__ 
 
@@ -309,11 +307,11 @@ Useilla selaimilla tämä tapahtuu komennolla __open file__. Laitoksen koneella 
 
 Maven-komentoja on mahdollista suorittaa myös NetBeansin kautta. Tämä tapahtuu klikkaamalla projektin kohdalla hiiren oikealla napilla: 
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-6.png" width="600">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-6.png" width="700">
 
 "Remember as"-toiminnolla voit tallettaa konfiguroidun maven-komentosarjan:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-5.png" width="600">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-5.png" width="700">
 
 ## 4 Maven-projektin hakemistorakenne
 
@@ -347,4 +345,4 @@ Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun
 
 ## 6
 
-Varmista että kassapäätteen teksteillä on 100% lause- ja haarautumakattavuus.
+Varmista jacocon avulla, että kassapäätteen teksteillä on 100% lause- ja haarautumakattavuus.
