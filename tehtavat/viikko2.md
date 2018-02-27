@@ -24,68 +24,6 @@ Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen l
 
 **HUOM2** Kirjoita assertEquals-komennot aina siten, että ensimmäisenä parametrina on odotettu tulos ja toisena parametrina testatun metodin antama tulos.
 
-## 2
-
-Ohjelmoinnin perusteiden eräässä tehtävässä (ks. [tehtävänanto](https://www.cs.helsinki.fi/group/java/s16-materiaali/viikko4/#91kello_laskurin_avulla) ) ohjelmoitiin luokka YlhaaltaRajoitettuLaskuri:
-
-``` java
-public class YlhaaltaRajoitettuLaskuri {
- 
-    private int arvo;
-    private int ylaraja;
- 
-    public YlhaaltaRajoitettuLaskuri(int ylarajanAlkuarvo) {
-        this.ylaraja = ylarajanAlkuarvo;
-        this.arvo = 0;
-    }
- 
-    public void seuraava() {
-        if (this.arvo == this.ylaraja) {
-            this.arvo = 0;
-        } else {
-            this.arvo++;
-        }
-    }
- 
-    public int arvo() {
-        return this.arvo;
-    }
- 
-    public void asetaArvo(int uusiArvo) {
-        if (uusiArvo < 0 || uusiArvo > this.ylaraja) {
-            return;
-        }
- 
-        this.arvo = uusiArvo;
-    }
- 
-    @Override
-    public String toString() {
-        String etunolla = "0";
-        if (this.arvo > 9) {
-            etunolla = "";
-        }
-        return etunolla + this.arvo;
-    }
-}
-```
-
-Tee laskurille seuraavat testit:
-* luodun laskurin alkuarvo on 0
-  * huom: arvo kannattaa varmistaa testeissä kutsumalla laskurin metodia _arvo_
-* kun laskuri etenee kerran, sen arvo on 1
-* kun laskuri etenee kaksi kertaa, sen arvo on 2
-* jos laskurin yläraja on n ja laskuri etenee n kertaa, on laskurin arvo n
-  * korvaa testeissä n jollain konkreettisella arvolla, esim. 4
-* jos laskurin yläraja on n ja laskuri etenee n+1 kertaa, on laskurin arvo 0
-* jos laskurin yläraja on n ja laskuri etenee n+2 kertaa, on laskurin arvo 1
-* metodi asetaArvo asettaa laskurin arvon oikein jos parametrin arvo on välillä 0 - laskurin yläraja
-* metodi asetaArvo ei tee mitään jos parametrin arvo ei ole välillä 0 - laskurin yläraja
-* toString tuottaa etunollan jos laskurin arvo on alle 10
-* toString ei tuota etunollaa jos laskurin arvo on vähintään 10
-
-**HUOM** on suositeltavaa, että yksi testi testaa vaan "yhtä asiaa" kerrallaan. Tee siis jokaisesta ylläolevasta oma testinsä.
-
 ## 2 Maksukortti ja kassapääte: testit kortille
 
 Ohjelmoinnin perusteiden viikolla [5 tehtävissä 101](https://www.cs.helsinki.fi/group/java/s16-materiaali/viikko5/#101maksukortti_ja_kassapaate) toteutettiin "tyhmä" Maksukortti ja Kassapääte. 
@@ -204,15 +142,12 @@ public class Kassapaate {
 }
 ```
 
-Jos olet toiminut tämän viikon [kotona tehtävien laskareiden tehtävän 4](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-kotitehtavat#4) ohjeiden mukaan, koodin pitäisi löytyä kotihakemistosi alta hakemistopolulta _kurssit/otm2016/viikko2_
+Mene nyt palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
 
-**HUOM: jos teit tehtävän ennen keskiviikkoaamua, hakemasi projektin versio oli väärä ja on parasta että haet zip-paketin uudelleen.**
-
-Jos et tehnyt tehtävää (tai teit sen ennen keskiviikkoa...), niin avaa terminaali ja luo sopiva hakemisto. Mene hakemistoon ja anna seuraavat komennot 
-
-``` bash
-wget https://www.cs.helsinki.fi/u/mluukkai/otm2016/Unicafe.zip
+```bash
+wget https://raw.githubusercontent.com/mluukkai/otm-2018/master/misc/Unicafe.zip
 unzip Unicafe.zip
+rm Unicafe.zip
 ```
 
 Avaa projekti NetBeansilla.
