@@ -411,7 +411,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/lh3-3.png)
 
-## harjoittelua
+## Harjoittelua
 
 - luo hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
 - commitoi muutokset
@@ -423,7 +423,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 - poista tiedosto _file1_ ja uudelleennimeä tiedosto _file2_ tiedostoksi _file22_
 - committoi 
 
-## Github 
+## GitHub 
 
 Gitin käytöstä on toki hyötyä jo harjoittelemallammekin tavalla, eli muodostamalla paikallisen koneen hakemistosta repositorio. Pääsemme kuitenkin nauttimaan kertaluokkaa suuremmista hyödyistä liittämällä repositoriomme internetissä olevaan _etärepositorioon_. Etärepositorion kautta repositorion tiedostot on helppo jakaa useiden koneiden tai/ja useiden käyttäjien kesken.
 
@@ -536,7 +536,7 @@ Branch master set up to track remote branch master from origin.
 
 * nyt kaikki näyttää toimivan
 
-## lisää tiedostoja
+## Lisää tiedostoja
 
 * tee repositorion sisälle hakemisto _laskarit_
   * ja sen sisälle hakemisto _viikko1_
@@ -574,7 +574,7 @@ Branch master set up to track remote branch master from origin.
 * Saamme tuotua muutokset paikalliselle koneelle komennolla _git pull_
 * Kokeile komentoa ja varmista, että muuttunut sisältö on nyt paikallisessa repositoriossa
 
-## lisää githubia
+## Lisää githubia
 
 * Tee paikallisella koneella jokin muutos esim. tiedostoon README.md
 * Lisää ja committaa muutos
@@ -582,7 +582,7 @@ Branch master set up to track remote branch master from origin.
 * Varmista GitHubista että muutokset näkyvät
 * Paikallinen repositoriosi ja GitHubin etärepositorio ovat jälleen samassa tilassa. 
 
-## paikallisen ja etärepositorion epäsynkrooni
+## Paikallisen ja etärepositorion epäsynkrooni
 
 * joskus käy niin, että paikallinen ja etärepositorio menevät epäsynkroniin, siten että molempiin tehdään yhtäaikaa uusi commit
 * luodaan tälläinen tilanne
