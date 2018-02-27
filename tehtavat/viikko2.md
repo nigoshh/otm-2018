@@ -303,9 +303,17 @@ Tulokset tulevat projektihakemistosi alihakemistoon __target/site/jacoco/index.h
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-4.png" width="600">
 
-Firefoxilla tämä tapahtuu komennolla __open file__. Voit myös avata selaimen terminaalissa menemällä ensin projektihakemistoon ja antamalla komennon __chromium-browser target/site/jacoco/index.html__ 
+Useilla selaimilla tämä tapahtuu komennolla __open file__. Laitoksen koneella voit myös avata selaimen terminaalissa menemällä ensin projektihakemistoon ja antamalla komennon __chromium-browser target/site/jacoco/index.html__ 
 
 **Jos maksukortin koodissa on vielä rivejä tai haarautumia (merkitty punaisella) joille ei ole testiä, kirjoita sopivat testit.**
+
+Maven-komentoja on mahdollista suorittaa myös NetBeansin kautta. Tämä tapahtuu klikkaamalla projektin kohdalla hiiren oikealla napilla: 
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-6.png" width="600">
+
+"Remember as"-toiminnolla voit tallettaa konfiguroidun maven-komentosarjan:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-5.png" width="600">
 
 ## 4 Maven-projektin hakemistorakenne
 
