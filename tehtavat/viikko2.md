@@ -142,7 +142,7 @@ public class Kassapaate {
 }
 ```
 
-Mene nyt palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
+Avaa terminaali, mene palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
 
 ```bash
 wget https://raw.githubusercontent.com/mluukkai/otm-2018/master/misc/Unicafe.zip
@@ -150,16 +150,87 @@ unzip Unicafe.zip
 rm Unicafe.zip
 ```
 
-Avaa projekti NetBeansilla.
+Lisää ja commitoi hakemisto repositorioon.
+
+Varmista komennolla _git status_, että working directory on puhdas ja kaikki on commitoitu:
+
+```bash
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+```
 
 Olemme tähän asti suorittaneet testit NetBeansilla. Kokeillaan nyt miten testit voidaan suorittaa _komentoriviltä_.
-* avaa terminaali (joka löytyy avaamalla vasemman yläkulman etsintäikkuna ja kirjoittamalla _terminal_)
 * mene hakemistoon, jossa projekti sijaitsee
 * suorita testit antamalla komento _mvn test_
   * huomaa, että komento _mvn_ tulee antaa aina projektin juurihakemistossa, eli samassa hakemistossa, jossa sijaitsee tiedosto _pom.xml_
   * muista, että näet hakemiston sisällön komennolla _ls_
 
-*Tee valmiiseen testiluokkaan MaksukorttiTest* testit, jotka testaavat ainakin seuraavia asioita:
+Jos kaikki on hyvin, saat raportin läpimenneistä testeistä
+
+<pre>
+Running com.mycompany.unicafe.MaksukorttiTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.046 s
+[INFO] Finished at: 2018-02-27T15:59:21+02:00
+[INFO] Final Memory: 19M/311M
+[INFO] ------------------------------------------------------------------------
+</pre>
+
+### .gitignore
+
+Kun testien jälkeen suoritat komennon _git status_ huomat että projektin juureen on ilmestynyt uusi hakemisto _target_ joka ei ole gitin alaisuudessa
+
+```bash
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	target/
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+maven-projektien hakemisto _target_, joka sisältää [maven-komentojen aikaansaannoksia on tyypillisesti hakemisto, jota emme halua versionhallinnan pariin.
+
+git-repositorion juureen on mahdollista lisätä tiedosto [.gitignore](https://www.atlassian.com/git/tutorials/gitignore) jossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_.
+
+Mene **repositoriosi juureen**, lue tiedosto _.gitignore_ ja avaa se editorilla ja lisää tiedostoon seuraava rivi:
+
+<pre>
+/laskarit/viikko2/Unicafe/target
+</pre>
+
+Kun nyt teet komennon _git status_ pitäisi tuloksen olla seuraava:
+
+<pre>
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+</pre>
+
+* eli vaikka hakemistossa _/laskarit/viikko2/Unicafe_  on alihakemisto _target_, ei git niitä huomioi
+
+### Takaisin testeihin
+
+Avaa nyt projekti NetBeansilla.
+
+* Tee valmiiseen testiluokkaan MaksukorttiTest* testit, jotka testaavat ainakin seuraavia asioita:
 * saldo alussa oikein
 * rahan lataaminen kasvattaa saldoa oikein
 * rahan ottaminen toimii:
@@ -267,54 +338,6 @@ Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun
 ## 6
 
 Varmista että kassapäätteen teksteillä on 100% lause- ja haarautumakattavuus.
-
-
-
-## .gitignore
-
-On tilanteita, joissa emme halua tiedostojen menevän versionhallinnan alaisuuteen. maven-projektien hakemisto _target_, joka sisältää [maven-komentojen aikaansaannokset](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-paikanpaalla-tehtavat#3-maven-projektin-hakemistorakenne), on tyypillisesti hakemisto, jota emme halua versionhallinnan pariin.
-
-Git-repositorion juureen sijoitettavassa [.gitignore](https://www.atlassian.com/git/tutorials/gitignore)-tiedostossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_
-
-* Muuta viime viikon paikanpäällä tehtävässä tekemäsi hakemisto _Unicafe_ git-repositorioksi
-  * komento _git init_
-  * **HUOM:** älä vielä lisää mitään commitoitavaksi!
-  * muista tässäkin myös komennon _git status_ aktiivinen käyttö!
-* Luodaan repositorion juureen tiedosto _.gitignore_ ja määritellään siihen ignoroitavaksi hakemisto _target_ ja tiedosto _nbactions.xml_, eli
-  * luo tiedosto nanolla
-  * tiedoston sisällöksi tulee
-
-<pre>
-target
-nbactions.xml
-</pre>
-
-* kun nyt teet komennon _git status_ pitäisi tuloksen olla seuraava:
-
-<pre>
-mluukkai@melkki:~/Unicafe$ git status
-On branch master
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	.gitignore
-	pom.xml
-	src/
-</pre>
-
-* eli vaikka hakemistossa on tiedosto _nbactions.xml_ sekä alihakemisto _target_, ei git niitä huomioi
-* lisää hakemiston sisältö repositorioon
-* commitoi 
-* tarkasta tilanne komennolla _git status_
-* kokeile nyt suorittaa maven-komentoja, jotka tekevät muutoksia hakemistoon _target_
-  * esim. testien suoritus ja testiraportin generointi
-* tarkasta komennolla _git status_, että git ei välitä muutoksista
-* tee jokin muutos projektin koodiin ja tarkasta että git huomaa tilanteen
-* commitoi muutoset
-
 
 
 ## GitHubissa olevan repositorion kloonaaminen
