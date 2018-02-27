@@ -242,7 +242,7 @@ Voit suorittaa testit NetBeansilla tai komentoriviltä
 
 ### Maven
 
-Suoritimme testit komentoriviltä komennolla _mvn test_. Mistä on kyse? Maksukortin sisältämä projekti on määritelty [maven](https://maven.apache.org)-formaatissa. Maven on työkalu, jonka avulla voidaan hallita Javalla tehtyjen ohjelmien kääntämistä, testien suorittamista ja paljon muitakin työvaiheita, kuten pian tulemme näkemään. Ohjelmoinnin perusteiden ja jatkokurssien tehtäviä ei ole määritelty mavenilla vaan hieman vanhemmassa [ant](http://ant.apache.org)-formaatissa. Maven on kuitenkin nykyään suositeltavampi, ja tekee monet asiat käyttäjän kannalta helpommaksi. 
+Suoritimme testit komentoriviltä komennolla _mvn test_. Mistä on kyse? Maksukortin sisältämä projekti on määritelty [maven](https://maven.apache.org)-formaatissa. Maven on työkalu, jonka avulla voidaan hallita Javalla tehtyjen ohjelmien kääntämistä, testien suorittamista ja paljon muitakin työvaiheita, kuten pian tulemme näkemään. Kurssin ohjelmoinnin perusteet tehtäviä ei ole määritelty mavenilla vaan hieman vanhemmassa [ant](http://ant.apache.org)-formaatissa. Ohjelmoinnin jatkokurssilla ainakin myöhemmillä viikoilla on käytössä maven, se ei tosin juurikaan näy normaalille NetBeans-käyttäjälle.
 
 Maven-projektien juuressa on tiedosto _pom.xml_, joka sisältää projektin konfiguraatiot. Katso miltä tiedosto näyttää. Tiedosto löytyy NetBeansista kohdan _project files_ alta.
 
@@ -279,8 +279,7 @@ Tiedostossa _plugin_-osiossa on määritelty, että koodi käännetään Javan v
 
 ## 3 Testauskattavuus
 
-Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi on olemassa työkaluja, joilla voidaan tarkastaa testien lause- ja haarautumakattavuus. __Lausekattavuus__ mittaa mitä koodirivejä testien suorittaminen on tutkinut. Täydellinen lausekattavuuskaan ei tietenkään takaa että ohjelma toimii oikein, mutta on parempi kuin ei mitään. __Haarautumakattavuus__ taas mittaa mitä eri suoritushaaroja koodista on käyty läpi. Suoritushaaroilla tarkoitetaan esim. if-komentojen valintatilanteita. 
-
+Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi on olemassa työkaluja, joilla voidaan tarkastaa testien rivi- ja haarautumakattavuus. __Rivikattavuus__ mittaa mitä koodirivejä testien suorittaminen on tutkinut. Täydellinen rivikattavuuskaan ei tietenkään takaa että ohjelma toimii oikein, mutta on parempi kuin ei mitään. __Haarautumakattavuus__ taas mittaa mitä eri suoritushaaroja koodista on käyty läpi. Suoritushaaroilla tarkoitetaan esim. if-komentojen valintatilanteita. 
 
 Projektiin on valmiiksi konfiguroitu käytettäväksi [Jacoco](http://www.eclemma.org/jacoco/) joka mittaa sekä lause- että haarautumakattavuuden. Määrittely on tiedoston pom.xml osiossa _plugins_:
 
@@ -298,9 +297,13 @@ Projektiin on valmiiksi konfiguroitu käytettäväksi [Jacoco](http://www.eclemm
 </build>
 ``` 
 
-_jacoco_ suoritetaan komentoriviltä (projektihakemistossa ollessasi) komennolla <code>mvn jacoco:report</code>
+_jacoco_ suoritetaan komentoriviltä (projektihakemistossa ollessasi) komennolla <code>mvn test jacoco:report</code>
 
-Tulokset tulevat projektihakemistosi alihakemistoon __target/site/jacoco/index.html__. Avaa tulokset web-selaimella. Firefoxilla tämä tapahtuu komennolla __open file__. Voit myös avata selaimen terminaalissa menemällä ensin projektihakemistoon ja antamalla komennon __chromium-browser target/site/jacoco/index.html__ 
+Tulokset tulevat projektihakemistosi alihakemistoon __target/site/jacoco/index.html__. Avaa tulokset web-selaimella:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-4.png" width="600">
+
+Firefoxilla tämä tapahtuu komennolla __open file__. Voit myös avata selaimen terminaalissa menemällä ensin projektihakemistoon ja antamalla komennon __chromium-browser target/site/jacoco/index.html__ 
 
 **Jos maksukortin koodissa on vielä rivejä tai haarautumia (merkitty punaisella) joille ei ole testiä, kirjoita sopivat testit.**
 
