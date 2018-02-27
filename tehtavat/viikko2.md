@@ -188,7 +188,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 ### .gitignore
 
-Kun testien jälkeen suoritat komennon _git status_ huomat että projektin juureen on ilmestynyt uusi hakemisto _target_ joka ei ole gitin alaisuudessa
+Kun testien jälkeen suoritat komennon _git status_, huomat että projektin juureen on ilmestynyt uusi hakemisto _target_ joka ei ole gitin alaisuudessa
 
 ```bash
 On branch master
@@ -201,11 +201,11 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-maven-projektien hakemisto _target_, joka sisältää [maven-komentojen aikaansaannoksia on tyypillisesti hakemisto, jota emme halua versionhallinnan pariin.
+maven-projektien hakemisto _target_, joka sisältää maven-komentojen aikaansaannoksia on tyypillisesti sellainen, jota emme halua versionhallinnan pariin.
 
 git-repositorion juureen on mahdollista lisätä tiedosto [.gitignore](https://www.atlassian.com/git/tutorials/gitignore) jossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_.
 
-Mene **repositoriosi juureen**, lue tiedosto _.gitignore_ ja avaa se editorilla ja lisää tiedostoon seuraava rivi:
+Mene **repositoriosi juureen**, luo tiedosto _.gitignore_, avaa se editorilla ja lisää tiedostoon seuraava rivi:
 
 <pre>
 /laskarit/viikko2/Unicafe/target
@@ -224,39 +224,39 @@ Untracked files:
 	.gitignore
 </pre>
 
-* eli vaikka hakemistossa _/laskarit/viikko2/Unicafe_  on alihakemisto _target_, ei git niitä huomioi
+Eli vaikka hakemistossa _/laskarit/viikko2/Unicafe_  on alihakemisto _target_, ei git niitä huomioi
 
 ### Takaisin testeihin
 
 Avaa nyt projekti NetBeansilla.
 
-* Tee valmiiseen testiluokkaan MaksukorttiTest* testit, jotka testaavat ainakin seuraavia asioita:
-* saldo alussa oikein
+* Tee valmiiseen testiluokkaan _MaksukorttiTest_ testit, jotka testaavat ainakin seuraavia asioita:
+* kortin on saldo alussa oikein
 * rahan lataaminen kasvattaa saldoa oikein
-* rahan ottaminen toimii:
+* rahan ottaminen toimii
   * saldo vähenee oikein jos rahaa on tarpeeksi
   * saldo ei muutu jos rahaa ei ole tarpeeksi
   * metodi palauttaa _true_ jos rahat riittivät ja muuten _false_
 
 Voit suorittaa testit NetBeansilla tai komentoriviltä
 
-## Maven
+### Maven
 
 Suoritimme testit komentoriviltä komennolla _mvn test_. Mistä on kyse? Maksukortin sisältämä projekti on määritelty [maven](https://maven.apache.org)-formaatissa. Maven on työkalu, jonka avulla voidaan hallita Javalla tehtyjen ohjelmien kääntämistä, testien suorittamista ja paljon muitakin työvaiheita, kuten pian tulemme näkemään. Ohjelmoinnin perusteiden ja jatkokurssien tehtäviä ei ole määritelty mavenilla vaan hieman vanhemmassa [ant](http://ant.apache.org)-formaatissa. Maven on kuitenkin nykyään suositeltavampi, ja tekee monet asiat käyttäjän kannalta helpommaksi. 
 
 Maven-projektien juuressa on tiedosto _pom.xml_, joka sisältää projektin konfiguraatiot. Katso miltä tiedosto näyttää. Tiedosto löytyy NetBeansista kohdan _project files_ alta.
 
-Tiedostossa on määritelty, että projektilla on testejä suoritettaessa _riippuvuutena_ JUnit-kirjaston versio 4.10:
+Tiedostossa on määritelty, että projektilla on testejä suoritettaessa _riippuvuutena_ JUnit-kirjaston versio 4.12:
 
 ``` java
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+<dependencies>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
 ```
 
 Tiedostossa _plugin_-osiossa on määritelty, että koodi käännetään javan uusinta versiota, eli "java kasia" käyttäen. Maven käyttää java kasista numeroa 1.8 (kohdat _source_ ja _target_):
@@ -338,43 +338,3 @@ Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun
 ## 6
 
 Varmista että kassapäätteen teksteillä on 100% lause- ja haarautumakattavuus.
-
-
-## GitHubissa olevan repositorion kloonaaminen
-
-Teimme äsken repositorion ensin paikallisesti ja linkitimme sen GitHubissa olevaan etärepositorioon. Usein tilanne on sellainen, missä haluaisimme GitHubissa jo olevan repositorion omalle koneellemme. Tähän on tarkoitettu gitin komento clone.
-
-* Luo GitHubiin uusi repositorio, laita tällä kertaa rasti kohtaan "Initialize this repository with a README"
-* GitHub luo repositorion sisälle README.md:n
-* Lisää githubista repositorioon uusi tiedosto ja tee jotain muutoksia README.md:hen
-* klikkaa kohtaa _clone or download_ ja kopioi kloonausurl
-  * varmista että valittuna on "clone with SSH"
-
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-4.png" alt="alt text" width="400">
-
-* mene sopivaan hakemistoon paikallisella koneella
-  * **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
-* anna kloonauskomento, parametrina kloonausurl
-
-``` 
-mluukkai@melkinkari:~$ git clone git@github.com:mluukkai-cs/otm2016-uusi.git
-Cloning into 'otm2016-uusi'...
-remote: Counting objects: 9, done.
-remote: Compressing objects: 100% (5/5), done.
-remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (9/9), done.
-Checking connectivity... done.
-mluukkai@melkinkari:~$
-``` 
-
-Hakemistoosi syntyy uusi hakemisto, esimerkissä nimeltään _otm2016-uusi_, eli oletusarvoisesti nimi päätellään kloonausurlista. Uuden hakemiston nimen voi myös määritellä itse antamalla komennolle lisäparametrin:
-
-``` 
-git clone git@github.com:mluukkai-cs/otm2016-uusi.git hakemiston_nimi
-``` 
-
-Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepositoriossa.
-* tee repositorioon jokin muutos, lisää ja committoi
-* push muutokset githubiin
-* varmista GitHubista että muutos menee perille
-

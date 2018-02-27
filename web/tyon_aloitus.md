@@ -71,3 +71,47 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
   * Fraktaaligeneraattori
 
 Voit katsoa myös [vanhat esimerkkiaiheet](https://www.cs.helsinki.fi/node/59273), jotka tosin ovat suurimmaksi osaksi samoja.
+
+
+###
+
+
+
+
+## GitHubissa olevan repositorion kloonaaminen
+
+Teimme äsken repositorion ensin paikallisesti ja linkitimme sen GitHubissa olevaan etärepositorioon. Usein tilanne on sellainen, missä haluaisimme GitHubissa jo olevan repositorion omalle koneellemme. Tähän on tarkoitettu gitin komento clone.
+
+* Luo GitHubiin uusi repositorio, laita tällä kertaa rasti kohtaan "Initialize this repository with a README"
+* GitHub luo repositorion sisälle README.md:n
+* Lisää githubista repositorioon uusi tiedosto ja tee jotain muutoksia README.md:hen
+* klikkaa kohtaa _clone or download_ ja kopioi kloonausurl
+  * varmista että valittuna on "clone with SSH"
+
+<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-4.png" alt="alt text" width="400">
+
+* mene sopivaan hakemistoon paikallisella koneella
+  * **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
+* anna kloonauskomento, parametrina kloonausurl
+
+``` 
+mluukkai@melkinkari:~$ git clone git@github.com:mluukkai-cs/otm2016-uusi.git
+Cloning into 'otm2016-uusi'...
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+Checking connectivity... done.
+mluukkai@melkinkari:~$
+``` 
+
+Hakemistoosi syntyy uusi hakemisto, esimerkissä nimeltään _otm2016-uusi_, eli oletusarvoisesti nimi päätellään kloonausurlista. Uuden hakemiston nimen voi myös määritellä itse antamalla komennolle lisäparametrin:
+
+``` 
+git clone git@github.com:mluukkai-cs/otm2016-uusi.git hakemiston_nimi
+``` 
+
+Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepositoriossa.
+* tee repositorioon jokin muutos, lisää ja committoi
+* push muutokset githubiin
+* varmista GitHubista että muutos menee perille
