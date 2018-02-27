@@ -259,49 +259,48 @@ Tiedostossa on määritelty, että projektilla on testejä suoritettaessa _riipp
 </dependencies>
 ```
 
-Tiedostossa _plugin_-osiossa on määritelty, että koodi käännetään javan uusinta versiota, eli "java kasia" käyttäen. Maven käyttää java kasista numeroa 1.8 (kohdat _source_ ja _target_):
+Tiedostossa _plugin_-osiossa on määritelty, että koodi käännetään Javan versiota 8 käyttäen. Maven käyttää Java kasista numeroa 1.8 (kohdat _source_ ja _target_):
 
 ``` java
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-                <version>2.5</version>
-            </plugin>
-            ...
-        </plugins>
-    </build>
+<build>
+    <plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+            <version>2.5</version>
+        </plugin>
+        ...
+    </plugins>
+</build>
 ``` 
 
 ## 3 Testauskattavuus
 
 Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi on olemassa työkaluja, joilla voidaan tarkastaa testien lause- ja haarautumakattavuus. __Lausekattavuus__ mittaa mitä koodirivejä testien suorittaminen on tutkinut. Täydellinen lausekattavuuskaan ei tietenkään takaa että ohjelma toimii oikein, mutta on parempi kuin ei mitään. __Haarautumakattavuus__ taas mittaa mitä eri suoritushaaroja koodista on käyty läpi. Suoritushaaroilla tarkoitetaan esim. if-komentojen valintatilanteita. 
 
-**FIX: vaihda jacocoon**
 
-Projektiin on valmiiksi konfiguroitu käytettäväksi [Cobertura](http://cobertura.github.io/cobertura/) joka mittaa sekä lause- että haarautumakattavuuden. Määrittely on tiedoston pom.xml osiossa _plugins_:
+Projektiin on valmiiksi konfiguroitu käytettäväksi [Jacoco](http://www.eclemma.org/jacoco/) joka mittaa sekä lause- että haarautumakattavuuden. Määrittely on tiedoston pom.xml osiossa _plugins_:
 
 ``` java
-    <build>
-        <plugins>
-            ...
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.7</version>
-            </plugin>
-            ...
-        </plugins>
-    </build>
+<build>
+    <plugins>
+        ...
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>2.7</version>
+        </plugin>
+        ...
+    </plugins>
+</build>
 ``` 
 
-_cobertura_ suoritetaan komentoriviltä (projektihakemistossa ollessasi) komennolla <code>mvn cobertura:cobertura</code>
+_jacoco_ suoritetaan komentoriviltä (projektihakemistossa ollessasi) komennolla <code>mvn jacoco:report</code>
 
-Tulokset tulevat projektihakemistosi alihakemistoon __target/site/cobertura/index.html__. Avaa tulokset web-selaimella. Firefoxilla tämä tapahtuu komennolla __open file__. Voit myös avata selaimen terminaalissa menemällä ensin projektihakemistoon ja antamalla komennon __chromium-browser target/site/cobertura/index.html__ 
+Tulokset tulevat projektihakemistosi alihakemistoon __target/site/jacoco/index.html__. Avaa tulokset web-selaimella. Firefoxilla tämä tapahtuu komennolla __open file__. Voit myös avata selaimen terminaalissa menemällä ensin projektihakemistoon ja antamalla komennon __chromium-browser target/site/jacoco/index.html__ 
 
 **Jos maksukortin koodissa on vielä rivejä tai haarautumia (merkitty punaisella) joille ei ole testiä, kirjoita sopivat testit.**
 
