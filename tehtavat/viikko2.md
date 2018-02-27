@@ -2,92 +2,13 @@
 
 # Viikon 2 tehtävät
 
+Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on ma 26.3. klo 23:59
 
-## .gitignore
+Tehtävät palautetaan Githubin avulla Labtoolin rekisteröimääri repositorioon.
 
-On tilanteita, joissa emme halua tiedostojen menevän versionhallinnan alaisuuteen. maven-projektien hakemisto _target_, joka sisältää [maven-komentojen aikaansaannokset](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-paikanpaalla-tehtavat#3-maven-projektin-hakemistorakenne), on tyypillisesti hakemisto, jota emme halua versionhallinnan pariin.
+Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko2_.
 
-Git-repositorion juureen sijoitettavassa [.gitignore](https://www.atlassian.com/git/tutorials/gitignore)-tiedostossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_
-
-* Muuta viime viikon paikanpäällä tehtävässä tekemäsi hakemisto _Unicafe_ git-repositorioksi
-  * komento _git init_
-  * **HUOM:** älä vielä lisää mitään commitoitavaksi!
-  * muista tässäkin myös komennon _git status_ aktiivinen käyttö!
-* Luodaan repositorion juureen tiedosto _.gitignore_ ja määritellään siihen ignoroitavaksi hakemisto _target_ ja tiedosto _nbactions.xml_, eli
-  * luo tiedosto nanolla
-  * tiedoston sisällöksi tulee
-
-<pre>
-target
-nbactions.xml
-</pre>
-
-* kun nyt teet komennon _git status_ pitäisi tuloksen olla seuraava:
-
-<pre>
-mluukkai@melkki:~/Unicafe$ git status
-On branch master
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	.gitignore
-	pom.xml
-	src/
-</pre>
-
-* eli vaikka hakemistossa on tiedosto _nbactions.xml_ sekä alihakemisto _target_, ei git niitä huomioi
-* lisää hakemiston sisältö repositorioon
-* commitoi 
-* tarkasta tilanne komennolla _git status_
-* kokeile nyt suorittaa maven-komentoja, jotka tekevät muutoksia hakemistoon _target_
-  * esim. testien suoritus ja testiraportin generointi
-* tarkasta komennolla _git status_, että git ei välitä muutoksista
-* tee jokin muutos projektin koodiin ja tarkasta että git huomaa tilanteen
-* commitoi muutoset
-
-
-
-## GitHubissa olevan repositorion kloonaaminen
-
-Teimme äsken repositorion ensin paikallisesti ja linkitimme sen GitHubissa olevaan etärepositorioon. Usein tilanne on sellainen, missä haluaisimme GitHubissa jo olevan repositorion omalle koneellemme. Tähän on tarkoitettu gitin komento clone.
-
-* Luo GitHubiin uusi repositorio, laita tällä kertaa rasti kohtaan "Initialize this repository with a README"
-* GitHub luo repositorion sisälle README.md:n
-* Lisää githubista repositorioon uusi tiedosto ja tee jotain muutoksia README.md:hen
-* klikkaa kohtaa _clone or download_ ja kopioi kloonausurl
-  * varmista että valittuna on "clone with SSH"
-
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-4.png" alt="alt text" width="400">
-
-* mene sopivaan hakemistoon paikallisella koneella
-  * **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
-* anna kloonauskomento, parametrina kloonausurl
-
-``` 
-mluukkai@melkinkari:~$ git clone git@github.com:mluukkai-cs/otm2016-uusi.git
-Cloning into 'otm2016-uusi'...
-remote: Counting objects: 9, done.
-remote: Compressing objects: 100% (5/5), done.
-remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (9/9), done.
-Checking connectivity... done.
-mluukkai@melkinkari:~$
-``` 
-
-Hakemistoosi syntyy uusi hakemisto, esimerkissä nimeltään _otm2016-uusi_, eli oletusarvoisesti nimi päätellään kloonausurlista. Uuden hakemiston nimen voi myös määritellä itse antamalla komennolle lisäparametrin:
-
-``` 
-git clone git@github.com:mluukkai-cs/otm2016-uusi.git hakemiston_nimi
-``` 
-
-Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepositoriossa.
-* tee repositorioon jokin muutos, lisää ja committoi
-* push muutokset githubiin
-* varmista GitHubista että muutos menee perille
-
+Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen laadun perusteella.
 
 ## 1 
 
@@ -102,6 +23,7 @@ Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepo
 **HUOM1** on suositeltavaa, että yksi testi testaa vaan "yhtä asiaa" kerrallaan. Tee siis jokaisesta ylläolevasta oma testinsä.
 
 **HUOM2** Kirjoita assertEquals-komennot aina siten, että ensimmäisenä parametrina on odotettu tulos ja toisena parametrina testatun metodin antama tulos.
+
 ## 2
 
 Ohjelmoinnin perusteiden eräässä tehtävässä (ks. [tehtävänanto](https://www.cs.helsinki.fi/group/java/s16-materiaali/viikko4/#91kello_laskurin_avulla) ) ohjelmoitiin luokka YlhaaltaRajoitettuLaskuri:
@@ -410,3 +332,91 @@ Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun
 ## 6
 
 Varmista että kassapäätteen teksteillä on 100% lause- ja haarautumakattavuus.
+
+
+
+## .gitignore
+
+On tilanteita, joissa emme halua tiedostojen menevän versionhallinnan alaisuuteen. maven-projektien hakemisto _target_, joka sisältää [maven-komentojen aikaansaannokset](https://github.com/mluukkai/OTM2016/wiki/Viikon-2-paikanpaalla-tehtavat#3-maven-projektin-hakemistorakenne), on tyypillisesti hakemisto, jota emme halua versionhallinnan pariin.
+
+Git-repositorion juureen sijoitettavassa [.gitignore](https://www.atlassian.com/git/tutorials/gitignore)-tiedostossa voidaan määritellä, mitä tiedostoja ja hakemistoja git jättää huomioimatta eli _ignoroi_
+
+* Muuta viime viikon paikanpäällä tehtävässä tekemäsi hakemisto _Unicafe_ git-repositorioksi
+  * komento _git init_
+  * **HUOM:** älä vielä lisää mitään commitoitavaksi!
+  * muista tässäkin myös komennon _git status_ aktiivinen käyttö!
+* Luodaan repositorion juureen tiedosto _.gitignore_ ja määritellään siihen ignoroitavaksi hakemisto _target_ ja tiedosto _nbactions.xml_, eli
+  * luo tiedosto nanolla
+  * tiedoston sisällöksi tulee
+
+<pre>
+target
+nbactions.xml
+</pre>
+
+* kun nyt teet komennon _git status_ pitäisi tuloksen olla seuraava:
+
+<pre>
+mluukkai@melkki:~/Unicafe$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	pom.xml
+	src/
+</pre>
+
+* eli vaikka hakemistossa on tiedosto _nbactions.xml_ sekä alihakemisto _target_, ei git niitä huomioi
+* lisää hakemiston sisältö repositorioon
+* commitoi 
+* tarkasta tilanne komennolla _git status_
+* kokeile nyt suorittaa maven-komentoja, jotka tekevät muutoksia hakemistoon _target_
+  * esim. testien suoritus ja testiraportin generointi
+* tarkasta komennolla _git status_, että git ei välitä muutoksista
+* tee jokin muutos projektin koodiin ja tarkasta että git huomaa tilanteen
+* commitoi muutoset
+
+
+
+## GitHubissa olevan repositorion kloonaaminen
+
+Teimme äsken repositorion ensin paikallisesti ja linkitimme sen GitHubissa olevaan etärepositorioon. Usein tilanne on sellainen, missä haluaisimme GitHubissa jo olevan repositorion omalle koneellemme. Tähän on tarkoitettu gitin komento clone.
+
+* Luo GitHubiin uusi repositorio, laita tällä kertaa rasti kohtaan "Initialize this repository with a README"
+* GitHub luo repositorion sisälle README.md:n
+* Lisää githubista repositorioon uusi tiedosto ja tee jotain muutoksia README.md:hen
+* klikkaa kohtaa _clone or download_ ja kopioi kloonausurl
+  * varmista että valittuna on "clone with SSH"
+
+<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-4.png" alt="alt text" width="400">
+
+* mene sopivaan hakemistoon paikallisella koneella
+  * **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
+* anna kloonauskomento, parametrina kloonausurl
+
+``` 
+mluukkai@melkinkari:~$ git clone git@github.com:mluukkai-cs/otm2016-uusi.git
+Cloning into 'otm2016-uusi'...
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+Checking connectivity... done.
+mluukkai@melkinkari:~$
+``` 
+
+Hakemistoosi syntyy uusi hakemisto, esimerkissä nimeltään _otm2016-uusi_, eli oletusarvoisesti nimi päätellään kloonausurlista. Uuden hakemiston nimen voi myös määritellä itse antamalla komennolle lisäparametrin:
+
+``` 
+git clone git@github.com:mluukkai-cs/otm2016-uusi.git hakemiston_nimi
+``` 
+
+Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepositoriossa.
+* tee repositorioon jokin muutos, lisää ja committoi
+* push muutokset githubiin
+* varmista GitHubista että muutos menee perille
+

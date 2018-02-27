@@ -50,11 +50,19 @@ Palauta mieleen kortin käyttötapa lukemalla [tehtäväkuvaus](https://www.cs.h
 
 ### alkutoimet
 
-Tehdään NetBeans-projekti koodiamme varten. Valitse _File > New project > Java / Java Application < next_
+Tee NetBeans-projekti koodiamme varten. 
+
+
+
+Valitse _File > New project > Java / Java Application < next_
+
+**Projekti tulee sijoittaa Labtooliin rekisteröimäsi repositorion hakemiston _laskarit/viikko2_ sisälle:**
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/v2-1.png)
 
 Anna projektille nimeksi esim. *Maksukortti* ja varmista, että kohdassa *Create Main Class* **ei ole** rastia:
 
-![](https://github.com/mluukkai/otm2016/raw/master/img/lh1-1.png)
+![](https://github.com/mluukkai/otm2016/raw/master/img/lh2-1.png)
 
 luo luokka Maksukortti ja copypastea siihen yllä oleva koodi. Lopputuloksen pitäisi näytää seuraavalta:
 
