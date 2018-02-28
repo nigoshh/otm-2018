@@ -26,7 +26,7 @@ Eräs mahdollisuus on tehdä aluksi tekstikäyttöliittymän ja vasta saatuasi o
 
 Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/). Muutamia vihjeitä liittyen JavaFX:ään [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
 
-On myös ja [arvosanan kannalta kannattavaa](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md)suositeltavaa, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+On myös ja [arvosanan kannalta kannattavaa](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md) suositeltavaa, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
 
 Harjoitustyön tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi. Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit sekä jar-tiedosto, joka mahdollistaa ohjelman suorittamisen NetBeansin ulkopuolella.
 

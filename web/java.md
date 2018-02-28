@@ -12,6 +12,8 @@ Pääasia on jokatapauksessa, että pyrit _eriyttämään mahdollisimman hyvin s
 
 Ohjelmoinnin jatkokurssin viikon 9 tehtävän [numerotiedustelu](https://materiaalit.github.io/ohjelmointi-s17/part9/) malliratkaisu tarjoaa erään kohtuullisen hyvän mallin teksikäyttöliittymälle.
 
+Pääohjelma ei tee mitään muuta kuin luo ja käynnistää luokan _Numerotiedustelu_ instanssin:
+
 ```java
 public class Paaohjelma {
  
@@ -23,6 +25,10 @@ public class Paaohjelma {
     }
 }
 ```
+
+_Numerotiedustelu_ on oikeastaan sovelluksen tekstikäyttöliittymä. Varsinainen sovelluslogiikka on luokan _NumeroJaOsoitepalvelu_ vastuulla. 
+
+Osa luokan _Numerotiedustelu_ koodia seuraavassa:
 
 ```java
 public class Numerotiedustelu {
@@ -103,99 +109,208 @@ public class Numerotiedustelu {
         palvelu.lisaaNumero(nimi, numero);
     }
  
-    private void tulostaOhje() {
-        System.out.println("käytettävissä olevat komennot: ");
-        for (String komento : komennot.values()) {
-            System.out.println(" " + komento);
-        }
+    // lisää käyttöliittymäfunktioita...
+}
+```
+
+Koodi tulostaa ruudulle komentojen nimet, kysyy käyttäjän syötettä ja suorittaa halutun toimenpiteen:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/j-1.png" width="700">
+
+Koodi haarautuu käyttäjän valinnan mukaan if:issä valitun toimenpiteen suorittavaan metodiin. Esim. jos valinta on 1, suoritetaan tiedot luetteloon lisäävä metodi:
+
+```java
+private void lisaaNumero() {
+    System.out.print("kenelle: ");
+    String nimi = lukija.nextLine();
+    System.out.print("numero: ");
+    String numero = lukija.nextLine();
+    palvelu.lisaaNumero(nimi, numero);
+}
+```
+
+Metodi ei kuitenkaan itse tiedä puhelinluettelosta mitään, luettelointitehtäviä eli *sovelluslogiikkaa* hoitaa muuttujaan _palvelu_ talletettu _NumeroJaOsoitepalvelu_-olio.
+
+Näin sovelluslogiikkaa voidaan testata JUnit-testien avulla automatisoidusti täysin käyttöliittymästä riippumatta.
+
+## Riippuvuuden injektointi
+
+Mallivastauksen koodi ei kuitenkaan ole ihan optimaalinen ja sitä saa parannettua helposti pienellä kikalla. Muutetaan _Numerotiedustelu_ muotoon
+
+```java
+public class Numerotiedustelu {
+ 
+    private Scanner lukija;
+    private Map<String, String> komennot;
+    private NumeroJaOsoitepalvelu palvelu;
+ 
+    public Numerotiedustelu(Scanner lukija, NumeroJaOsoitepalvelu palvelu) {
+        this.lukija = lukija;
+        this.palvelu = palvelu;
+        palvelu = new NumeroJaOsoitepalvelu();
+ 
+        komennot = new TreeMap<>();
+        
+        komennot.put("x", "x lopeta");
+        // ...
     }
+
+    // ...
+}    
+```
+
+Pääohjelmaa täytyy nyt muuttaa seuraavasti:
+
+```java
+public class Paaohjelma {
  
-    private void haeHenkilo() {
-        System.out.print("numero: ");
-        String numero = lukija.nextLine();
-        String nimi = palvelu.haeNimi(numero);
-        if (nimi == null) {
-            System.out.println(" ei löytynyt");
-            return;
-        }
-        System.out.println(" " + nimi);
-    }
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+        NumeroJaOsoitepalvelu palvelu = new NumeroJaOsoitepalvelu();
  
-    private void lisaaOsoite() {
-        System.out.print("kenelle: ");
-        String nimi = lukija.nextLine();
-        System.out.print("katu: ");
-        String katu = lukija.nextLine();
-        System.out.print("kaupunki: ");
-        String kaupunki = lukija.nextLine();
-        palvelu.lisaaOsoite(nimi, katu, kaupunki);
-    }
- 
-    private void haeTeidot() {
-        System.out.print("kenen: ");
-        String nimi = lukija.nextLine();
-        Henkilo henkilo = palvelu.haeNimenPerusteella(nimi);
-        if (henkilo == null) {
-            System.out.println("  ei löytynyt");
-            return;
-        }
- 
-        tulostaHenkilonTiedot(henkilo);
-    }
- 
-    private void tulostaHenkilonTiedot(Henkilo henkilo) {
-        tulostaOsoite(henkilo);
-        tulostaPuhelinnumerot(henkilo);
-    }
- 
-    private void tulostaOsoite(Henkilo henkilo) {
-        if (henkilo.getKatu() == null || henkilo.getKaupunki() == null) {
-            System.out.println("  osoite ei tiedossa");
-            return;
-        }
- 
-        System.out.println("  osoite: " + henkilo.getKatu() + " " + henkilo.getKaupunki());
-    }
- 
-    private void tulostaPuhelinnumerot(Henkilo henkilo) {
-        if (henkilo.getPuhelinnumerot().isEmpty()) {
-            System.out.println("  ei puhelinta");
-            return;
-        }
- 
-        System.out.println("  puhelinnumerot:");
-        for (String numero : henkilo.getPuhelinnumerot()) {
-            System.out.println("   " + numero);
-        }
-    }
- 
-    private void poistaHenkilo() {
-        System.out.print("kenet: ");
-        String nimi = lukija.nextLine();
-        palvelu.poista(nimi);
-    }
- 
-    private void listaus() {
-        System.out.print("hakusana (jos tyhjä, listataan kaikki): ");
-        String hakusana = lukija.nextLine();
-        Set<Henkilo> loytyi = palvelu.hae(hakusana);
-        if (loytyi.isEmpty()) {
-            System.out.println(" ei löytynyt");
-            return;
-        }
- 
-        for (Henkilo h : palvelu.hae(hakusana)) {
-            System.out.println();
-            System.out.println(" " + h.getNimi());
-            tulostaHenkilonTiedot(h);
-        }
+        Numerotiedustelu numerotiedustelu = new Numerotiedustelu(lukija, palvelu);
+        numerotiedustelu.kaynnista();
     }
 }
-```java 
+```
 
+Ero on hyvin pieni, nyt sovelluslogiikasta huolehtiva _NumeroJaOsoitepalvelu_-olio luodaan pääohjelmassa ja annetaan käyttöliittymänä toimivalle _Numerotiedustelu_-oliolle konstruktorin parametrina.
+
+Tästä tekniikasta käytetään nimitystä [riippuvuuden injektointi](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#riippuvuuksien-injektointi), sillä  _NumeroJaOsoitepalvelu_-olio on _Numerotiedustelu_-olion riippuvuus joka tässä myöhemmässä versiossa injetoidaan konstruktoriparametrin avulla riippuvuutta tarvitsevalle oliolle. Aiemmassa versiossahan numerotiedustelu loi riippuvuuden itse.
+
+Riippuvuuksien injektoinnista on monia etuja, eräs näistä on laajennettavuus.
+
+Voisimme luoda uuden parannellun version numero- ja osoitepalvelusta perinnän avulla:
+
+```java
+public class ParanneltuNumeroJaOsoitepalvelu extends NumeroJaOsoitepalvelu {
+  // ...
+}
+```
+
+Laajennettu palvelu voisi käyttää vanhaa käyttöliittymää sellaisenaan:
+
+```java
+public class Paaohjelma {
+ 
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+        ParanneltuNumeroJaOsoitepalvelu palvelu = new ParanneltuNumeroJaOsoitepalvelu();
+ 
+        Numerotiedustelu numerotiedustelu = new Numerotiedustelu(lukija, palvelu);
+        numerotiedustelu.kaynnista();
+    }
+}
+```
+
+Toinen etu merkittävä etu on testauksen helpottaminen. Se onkin syynä sille, miksi _Scanner_ injektoidaan _Numerotiedustelu_-oliolle.
+
+Testit toimivat seuraavaan tyyliin:
+
+```java
+public class NumerotiedusteluTest {
+ 
+    public void numeronLisays() 
+        Scanner lukija = new TestausSkanner(
+          "1",
+          "Arto Hellas",
+          "040-123456",
+          "x"
+        );
+
+        NumeroJaOsoitepalvelu palvelu = new NumeroJaOsoitepalvelu();
+ 
+        Numerotiedustelu numerotiedustelu = new Numerotiedustelu(lukija, palvelu);
+        numerotiedustelu.kaynnista();
+
+        // varmista assert-lauseella että ohjelman tulostus oli se halutun kaltainen
+    }
+}
+```
+
+Eli testi antaa _Numerotiedustelu_-oliolle simuloidun syötteen, joka toimii numerotiedustelun kannalta normaalin Scannerin tavoin. Suorituksen jälkeen testi varmistaa, että ohjelman tulostus on halutun kaltainen. 
 
 ### Java FX
+
+Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/)
+
+Myös graafista käyttöliittymää käytettäessä tulee periaatteen olla se, että käyttöliittymän koodi ei sisällä sovelluslogiikkaa.
+
+Mallia voi ottaa esimerkiksi kurssin referenssisovelluksen [TodoApp:in](https://github.com/mluukkai/OtmTodoApp/) koodista ja [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+### Sovelluksen alustaminen ja sulkeminen
+
+Kuten jatkokurssin materiaalissa kerrotaan, JavaFX-sovelluksen käyttöliittymästä vastaava pääluokka on peritty luokasta _Application_.
+
+_main_-metodi ei yleensä tee mitään muuta kuin kutsuu metodia _launch_ joka taas saa aikaan sen, että pääluokasta luodaan instanssi ja instanssin metodeita _init_ ja _start_ kutsutaan.
+
+Metodi _start_ on pakko toteuttaa ja sen suorituksen aikana muodostetaan käyttöliittymä. Metodin _init_ toteutus on vapaaehtoinen ja se on erinomainen paikka alustaa projektin riippuvuudet sillä metodi suoritetaan ennen start:ia. Teknisten rajoitteiden takia JavaFX-sovelluksille on hankalaa antaa riippuvuuksia samaan tapaan konstruktori-injektiolla kuin mitä aiemmassa esimerkissä teimme.
+
+Seuraavassa ote Todo-sovelluksen käyttöliittymän koodista:
+
+```java
+public class TodoUi extends Application {
+    // sovelluslogiikka  
+    private TodoService todoService;
+    
+    @Override
+    public void init() {
+        FileUserDao userDao = new FileUserDao("users.txt");
+        FileTodoDao todoDao = new FileTodoDao("todos.txt", userDao);
+        // alustetaan sovelluslogiikka 
+        todoService = new TodoService(todoDao, userDao);
+    }
+
+    @Override
+    public void start(Stage primaryStage) {   
+      // muodosta käyttöliittymä täällä
+  
+      Button createTodo = new Button("create");
+      // käyttöliittymä kutsuu todoService-olioa hoitamaan sovelluslogiikkaan liittyvät toimet
+      createTodo.setOnAction(e->{
+          todoService.createTodo(newTodoInput.getText());
+          newTodoInput.setText("");       
+          redrawTodolist();
+      });
+
+      primaryStage.setOnCloseRequest(e->{
+        System.out.println("sovellus on aikeissa sulkeutua");
+        if (enHaluaEttaSovellusSulkeutuu) {
+          e.consume();   
+        }
+      });
+    }    
+
+    @Override
+    public void stop() {
+      // tee lopetustoimenpiteet täällä
+      System.out.println("sovellus sulkeutuu");
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+```
+
+Koodi havainnollistaa myös tapaa, miten lambda-funktiona määritelty _createTodo_-napin tapahtumankäsittelijä kutsuu sovelluslogiikan metodia _todoService.createTodo_. 
+
+Koodissa on myös metodi [stop](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#stop--) joka suoritetaan aina viimeisenä ennen sovelluksen sulkeutumista. Metodissa voidaan suorittaa tarvittavia lopetustoimia, esim. tiedostojen tallentamista.
+
+Metodin _start_ lopuun on rekisteröity tapahtumankuuntelija joka suoritetaan juuri ennen sovelluksen sulkemista. If-haara demonstroi miten sulkemisen voi vielä estää tapahtumankuuntelijassa. 
+
+### JavaFX-aiheisia linkkejä
+
+Ohjelmoinnin jatkokurssilla tehdään JavaFX:n ainoastaan matala pintaraapaisu, jatkokurssin materiaali kannattaa kuitenkin ehdottomasti kerrata jos olet aikeissa käyttää JavaFX:ää. 
+
+Jos käyttöliittymäsi on vähänkin epätriviaali, joudut suurella todennäköisyydellä etsimään itse lisää tietoa. Omatoimisen tiedonhaun harjoittelu onkin tämän kurssin eräs tärkeimmistä oppimistavoitteista. Seuraavassa muutamia linkkejä auttamaan alkuunpääsemistä. Jos löydät internetistä hyvää materiaalia, tee sivulle [pull request](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#kirjoitusvirheitä-materiaalissa)
+
+-
+
+### Scenebuilder
 
 ## tietojen talletus
 
 ### DAO
+
+### injektoi daot...

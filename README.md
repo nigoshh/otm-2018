@@ -29,6 +29,7 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
 - ohjeita 
   - [Aiheideoita ja oheita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
   - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) 
+  - [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen liittyviä vihjeitä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
   - [maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
   - [Checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
   - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
