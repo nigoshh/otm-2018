@@ -1,5 +1,3 @@
-# MELKEIN VALMIS
-
 # Viikon 1 tehtävät
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on ma 19.3. klo 23:59
