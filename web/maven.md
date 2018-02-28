@@ -2,7 +2,7 @@
 
 # Ohjeita maveniin
 
-## projektin luominen
+## Projektin luominen
 
 Ohje maven-muotoisen projektin luomiseen NetBeansilla [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md#maven-projektin-luominen)
 
@@ -52,7 +52,42 @@ mvn test jacoco:report
 
 Katso lisää [viikon 2 laskareista](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#3-testauskattavuus).
 
-### pakkausten exkludaus
+### Koodin huomiotta jättäminen kattavuusraportissa
+
+Joskus haluamme jättää osan koodista, esim. käyttöliittymän huomioimatta kattavuusraportissa. 
+
+Oletetaan, että projekti näyttää seuraavalta
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-1.png" width="700">
+
+oletusarvoisesti testauskattavuus raportoidaan kaikesta koodista
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-2.png" width="700">
+
+Yksittäisen pakkauksen koodit on helppo poistaa raportin alaisuudesta lisäämällä jacoco-pluginin määrittelyyn _excludes_-osa seuraavasti:
+
+```xml
+<plugin>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.0</version>
+    <configuration>
+        <excludes>
+            <exclude>pokemontietokanta/ui/*</exclude>
+        </excludes>
+    </configuration>                
+    <executions>
+        <execution>
+            <id>default-prepare-agent</id>
+            <goals>
+                <goal>prepare-agent</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>  
+```
+
+Excludesin alle voi lisätä tarvittaessa myös useampia excludeja. Lisää tietoa exclude-syntaksista internetissä, esim. [täältä](https://stackoverflow.com/questions/27799419/maven-jacoco-configuration-exclude-classes-packages-from-report-not-working).
 
 ## maven-komentojen suorittaminen NetBeansista
 
@@ -60,20 +95,22 @@ Ohje [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikk
 
 ## Checkstyle
 
+Katso lisää [täältä](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)
+
 ## JavaDoc
+
+Katso lisää [täältä](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
 
 ## Jarin generointi
 
-Haluamme suorittaa ohjelmamme komentoriviltä ja laittaa ohjelmamme julkisesti saataville, siten että kuka tahasa pystyy käyttämään ohjelmaa. Tämä onnistuu helposti jos paketoimme ohjelmamme [jar-paketiksi](https://en.wikipedia.org/wiki/JAR_(file_format))
+Maven-muotoinen projekti voidaan helposti paketoida [jar-paketiksi](https://en.wikipedia.org/wiki/JAR_(file_format)), jolloin ohjelmaa voidaan suorittaa NetBeansin ulkopuolelta.
 
-Jar-tiedosto on helppo luoda mavenilla. Tarvitsemme hieman konfigurointia.
-* Lisää seuraava tiedoston pom.xml sisälle, esim. juuri ennen viimeistä riviä.
-  * tiedostoa kannattaa editoida NetBeansilla
-
+Jarin generoimiseen tarvitaan seuraava konfiguraatio:
 
 ```xml
     <build> 
        <plugins>
+            // muut pluginit ovat tässä välissä
            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -87,7 +124,7 @@ Jar-tiedosto on helppo luoda mavenilla. Tarvitsemme hieman konfigurointia.
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>fi.helsinki.cs.otmtestiappi.Main</mainClass>
+                                    <mainClass>pokemontietokanta.ui.Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -100,26 +137,11 @@ Jar-tiedosto on helppo luoda mavenilla. Tarvitsemme hieman konfigurointia.
 
 Huomaa, että kohdan _mainClass_ on oltava **täsmälleen sama** kuin pääohjelman sisältävän luokan täydellinen nimi:
 
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-5.png" alt="alt text" width="800">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-3.png" width="700">
 
 * Saat nyt luotua jar-tiedoston antamalla komentoriviltä komennon _mvn package_
 * komento luo hakemiston _target_ sisälle kaksi jar-päätteistä tiedostoa, niistä oikea on se, jonka nimessä *ei* ole sanaa original
 * ohjelman voi nyt suorittaa komennolla <code>java -jar jartiedoston_nimi.jar</code>
-* suorita ohjelma komentoriviltä
 
-### Github release
+Jar-tiedosto on madollista suorittaa millä tahansa koneella, olettaen että koneelle on asennettu Javan versio 1.8
 
-Jar-tiedosto siis generoituu hakemistoon target, eli se ei tallennu repositorioon. Miten saamme levitettyä ohjelmistomme potentiaalisille käyttäjille? 
-
-Yksi mahdollisuus on luoda GitHubiin release, eli julkaistu versio.
-* klikkaa repositorion GitHub-sivulta kohtaa "0 releases"
-* määrittele julkaisun tiedot ja lisää jar-tiedosto klikkaamalla kohtaa "Attach binaries..."
-  * jar-tiedosto kannattaa ehkä uudelleennimetä, mavenin generoima tiedostonimi on hieman ikävä
-
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-6.png" alt="alt text" width="800">
-
-Nyt koodi on kenen tahansa ladattavissa menemällä GitHub-repositorioosi, ja klikkaamalla repositoriosivusi kohtaa "1 release" ja suoritettavissa komennolla <code>java -jar tiedostonnimi.jar</code> olettaen että koneelle on asennettu Javan versio 1.8
-
-Tämän kurssin osalta git-harjoittelumme loppuu tähän. Nyt opittu riittää hyvin yhden ihmisen käyttöön, esim. ohjelmoinnin harjoitustyön yhteydessä.
-
-Gitissä on runsaasti hyödyllisiä ominaisuuksia joihin emme vielä tutustuneet. 

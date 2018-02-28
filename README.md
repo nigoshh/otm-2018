@@ -23,10 +23,10 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
 
 ## Linkkejä
 
-- [kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
+- [Kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
 - [labtool](https://tktl-labtool.herokuapp.com/)
-- ohjeita (**ohjeet eivät ole vielä ajantasalla!**)
+- ohjeita 
   - [aiheideoita ja oheita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/aiheideoita.md)
   - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) 
   - [maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
@@ -78,7 +78,8 @@ Palautuksen deadline ma 16.4. klo 23:59
 - Ohjelman perustoiminnallisuus (1p)
   - Lisää koodia edellisestä viikosta 
 - Testien aloitus (1p)
-- Alustava rakenne luokkakaavona (1p)
+- Alustava rakenne luokkakaavona (0.5p)
+- Checkstyle otettu käyttöön (0.5p)
 
 ### viikko 5
 

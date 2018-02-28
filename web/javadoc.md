@@ -86,6 +86,7 @@ public int onnistumistodennakoisyys(int syote, int kayttajanKorjaus) {
 Lisää ohjeita löydät [JavaDocin Wikipedia-sivulta](http://en.wikipedia.org/wiki/Javadoc).
 
 ### JavaDocin Generointi 
+
 Jos haluat saada projektisi JavaDocista helposti selattavan html-sivun ja NetBeansin oma "Generate JavaDoc"-näppäin on harmaana, ei kannata huolestua, voimme lisätä sen helposti samaan custom-valikkoon kuin pit.
 
 Lisää pom.mxl:ään tämä plugin:
