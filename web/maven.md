@@ -56,50 +56,13 @@ Katso lisää [viikon 2 laskareista](https://github.com/mluukkai/otm-2018/blob/m
 
 ## maven-komentojen suorittaminen NetBeansista
 
+Ohje [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#maven-komentojen-suorittaminen-netbeansista).
+
 ## Checkstyle
 
 ## JavaDoc
 
-## jarin generointi
-
-## hieman lisää mavenia
-
-* Luo NetBeansilla maven-muotoinen projekti, jonka sijoitat tehtävien alussa tekemäsi _repositoriosi juureen_.
-  * projektin sijainnin pystyt määrittelemään uuden projektin luomisdialogin kohdassa _project location_
-* Jos loit sovelluksen oikeaan paikkaan _git status_ -komennon tuloste on suunilleen seuraavanlainen
-
-``` 
-mluukkai@melkki:~/otm_viikko5$ git status
-On branch master
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	otmtestiappi/
-
-nothing added to commit but untracked files present (use "git add" to track)
-``` 
-
-* lisää ja commitoi sovellus repositorioon
-* tee sovellukselle yksinkertainen pääohjelma, eli luokka jonka sisällä on metodi
-
-``` java
-    public static void main(String[] args) {
-        System.out.println("testing...");
-    }
-``` 
-
-* **ÄLÄ** vielä suorita ohjelmaa
-* lisää ja commitoi sovellus repositorioon
-* kuten muistamme, maven-projektien alle syntyy komentojen suorittamisen seurauksena hakemisto _target_
-* emme halua hakemistoa git-repositorioomme, eli se tulee ignoroida
-* suorita nyt ohjelma
-* huomaat että sovelluksen alle muodostuu hakemisto _target_
-* jos kokeilet mitä _git status_ sanoo, huomaat että yllättäen git ignoroi syntyneen target-hakemiston
-* NetBeans onkin lisännyt automaattisesti hakemiston ignoroitavksi
-* Katso miltä .gitignore näyttää, lisää ja commitoi siihen tullut muutos
+## Jarin generointi
 
 Haluamme suorittaa ohjelmamme komentoriviltä ja laittaa ohjelmamme julkisesti saataville, siten että kuka tahasa pystyy käyttämään ohjelmaa. Tämä onnistuu helposti jos paketoimme ohjelmamme [jar-paketiksi](https://en.wikipedia.org/wiki/JAR_(file_format))
 
@@ -144,7 +107,7 @@ Huomaa, että kohdan _mainClass_ on oltava **täsmälleen sama** kuin pääohjel
 * ohjelman voi nyt suorittaa komennolla <code>java -jar jartiedoston_nimi.jar</code>
 * suorita ohjelma komentoriviltä
 
-## Github release
+### Github release
 
 Jar-tiedosto siis generoituu hakemistoon target, eli se ei tallennu repositorioon. Miten saamme levitettyä ohjelmistomme potentiaalisille käyttäjille? 
 

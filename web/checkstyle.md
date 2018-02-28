@@ -1,6 +1,6 @@
-## checkstyle
+# KESKEN
 
-# Checkstyle
+## Checkstyle
 
 Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. Tässä hyvänä apuvälineenä on staattisen analyysin työkalu Checkstyle. ks. [http://checkstyle.sourceforge.net/](http://checkstyle.sourceforge.net/). Kurssilla käytetään *Ohjelmoinnin Perusteista* ja *Ohjelmoinnin Jatkokurssista* tuttua checkstyleä, [koodin laatuvaatimuksien](Koodin-laatuvaatimukset.md) seurannassa.
 
