@@ -43,21 +43,21 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
 
 ### viikko 1
 
+Palautuksen deadline ma 19.3. klo 23:59
+
 - Maanantaina 12.3. klo 12-14 kurssin ainoa luento A111
 - Komentorivi- ja Git-harjoittelu (2p)
   - Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
 - Tehtävien palautus tapahtuu tekemällä repositorio githubiin ja rekisteröitymällä labtooliin
 
-- Palautuksen deadline ma 19.3. klo 23:59
-
 ### viikko 2
+
+Palautuksen deadline ma 26.3. klo 23:59
 
 - Oman aiheen alustava määrittelydokumentti (1p)
 - JUnit-harjoittelu (2p)
   - Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md)
 - oman projektin koodaus alkaa
-
-- Palautuksen deadline ma 26.3. klo 23:59
 
 ### viikko 3
 
