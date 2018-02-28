@@ -13,7 +13,11 @@ Kurssin oppimistavoitteet ovat edelleen suunilleen samat kuin aiemmin. Kurssin s
 
 Kurssin suoritusmuoto poikkeaa radikaalisti aiemmasta viikoittaiset luennot ja laskuharjoitukset sisältävästä kurssista, nykyinen OTM muistuttaakin läheisesti entistä Ohjelmoinnin harjoitustyötä.
 
-Kurssin ensimmäisen kolmen viikon aikana harjoitellaan versionhallintaa, yksikkötestausta sekä UML-kaavioiden tekemistä. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole.
+Kurssin ensimmäisen kolmen viikon aikana harjoitellaan versionhallintaa, yksikkötestausta sekä UML-kaavioiden tekemistä. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole. Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md).
+
+Tälle sivulle on koottu erinäistä asiaa liittyen kurssin "teoriapuoleen" sekä erinäisiin menetelmiin, kuten UML-kaavioihin. Sivu kannattaa lukea kokonaisuudessaan heti ensimmäisen viikon aikana, tosin luvusta [Työkaluja](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#työkaluja) alkaen olevaa asiaa tarvitaan oikeastaan vasta viikosta 2 eteenpäin.
+
+Ohjeita työn aloittamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
 
 # Kirjoitusvirheitä materiaalissa
 

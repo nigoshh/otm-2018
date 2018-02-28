@@ -1,5 +1,39 @@
 # KESKEN
 
+# Harjoitustyön aloittaminen ja aiheen valinta
+
+## Yleistä
+
+Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalinteisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyötä tehdään itsenäisesti mutta tarjolla on runsaasti pajaohjausta. 
+
+Harjoitustyön on edettävä [viikottaisten tavoitteiden mukaan](https://github.com/mluukkai/otm-2018#aikataulu). Työ on saatava valmiiksi kurssin aikana ja sitä on toteutettava tasaisesti, muuten kurssi katsotaan keskeytetyksi. Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli keväällä 2019), vaan työ on aloitettava uudella aiheella alusta.  Muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi.
+
+Koko kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. Osa pisteistä kertyy [aikatauluun](https://github.com/mluukkai/otm-2018#aikataulu) määriteltyjen viikoittaisten välitavoitteiden kautta, osa taas perustuu työn lopulliseen palautukseen.
+
+## Harjoitustyön kieli ja ohjelmointikieli
+
+Harjoitustyön ohjelmointikieli on pääsääntöisesti Java. Ohjaajat saattavat suostua muihinkin kieliin, mutta asia on syytä sopia kurssin ensimmäisen viikon aikana. 
+
+Ohjelmakoodin muuttujat, luokat ja metodit kirjoitetaan englanniksi. Dokumentaatio voidaan kirjoittaa joko suomeksi tai englanniksi. 
+
+## Ohjelman toteutus
+
+Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä. Muutamia viheitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä](https://github.com/mluukkai/otm-2018#aikataulu)
+
+Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siispä ohjelmakoodille onkin syytä laatia jatkuvasti yksikkötestejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
+
+Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei kirjoiteta käyttöliittymän sekaan](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)!
+
+Voit tehdä harjoitustyöhösi aluksi tekstikäyttöliittymän ja vasta saatuasi ohjelman perustoiminnallisuuden toteutettua voit siirtyä graafisen käyttöliittymän toteutukseen. Graafinen käyttöliittymä on mahdollista myös jättää pois, mutta tämä [vaikuttaa arvosanaan](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md). 
+
+Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/). Muutamia vihjeitä liittyen JavaFX:n [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+
+On myös ja [arvosanan kannalta kannattavaa](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md)suositeltavaa, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+
+Harjoitustyön tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi. Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit sekä jar-tiedosto, joka mahdollistaa ohjelman suorittamisen NetBeansin ulkopuolella.
+
+Toivottava dokumentaation taso käy ilmi [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp).
+
 ## Esimerkkejä aiheista
 
 ### Hyvän aiheen ominaisuudet
@@ -9,8 +43,8 @@
 
 * "Riittävän laaja"
   * Vältä eeppisiä aiheita, aloita riittävän pienestä. Yksi periodi on yllättävän lyhyt aika
-  * Valitse kuitenkin aihe, jota saa laajennettua sopivasti
-  * Hyvässä aiheessa on muutamia logiikkaluokkia, tiedostonkäsittelyä ja logiikasta eriytetty käyttöliittymä
+  * Valitse kuitenkin aihe, jonka perustoiminnallisuuden saa toteutettua nopeasti, mutta jota saa myös laajennettua helposti
+  * Hyvässä aiheessa on muutamia logiikkaluokkia, tiedoston. tai tietokannankäsittelyä ja logiikasta eriytetty käyttöliittymä
 
 * Kurssilla pääpaino on Ohjelmoinnin Perusteissa ja Jatkokurssilla opitussa asioissa
   * Käytettävyys
@@ -25,7 +59,7 @@
   * Tietoturva
   * Tehokkuus
   
-* **HUOMIO!** Kannattaa yrittää välttää aiheita, joissa pääpaino on tiedon säilömisessä tai käyttöliittymässä. Paljon tietoa säilövät sovellukset ovat vaikeita testata tämän kurssin esitietovaatimusten puitteissa, ja ne sopivat yleensä paremmin Tietokantasovellus-kurssille. Käyttöliittymäkeskeisissä aiheissa (esim. tekstieditori) voi olla vaikea keksiä sovelluslogiikkaa, joka on enemmän tämän kurssin painopiste (myös siksi koska käyttöliittymää ei tällä kurssilla testata ja testaus on kurssin keskeinen aihe - jos ei ole sovelluslogiikkaa, on vaikea myös kirjoittaa sille testejä)
+* **HUOMIO!** Kannattaa yrittää välttää aiheita, joissa pääpaino on tiedon säilömisessä tai käyttöliittymässä. Paljon tietoa säilövät, esim. yli 3 tietokantataulua tarvitsevat sovellukset ovat vaikeita testata tämän kurssin esitietovaatimusten puitteissa, ja ne sopivat yleensä paremmin Tietokantasovellus-kurssille. Käyttöliittymäkeskeisissä aiheissa (esim. tekstieditori) voi olla vaikea keksiä sovelluslogiikkaa, joka on enemmän tämän kurssin painopiste (myös siksi koska käyttöliittymää ei tällä kurssilla testata ja testaus on kurssin keskeinen aihe - jos ei ole sovelluslogiikkaa, on vaikea myös kirjoittaa sille testejä)
 
 ### Esimerkkejä aiheista
 
@@ -35,10 +69,11 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
   * Aritmetiikan harjoittelua
   * Tehtävägeneraattori, joka antaa käyttäjälle tehtävän sekä mallivastauksen (esim. matematiikkaa, fysiikkaa, kemiaa, ...)
   * Opintojen seurantajärjestelmä
-  * IRC- tai Slack-botti
+  * telegram- tai Slack-botti
   * Code Snippet Manageri
   * Laskin, funktiolaskin, graafinen laskin
   * Budjetointi-sovellus
+  * Opintojen seurantasovellus
   * HTML WYSIWYG-editor (What you see is what you get)
 
 * Reaaliaikaiset pelit
@@ -72,48 +107,111 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
   * Keräilykorttien hallintajärjestelmä
   * Fraktaaligeneraattori
 
-Voit katsoa myös [vanhat esimerkkiaiheet](https://www.cs.helsinki.fi/node/59273), jotka tosin ovat suurimmaksi osaksi samoja.
+## Harjoitustyön aloitus
 
+Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt viikon 1 laskareiden palautuksen.
 
-###
+### GitHubissa olevan repositorion kloonaaminen
 
+Jos haluat tehdä harjoitustyötä eri koneella, kuin mille teit repositoriosi alunperin, saat koodin siirrettyä toiselle koneelle kloonaamalla repositorion.
 
+Koneeseesi täytyy luonnollisesti [ensin asentaa](https://git-scm.com/downloads) git jos se ei ole jo koneellasi.
+* Muista myös [oleellisten konfiguraatioiden](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#konfiguraatioita) tekeminen
 
-
-## GitHubissa olevan repositorion kloonaaminen
-
-Teimme äsken repositorion ensin paikallisesti ja linkitimme sen GitHubissa olevaan etärepositorioon. Usein tilanne on sellainen, missä haluaisimme GitHubissa jo olevan repositorion omalle koneellemme. Tähän on tarkoitettu gitin komento clone.
-
-* Luo GitHubiin uusi repositorio, laita tällä kertaa rasti kohtaan "Initialize this repository with a README"
-* GitHub luo repositorion sisälle README.md:n
-* Lisää githubista repositorioon uusi tiedosto ja tee jotain muutoksia README.md:hen
+Kloonaus tapahtuu seuraavasti.
+* mene sopivaan hakemistoon koneellasi
+  * **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
+* avaa palautusrepositoriosi
 * klikkaa kohtaa _clone or download_ ja kopioi kloonausurl
   * varmista että valittuna on "clone with SSH"
 
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-4.png" alt="alt text" width="400">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-1.png" width="700">
 
 * mene sopivaan hakemistoon paikallisella koneella
   * **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
-* anna kloonauskomento, parametrina kloonausurl
+* anna kloonauskomento _git clone_ parametrina kloonausurl
 
 ``` 
-mluukkai@melkinkari:~$ git clone git@github.com:mluukkai-cs/otm2016-uusi.git
-Cloning into 'otm2016-uusi'...
-remote: Counting objects: 9, done.
-remote: Compressing objects: 100% (5/5), done.
-remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (9/9), done.
-Checking connectivity... done.
-mluukkai@melkinkari:~$
+mluukkai@melkinkari:~$ git clone git@github.com:mluukkai/otm-harjoitustyo.git
+Cloning into 'otm-harjoitustyo'...
+remote: Counting objects: 29, done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 29 (delta 5), reused 17 (delta 2), pack-reused 0
+Receiving objects: 100% (29/29), 4.83 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (5/5), done.
 ``` 
 
-Hakemistoosi syntyy uusi hakemisto, esimerkissä nimeltään _otm2016-uusi_, eli oletusarvoisesti nimi päätellään kloonausurlista. Uuden hakemiston nimen voi myös määritellä itse antamalla komennolle lisäparametrin:
+Hakemistoosi syntyy uusi hakemisto, esimerkissä nimeltään _otm-harjoitustyo_, eli oletusarvoisesti nimi päätellään kloonausurlista. Uuden hakemiston nimen voi myös määritellä itse antamalla komennolle lisäparametrin:
 
 ``` 
-git clone git@github.com:mluukkai-cs/otm2016-uusi.git hakemiston_nimi
+git clone git@github.com:mluukkai/otm-harjoitustyo.git hakemiston_nimi
 ``` 
 
 Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepositoriossa.
 * tee repositorioon jokin muutos, lisää ja committoi
-* push muutokset githubiin
-* varmista GitHubista että muutos menee perille
+
+Jotta saat pushattua muutokset GitHubiin on koneesi julkinen avain talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#julkinen-avain)
+
+Kun avain on asetettu push muutokset githubiin ja varmista GitHubista että muutos menee perille
+
+**HUOM** jos _git push_ ei toimi, eli saat seuraavan virheilmoituksen
+
+```
+ERROR: Permission to mluukkai/otm-harjoitustyo.git denied to mluukkai.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+niin voit siirtyä käyttämään _HTTPS_-muotoista kloonausurlia:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-2.png" width="500">
+
+joudut poistamaan ensin vanhan kloonausurlin ja lisäämään uuden antamalla seuraavat komennot:
+
+```
+git remote rm origin
+git remote add origin https://github.com/mluukkai/otm-harjoitustyo.git
+```
+
+Ikävä seuraus tästä on se, että GitHub kysyy jokaisen pushaamisen yhteydessä salasanaasi.
+
+### Työskentely usealla koneella
+
+Jos työskentelet monella koneella niin huomioi seuraavat
+- GitHubissa oleva nrepositorion tulee olla kloonattuna kaikille koneille
+- Oletusarvoisesti kaikkien koneiden julkiset avaimet kanattaa olla määritelty GitHubiin
+-  [oleelliset konfguraatiot](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#konfiguraatioita) kannattaa olla tehtynä kaikilla koneilla
+- **TÄRKEÄÄ** aina kun lopetat työskentelyn koneella, pushaa muutokset githubiin
+- kun aloitat työskentelyn koneelta, pullaa muutokset githubista.
+- jos (ja kun) törmäät seuraavaan virheeseen
+```
+mluukkai@melkki:~/otm-harjoitustyo$ git push
+To git@github.com:mluukkai/otm-harjoitustyo.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:mluukkai/otm-harjoitustyo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+mluukkai@melkki:~/otm-harjoitustyo$
+``` 
+- tilanne korjautuu kun ensin pullaat githubin sisällön
+
+### Maven-projektin luominen
+
+Harjoitustyössä tehtävä ohjelmisto tehdään maven-projektina. Projektin luominen onnistuu NetBeansin avulla seuraavasti.
+- valitse _new project_ ja tee seuraavat valinnat:
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-3.png" width="550">
+- määrittele kenttän _Project location_ arvoksi repositoriosi juuri
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-4.png" width="600">
+- luo repositoriosi juureen tiedosto _.gitignore_ ja lisää sinne rivi, joka ignoroi luodun projektin hakemisto alle tulevan hakemistn _target_. Omassa esimerkissäni rivi olisi
+
+```
+Pokemontietokanta/target
+```
+- lisää muutokset versionhallintaan, commitoi ja pushaa
+- varmista että GitHub-näkymä näyttää suunilleen seuraavalta
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-5.png" width="600">

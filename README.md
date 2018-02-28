@@ -2,13 +2,15 @@
 
 Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pieni harjoitustyö.
 
-Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimisesti tehtävä harjoitustehtävä. Kurssin pääpainon muodostaa viikolla 2 aloitettava, itsenäisesti tehtävä harjoitustyö. Työtä on tarkoitus edistää pala palalta viikoittaisten tavoitteiden ohjaamana. 
+Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimisesti tehtävä harjoitustehtävä. Kurssin pääpainon muodostaa viikolla 2 aloitettava, itsenäisesti tehtävä harjoitustyö. Työtä on tarkoitus edistää pala palalta [viikoittaisten](https://github.com/mluukkai/otm-2018#aikataulu) tavoitteiden ohjaamana. 
 
-Kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. Osa pisteistä kertyy viikoittaisten välitavoitteiden kautta, osa taas perustuu työn lopulliseen palautukseen.
+Kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. Osa pisteistä kertyy [aikatauluun](https://github.com/mluukkai/otm-2018#aikataulu) määriteltyjen viikoittaisten välitavoitteiden kautta, osa taas perustuu työn lopulliseen palautukseen.
 
-Kurssilla ei ole koetta. Harjoitustyö tulee tehdä kurssin aikataulujen puitteissa. Kesken jäänyttä harjoitustyötä ei voi jatkaa seuraavalla kurssilla (keväällä 2019), joten muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi.
+Kurssilla ei ole koetta. Harjoitustyö tulee tehdä kurssin aikataulujen puitteissa. Kesken jäänyttä harjoitustyötä ei voi jatkaa seuraavalla kurssilla (keväällä 2019), joten **muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi!**
 
-Tarkemmat arvosteluperusteet sivun lopussa.
+Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md).
+
+# Aloita lukemalla ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku.
 
 ## Ajankohtaista
 
@@ -102,26 +104,3 @@ Tarkemmat arvosteluperusteet sivun lopussa.
 - Demot
 
 - Lopullisen palautuksen deadline pe 11.5. klo 23:59
-
-## Kurssin suorittaminen ja arvostelu
-
-Kurssilla jaossa 60 pistettä. Pisteet jakautuvat alustavan suunnitelman mukaan seuraavasti
-
-- Viikkodeadlinet 17p
-- Koodikatselmointi 3p
-- Dokumentaatio	9p   
-  - Määrittely		
-  - Arkkitehtuuri		
-  - Käyttö/asennusohje	
-  - Repositorio		
-- Testaus	8p	
-  - Testit			
-  - Testidokumentti	
-- Lopullinen ohjelma 23p
-  - Featuret		
-  - Koodin laatu 		
-  - Javadoc	
-
-Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
-
-Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta.
