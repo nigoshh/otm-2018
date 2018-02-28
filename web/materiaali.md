@@ -451,7 +451,7 @@ Pakkausrakenne voidaan kuvata UML:ssä pakkauskaaviolla:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png" width="160">
 
-Pakkauste välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _todoapp.ui_ riippuu pakkauksesta _todoapp.domain_ sillä _ui_:n luokka _Main_ käyttää _domain_-pakkauksen luokkia _Todo_ ja _TodoService_.
+Pakkausten välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _todoapp.ui_ riippuu pakkauksesta _todoapp.domain_ sillä _ui_:n luokka _Main_ käyttää _domain_-pakkauksen luokkia _Todo_ ja _TodoService_.
 
 Vastaavasti pakkaus _todoapp.domain_ riippuu pakkauksesta _todoapp.dao_ sillä domainin luokka _TodoService_ käyttää _dao_-pakkauksen rajapintoja _TodoDao_ ja UserDao.
 
@@ -500,7 +500,7 @@ Sekvenssikaaviona kuvattuna tilanne näyttää seuraavalta:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png" width="450">
 
-Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutstujan ja kutsutun olion elämänlangat. Paluuarvo merkitään katkoviivalla.
+Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutsujan ja kutsutun olion elämänlangat. Paluuarvo merkitään katkoviivalla.
 
 Jos saldo ei riitä, etenee suoritus seuraavan sekvenssikaavion tapaan:
 
@@ -629,7 +629,7 @@ Sovelluslogiikka, eli esim. käyttäjän kirjautumisesta huolehtiminen, todojen 
 
 Sovelluslogiikan alapuolella on _datan tallennuksesta vastaava kerros_, jonka käytännössä muodostavat DAO-suunnittelumallin (ks. Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
 
-[Kerrosarkkitehtuuri](https://en.wikipedia.org/wiki/Multitier_architecture) (engl. layered architecture tai multitier architecture) on ehkä eniten käytetty ohjelmistojen [arkkitehtuurimalli](https://en.wikipedia.org/wiki/Software_Architecture_styles_and_patterns), eli yleisesti käytetty tapa ohjelmiston rakenteen strukturointiin. Käytännössä lähes jokainen ohjelmisto noudattaa ainakin jossain määrin kerroksellisuuden periaatetta. On olemassa lukuisia arkkitehtuurimalleja joihin tutustutaan tarkemmin kursseilla Ohjelmistotuotanto ja Ohjelmistoarkkitehtuurit.
+[Kerrosarkkitehtuuri](https://en.wikipedia.org/wiki/Multitier_architecture) (engl. layered architecture tai multitier architecture) on ehkä eniten käytetty ohjelmistojen [arkkitehtuurimalli](https://en.wikipedia.org/wiki/Software_Architecture_styles_and_patterns), eli yleisesti käytetty tapa ohjelmiston rakenteen strukturointiin. Käytännössä lähes jokainen ohjelmisto noudattaa ainakin jossain määrin kerroksellisuuden periaatetta. On olemassa lukuisia arkkitehtuurimalleja, joihin tutustutaan tarkemmin kursseilla Ohjelmistotuotanto ja Ohjelmistoarkkitehtuurit.
 
 ## Oliosuunnittelun periaatteita
 
@@ -653,7 +653,7 @@ Todo-sovelluksen suunnittelussa periaatetta on noudatettu suhteellisen hyvin
 - käyttölittymästä on eristetty sovelluslogiikka kokonaan
 - käyttäjä ja tehtävät on talletettu omiin luokkiinsa User ja Todo
 - sovelluslogiikan suorittamisesta, eli User- ja Todo-olioiden manipuloinnista vastaa oma oma luokka _TodoService_
-- tietojen talletuksesta levylle vastaavat DAO-oliot, jotka vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
+- tietojen talletuksesta levylle vastaavat DAO-oliot, jotka on vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
 	
 ### Program to an interface, not to an Implementation
 	
@@ -669,13 +669,13 @@ Todo-sovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita
 
 ### Riippuvuuksien minimointi
 	
-Minimoi riippuvuudet , eli älä tee _spagettikoodia_, jossa kaikki oliot tuntevat toisensa. Pyri eliminoimaan riippuvuudet siten, että luokat tuntevat mahdollisimman vähän muita luokkia, ja mielellään nekin vain rajapintojen kautta 
+Minimoi riippuvuudet , eli älä tee _spagettikoodia_, jossa kaikki oliot tuntevat toisensa. Pyri eliminoimaan riippuvuudet siten, että luokat tuntevat mahdollisimman vähän muita luokkia, ja mielellään nekin vain rajapintojen kautta.
 
-Kerrosarkkitehtuuri tähtää osaltaan riippuvuuksien eliminointiin, esim. käyttöliittymä on nyt riippuvainen ainoastaan sovelluslogiikkakerroksen luokista _TodoService_ ja _Todo_ mutta ei millään tavalla tietojen talletuksesta vastaavista DAO-luokista.
+Kerrosarkkitehtuuri tähtää osaltaan riippuvuuksien eliminointiin, esim. käyttöliittymä on nyt riippuvainen ainoastaan sovelluslogiikkakerroksen luokista _TodoService_ ja _Todo_, mutta ei millään tavalla tietojen talletuksesta vastaavista DAO-luokista.
 
 ## Riippuvuuksien injektointi
 
-Turhien riippuvuuksien eliminonitiin liittyy läheisesti tapa, miten oliot pääsevät käsiksi riippuvuuksiinsa eli tarvitsemiinsa olioihin.
+Turhien riippuvuuksien eliminointiin liittyy läheisesti tapa, jolla oliot pääsevät käsiksi riippuvuuksiinsa eli tarvitsemiinsa olioihin.
 
 Sovelluslogiikasta huolehtiva _TodoService_-olio tarvitsee toimiakseen _TodoDao_- ja _UserDao_-oliot. Se saa oliot konstruktorin parametrina:
 
