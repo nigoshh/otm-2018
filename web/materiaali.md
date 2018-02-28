@@ -41,15 +41,15 @@ Korjausehdotuksesta tulee nyt pullrequest ja se päivittyy siinä vaiheessa sivu
 
 # Ohjelmistotuotanto
 
-Kun tehdään pientä ohjelmaa omaan käyttöön ei työskentelymenetelmillä ole suurta merkitystä. Kun ohjelmiston koko on suurempi ja erityisesti jos sitä tehdään useamman ihmisen toimesta ulkoiselle käyttäjälle tai tilaajalle ei pelkkä häkkeröinti enää tuota optimaalista tulosta. Tarvitaankin jonkinlainen systemaattinen menetelmä ohjaamaan ohjelmistokehittäjien toimintaa ja varmistamaan, että ohjelmistosta tulee käyttäjien käyttötarkoitukseen sopiva.
+Kun tehdään pientä ohjelmaa omaan käyttöön, ei työskentelymenetelmillä ole suurta merkitystä. Kun ohjelmiston koko on suurempi ja erityisesti, jos sitä tehdään useamman ihmisen toimesta ulkoiselle käyttäjälle tai tilaajalle, ei pelkkä häkkeröinti enää tuota optimaalista tulosta. Tarvitaankin jonkinlainen systemaattinen menetelmä ohjaamaan ohjelmistokehittäjien toimintaa ja varmistamaan, että ohjelmistosta tulee käyttäjien käyttötarkoitukseen sopiva.
 
 Ohjelmiston systemaattinen tekeminen, eli ohjelmistotuotanto (engl. Software engineering) sisältää useita erilaisia aktiviteettejä, joiden aikana tekemisen fokus on hieman erilaisissa asioissa. Näitä aktiviteetteja tai _vaiheita_ niinkuin niitä joskus nimitetään ovat seuraavat
 
-- _vaatimusmäärittely_ jonka tehtävä on selvittää kuinka ohjelmiston halutaan toimivan
-- _suunnittelu_ jonka aikana mietitään miten halutunkaltainen ohjelmisto tulisi rakentaa
+- _vaatimusmäärittely_ jonka tehtävä on selvittää, kuinka ohjelmiston halutaan toimivan
+- _suunnittelu_ jonka aikana mietitään, miten halutunkaltainen ohjelmisto tulisi rakentaa
 - _toteutusvaiheessa_ määritelty ja suunniteltu ohjelmisto koodataan
 - _testauksen_ tehtävä taas on varmistaa ohjelmiston laatu, että se ei ole liian buginen ja että se toimii kuten vaatimusmäärittely sanoo
-- _ylläpitovaiheessa_ ohjelmisto on jo käytössä ja siitehen tehdään bugikorjauksia ja mahdollisia laajennuksia.
+- _ylläpitovaiheessa_ ohjelmisto on jo käytössä ja siihen tehdään bugikorjauksia ja mahdollisia laajennuksia.
 
 Katsotaan vielä kutakin vaihetta hieman tarkemmin. 
 
@@ -67,7 +67,7 @@ Esimerkkisovelluksemme on siis klassinen _todoapp_, eli sovellus, jonka avulla k
 
 Vaatimusmäärittely kannattaa yleensä aloittaa tunnistamalla järjestelmän erityyppiset _käyttäjäroolit_. Sovelluksellamme ei ole toistaiseksi muuta kuin normaaleja käyttäjiä. Jatkossa sovellukseen saatetaan lisätä myös ylläpitäjän oikeuksilla varustettu käyttäjärooli.
 
-Kun sovelluksen käyttäjäroolit ovat selvillä, mietitään mitä toiminnallisuuksia kunkin käyttäjäroolin halutaan pystyvät tekemään sovelluksen avulla.
+Kun sovelluksen käyttäjäroolit ovat selvillä, mietitään mitä toiminnallisuuksia kunkin käyttäjäroolin halutaan pystyvän tekemään sovelluksen avulla.
 
 Todo-sovelluksen normaalien käyttäjien toiminnallisuuksia ovat esim. seuraavat
 
@@ -98,8 +98,8 @@ Ohjelmiston suunnittelu jakautuu yleensä kahteen erilliseen vaiheeseen.
 
 _Arkkitehtuurisuunnittelussa_ määritellään ohjelman rakenne karkealla tasolla 
 - mistä suuremmista rakennekomponenteista ohjelma koostuu
-- miten komponentit yhdistetään, eli minkälaisia komponenttien väliset rajapinnat
-- mitä riippuvuuksia ohjelmalla on esim. tietokantoihin ja ulkoisiin rajapintoihin.
+- miten komponentit yhdistetään, eli minkälaisia komponenttien väliset rajapinnat ovat
+- mitä riippuvuuksia ohjelmalla on esim. tietokantoihin ja ulkoisiin rajapintoihin
 
 Arkkitehtuurisuunnittelua tarkentaa _oliosuunnittelu_, missä mietitään ohjelmiston yksittäisten komponenttien rakennetta,  eli minkälaisisista luokista komponentot koostuvat ja miten luokat kutsuvat toistensa metodeja sekä mitä apukirjastoja luokat käyttävät.
 
@@ -131,7 +131,7 @@ Asiakkaan muuttuvien vaatimuksien lisäksi toinen suuri ongelma on se, että ves
 
 Vesiputousmallin heikkoudet ovat johtaneet viime vuosina yleistyneiden _ketterien (engl. agile) ohjelmistokehitysmenetelmien_ käyttöönottoon. 
 
-Ketterissä menetelmistä lähdetään oletuksesta, että vaatimuksia ei voi tyhjentävästi määritellä ohjelmistokehitysprosessin alussa. Koska näin ei voida tehdä, ei sitä edes yritetä vaan pyritään toimimaan niin, että asiakkaan vaatimukset saadaan tarkennettua pikkuhiljaa ohjelmiston kehitysprosessin aikana ja lopputuloksesta saadaan sitä kautta mahdollisimmann halutun kaltainen.
+Ketterissä menetelmistä lähdetään oletuksesta, että vaatimuksia ei voi tyhjentävästi määritellä ohjelmistokehitysprosessin alussa. Koska näin ei voida tehdä, ei sitä edes yritetä vaan pyritään toimimaan niin, että asiakkaan vaatimukset saadaan tarkennettua pikkuhiljaa ohjelmiston kehitysprosessin aikana ja lopputuloksesta saadaan sitä kautta mahdollisimman halutun kaltainen.
 
 Ketterä ohjelmistokehitys etenee yleensä siten, että ensin kartoitetaan pääpiirteissään ohjelman vaatimuksia ja ehkä hahmotellaan järjestelmän alustava arkkitehtuuri. Tämän jälkeen suoritetaan useita _iteraatioita_ (joista käytetään yleisesti myös nimitystä sprintti), joiden aikana ohjelmaa rakennetaan pala palalta eteenpäin. Kussakin iteraatiossa suunnitellaan ja toteutetaan valmiiksi pieni osa ohjelman vaatimuksista. Vaatimukset voivat myös tarkentua koko prosessin ajan.
 
@@ -147,7 +147,7 @@ Ketterässä ohjelmistokehityksessä dokumentointi ei ole yleensä niin keskeise
 
 Vähäisemmän dokumentaation sijaan testauksella ja ns. jatkuvalla integroinnilla on hyvin suuri merkitys. Yleensä pyritään siihen, että järjestelmään lisättävät uudet komponentit testataan välittömästi ja pyritään heti integroimaan kokonaisuuteen, tästä työskentelytavasta käytetään nimitystä _jatkuva integrointi_ (engl. continuous integration). Näin uusia versioita järjestelmästä syntyy jopa päivittäin.
 
-Uusien komponenttien toimiminen pyritään varmistamaan perinpohjaisella automaattisella testauksella. Joskus jopa "testataan ensin", eli jo ennen ennen uuden komponentin toteuttamista ohjelmoidaan komponentin toimintaa testaavat testitapaukset. Testitapausten valmistuttua toteutetaan komponentti ja siinä vaiheessa kun komponentti läpäisee testitapaukset, se integroidaan muuhun kokonaisuuteen.
+Uusien komponenttien toimiminen pyritään varmistamaan perinpohjaisella automaattisella testauksella. Joskus jopa "testataan ensin", eli jo ennen uuden komponentin toteuttamista ohjelmoidaan komponentin toimintaa testaavat testitapaukset. Testitapausten valmistuttua toteutetaan komponentti ja siinä vaiheessa kun komponentti läpäisee testitapaukset, se integroidaan muuhun kokonaisuuteen.
 
 Erilaisia ketteriä ohjelmistokehitysmenetelmiä on olemassa lukuisia, näistä tunnetuin nykyään on Scrum. 
 
@@ -157,7 +157,7 @@ Tämän kurssin harjoitustyö pyritään tekemään osittain ketterien menetelmi
 
 # Työkaluja
 
-Tarvitsemme ohejlmisokehityksessä suuren joukon käytännön työkaluja. 
+Tarvitsemme ohejelmisokehityksessä suuren joukon käytännön työkaluja. 
 
 ## Komentorivi ja Versionhallinta
 
@@ -167,7 +167,7 @@ Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionohallintaa, 
 
 Olet todennäköisesti ohjelmoinut Javaa suurimmaksi osaksi NetBeansilla ja luottanut siihen että kaikki hoituu valitsemalla sopivia toimintoja valikoista ja painamalla "vihreää nappia".
 
-Alamme tämän kurssin myötä hieman tutkimaan miten Javalla tehdyn ohjelmiston hallinnointi (esim. koodin kääntäminen, koodin sekä testin suorittaminen ja koodin paketoiminen NetBeansin ulkopuolella suoritettavissa olevaksi jar-paketiksi) tapahtuu NetBeansin "ulkopuolella".
+Alamme tämän kurssin myötä hieman tutkimaan, miten Javalla tehdyn ohjelmiston hallinnointi (esim. koodin kääntäminen, koodin sekä testin suorittaminen ja koodin paketoiminen NetBeansin ulkopuolella suoritettavissa olevaksi jar-paketiksi) tapahtuu NetBeansin "ulkopuolella".
 
 Java-projektien hallinnointiin on olemassa muutamakin vaihtoehto. Käytämme tällä kurssilla _mavenia_, joka lienee jo useimmille osittain tuttu esim. Tietokantojen perusteista.
 
@@ -182,7 +182,7 @@ JUnitiin tutustumme viikon 2 [tehtävissä](https://github.com/mluukkai/otm-2018
 
 ## JavaDoc
 
-Osa ohjelmiston dokumentointia on lähdekoodin API:n eli käytännössä luokkien julkisten metodien kuvaus. Javassa lähdekoodi dokumentoidaan käyttäen JavaDoc-työkalua. Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja  kommentteja.
+Osa ohjelmiston dokumentointia on lähdekoodin API:n eli käytännössä luokkien julkisten metodien kuvaus. Javassa lähdekoodi dokumentoidaan käyttäen JavaDoc-työkalua. Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja kommentteja.
 
 Sovelluksen JavaDocia voi tarkastella selaimen avulla
 
@@ -280,9 +280,9 @@ Jokaiseen todoon liittyy yksi käyttäjä, ja yksittäiseen käyttäjään liitt
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-3a.png" width="500">
 
-Luokkakaavioon on nyt merkitty molempien luokkien  oliomuuttujat sekä metodit. 
+Luokkakaavioon on nyt merkitty molempien luokkien oliomuuttujat sekä metodit. 
 
-Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavihin riittää merkitä luokan nimi
+Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavioihin riittää merkitä luokan nimi
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-4.png" width="350">
 
@@ -362,7 +362,7 @@ public class Kassapaate {
 }
 ```
 
-Kassapääte käyttää maksukortteja hetkellisesti lounaiden maksamisen ja rahan lataamisen yhteydessä. Kassapääte ei kuitenkaan muista pysyvästi yksittäisiä maksukortteja. Tämän takia kassapäätteellä on riippuvuus matkakortteihin mutta ei kuitenkaan normaalia yhteyttä sillä UML-kaavioon merkattu yhteys viittaa pysyvään, ajallisesti pidempikestoiseen suhteeseen.
+Kassapääte käyttää maksukortteja hetkellisesti lounaiden maksamisen ja rahan lataamisen yhteydessä. Kassapääte ei kuitenkaan muista pysyvästi yksittäisiä maksukortteja. Tämän takia kassapäätteellä on riippuvuus matkakortteihin, mutta ei kuitenkaan normaalia yhteyttä sillä UML-kaavioon merkattu yhteys viittaa pysyvään, ajallisesti pidempikestoiseen suhteeseen.
 
 Tilannetta kuvaava luokkakaavio on seuraava:
 
@@ -406,7 +406,7 @@ Merkitään luokkakaavioon seuraavasti:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-5.png" width="600">
 
-Riippuvuuksien merkitseminen luokkakaavioihin ei ole välttämättä kovin oleellinen asia, niitä kannattaa merkitä jos ne tuovat esiille tilanteen kannalta jotain oleellista.
+Riippuvuuksien merkitseminen luokkakaavioihin ei ole välttämättä kovin oleellinen asia, niitä kannattaa merkitä jos ne tuovat esille tilanteen kannalta jotain oleellista.
 
 #### Rajapinta ja perintä
 
@@ -451,7 +451,7 @@ Pakkausrakenne voidaan kuvata UML:ssä pakkauskaaviolla:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-11.png" width="160">
 
-Pakkauste välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _todoapp.ui_ riippuu pakkauksesta _todoapp.domain_ sillä _ui_:n luokka _Main_ käyttää _domain_-pakkauksen luokkia _Todo_ ja _TodoService_.
+Pakkausten välille on merkitty _riippuvuudet_ katkoviivalla. Pakkaus _todoapp.ui_ riippuu pakkauksesta _todoapp.domain_ sillä _ui_:n luokka _Main_ käyttää _domain_-pakkauksen luokkia _Todo_ ja _TodoService_.
 
 Vastaavasti pakkaus _todoapp.domain_ riippuu pakkauksesta _todoapp.dao_ sillä domainin luokka _TodoService_ käyttää _dao_-pakkauksen rajapintoja _TodoDao_ ja UserDao.
 
@@ -500,7 +500,7 @@ Sekvenssikaaviona kuvattuna tilanne näyttää seuraavalta:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png" width="450">
 
-Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutstujan ja kutsutun olion elämänlangat. Paluuarvo merkitään katkoviivalla.
+Sekvenssikaaviossa oliot kuvataan laatikoina, joista lähtee alaspäin olion "elämänlanka". Kaaviossa aika etenee ylhäältä alas. Metodikutsut kuvataan nuolena, joka yhdistävää kutsujan ja kutsutun olion elämänlangat. Paluuarvo merkitään katkoviivalla.
 
 Jos saldo ei riitä, etenee suoritus seuraavan sekvenssikaavion tapaan:
 
@@ -629,7 +629,7 @@ Sovelluslogiikka, eli esim. käyttäjän kirjautumisesta huolehtiminen, todojen 
 
 Sovelluslogiikan alapuolella on _datan tallennuksesta vastaava kerros_, jonka käytännössä muodostavat DAO-suunnittelumallin (ks. Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
 
-[Kerrosarkkitehtuuri](https://en.wikipedia.org/wiki/Multitier_architecture) (engl. layered architecture tai multitier architecture) on ehkä eniten käytetty ohjelmistojen [arkkitehtuurimalli](https://en.wikipedia.org/wiki/Software_Architecture_styles_and_patterns), eli yleisesti käytetty tapa ohjelmiston rakenteen strukturointiin. Käytännössä lähes jokainen ohjelmisto noudattaa ainakin jossain määrin kerroksellisuuden periaatetta. On olemassa lukuisia arkkitehtuurimalleja joihin tutustutaan tarkemmin kursseilla Ohjelmistotuotanto ja Ohjelmistoarkkitehtuurit.
+[Kerrosarkkitehtuuri](https://en.wikipedia.org/wiki/Multitier_architecture) (engl. layered architecture tai multitier architecture) on ehkä eniten käytetty ohjelmistojen [arkkitehtuurimalli](https://en.wikipedia.org/wiki/Software_Architecture_styles_and_patterns), eli yleisesti käytetty tapa ohjelmiston rakenteen strukturointiin. Käytännössä lähes jokainen ohjelmisto noudattaa ainakin jossain määrin kerroksellisuuden periaatetta. On olemassa lukuisia arkkitehtuurimalleja, joihin tutustutaan tarkemmin kursseilla Ohjelmistotuotanto ja Ohjelmistoarkkitehtuurit.
 
 ## Oliosuunnittelun periaatteita
 
@@ -653,7 +653,7 @@ Todo-sovelluksen suunnittelussa periaatetta on noudatettu suhteellisen hyvin
 - käyttölittymästä on eristetty sovelluslogiikka kokonaan
 - käyttäjä ja tehtävät on talletettu omiin luokkiinsa User ja Todo
 - sovelluslogiikan suorittamisesta, eli User- ja Todo-olioiden manipuloinnista vastaa oma oma luokka _TodoService_
-- tietojen talletuksesta levylle vastaavat DAO-oliot, jotka vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
+- tietojen talletuksesta levylle vastaavat DAO-oliot, jotka on vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
 	
 ### Program to an interface, not to an Implementation
 	
@@ -669,13 +669,13 @@ Todo-sovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita
 
 ### Riippuvuuksien minimointi
 	
-Minimoi riippuvuudet , eli älä tee _spagettikoodia_, jossa kaikki oliot tuntevat toisensa. Pyri eliminoimaan riippuvuudet siten, että luokat tuntevat mahdollisimman vähän muita luokkia, ja mielellään nekin vain rajapintojen kautta 
+Minimoi riippuvuudet , eli älä tee _spagettikoodia_, jossa kaikki oliot tuntevat toisensa. Pyri eliminoimaan riippuvuudet siten, että luokat tuntevat mahdollisimman vähän muita luokkia, ja mielellään nekin vain rajapintojen kautta.
 
-Kerrosarkkitehtuuri tähtää osaltaan riippuvuuksien eliminointiin, esim. käyttöliittymä on nyt riippuvainen ainoastaan sovelluslogiikkakerroksen luokista _TodoService_ ja _Todo_ mutta ei millään tavalla tietojen talletuksesta vastaavista DAO-luokista.
+Kerrosarkkitehtuuri tähtää osaltaan riippuvuuksien eliminointiin, esim. käyttöliittymä on nyt riippuvainen ainoastaan sovelluslogiikkakerroksen luokista _TodoService_ ja _Todo_, mutta ei millään tavalla tietojen talletuksesta vastaavista DAO-luokista.
 
 ## Riippuvuuksien injektointi
 
-Turhien riippuvuuksien eliminonitiin liittyy läheisesti tapa, miten oliot pääsevät käsiksi riippuvuuksiinsa eli tarvitsemiinsa olioihin.
+Turhien riippuvuuksien eliminointiin liittyy läheisesti tapa, jolla oliot pääsevät käsiksi riippuvuuksiinsa eli tarvitsemiinsa olioihin.
 
 Sovelluslogiikasta huolehtiva _TodoService_-olio tarvitsee toimiakseen _TodoDao_- ja _UserDao_-oliot. Se saa oliot konstruktorin parametrina:
 
