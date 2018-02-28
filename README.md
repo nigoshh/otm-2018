@@ -24,14 +24,14 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
 ## Linkkejä
 
 - [Kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
-- [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
+- Kurssin referenssisovellus [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
 - [labtool](https://tktl-labtool.herokuapp.com/)
 - ohjeita 
-  - [aiheideoita ja oheita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/aiheideoita.md)
+  - [Aiheideoita ja oheita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
   - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) 
   - [maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
-  - [checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
-  - [javadoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
+  - [Checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
+  - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
 - Viikoittaiset palautuket
   - [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md)
   - laskarit [1](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) [2](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [3](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md)
@@ -100,8 +100,9 @@ Palautuksen deadline ma 30.4. klo 23:59
 - Release 2 (1p)
   - releasessa oltava suoritettava jar
   - Koodi kasvanut edellisestä viikosta
-- Testejä lisää (1p)
+- Testejä lisää (0.5p)
   - testikattavuusraportti
+- JavaDoc aloitettu (0.5p)
 - Alustava versio arkkitehtuuridokumentista (1p)
 
 ### viikko 7

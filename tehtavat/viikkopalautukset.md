@@ -17,7 +17,8 @@ Määrittelydokumenttiin voi ottaa mallia [referenssiprojektista](https://github
 Palautuksen deadline ma 9.4. klo 23:59
 
 - Koodin runko valmiina (2p)
-  - Edellytys pisteille ajettavissa oleva versio, joka toteuttaa ainakin osan jostain toiminnallisuudesta
+  - Edellytys pisteille ajettavissa oleva versio, joka toteuttaa ainakin osan jostain määrittelydokumentin toiminnallisuudesta
+  - Pelkät getterietä ja settereitä sisältävät, täysin ilman toiminnallisuutta olevat luokat eivät tuo pisteitä
 
 ## viikko 4
 
@@ -25,45 +26,41 @@ Palautuksen deadline ma 16.4. klo 23:59
 
 - Ohjelman perustoiminnallisuus (1p)
   - Lisää koodia edellisestä viikosta 
-- Testien aloitus (1p)
+  - Koodin tulee olla suoritettavissa ja sen pitää laajentaa järkevällä tavalla edellisen viikon versiota
+- Testien tekeminen aloitettu (1p)
+  - pisteeseen edellytetään että noin 25% sovelluslogiikasta on testattu
 - Alustava rakenne luokkakaavona (0.5p)
 - Checkstyle otettu käyttöön (0.5p)
+
+Ohjeita
+- [Testit ja testikattavuus](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#testit-ja-testikattavuus)
+- [Checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)
 
 ## viikko 5
 
 Palautuksen deadline ma 23.4. klo 23:59
 
-- Release 1 (1p)
+- Koodi kasvanut edellisestä viikosta (1p)
+  - Koodin tulee olla suoritettavissa ja sen pitää laajentaa järkevällä tavalla edellisen viikon versiota
+- Ensimmäinen release (0.5p)
   - releasessa oltava suoritettava jar
-  - Koodi kasvanut edellisestä viikosta
 - Testejä lisää (1p)
-  - Testikattavuusraportti
-- Jotain päätoiminnallisuutta kuvaava sekvenssikaavio (1p)
+  - pisteeseen edellytetään että noin 50% sovelluslogiikasta on testattu
+- Jotain päätoiminnallisuutta kuvaava sekvenssikaavio (0.5p)
 - Koodikatselmointi
 
 Ohjeita
-- [testikattavuuden määrittly](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
-
-### Github release
-
-Yksi mahdollisuus on luoda GitHubiin release, eli julkaistu versio.
-* klikkaa repositorion GitHub-sivulta kohtaa "0 releases"
-* määrittele julkaisun tiedot ja lisää jar-tiedosto klikkaamalla kohtaa "Attach binaries..."
-  * jar-tiedosto kannattaa ehkä uudelleennimetä, mavenin generoima tiedostonimi on hieman ikävä
-
-<img src="https://github.com/mluukkai/otm2016/raw/master/img/lh5-6.png" alt="alt text" width="800">
-
-Nyt koodi on kenen tahansa ladattavissa menemällä GitHub-repositorioosi, ja klikkaamalla repositoriosivusi kohtaa "1 release" ja suoritettavissa komennolla <code>java -jar tiedostonnimi.jar</code> olettaen että koneelle on asennettu Javan versio 1.8
+- [releasen tekeminen](https://github.com/mluukkai/otm-2018/blob/master/web/release.md)
 
 ## viikko 6
 
 Palautuksen deadline ma 30.4. klo 23:59
 
-- Release 2 (1p)
-  - releasessa oltava suoritettava jar
+- Lisää koodia ja uusi release (1p)
   - Koodi kasvanut edellisestä viikosta
+  - suoritettavan jar-tiedoston sisältävä uusi release
 - Testejä lisää (0.5p)
-  - testikattavuusraportti
+  - pisteeseen edellytetään että noin 65% sovelluslogiikasta on testattu
 - JavaDoc aloitettu (0.5p)
 - Alustava versio arkkitehtuuridokumentista (1p)
 

@@ -10,14 +10,14 @@ Kurssilla jaossa 60 pistettä. Pisteet jakautuvat alustavan suunnitelman mukaan 
   - Määrittely		
   - Arkkitehtuuri		
   - Käyttö/asennusohje	
-  - Repositorio		
+  - Repositorio	
+  - JavaDoc	
 - Testaus	8p	
   - Testit			
   - Testidokumentti	
 - Lopullinen ohjelma 23p
   - Featuret		
   - Koodin laatu 		
-  - Javadoc	
 
 Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
 
