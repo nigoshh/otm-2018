@@ -2,7 +2,7 @@
 
 ## Yleistä
 
-Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalinteisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyötä tehdään itsenäisesti mutta tarjolla on runsaasti pajaohjausta. 
+Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on runsaasti pajaohjausta. 
 
 Harjoitustyön on edettävä [viikottaisten tavoitteiden mukaan](https://github.com/mluukkai/otm-2018#aikataulu). Työ on saatava valmiiksi kurssin aikana ja sitä on toteutettava tasaisesti, muuten kurssi katsotaan keskeytetyksi. Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli keväällä 2019), vaan työ on aloitettava uudella aiheella alusta.  Muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi.
 
@@ -24,7 +24,7 @@ Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei ki
 
 Voit tehdä harjoitustyöhösi aluksi tekstikäyttöliittymän ja vasta saatuasi ohjelman perustoiminnallisuuden toteutettua voit siirtyä graafisen käyttöliittymän toteutukseen. Graafinen käyttöliittymä on mahdollista myös jättää pois, mutta tämä [vaikuttaa arvosanaan](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md). 
 
-Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/). Muutamia vihjeitä liittyen JavaFX:n [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/). Muutamia vihjeitä liittyen JavaFX:ään [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
 
 On myös ja [arvosanan kannalta kannattavaa](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md)suositeltavaa, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
 
@@ -44,7 +44,7 @@ Toivottava dokumentaation taso käy ilmi [referenssiprojektissa](https://github.
   * Valitse kuitenkin aihe, jonka perustoiminnallisuuden saa toteutettua nopeasti, mutta jota saa myös laajennettua helposti
   * Hyvässä aiheessa on muutamia logiikkaluokkia, tiedoston. tai tietokannankäsittelyä ja logiikasta eriytetty käyttöliittymä
 
-* Kurssilla pääpaino on Ohjelmoinnin Perusteissa ja Jatkokurssilla opitussa asioissa
+* Kurssilla pääpaino on Ohjelmoinnin Perusteissa ja Jatkokurssilla opituissa asioissa
   * Käytettävyys
   * Toimivuus ja varautuminen virhetilanteisiin
   * Luokkien vastuut
@@ -181,7 +181,7 @@ Jos työskentelet monella koneella niin huomioi seuraavat
 - Oletusarvoisesti kaikkien koneiden julkiset avaimet kanattaa olla määritelty GitHubiin
 -  [oleelliset konfguraatiot](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#konfiguraatioita) kannattaa olla tehtynä kaikilla koneilla
 - **TÄRKEÄÄ** aina kun lopetat työskentelyn koneella, pushaa muutokset githubiin
-- kun aloitat työskentelyn koneelta, pullaa muutokset githubista.
+- kun aloitat työskentelyn koneelta, pullaa muutokset githubista
 - jos (ja kun) törmäät seuraavaan virheeseen
 ```
 mluukkai@melkki:~/otm-harjoitustyo$ git push
@@ -199,13 +199,13 @@ mluukkai@melkki:~/otm-harjoitustyo$
 
 ### Maven-projektin luominen
 
-Harjoitustyössä tehtävä ohjelmisto tehdään maven-projektina. Projektin luominen onnistuu NetBeansin avulla seuraavasti.
+Harjoitustyössä tehtävä ohjelmisto tehdään maven-projektina. Projektin luominen onnistuu NetBeansin avulla seuraavasti:
 - valitse _new project_ ja tee seuraavat valinnat:
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-3.png" width="550">
 - Vaikka käyttäisit JavaFX:ää, kannattaa projektia varten silti luoda  "normaali" maven-projekti
-- määrittele kenttän _Project location_ arvoksi repositoriosi juuri
+- määrittele kentän _Project location_ arvoksi repositoriosi juuri
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-4.png" width="600">
-- luo repositoriosi juureen tiedosto _.gitignore_ ja lisää sinne rivi, joka ignoroi luodun projektin hakemisto alle tulevan hakemistn _target_. Omassa esimerkissäni rivi olisi
+- luo repositoriosi juureen tiedosto _.gitignore_ ja lisää sinne rivi, joka ignoroi luodun projektin hakemiston alle tulevan hakemiston _target_. Omassa esimerkissäni rivi olisi
 
 ```
 Pokemontietokanta/target
