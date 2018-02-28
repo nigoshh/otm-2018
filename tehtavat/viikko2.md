@@ -284,13 +284,20 @@ Projektiin on valmiiksi konfiguroitu käytettäväksi [Jacoco](http://www.eclemm
 ``` java
 <build>
     <plugins>
-        ...
+        // ...
         <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>2.7</version>
-        </plugin>
-        ...
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.0</version>
+            <executions>
+                <execution>
+                    <id>default-prepare-agent</id>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>  
     </plugins>
 </build>
 ``` 
@@ -304,6 +311,8 @@ Tulokset tulevat projektihakemistosi alihakemistoon __target/site/jacoco/index.h
 Useilla selaimilla tämä tapahtuu komennolla __open file__. Laitoksen koneella voit myös avata selaimen terminaalissa menemällä ensin projektihakemistoon ja antamalla komennon __chromium-browser target/site/jacoco/index.html__ 
 
 **Jos maksukortin koodissa on vielä rivejä tai haarautumia (merkitty punaisella) joille ei ole testiä, kirjoita sopivat testit.**
+
+## Maven-komentojen suorittaminen NetBeansista
 
 Maven-komentoja on mahdollista suorittaa myös NetBeansin kautta. Tämä tapahtuu klikkaamalla projektin kohdalla hiiren oikealla napilla: 
 

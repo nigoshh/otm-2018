@@ -1,6 +1,4 @@
-# KESKEN
-
-# Harjoitustyön aloittaminen ja aiheen valinta
+# Aiheen valinta ja harjoitustyön aloittaminen 
 
 ## Yleistä
 
@@ -118,7 +116,9 @@ Jos haluat tehdä harjoitustyötä eri koneella, kuin mille teit repositoriosi a
 Koneeseesi täytyy luonnollisesti [ensin asentaa](https://git-scm.com/downloads) git jos se ei ole jo koneellasi.
 * Muista myös [oleellisten konfiguraatioiden](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#konfiguraatioita) tekeminen
 
-Kloonaus tapahtuu seuraavasti.
+Talleta koneesi julkinen avain talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#julkinen-avain)
+
+Kloonaus tapahtuu seuraavasti
 * mene sopivaan hakemistoon koneellasi
   * **ÄLÄ** kuitenkaan mene minkään git-repositorion sisälle
 * avaa palautusrepositoriosi
@@ -149,10 +149,7 @@ git clone git@github.com:mluukkai/otm-harjoitustyo.git hakemiston_nimi
 
 Syntynyt hakemisto on nyt git-repositorio, jonka sisältö on sama kuin etärepositoriossa.
 * tee repositorioon jokin muutos, lisää ja committoi
-
-Jotta saat pushattua muutokset GitHubiin on koneesi julkinen avain talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#julkinen-avain)
-
-Kun avain on asetettu push muutokset githubiin ja varmista GitHubista että muutos menee perille
+* pushaa muutokset githubiin ja varmista GitHubista että muutos menee perille
 
 **HUOM** jos _git push_ ei toimi, eli saat seuraavan virheilmoituksen
 
@@ -180,7 +177,7 @@ Ikävä seuraus tästä on se, että GitHub kysyy jokaisen pushaamisen yhteydess
 ### Työskentely usealla koneella
 
 Jos työskentelet monella koneella niin huomioi seuraavat
-- GitHubissa oleva nrepositorion tulee olla kloonattuna kaikille koneille
+- GitHubissa oleva repositorion tulee olla kloonattuna kaikille koneille
 - Oletusarvoisesti kaikkien koneiden julkiset avaimet kanattaa olla määritelty GitHubiin
 -  [oleelliset konfguraatiot](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#konfiguraatioita) kannattaa olla tehtynä kaikilla koneilla
 - **TÄRKEÄÄ** aina kun lopetat työskentelyn koneella, pushaa muutokset githubiin
@@ -205,6 +202,7 @@ mluukkai@melkki:~/otm-harjoitustyo$
 Harjoitustyössä tehtävä ohjelmisto tehdään maven-projektina. Projektin luominen onnistuu NetBeansin avulla seuraavasti.
 - valitse _new project_ ja tee seuraavat valinnat:
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-3.png" width="550">
+- Vaikka käyttäisit JavaFX:ää, kannattaa projektia varten silti luoda  "normaali" maven-projekti
 - määrittele kenttän _Project location_ arvoksi repositoriosi juuri
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-4.png" width="600">
 - luo repositoriosi juureen tiedosto _.gitignore_ ja lisää sinne rivi, joka ignoroi luodun projektin hakemisto alle tulevan hakemistn _target_. Omassa esimerkissäni rivi olisi
@@ -215,3 +213,5 @@ Pokemontietokanta/target
 - lisää muutokset versionhallintaan, commitoi ja pushaa
 - varmista että GitHub-näkymä näyttää suunilleen seuraavalta
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-5.png" width="600">
+
+Pääset oletusarvoisella konfiguraatiolla alkuun. Lisää ohjeita mavenin konfigurointiin [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)

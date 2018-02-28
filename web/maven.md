@@ -1,14 +1,64 @@
 # KESKEN
 
-# maven
+# Ohjeita maveniin
 
-## projektin aloitus
+## projektin luominen
 
-## Testikattavuus
+Ohje maven-muotoisen projektin luomiseen NetBeansilla [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md#maven-projektin-luominen)
+
+Vaikka käyttäisit JavaFX:ää, kannattaa projektia varten silti luoda ohjeen mukaan "normaali" maven-projekti.
+
+## Testit ja Testikattavuus
+
+Lisää tiedostoon _pom.xml_ seuraavat
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.0</version>
+            <executions>
+                <execution>
+                    <id>default-prepare-agent</id>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>  
+    </plugins>
+</build>
+```
+
+Huomaa, että määrittelyt on lisättävä _Project_-tagien sisälle:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-1.png" width="700">
+
+Voit nyt suorittaa testauskattavuuden mittaamisen komennolla
+
+```xml
+mvn test jacoco:report
+```
+
+Katso lisää [viikon 2 laskareista](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#3-testauskattavuus).
+
+### pakkausten exkludaus
+
+## maven-komentojen suorittaminen NetBeansista
+
+## Checkstyle
 
 ## JavaDoc
-
-## checkstyle
 
 ## jarin generointi
 

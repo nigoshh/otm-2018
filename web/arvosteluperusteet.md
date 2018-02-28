@@ -1,4 +1,6 @@
-## Kurssin suorittaminen ja arvostelu
+# KESKEN
+
+# Kurssin suorittaminen ja arvostelu
 
 Kurssilla jaossa 60 pistettä. Pisteet jakautuvat alustavan suunnitelman mukaan seuraavasti
 
