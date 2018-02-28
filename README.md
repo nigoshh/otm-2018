@@ -32,6 +32,9 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
   - [maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
   - [checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
   - [javadoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
+- Viikoittaiset palautuket
+  - [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md)
+  - laskarit [1](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) [2](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [3](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md)
 - työkaluja kaavioiden piirtoon
   - <http://yuml.me/> luokkakaaviot
   - <https://www.websequencediagrams.com/> sekvenssikaavioihin
@@ -55,6 +58,7 @@ Palautuksen deadline ma 19.3. klo 23:59
 Palautuksen deadline ma 26.3. klo 23:59
 
 - Oman aiheen alustava määrittelydokumentti (1p)
+  - katso palautusohje tarkemmin [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md#viikko-2)
 - JUnit-harjoittelu (2p)
   - Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md)
 - oman projektin koodaus alkaa
