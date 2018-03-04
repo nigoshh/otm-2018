@@ -774,3 +774,7 @@ public class TodoServiceUserTest {
 Toisin kuin todelliset DAO:t, testeissä käytettävät valekomponentit eivät tallenna dataa levylle, tämä tekee testaamisesta helpompaa.
 
 Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md) ja [testausdokumentista](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
+
+# Ohjelmiston toteutus
+
+Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen kongigurointiin liittyviä vihjeitä on koottu [tänne](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
