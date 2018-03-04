@@ -2,7 +2,7 @@
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on ma 26.3. klo 23:59
 
-Tehtävät palautetaan Githubin avulla Labtoolin rekisteröimääri repositorioon.
+Tehtävät palautetaan Githubin avulla Labtoolin rekisteröimääsi repositorioon.
 
 Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko2_.
 
@@ -15,10 +15,10 @@ Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen l
 * lisää lopuksi maksukortille seuraavat testit:
   * maukkaan lounaan syöminen ei vie saldoa negatiiviseksi, ota tähän mallia testistä syoEdullisestiEiVieSaldoaNegatiiviseksi
   * negatiivisen summan lataaminen ei muuta kortin saldoa
-  * kortilla pystyy ostamaan edullisen lounaan kun kortilla rahaa vain edullisen lounaan verran (eli 2.5e)
-  * kortilla pystyy ostamaan maukkaan lounaan kun kortilla rahaa vain maukkaan lounaan verran (eli 4e)
+  * kortilla pystyy ostamaan edullisen lounaan, kun kortilla rahaa vain edullisen lounaan verran (eli 2.5e)
+  * kortilla pystyy ostamaan maukkaan lounaan, kun kortilla rahaa vain maukkaan lounaan verran (eli 4e)
 
-**HUOM1** on suositeltavaa, että yksi testi testaa vaan "yhtä asiaa" kerrallaan. Tee siis jokaisesta ylläolevasta oma testinsä.
+**HUOM1** on suositeltavaa, että yksi testi testaa vain "yhtä asiaa" kerrallaan. Tee siis jokaisesta ylläolevasta oma testinsä.
 
 **HUOM2** Kirjoita assertEquals-komennot aina siten, että ensimmäisenä parametrina on odotettu tulos ja toisena parametrina testatun metodin antama tulos.
 
@@ -186,7 +186,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 ### .gitignore
 
-Kun testien jälkeen suoritat komennon _git status_, huomat että projektin juureen on ilmestynyt uusi hakemisto _target_ joka ei ole gitin alaisuudessa
+Kun testien jälkeen suoritat komennon _git status_, huomaat että projektin juureen on ilmestynyt uusi hakemisto _target_, joka ei ole gitin alaisuudessa
 
 ```bash
 On branch master
@@ -229,18 +229,18 @@ Eli vaikka hakemistossa _/laskarit/viikko2/Unicafe_  on alihakemisto _target_, e
 Avaa nyt projekti NetBeansilla.
 
 * Tee valmiiseen testiluokkaan _MaksukorttiTest_ testit, jotka testaavat ainakin seuraavia asioita:
-* kortin on saldo alussa oikein
+* kortin saldo alussa oikein
 * rahan lataaminen kasvattaa saldoa oikein
 * rahan ottaminen toimii
-  * saldo vähenee oikein jos rahaa on tarpeeksi
-  * saldo ei muutu jos rahaa ei ole tarpeeksi
-  * metodi palauttaa _true_ jos rahat riittivät ja muuten _false_
+  * saldo vähenee oikein, jos rahaa on tarpeeksi
+  * saldo ei muutu, jos rahaa ei ole tarpeeksi
+  * metodi palauttaa _true_, jos rahat riittivät ja muuten _false_
 
-Voit suorittaa testit NetBeansilla tai komentoriviltä
+Voit suorittaa testit NetBeansilla tai komentoriviltä.
 
 ### Maven
 
-Suoritimme testit komentoriviltä komennolla _mvn test_. Mistä on kyse? Maksukortin sisältämä projekti on määritelty [maven](https://maven.apache.org)-formaatissa. Maven on työkalu, jonka avulla voidaan hallita Javalla tehtyjen ohjelmien kääntämistä, testien suorittamista ja paljon muitakin työvaiheita, kuten pian tulemme näkemään. Kurssin ohjelmoinnin perusteet tehtäviä ei ole määritelty mavenilla vaan hieman vanhemmassa [ant](http://ant.apache.org)-formaatissa. Ohjelmoinnin jatkokurssilla ainakin myöhemmillä viikoilla on käytössä maven, se ei tosin juurikaan näy normaalille NetBeans-käyttäjälle.
+Suoritimme testit komentoriviltä komennolla _mvn test_. Mistä on kyse? Maksukortin sisältämä projekti on määritelty [maven](https://maven.apache.org)-formaatissa. Maven on työkalu, jonka avulla voidaan hallita Javalla tehtyjen ohjelmien kääntämistä, testien suorittamista ja paljon muitakin työvaiheita, kuten pian tulemme näkemään. Kurssin ohjelmoinnin perusteet tehtäviä ei ole määritelty mavenilla, vaan hieman vanhemmassa [ant](http://ant.apache.org)-formaatissa. Ohjelmoinnin jatkokurssilla ainakin myöhemmillä viikoilla on käytössä maven, se ei tosin juurikaan näy normaalille NetBeans-käyttäjälle.
 
 Maven-projektien juuressa on tiedosto _pom.xml_, joka sisältää projektin konfiguraatiot. Katso miltä tiedosto näyttää. Tiedosto löytyy NetBeansista kohdan _project files_ alta.
 
