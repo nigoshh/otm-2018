@@ -16,7 +16,7 @@ Ohjelmakoodin muuttujat, luokat ja metodit kirjoitetaan englanniksi. Dokumentaat
 
 ## Ohjelman toteutus
 
-Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä. Muutamia viheitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä](https://github.com/mluukkai/otm-2018#aikataulu)
+Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä](https://github.com/mluukkai/otm-2018#aikataulu)
 
 Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siispä ohjelmakoodille onkin syytä laatia jatkuvasti yksikkötestejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
 
