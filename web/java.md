@@ -300,18 +300,279 @@ Koodissa on myös metodi [stop](https://docs.oracle.com/javase/8/javafx/api/java
 
 Metodin _start_ lopuun on rekisteröity tapahtumankuuntelija joka suoritetaan juuri ennen sovelluksen sulkemista. If-haara demonstroi miten sulkemisen voi vielä estää tapahtumankuuntelijassa. 
 
+### FXML
+
+Ohjelmoinnin jatkokurssilla ja [esimerkkisovelluksessa](https://github.com/mluukkai/OtmTodoApp) käyttöliittymät luodaan ohjelmallisesti, eli luomalla ja yhdistelemällä käyttöliittymäkomponentteja muodostavia olioita. 
+
+JavaFX tarjoaa myös tavan käyttöliittymän ulkoasun määrittelemiseen läheisesti HTML:ää muistuttavassa [FXML-formaatissa](https://docs.oracle.com/javase/8/javafx/fxml-tutorial/why_use_fxml.htm).
+
+Tarkastellaan yksinkertaista esimerkkiä, graafista noppaa:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/j-2.png" width="400">
+
+Käyttöliittymän rakenteen määrittelee tiedosto _Scene.fxml_:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otm2018.FXMLController">
+    <children>
+        <Label fx:id="display" alignment="CENTER" layoutX="84.0" layoutY="47.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="146.0" />    
+        <Button fx:id="button" layoutX="134.0" layoutY="113.0" onAction="#handleButtonAction" text="roll" />
+    </children>
+</AnchorPane>
+```
+
+Layout on nyt muodostettu [AnchorPanen](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/AnchorPane.html) avulla. Toisin kuin muissa layouteissa, AnchorPanessa jokaiselle siihen sijoitettavalle komponentille annetaan absoluuttinen sijainti. Käyttöliittymä siis koostuu kahdesta komponentista, Labelista ja Buttonista. Molemilla on joukko _attribuutteja_, joista osa liittyy komponentin sijainnin määrittelemiseen, ja osa taas on oleellinen ohjelman toiminnallisuuden kannalta. 
+
+AnchorPanen attribuuteista erityisen mielenkiintoinen on _fx:controller_, se määrittelee luokan, joka toimii näkymän _kontrollerina_. Luokka on määritelty seuraavasti:
+
+```java
+package otm2018;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+
+public class FXMLController implements Initializable {
+    private Dice dice;
+
+    public FXMLController() {
+        dice = new Dice();
+    }
+     
+    @FXML
+    private Label display;
+    
+    @FXML
+    private void handleButtonAction(ActionEvent event) {
+        dice.roll();
+        label.setText("you got "+dice.getValue());
+    }
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        label.setText("dice not rolled yet...");
+    }    
+}
+```
+
+Kontrollerin oliomuuttuja _display_ on nyt sidottu näkymän labeliin sillä muuttujan nimi on sama kuin labelin attribuutin _fx:id_ arvo:
+
+```xml
+<Label fx:id="display" ... />  
+```
+
+Kontrollerin metodi _handleButtonAction_ toimii näkymän napin tapahtumankuuntelija, sillä nappi viittaa siihen attribuutin _onAction_ avulla:
+
+```xml
+<Button fx:id="button" onAction="#handleButtonAction" text="roll" .../>
+```xml
+
+Sovelluslogiikkaa, eli nopan toiminnallisuutta mallintava luokka näyttää seuraavalta:
+
+```java
+package otm2018;
+
+public class Dice {
+    private int value;
+
+    public int getValue() {
+        return value;
+    }
+    
+    public void roll() {
+        value = (int)(Math.random()*6+1);
+    }
+}
+```
+
+Pääohjelman _start_-metodin rooliksi jää nyt ladata fxml:n määrittely ja muodostaa sen perusteella näkyville asetettava Scene: 
+
+```java
+package otm2018;
+
+import javafx.application.Application;
+import static javafx.application.Application.launch;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
+        
+        Scene scene = new Scene(root);
+        
+        stage.setTitle("JavaFX and Maven");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+}
+```
+
+### Scenebuilder
+
+FXML-muotoiset käyttöliittymien näkymät on mahdollista tehdä käsin editoimalla fxml-tiedostoja. Toinen mahdollisuus on käyttää graafista [Scenebuilder](http://gluonhq.com/products/scene-builder/)-editoria käyttöliittymän rakentamiseen
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/j-3.png" width="800">
+
+Scenebuilder integroitui ainakin OSX:ssä automaattisessti NetBeansiin.
+
 ### JavaFX-aiheisia linkkejä
 
 Ohjelmoinnin jatkokurssilla tehdään JavaFX:n ainoastaan matala pintaraapaisu, jatkokurssin materiaali kannattaa kuitenkin ehdottomasti kerrata jos olet aikeissa käyttää JavaFX:ää. 
 
 Jos käyttöliittymäsi on vähänkin epätriviaali, joudut suurella todennäköisyydellä etsimään itse lisää tietoa. Omatoimisen tiedonhaun harjoittelu onkin tämän kurssin eräs tärkeimmistä oppimistavoitteista. Seuraavassa muutamia linkkejä auttamaan alkuunpääsemistä. Jos löydät internetistä hyvää materiaalia, tee sivulle [pull request](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#kirjoitusvirheitä-materiaalissa)
 
--
+- [Getting started](https://docs.oracle.com/javase/8/javafx/get-started-tutorial/index.html)
+- [API](https://docs.oracle.com/javase/8/javafx/api/toc.htm)
+- Oraclen JavaFX-tutoriaalit
+  - [layoutit](https://docs.oracle.com/javase/8/javafx/layout-tutorial/index.html)
+  - [käyttöliittymäkomponentit](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/ui_controls.htm)
+  - [diagrammit](https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/charts.htm)
+  - [FXML](https://docs.oracle.com/javafx/2/get_started/fxml_tutorial.htm)
+- [FXML getting started](https://docs.oracle.com/javafx/2/fxml_get_started/jfxpub-fxml_get_started.htm)  
+- [Scenebuilder](http://gluonhq.com/products/scene-builder/)
+- [Riippuvuuksien injektio FXML-kontrollereille](https://stackoverflow.com/questions/30814258/javafx-pass-parameters-while-instantiating-controller-class)
+- [JavaFX dialogit](http://code.makery.ch/blog/javafx-dialogs-official/)
 
-### Scenebuilder
+Youtubesta löytyy runsaasti vaihtelevanlaatuisia videoita aihepiiristä.
 
-## tietojen talletus
+## Tietojen talletus
 
-### DAO
+Arvosteluperusteet [kannustavat](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md) siihen että ohjelmasti käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
 
-### injektoi daot...
+### DAO-suunnittelumalli
+
+Riippumatta mihin tiedon tallennat, kannattaa tiedon tallentaminen eristää sovelluksen muista osista esim. tietokantojen perusteista tutun [DAO](https://materiaalit.github.io/tikape-k18/part3/)-suunnittelumallin avulla.
+
+[Esimerkkisovelluksella](https://github.com/mluukkai/OtmTodoApp) on Tikapenkin mallia noudattelevat DAO:t sekä sovelluksen käsittelemille käyttäjille että käyttäjien todoille eli työtehtäville.
+
+Molemmat DAO:t on piilotettu sovelluslogiikalta rajapintojen taakse:  
+
+```java
+public interface UserDao {
+    void create(User user);
+    User findByUsername(String username);
+    List<User> getAll();
+}
+
+public interface TodoDao {
+    void create(Todo todo);
+    List<Todo> getAll();
+    void setDone(int id);
+}
+```
+
+Esimerkkisovelluskessa on DAO:ista tiedostoon tallettavat versiot. Toteukset ovat melko suoraviivaisia ja epämielenkiintoisia:
+
+```java
+public class FileUserDao implements UserDao {
+    private List<User> users;
+    private String file;
+
+    public FileUserDao(String file) {
+        users = new ArrayList<>();
+        this.file = file;
+        load();   
+    }
+
+    private void load() {
+        try {
+            Scanner reader = new Scanner(new File(file));
+            while (reader.hasNextLine()) {
+                String[] parts = reader.nextLine().split(";");
+                User u = new User(parts[0], parts[1]);
+                users.add(u);
+            }
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    private void save() {
+        try {
+            FileWriter writer = new FileWriter(new File(file));
+            for (User user : users) {
+                writer.write(user.getUsername()+";"+user.getName()+"\n");
+            }
+            writer.close();
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    @Override
+    public List<User> getAll() {
+        return users;
+    }
+    
+    @Override
+    public User findByUsername(String username) {
+        return users.stream().filter(u->u.getUsername().equals(username)).findFirst().orElse(null);
+    }
+    
+    @Override
+    public void create(User user) {
+        users.add(user);
+        save();
+    }    
+}
+```
+
+TodoDao:n toteutukseen liittyy pieni mielenkiintoinen detalji. Koska Todo tuntee käyttäjänsä, tarvtsee _FileTodoDao_ linkitystä varten _UserDao_:n:
+
+```java
+public class FileTodoDao implements TodoDao {
+    public List<Todo> todos;
+    private String file;
+
+    public FileTodoDao(String file, UserDao userDao) {
+        todos = new ArrayList<>();
+        this.file = file;
+        try{
+            Scanner reader = new Scanner(new File(file));
+            while (reader.hasNextLine()) {
+                String[] parts = reader.nextLine().split(";");
+                int id = Integer.parseInt(parts[0]);
+                boolean done = Boolean.parseBoolean(parts[2]);
+                User user = userDao.getAll().stream().filter(u->u.getUsername().equals(parts[3])).findFirst().orElse(null); 
+                Todo todo = new Todo(id, parts[1], done, user);
+                todos.add(todo);
+            }
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        
+    }
+
+    // ...
+}
+```
+
+Sovelluksen _todoService_ ei siis tunne _DAO_-olioiden todellista luonnetta, sovelluksen alustusmetodi _init_ luo käytettävät DAO:t ja injektoi ne sovelluslogiikalle:
+
+```java
+@Override
+public void init() {
+    FileUserDao userDao = new FileUserDao("users.txt");
+    FileTodoDao todoDao = new FileTodoDao("todos.txt", userDao);
+    todoService = new TodoService(todoDao, userDao);
+}
+```

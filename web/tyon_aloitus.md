@@ -202,7 +202,7 @@ mluukkai@melkki:~/otm-harjoitustyo$
 Harjoitustyössä tehtävä ohjelmisto tehdään maven-projektina. Projektin luominen onnistuu NetBeansin avulla seuraavasti:
 - valitse _new project_ ja tee seuraavat valinnat:
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-3.png" width="550">
-- Vaikka käyttäisit JavaFX:ää, kannattaa projektia varten silti luoda  "normaali" maven-projekti
+- Vaikka käyttäisit JavaFX:ää, kannattaa projektia varten silti luoda  "normaali" maven-projekti ellet päätä käyttää [FXML:ää](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md#fxml)
 - määrittele kentän _Project location_ arvoksi repositoriosi juuri
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-4.png" width="600">
 - luo repositoriosi juureen tiedosto _.gitignore_ ja lisää sinne rivi, joka ignoroi luodun projektin hakemiston alle tulevan hakemiston _target_. Omassa esimerkissäni rivi olisi
