@@ -247,10 +247,10 @@ Committointi onnistuu komennolla _git commit_. Kuten edelliselläkin kerralla, a
 
 Tarkasta committoinnin jälkeen jälleen tilanne komennolla _git status_.
 
-**HUOM** jos suoritat commitoinnin vahingossa ilman commit-viestiä, eli parametria _-m_, avaa git tekstieditorin ja olettaa että haluat kirjoittaa commit-viestin editoriin. Jos et määritellyt alun ohjeen mukaan gitille editoriksi nanoa, avautuu oletusarvoien editori _vim_ ja joudut kenties googlaamaan miten pääset pois editorista.
+**HUOM** jos suoritat commitoinnin vahingossa ilman commit-viestiä, eli parametria _-m_, avaa git tekstieditorin ja olettaa että haluat kirjoittaa commit-viestin editoriin. Jos et määritellyt alun ohjeen mukaan gitille editoriksi nanoa, avautuu oletusarvoinen editori _vim_ ja joudut kenties googlaamaan, miten pääset pois editorista.
 
 Tiedostot ja niihin tehdyt muutokset voivat siis olla gitin suhteen _kolmessa eri tilassa_. 
-* Aluksi tiedostot (tai niihin tehdyt muutokset) ovat vain _working directoryssä_ ja git ei noteeraa niitä ennen kun ne lisätään komennolla <code>git add</code>. 
+* Aluksi tiedostot (tai niihin tehdyt muutokset) ovat vain _working directoryssä_ ja git ei noteeraa niitä ennen kuin ne lisätään komennolla <code>git add</code>. 
 * Tämän jälkeen tiedostot ovat valmiina commitoitavaksi. Gitin terminologian mukaan valmiina committoitavaksi olevat tiedostot ovat _staging_-alueella.
 *  Komento <code>git commit</code> siirtää stagingissa olevat muutokset repositorioon eli luo uuden _commitin_. 
 
@@ -289,31 +289,31 @@ Voit selata logia nuolinäppäimillä. Pääset ulos _git log_:ista painamalla _
 
 Muista käyttää komentoa _git status_ mahdollisimman usein. Älä myöskään unohda tab-completea!
 
-* Luo tiedosto _kolmas.txt_. 
-* Lisää se commitoitavaksi ja commitoi. 
+* Luo tiedosto _kolmas.txt_
+* Lisää se commitoitavaksi ja commitoi 
 * Muuta tiedostojen _toinen.txt_ ja _kolmas.txt_ sisältöä ja commitoi muutokset
-* Luo hakemisto _stuff_ ja sen sisälle jokin tiedosto. 
-* Lisää muutokset committoitavaksi ja committoi. 
-  * Huomaa, että hakemiston lisääminen riittää, sen sisältämät tiedostot tulevat automaattisesti lisätyksi.
-* Katso miltä git logi näyttää
+* Luo hakemisto _stuff_ ja sen sisälle jokin tiedosto
+* Lisää muutokset committoitavaksi ja committoi
+  * Huomaa, että hakemiston lisääminen riittää, sen sisältämät tiedostot tulevat automaattisesti lisätyksi
+* Katso miltä git-logi näyttää
 
 ## gitk
 
-Giting committeja voi tarkastella myös graafisella _gitk_-komennolla (OSx:lle vastaavia työkaluja ovat [gitx](http://gitx.frim.nl) ja Windowsillakin toimiva [Sourcetree](https://www.sourcetreeapp.com)). Suorita komento repositoriossa:
+Gitin committeja voi tarkastella myös graafisella _gitk_-komennolla (OSx:lle vastaavia työkaluja ovat [gitx](http://gitx.frim.nl) ja Windowsillakin toimiva [Sourcetree](https://www.sourcetreeapp.com)). Suorita komento repositoriossa:
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/lh3-1.png)
 
-Vasemmalla yläkulmassa näet kaikki commitit. Uusin tilanne ylimpänä. Uusimman commitin nimi on *master*. Klikkaamalla commitia, näet muissa ikkunoissa commitiin liittyviä tietoja. Oikealla alakulmassa näet ne tiedostot, jotka ovat muuttuneet commitissa (jos valinta on _patch_) tai ne tiedostot, joita repositoriossa oli olemassa commitin aikana (jos valinta on _tree_). Vasemmassa alakulmassa pystyt tarkastelemaan commitin tiedostoihin tekemiä muutoksia tai tiedostojen tilaa commitin aikana.  Valinnat ovat hieman hämäävät sillä ne toimivat eri tavoin riippuen oikean puolen moodista.
+Vasemmalla yläkulmassa näet kaikki commitit. Uusin tilanne ylimpänä. Uusimman commitin nimi on *master*. Klikkaamalla commitia, näet muissa ikkunoissa commitiin liittyviä tietoja. Oikealla alakulmassa näet ne tiedostot, jotka ovat muuttuneet commitissa (jos valinta on _patch_) tai ne tiedostot, joita repositoriossa oli olemassa commitin aikana (jos valinta on _tree_). Vasemmassa alakulmassa pystyt tarkastelemaan commitin tiedostoihin tekemiä muutoksia tai tiedostojen tilaa commitin aikana.  Valinnat ovat hieman hämäävät, sillä ne toimivat eri tavoin riippuen oikean puolen moodista.
 
 Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, jotta voit pitää gitk:ta käynnissä.
 
-* Kopioi tiedostoon _tiedosto.txt_ jostain paljon tekstiä ja commitoi tiedosto.
-* Poista nyt osa tiedoston tekstistä ja lisää tiedostoon hieman lisää tekstiä.
+* Kopioi tiedostoon _tiedosto.txt_ jostain paljon tekstiä ja commitoi tiedosto
+* Poista nyt osa tiedoston tekstistä ja lisää tiedostoon hieman lisää tekstiä
 * commitoi muutosten jälkeen
 * Päivitä gitk:n näkymä (file/update) ja katso miten muutokset näkyvät (tarkastele kahta ylintä committia) 
-  * valitse oikeasta alakulmasta _patch_ ja vasemmasta _diff_.
+  * valitse oikeasta alakulmasta _patch_ ja vasemmasta _diff_
   * näin näet commitin aiheuttamat muutokset [diff](https://fi.wikipedia.org/wiki/Diff)-muodossa
-  * jos oikealta on valittuna _tree_ näkyy vasemmalla puolella (valinnasta riippumatta) tiedostojen commitin aikainen tilanne 
+  * jos oikealta on valittuna _tree_, näkyy vasemmalla puolella (valinnasta riippumatta) tiedostojen commitin aikainen tilanne 
 
 ## tiedoston poistaminen ja uudelleennimentä
 
@@ -321,7 +321,7 @@ Seuraavaa tehtävää tekiessäsi kannattaa terminaaliin avata uusi välilehti, 
 * suorita _git status_
 * commitoi muutos
   * poista ensin tiedosto gitin alaisuudesta komennolla _git rm_
-* varmista komennolla _git status_ että kaikki on niinkuin kuuluukin
+* varmista komennolla _git status_, että kaikki on niinkuin kuuluukin
 * muuta tiedoston _tiedosto.txt_ nimeksi _eka.txt_
   * uudelleennimentä tapahtuu komennolla _mv_
 * suorita _git status_
@@ -357,7 +357,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Kuten oletettua, git kertoo että olemme tehneet muutoksia jotka eivät ole "staged for commit", eli lisättyjä commitoitavaksi. 
+Kuten oletettua, git kertoo että olemme tehneet muutoksia, jotka eivät ole "staged for commit", eli lisättyjä commitoitavaksi. 
 * Päätetäänkin perua muutokset. Se onnistuu komennolla <code>git checkout -- eka.txt</code>
 * Kun suoritat uudelleen komennon _git status_ huomaat, että working directory ei enää sisällä muutoksia:
 
@@ -405,7 +405,7 @@ Tiedosto ei siis enää ole _staged_-tilassa, muutokset ovat kuitenkin _working 
 * pääset perumaan muutokset kokonaan antamalla komennon <code>git checkout -- kolmas.txt</code>
 * varmista, että tiedosto on palannut muutoksia edeltävään tilaan
 
-Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on lisätty committoitavaksi, eli se on  _staged_, voidaan muutos perua komennolla _git reset HEAD_. Tällöin muutokset kuitenkin vielä jäävät tiedostoon, eli ovat _working directoryssä. Tiedosto saadaan palautettua repositoriossa olevaan edellisen  commitin tilaan komennolla _git checkout_.
+Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on lisätty committoitavaksi, eli se on  _staged_, voidaan muutos perua komennolla _git reset HEAD_. Tällöin muutokset kuitenkin vielä jäävät tiedostoon, eli ovat _working directoryssä. Tiedosto saadaan palautettua repositoriossa olevaan edellisen commitin tilaan komennolla _git checkout_.
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/lh3-3.png)
 
@@ -454,7 +454,7 @@ Siirrytään sitten GitHubin käyttöön
 
 * luo repositorio painamalla vihreää _Create repository_ -nappia
 
-Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikallisen koneen repositorin _otm-harjoitustyo_ etärepositorioksi.
+Seuraavaksi haluamme liittää GitHubiin luodun repositorion juuri luodun paikallisen koneen repositorion _otm-harjoitustyo_ etärepositorioksi.
 
 * etärepositorion lisääminen onnistuu GitHubiin avautuvan näkymän ohjeiden mukaan 
 * varmista, että kohdasta "Quick setup..." on valittu **SSH**
@@ -510,7 +510,7 @@ Pushaus ei edelleenkään toimi. Nyt kyse on siitä, että git haluaisi suoritta
 
 * luo salausavain antamalla komentoriviltä komento _ssh-keygen_
   * voit vastata kaikkiin kysymyksiin enterillä
-* syntyy kaksi salausavainta, salainen ja julkinen. ne sijoitetaan kotihakemistosi alla olevaan hakemistoon _.ssh_
+* syntyy kaksi salausavainta, salainen ja julkinen. Ne sijoitetaan kotihakemistosi alla olevaan hakemistoon _.ssh_
 * mene hakemistoon ja katso hakemiston sisältöä
 * tiedosto _id_rsa.pub_ sisältää julkisen avaimen, se on tarkoitus kopioida githubiin jotta avaimeen perustuva kirjautuminen onnistuisi
   * näet tiedoston sisällön komennolla _cat id_rsa.pub_
@@ -538,11 +538,11 @@ Branch master set up to track remote branch master from origin.
 
 * tee repositorion sisälle hakemisto _laskarit_
   * ja sen sisälle hakemisto _viikko1_
-  * Komentorivitehtävien lopussa oli kehoitus :Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
+  * Komentorivitehtävien lopussa oli kehoitus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
-  * Mene edellisen tehtäväsarjan git-harjoitusrepositorioon ja anna siellä  komento _git log --stat | cat_
+  * Mene edellisen tehtäväsarjan git-harjoitusrepositorioon ja anna siellä komento _git log --stat | cat_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne edellisen bulletin komennon tulos
-* Kirjoita jotain teksitä hakemiston juuressa olevaan tiedostoon README.md
+* Kirjoita jotain tekstiä hakemiston juuressa olevaan tiedostoon README.md
   * muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen
   * tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää boldattuja ja vinonnettuja osuuksia
   * näemme pian tekstin ruudulla muotoiltuna
@@ -554,7 +554,7 @@ Branch master set up to track remote branch master from origin.
 
 * mene GitHub-repositoriosi sivulle
   * käytännössä tämä tapahtuu uudelleenlataamalla repositorion luomisen jälkeen avautunut sivu
-* huomaat että tiedostot näkyvät nyt repositorion sivulla. sivulle renderöityy repositorion juuressa olevan README.md:n sisältö markdown-muotoiltuna
+* huomaat että tiedostot näkyvät nyt repositorion sivulla. Sivulle renderöityy repositorion juuressa olevan README.md:n sisältö markdown-muotoiltuna
 * voit editoida repositoriossa olevia tiedostoja suoraan GitHubin editorilla menemällä tiedoston sivulle ja painamalla kynäsymbolia
 * tee README.md:hen linkit repositorion hakemistossa _laskarit/viikko1/_ oleviin tiedostoihin _komentorivi.txt_ ja _gitlog.txt_
   * ohje linkin muodostamiseen löytyy [täältä](https://guides.github.com/features/mastering-markdown/)
@@ -576,7 +576,7 @@ Branch master set up to track remote branch master from origin.
 
 * Tee paikallisella koneella jokin muutos esim. tiedostoon README.md
 * Lisää ja committaa muutos
-* Vie muutokset githubiin komennolla _git push_
+* Vie muutokset GitHubiin komennolla _git push_
 * Varmista GitHubista että muutokset näkyvät
 * Paikallinen repositoriosi ja GitHubin etärepositorio ovat jälleen samassa tilassa. 
 
@@ -586,7 +586,7 @@ Branch master set up to track remote branch master from origin.
 * luodaan tälläinen tilanne
 * tee paikalliseen repositorioon muutos tiedostoon _README.md_, lisää ja committoi muutos
   * **älä** pushaa muutosta GitHubiin
-* tee GitHubiin muutos **johonkin muualle** kun README.md-tiedostoon
+* tee GitHubiin muutos **johonkin muualle** kuin README.md-tiedostoon
   * editoi siis esim. tiedostoa _gitlog.txt_ hieman suoraan GitHubissa
 * yritä nyt pushata paikallisen repositorion muutokset githubiin
 * seurauksena on virheilmoitus
@@ -605,7 +605,7 @@ mluukkai@melkki:~/otm-harjoitustyo$
 ``` 
 
 * Tulet törmäämään tähän varmaan useasti jatkossakin.
-* Ongelma ei ole paha. Koska paikalliset ja GitHubin muutokset ovat kohdistuneet **eri tiedostoihin** selviämme helpolla 
+* Ongelma ei ole paha. Koska paikalliset ja GitHubin muutokset ovat kohdistuneet **eri tiedostoihin**, selviämme helpolla 
 * ensin pullaamme muutokset paikalliseen repositorioon komennolla _git pull_
   * pullaaminen synnyttää ns. merge commitin, jolle joudumme määrittelemään commit-viestin avautuvaan editoriin
   * oletusarvoinen viesti käy, eli riittää että poistut editorista tallentaen muutokset
@@ -624,7 +624,7 @@ Nyrkkisääntönä kannattaa pitää aina sitä, että kun rupeat työskentelem�
 
 Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://tktl-labtool.herokuapp.com/register)
 
-Labtool kysyy myös harjoitustyön aihetta (=topic). Voit jättää kohdan tyhjäksi jos et ole vielä päättänyt mitä aiot tehdä.
+Labtool kysyy myös harjoitustyön aihetta (=topic). Voit jättää kohdan tyhjäksi, jos et ole vielä päättänyt mitä aiot tehdä.
 
 ## Lisää gitiä
 
