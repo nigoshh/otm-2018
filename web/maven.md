@@ -1,5 +1,3 @@
-# KESKEN
-
 # Ohjeita maveniin
 
 ## Projektin luominen

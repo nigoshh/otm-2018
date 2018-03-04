@@ -129,9 +129,10 @@ private void lisaaNumero() {
 }
 ```
 
-Metodi ei kuitenkaan itse tiedä puhelinluettelosta mitään, luettelointitehtäviä eli *sovelluslogiikkaa* hoitaa muuttujaan _palvelu_ talletettu _NumeroJaOsoitepalvelu_-olio.
+Metodi ei kuitenkaan itse tiedä puhelinluettelosta mitään, luettelointitehtäviä eli *sovelluslogiikkaa* hoitaa muuttujaan _palvelu_ talletettu _NumeroJaOsoitepalvelu_-olio, jonka metodia _lisaaNumero_ käyttöliittymä kutsuu käyttäjän antama syöte parametrina.
 
-Näin sovelluslogiikkaa voidaan testata JUnit-testien avulla automatisoidusti täysin käyttöliittymästä riippumatta.
+Koska sovelluslogiikka tapahtuu kokonaan erillään käyttöliittymästä, voidaan sen toimivuus
+ testata helposti JUnitin avulla automatisoidusti.
 
 ## Riippuvuuden injektointi
 
