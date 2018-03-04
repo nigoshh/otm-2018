@@ -19,25 +19,9 @@ Tälle sivulle on koottu erinäistä asiaa liittyen kurssin "teoriapuoleen" sek�
 
 Ohjeita työn aloittamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
 
-# Kirjoitusvirheitä materiaalissa
+# Kirjoitusvirheitä 
 
-Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GihHubiin, paina sivulla olevaa kynä-symbolia:
-
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-0.png)
-
-korjaa virhe ja ehdota muutosta (nappi sivun alalaidassa):
-
-![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-4.png)
-
-luo pullrequest:
-
-![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-5.png)
-
-ja varmista vielä:
-
-![](https://github.com/mluukkai/ohtu2017/raw/master/images/lh3-6.png)
-
-Korjausehdotuksesta tulee nyt pullrequest ja se päivittyy siinä vaiheessa sivulle kun joku kurssihenkilökunnasta hyväksyy sen.
+Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GihHubiin ja toimi [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/typokorjaukset.md) olevan ohjeen mukaan.
 
 # Ohjelmistotuotanto
 
@@ -777,4 +761,4 @@ Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mlu
 
 # Ohjelmiston toteutus
 
-Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen kongigurointiin liittyviä vihjeitä on koottu [tänne](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+Muutamia käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä on koottu [tänne](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)

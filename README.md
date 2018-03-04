@@ -12,6 +12,10 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
 
 # Aloita lukemalla ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku.
 
+## Kirjoitusvirheitä 
+
+Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GihHubiin ja toimi [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/typokorjaukset.md) olevan ohjeen mukaan.
+
 ## Ajankohtaista
 
 - Ennakkotiedoista poiketen kurssilla on vain yksi luento, ma 12.3. klo 12-14 A111
@@ -29,7 +33,7 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
 - ohjeita 
   - [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
   - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) 
-  - [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen kongigurointiin liittyviä vihjeitä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+  - [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
   - [Maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
   - [Checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
   - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
@@ -47,7 +51,7 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
 
 ### viikko 1
 
-Palautuksen deadline ma 19.3. klo 23:59
+Palautuksen deadline ti 20.3. klo 23:59
 
 - Maanantaina 12.3. klo 12-14 kurssin ainoa luento A111
 - Komentorivi- ja Git-harjoittelu (2p)
@@ -56,7 +60,7 @@ Palautuksen deadline ma 19.3. klo 23:59
 
 ### viikko 2
 
-Palautuksen deadline ma 26.3. klo 23:59
+Palautuksen deadline ti 27.3. klo 23:59
 
 - Oman aiheen alustava määrittelydokumentti (1p)
   - katso palautusohje tarkemmin [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md#viikko-2)
@@ -66,7 +70,7 @@ Palautuksen deadline ma 26.3. klo 23:59
 
 ### viikko 3
 
-Palautuksen deadline ma 9.4. klo 23:59
+Palautuksen deadline ti 10.4. klo 23:59
 
 - Koodin runko valmiina (2p)
  - Edellytys pisteille ajettavissa oleva versio, joka toteuttaa ainakin osan jostain toiminnallisuudesta
@@ -74,7 +78,7 @@ Palautuksen deadline ma 9.4. klo 23:59
 
 ### viikko 4
 
-Palautuksen deadline ma 16.4. klo 23:59
+Palautuksen deadline ti 17.4. klo 23:59
 
 - Ohjelman perustoiminnallisuus (1p)
   - Lisää koodia edellisestä viikosta 
@@ -84,7 +88,7 @@ Palautuksen deadline ma 16.4. klo 23:59
 
 ### viikko 5
 
-Palautuksen deadline ma 23.4. klo 23:59
+Palautuksen deadline ti 24.4. klo 23:59
 
 - Release 1 (1p)
   - releasessa oltava suoritettava jar
@@ -96,7 +100,7 @@ Palautuksen deadline ma 23.4. klo 23:59
 
 ### viikko 6
 
-Palautuksen deadline ma 30.4. klo 23:59
+Palautuksen deadline ke 2.5. klo 23:59
 
 - Release 2 (1p)
   - releasessa oltava suoritettava jar
