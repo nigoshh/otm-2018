@@ -29,8 +29,8 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 - [Kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - Kurssin referenssisovellus [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
-- [labtool](https://tktl-labtool.herokuapp.com/)
-- ohjeita 
+- [Labtool](https://tktl-labtool.herokuapp.com/)
+- Ohjeita 
   - [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
   - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) 
   - [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
@@ -38,9 +38,9 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - [Checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
   - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
 - Viikoittaiset palautuket
-  - [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md)
-  - laskarit [1](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) [2](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [3](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md)
-- työkaluja kaavioiden piirtoon
+  - [Harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md)
+  - Laskarit [1](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) [2](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [3](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md)
+- Työkaluja kaavioiden piirtoon
   - <http://yuml.me/> luokkakaaviot
   - <https://www.websequencediagrams.com/> sekvenssikaavioihin
   - <https://draw.io/> kaikki kaaviot
