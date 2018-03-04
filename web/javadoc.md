@@ -1,6 +1,6 @@
 # KESKEN
 
-## JavaDoc
+# JavaDoc
 
 Osa ohjelmiston dokumentointia on lähdekoodin *API-kuvaus*.  Javassa lähdekoodi dokumentoidaan käyttäen *JavaDoc*-työkalua.  Dokumentointi on kuin kommenttien kirjoittamista, mutta erityisillä avainsanoilla.  JavaDoc työkalu, jota voi käyttää suoraan NetBeanssin valikoista tekee kaikesta lähdekoodidokumentoinnista automaattisesti HTML-sivun.
 
@@ -62,7 +62,7 @@ Jos sinulla kaikesta huolimatta on julkisia muuttujia, JavaDoc-syntaksin mukaan 
 public int kalibrointi = 20;
 ```
  
-### Tarkempi dokumentointi
+## Tarkempi dokumentointi
 
 Laajennetaan vielä alussa esiteltyä esimerkkiä.  Metodille annetaan toinen parametri ja tämä dokumentoidaan omana @param-rivinä.  Lisäksi dokumentointiin lisätään "See Also" -kohta, jonka kautta HTML-dokumentissa liikkuminen laskukone-pakkauksen Laskenta-luokan laskeTn(int)-metodiin on helppoa.  Tämä ilmaistaan muodossa laskukone.Laskenta#laskeTn(int).  NetBeanssin control+space osaa täydentää projektin koodin mukaan tämän polun!
 ``` java
@@ -85,7 +85,7 @@ public int onnistumistodennakoisyys(int syote, int kayttajanKorjaus) {
 
 Lisää ohjeita löydät [JavaDocin Wikipedia-sivulta](http://en.wikipedia.org/wiki/Javadoc).
 
-### JavaDocin Generointi 
+## JavaDocin Generointi 
 
 Jos haluat saada projektisi JavaDocista helposti selattavan html-sivun ja NetBeansin oma "Generate JavaDoc"-näppäin on harmaana, ei kannata huolestua, voimme lisätä sen helposti samaan custom-valikkoon kuin pit.
 
@@ -119,3 +119,5 @@ Tämän jälkeen build-osan pitäisi näyttää suunnilleen tältä jolloin sen 
     </plugins>
 </build>
 ```
+
+## Pakkausten dokumentointi

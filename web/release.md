@@ -1,6 +1,6 @@
 # KESKEN
 
-## Github release
+# Github release
 
 Yksi mahdollisuus on luoda GitHubiin release, eli julkaistu versio.
 * klikkaa repositorion GitHub-sivulta kohtaa "0 releases"

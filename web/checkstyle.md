@@ -1,12 +1,12 @@
 # KESKEN
 
-## Checkstyle
+# Checkstyle
 
 Koodin testauksen lisäksi koodin luettavuuden ylläpitäminen on tärkeää. Tässä hyvänä apuvälineenä on staattisen analyysin työkalu Checkstyle. ks. [http://checkstyle.sourceforge.net/](http://checkstyle.sourceforge.net/). Kurssilla käytetään *Ohjelmoinnin Perusteista* ja *Ohjelmoinnin Jatkokurssista* tuttua checkstyleä, [koodin laatuvaatimuksien](Koodin-laatuvaatimukset.md) seurannassa.
 
 >Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. It automates the process of checking Java code to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
 
-### Checkstylen tuominen projektiin
+## Checkstylen tuominen projektiin
 
 Checkstyle on helppo tuoda Maven-projektiin, lisätään se vain **pom.xml** tiedostoon. Jotta Checkstylen raporteista pääsisi helposti tarkastelemaan lähdekoodissa olevaa ongelmakohtaa, on hyvä käyttää Checkstyleä yhdessä [jxr:n](http://maven.apache.org/plugins/maven-jxr-plugin/) kanssa. 
 
@@ -143,7 +143,7 @@ Generoituasi Checkstyle-raportin löydät sen polusta **/target/site/checkstyle.
 
 Lisää Checkstylestä voi lukea [ohtun sivuilta](https://github.com/mluukkai/ohtu2014/blob/master/web/laskari3.md)
 
-### Deadline 3: Luokkien jättäminen checkstylen ulkopuolelle
+## Deadline 3: Luokkien jättäminen checkstylen ulkopuolelle
 
 Kurssilla ei ole tarpeen kirjoittaa ehdottoman siistiä käyttöliittymäkoodia, ja siksi emme vaadikaan että käyttöliittymäluokkia testataan ollenkaan Checkstylen avulla. Muutetaan siis vielä raportointi niin, että tietyt tiedostot
 jätetään pois (esimerkiksi Main.java-tiedostosi). Lisää siis seuraava määritys ```<module name='TreeWalker'>```-tagin ulkopuolelle (!!) esimerkiksi siis ```<module name='FileLength'>```-tagin ylä- tai alapuolelle, mutta kuitenkin niin, että se on ```<module name='Checker'>```-
