@@ -1,5 +1,3 @@
-# KESKEN
-
 # Muutamia toteutukseen liittyviä vihjeitä
 
 ## Sovelluksen käyttöliittymä
@@ -571,8 +569,47 @@ Sovelluksen _todoService_ ei siis tunne _DAO_-olioiden todellista luonnetta, sov
 ```java
 @Override
 public void init() {
-    FileUserDao userDao = new FileUserDao("users.txt");
-    FileTodoDao todoDao = new FileTodoDao("todos.txt", userDao);
+    String userFile = "users.txt";
+    String todoFile = "todos.txt";
+
+    FileUserDao userDao = new FileUserDao(userFile);
+    FileTodoDao todoDao = new FileTodoDao(todoFile, userDao);
     todoService = new TodoService(todoDao, userDao);
 }
 ```
+
+## Sovelluksen konfiguraatiot
+
+Sovelluksen koodiin ei ole syytä kovakoodata mitään konfiguraatioita, kuten sen käyttämien tiedostojen tai tietokantojen nimiä. Edellä esitetyssä alustusmetodissa _init_ syyllistytään juuri tähän. Eräs syy tähän on se, että jos konfiguraatiot ovat koodissa, ei ohjelman normaalin käyttäjän (jolla ei ole pääsyä koodiin) ole mahdollista tehdä muutoksia konfiguraatioihin.
+
+Konfuguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisessä konfiguraatiotiedostoissa. 
+
+Esimerkkisovelluksen konfiguraatiot on määritelty sovelluksen juuressa olevaan tiedostoon 
+_config.properties_:
+
+<pre>
+userFile=users.txt
+todoFile=todos.txt
+</pre>
+
+Koodi käsittelee konfiguraatioita [Property](https://docs.oracle.com/javase/7/docs/api/java/util/Properties.html)-olion avulla:
+
+```java
+@Override
+public void init() throws Exception {
+    Properties properties = new Properties();
+
+    properties.load(new FileInputStream("config.properties"));
+    
+    String userFile = properties.getProperty("userFile");
+    String todoFile = properties.getProperty("todoFile");
+        
+    FileUserDao userDao = new FileUserDao(userFile);
+    FileTodoDao todoDao = new FileTodoDao(todoFile, userDao);
+    todoService = new TodoService(todoDao, userDao);
+}
+```
+
+Lisää konfiguraatioiden käsittelyyn Property-olioiden avulla esim. [täällä](https://www.mkyong.com/java/java-properties-file-examples/) tai [täällä](https://docs.oracle.com/javase/tutorial/essential/environment/properties.html)
+
+Toinen hyvä paikka konfiguraatioille ovat [ympäristömuuttujat](https://docs.oracle.com/javase/tutorial/essential/environment/env.html).

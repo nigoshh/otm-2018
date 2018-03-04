@@ -1,4 +1,4 @@
-# Ohjeita maveniin
+# Ohjeita Maveniin
 
 ## Projektin luominen
 
