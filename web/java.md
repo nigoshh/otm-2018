@@ -2,13 +2,13 @@
 
 ## Sovelluksen käyttöliittymä
 
-Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md)
+Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md).
 
-Pääasia on jokatapauksessa, että pyrit _eriyttämään mahdollisimman hyvin sovelluslogiikan käyttöliittymästä_. Käyttöliittymän roolin tulee siis olla ainoastaan käyttäjän kanssa tapahtuva interaktio, varsinaisen logiikan tulee tapahtua muissa oliossa. 
+Pääasia on joka tapauksessa, että pyrit _eriyttämään mahdollisimman hyvin sovelluslogiikan käyttöliittymästä_. Käyttöliittymän roolin tulee siis olla ainoastaan käyttäjän kanssa tapahtuva interaktio, varsinaisen logiikan tulee tapahtua muissa oliossa. 
 
 ### Eräs malli tekstikäyttöliittymälle
 
-Ohjelmoinnin jatkokurssin viikon 9 tehtävän [numerotiedustelu](https://materiaalit.github.io/ohjelmointi-s17/part9/) malliratkaisu tarjoaa erään kohtuullisen hyvän mallin teksikäyttöliittymälle.
+Ohjelmoinnin jatkokurssin viikon 9 tehtävän [numerotiedustelu](https://materiaalit.github.io/ohjelmointi-s17/part9/) malliratkaisu tarjoaa erään kohtuullisen hyvän mallin tekstikäyttöliittymälle.
 
 Pääohjelma ei tee mitään muuta kuin luo ja käynnistää luokan _Numerotiedustelu_ instanssin:
 
@@ -115,7 +115,7 @@ Koodi tulostaa ruudulle komentojen nimet, kysyy käyttäjän syötettä ja suori
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/j-1.png" width="700">
 
-Koodi haarautuu käyttäjän valinnan mukaan if:issä valitun toimenpiteen suorittavaan metodiin. Esim. jos valinta on 1, suoritetaan tiedot luetteloon lisäävä metodi:
+Koodi haarautuu käyttäjän valinnan mukaan if:ssä valitun toimenpiteen suorittavaan metodiin. Esim. jos valinta on 1, suoritetaan tiedot luetteloon lisäävä metodi:
 
 ```java
 private void lisaaNumero() {
@@ -175,7 +175,7 @@ public class Paaohjelma {
 
 Ero on hyvin pieni, nyt sovelluslogiikasta huolehtiva _NumeroJaOsoitepalvelu_-olio luodaan pääohjelmassa ja annetaan käyttöliittymänä toimivalle _Numerotiedustelu_-oliolle konstruktorin parametrina.
 
-Tästä tekniikasta käytetään nimitystä [riippuvuuden injektointi](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#riippuvuuksien-injektointi), sillä  _NumeroJaOsoitepalvelu_-olio on _Numerotiedustelu_-olion riippuvuus joka tässä myöhemmässä versiossa injetoidaan konstruktoriparametrin avulla riippuvuutta tarvitsevalle oliolle. Aiemmassa versiossahan numerotiedustelu loi riippuvuuden itse.
+Tästä tekniikasta käytetään nimitystä [riippuvuuden injektointi](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#riippuvuuksien-injektointi), sillä  _NumeroJaOsoitepalvelu_-olio on _Numerotiedustelu_-olion riippuvuus, joka tässä myöhemmässä versiossa injetoidaan konstruktoriparametrin avulla riippuvuutta tarvitsevalle oliolle. Aiemmassa versiossahan numerotiedustelu loi riippuvuuden itse.
 
 Riippuvuuksien injektoinnista on monia etuja, eräs näistä on laajennettavuus.
 
@@ -202,7 +202,7 @@ public class Paaohjelma {
 }
 ```
 
-Toinen etu merkittävä etu on testauksen helpottaminen. Se onkin syynä sille, miksi _Scanner_ injektoidaan _Numerotiedustelu_-oliolle.
+Toinen merkittävä etu on testauksen helpottaminen. Se onkin syynä sille, miksi _Scanner_ injektoidaan _Numerotiedustelu_-oliolle.
 
 Testit toimivat seuraavaan tyyliin:
 
@@ -235,7 +235,7 @@ Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttä�
 
 Myös graafista käyttöliittymää käytettäessä tulee periaatteen olla se, että käyttöliittymän koodi ei sisällä sovelluslogiikkaa.
 
-Mallia voi ottaa esimerkiksi kurssin referenssisovelluksen [TodoApp:in](https://github.com/mluukkai/OtmTodoApp/) koodista ja [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
+Mallia voi ottaa esimerkiksi kurssin referenssisovelluksen [TodoApp:in](https://github.com/mluukkai/OtmTodoApp/) koodista ja [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md).
 
 ### Sovelluksen alustaminen ja sulkeminen
 
@@ -296,7 +296,7 @@ Koodi havainnollistaa myös tapaa, miten lambda-funktiona määritelty _createTo
 
 Koodissa on myös metodi [stop](https://docs.oracle.com/javase/8/javafx/api/javafx/application/Application.html#stop--) joka suoritetaan aina viimeisenä ennen sovelluksen sulkeutumista. Metodissa voidaan suorittaa tarvittavia lopetustoimia, esim. tiedostojen tallentamista.
 
-Metodin _start_ lopuun on rekisteröity tapahtumankuuntelija joka suoritetaan juuri ennen sovelluksen sulkemista. If-haara demonstroi miten sulkemisen voi vielä estää tapahtumankuuntelijassa. 
+Metodin _start_ loppuun on rekisteröity tapahtumankuuntelija, joka suoritetaan juuri ennen sovelluksen sulkemista. If-haara demonstroi miten sulkemisen voi vielä estää tapahtumankuuntelijassa. 
 
 ### FXML
 
@@ -362,7 +362,7 @@ public class FXMLController implements Initializable {
 }
 ```
 
-Kontrollerin oliomuuttuja _display_ on nyt sidottu näkymän labeliin sillä muuttujan nimi on sama kuin labelin attribuutin _fx:id_ arvo:
+Kontrollerin oliomuuttuja _display_ on nyt sidottu näkymän labeliin, sillä muuttujan nimi on sama kuin labelin attribuutin _fx:id_ arvo:
 
 ```xml
 <Label fx:id="display" ... />  
@@ -426,7 +426,7 @@ public class MainApp extends Application {
 
 ### Scenebuilder
 
-FXML-muotoiset käyttöliittymien näkymät on mahdollista tehdä käsin editoimalla fxml-tiedostoja. Toinen mahdollisuus on käyttää graafista [Scenebuilder](http://gluonhq.com/products/scene-builder/)-editoria käyttöliittymän rakentamiseen
+FXML-muotoiset käyttöliittymien näkymät on mahdollista tehdä käsin editoimalla fxml-tiedostoja. Toinen mahdollisuus on käyttää graafista [Scenebuilder](http://gluonhq.com/products/scene-builder/)-editoria käyttöliittymän rakentamiseen.
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/j-3.png" width="800">
 
@@ -454,7 +454,7 @@ Youtubesta löytyy runsaasti vaihtelevanlaatuisia videoita aihepiiristä.
 
 ## Tietojen talletus
 
-Arvosteluperusteet [kannustavat](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md) siihen että ohjelmasti käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
+Arvosteluperusteet [kannustavat](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md) siihen, että ohjelmasti käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
 
 ### DAO-suunnittelumalli
 
