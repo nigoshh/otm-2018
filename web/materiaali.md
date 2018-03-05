@@ -72,8 +72,7 @@ Ohjelmiston vaatimuksiin kuuluvat myös _toimintaympäristön rajoitteet_. Todo-
 
 Vaatimusmäärittelyn aikana hahmotellaan yleensä myös sovelluksen käyttöliittymä.
 
-Kurssin aiemmissa versioissa käyttäjien vaatimukset dokumentointiin [käyttötapauksina](https://en.wikipedia.org/wiki/Use_case) (engl. use case). Käytämme tällä kurssilla hieman kevyempää tapaa, ja kirjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana listana. Katso tarkemmin Todo-sovelluksen alustavasta  
-[vaatimusmäärittelystä](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md).
+Kurssin aiemmissa versioissa käyttäjien vaatimukset dokumentointiin [käyttötapauksina](https://en.wikipedia.org/wiki/Use_case) (engl. use case). Käytämme tällä kurssilla hieman kevyempää tapaa, ja kirjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana feature-listana. Katso tarkemmin Todo-sovelluksen alustavasta [vaatimusmäärittelystä](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/vaatimusmaarittely.md).
 
 
 ## Suunnittelu
@@ -441,7 +440,7 @@ Vastaavasti pakkaus _todoapp.domain_ riippuu pakkauksesta _todoapp.dao_ sillä d
 
 Pakkauskaavioihin on myös mahdollista merkitä pakkausten sisältönä olevia luokkia normaalin luokkakaaviosyntaksin mukaan:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-12.png" width="400">
+<img src="https://raw.githubusercontent.com/mluukkai/OtmTodoApp/master/dokumentaatio/kuvat/a-3c.png" width="500">
 
 Sovelluksen koodi on organisoitu _kerrosarkkitehtuurin_ periaatteiden mukaan. Asiasta lisää hieman myöhemmin tässä dokumentissa.
 
