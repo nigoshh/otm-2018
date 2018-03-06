@@ -466,13 +466,13 @@ Molemmat DAO:t on piilotettu sovelluslogiikalta rajapintojen taakse:
 
 ```java
 public interface UserDao {
-    void create(User user);
+    User create(User user);
     User findByUsername(String username);
     List<User> getAll();
 }
 
 public interface TodoDao {
-    void create(Todo todo);
+    Todo create(Todo todo);
     List<Todo> getAll();
     void setDone(int id);
 }
@@ -527,9 +527,10 @@ public class FileUserDao implements UserDao {
     }
     
     @Override
-    public void create(User user) {
+    public User create(User user) {
         users.add(user);
         save();
+        return user;
     }    
 }
 ```

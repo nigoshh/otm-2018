@@ -29,6 +29,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 - [Kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - Kurssin referenssisovellus [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
+  - Sovelluksen tarkoituksena on demonstroida erästä tapaa tehdä suurin piirtein täysiin pisteisiin riittävä dokumentaatio projektillesi. Itse ohjelma on sen verran suppea, että saadaksesi kurssilta arvosanan 5 joudut tekemään hieman laajemman sovelluksen. Myös testaus on jätetty vajaaksi.
 - [Labtool](https://tktl-labtool.herokuapp.com/)
 - Ohjeita 
   - [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
