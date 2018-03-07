@@ -54,7 +54,7 @@ Ohjeita
 
 ## viikko 6
 
-Palautuksen deadline ma 30.4. klo 23:59
+Palautuksen deadline tiistai 1.5. klo 23:59
 
 - Lisää koodia ja uusi release (1p)
   - Koodi kasvanut edellisestä viikosta
@@ -68,3 +68,5 @@ Ohjeita
 - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
 
 ## viikko 7
+
+Palautuksen deadline ma 30.4. klo 23:59
