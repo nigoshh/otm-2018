@@ -12,6 +12,12 @@ Koko kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteis
 
 Harjoitustyön ohjelmointikieli on pääsääntöisesti Java. Ohjaajat saattavat suostua muihinkin kieliin, mutta asia on syytä sopia kurssin ensimmäisen viikon aikana. 
 
+Näyttää sitä, että Javan lisäksi mahdollisia ovat myös Javascript, Ruby, C++ ja Python. Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olevat komponentit, mutta sovelluksen käyttöliittymän tulee olla ns desktop-sovellus.
+
+Muuta kuin Javaa käytettäessä ohjaus saattaa olla "huonompaa", sillä kurssihenkilökunnan kokemus vaihtoehtoisilla kielillä tehtävistä desktop-sovelluksista on rajallinen.
+
+Muita kieliä valitessa on myös syytä pitää mielessä, että kieleltä on syytä löytyä Javan [Mavenia](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md), [JUnitia](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md), [jacocoa](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#3-testauskattavuus) [checkstyeä](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md), [JavaDocia](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) vastaavat menetelmät.
+
 Ohjelmakoodin muuttujat, luokat ja metodit kirjoitetaan englanniksi. Dokumentaatio voidaan kirjoittaa joko suomeksi tai englanniksi. 
 
 ## Ohjelman toteutus
