@@ -33,8 +33,13 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 - [Kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - Viikoittaiset palautuket
-  - [Harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md)
-  - Laskarit [1](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) [2](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [3](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md)
+  - viikko 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) 
+  - viikko 2 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md) 
+  - viikko 3 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md) [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko3.md)
+  - viikko 4 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md)
+  - viikko 5 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md)
+  - viikko 6 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md)
+  - viikko 7 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko7.md)         
 - Kurssin referenssisovellus [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
   - Sovelluksen tarkoituksena on demonstroida erästä tapaa tehdä suurin piirtein täysiin pisteisiin riittävä dokumentaatio projektillesi. Itse ohjelma on sen verran suppea, että saadaksesi kurssilta arvosanan 5 joudut tekemään hieman laajemman sovelluksen. Myös testaus on jätetty vajaaksi.
 - [Labtool](https://tktl-labtool.herokuapp.com/)
