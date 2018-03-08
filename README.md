@@ -3,7 +3,7 @@
 ## TL;DR
 
 - Varaa aikaa 10-15h joka viikko
-- Lue ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
+- Lue __heti__ ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
 - Tutustu [arvosteluperusteisiin](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
 - Pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
   - viikon 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
