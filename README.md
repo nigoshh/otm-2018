@@ -1,6 +1,6 @@
 # Ohjelmistotekniikan menetelmät, kevät 2018
 
-## TL;DR,
+## TL;DR
 
 - Varaa aikaa 10-15h joka viikko
 - Lue ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
@@ -10,7 +10,7 @@
 - tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 14-16
 - liity telegramiin <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
 
-## yleistä
+## Yleistä
 
 Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pieni harjoitustyö.
 
