@@ -2,7 +2,7 @@
 
 ## Sovelluksen käyttöliittymä
 
-Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md).
+Voit siis tehdä sovelluksellesi tekstikäyttöliittymän tai graafisen käyttöliittymän. Tekstikäyttöliittymän tekeminen on toki useimmiten huomattavasti helpompaa, mutta se voi olla hieman tylsää ja graafisen käyttöliittymän tekemättömyys saattaa [vaikuttaa arvosanaan](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md).
 
 Pääasia on joka tapauksessa, että pyrit _eriyttämään mahdollisimman hyvin sovelluslogiikan käyttöliittymästä_. Käyttöliittymän roolin tulee siis olla ainoastaan käyttäjän kanssa tapahtuva interaktio, varsinaisen logiikan tulee tapahtua muissa oliossa. 
 
@@ -454,7 +454,7 @@ Youtubesta löytyy runsaasti vaihtelevanlaatuisia videoita aihepiiristä.
 
 ## Tietojen talletus
 
-Arvosteluperusteet [kannustavat](https://github.com/mluukkai/otm-2018/blob/master/web/arvvosteluperusteet.md) siihen, että ohjelmasti käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
+Arvosteluperusteet [kannustavat](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md) siihen, että ohjelmasti käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
 
 ### DAO-suunnittelumalli
 
