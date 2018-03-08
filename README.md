@@ -19,7 +19,12 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 ## Ajankohtaista
 
 - Ennakkotiedoista poiketen kurssilla on vain yksi luento, ma 12.3. klo 12-14 A111
-- Kurssilla on tarjolla runsaasti ohjausta salissa B221/BK107, ohjausajat selviävät myöhemmin
+- Paja salissa B221
+  - ma 12-16 (ensimmäisellä viikolla 14-16)
+  - ti 12-18
+  - ke 10-14
+  - pe 14-16
+
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
 <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
   - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen ilmainen keskustelufoorumisovellus jota on mahdollista käyttää selaimella, mobiililaitteilla ja windows/linux/osx-clienteillä
