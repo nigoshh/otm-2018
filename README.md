@@ -1,5 +1,17 @@
 # Ohjelmistotekniikan menetelmät, kevät 2018
 
+## TL;DR,
+
+- Varaa aikaa 10-15h joka viikko
+- Lue ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
+- Tutustu [arvosteluperusteisiin](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
+- pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
+  - viikon 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
+- tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 14-16
+- liity telegramiin <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
+
+## yleistä
+
 Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pieni harjoitustyö.
 
 Kurssin kolmella ensimmäisellä viikolla on muutama ohjauksessa tai omatoimisesti tehtävä harjoitustehtävä. Kurssin pääpainon muodostaa viikolla 2 aloitettava, itsenäisesti tehtävä harjoitustyö. Työtä on tarkoitus edistää pala palalta [viikoittaisten](https://github.com/mluukkai/otm-2018#aikataulu) tavoitteiden ohjaamana. 
@@ -10,14 +22,6 @@ Kurssilla ei ole koetta. Harjoitustyö tulee tehdä kurssin aikataulujen puittei
 
 Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md).
 
-## TL;DR,
-
-- Lue ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
-- Tutustu [arvosteluperusteisiin](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
-- pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
-  - viikon 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
-- tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 14-16
-- liity telegramiin <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
 
 ## Kirjoitusvirheitä 
 
