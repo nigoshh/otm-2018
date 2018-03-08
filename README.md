@@ -10,7 +10,14 @@ Kurssilla ei ole koetta. Harjoitustyö tulee tehdä kurssin aikataulujen puittei
 
 Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md).
 
-# Aloita lukemalla ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku.
+## TL;DR,
+
+- Lue ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
+- Tutustu [arvosteluperusteisiin](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
+- pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
+  - viikon 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
+- tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 14-16
+- liity telegramiin <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
 
 ## Kirjoitusvirheitä 
 
@@ -72,11 +79,11 @@ Palautuksen deadline ti 20.3. klo 23:59
 
 Palautuksen deadline ti 27.3. klo 23:59
 
-- HArjoitustyön aiheen alustava määrittelydokumentti (1p)
+- Harjoitustyön aiheen alustava määrittelydokumentti (1p)
   - katso tarkemmin [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md) 
 - JUnit-harjoittelu (2p)
   - Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md)
-- oman projektin koodaus alkaa
+- Oman projektin koodaus alkaa
 
 ### viikko 3
 
