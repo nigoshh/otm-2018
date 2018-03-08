@@ -5,10 +5,11 @@
 - Varaa aikaa 10-15h joka viikko
 - Lue ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
 - Tutustu [arvosteluperusteisiin](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
-- pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
+- Pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
   - viikon 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
-- tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 14-16
-- liity telegramiin <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
+- Tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 14-16
+- Liity telegramiin <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
+- Kysy heti jos joku epäselvää
 
 ## Yleistä
 
