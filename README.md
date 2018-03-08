@@ -34,8 +34,8 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 - [Kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
 - Viikoittaiset palautuket
   - viikko 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) 
-  - viikko 2 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md) 
-  - viikko 3 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md) [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko3.md)
+  - viikko 2 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) ja [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md) 
+  - viikko 3 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md) ja [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko3.md)
   - viikko 4 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md)
   - viikko 5 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md)
   - viikko 6 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md)
@@ -72,8 +72,8 @@ Palautuksen deadline ti 20.3. klo 23:59
 
 Palautuksen deadline ti 27.3. klo 23:59
 
-- Oman aiheen alustava määrittelydokumentti (1p)
-  - katso palautusohje tarkemmin [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md#viikko-2)
+- HArjoitustyön aiheen alustava määrittelydokumentti (1p)
+  - katso tarkemmin [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md) 
 - JUnit-harjoittelu (2p)
   - Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md)
 - oman projektin koodaus alkaa
@@ -82,47 +82,47 @@ Palautuksen deadline ti 27.3. klo 23:59
 
 Palautuksen deadline ti 10.4. klo 23:59
 
-- Koodin runko valmiina (2p)
- - Edellytys pisteille ajettavissa oleva versio, joka toteuttaa ainakin osan jostain toiminnallisuudesta
-- [Tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) Luokka- ja sekvenssikaaviosta (1p)
+- Harjoitustyön koodin runko valmiina (2p)
+  - katso tarkemmin [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko3.md) 
+- Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) Luokka- ja sekvenssikaaviosta (1p)
 
 ### viikko 4
 
 Palautuksen deadline ti 17.4. klo 23:59
 
-- Ohjelman perustoiminnallisuus (1p)
-  - Lisää koodia edellisestä viikosta 
-- Testien aloitus (1p)
-- Alustava rakenne luokkakaavona (0.5p)
-- Checkstyle otettu käyttöön (0.5p)
+- Harjoitustyö (3p)
+  - Ohjelman perustoiminnallisuus 
+  - Testien aloitus 
+  - Alustava rakenne luokkakaavona 
+  - Checkstyle otettu käyttöön
+- Tarkemat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md) 
 
 ### viikko 5
 
 Palautuksen deadline ti 24.4. klo 23:59
 
-- Release 1 (1p)
-  - releasessa oltava suoritettava jar
-  - Koodi kasvanut edellisestä viikosta
-- Testejä lisää (1p)
-  - Testikattavuusraportti
-- Jotain päätoiminnallisuutta kuvaava sekvenssikaavio (1p)
-- Koodikatselmointi
+- Harjoitustyö (3p)
+  - Release 1 
+  - Testikattavuus nousee 
+  - Jotain päätoiminnallisuutta kuvaava sekvenssikaavio 
+- Tarkemat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md) 
+- Koodikatselmointi (2p)
+  - ohjeet myöhemmin
 
 ### viikko 6
 
 Palautuksen deadline ke 2.5. klo 23:59
 
-- Release 2 (1p)
-  - releasessa oltava suoritettava jar
-  - Koodi kasvanut edellisestä viikosta
-- Testejä lisää (0.5p)
-  - testikattavuusraportti
-- JavaDoc aloitettu (0.5p)
-- Alustava versio arkkitehtuuridokumentista (1p)
+- Harjoitustyö (3p)
+  - Release 2
+  - Testikattavuus nousee 
+  - JavaDoc aloitettu 
+  - Alustava versio arkkitehtuuridokumentista 
+- Tarkemat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md) 
 
 ### viikko 7
 
 Lopullisen palautuksen deadline pe 11.5. klo 23:59
 
 - Demot
-
+- [loppupalautuksen ohjeet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md) 
