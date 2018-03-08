@@ -8,7 +8,7 @@
 - Pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
   - viikon 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
 - Tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 14-16
-- Liity telegramiin <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
+- Liity telegramiin <https://t.me/tktlotm>
 - Kysy heti jos joku epäselvää
 
 ## Yleistä
