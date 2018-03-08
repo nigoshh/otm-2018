@@ -24,7 +24,6 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - ti 12-18
   - ke 10-14
   - pe 14-16
-
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
 <https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
   - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen ilmainen keskustelufoorumisovellus jota on mahdollista käyttää selaimella, mobiililaitteilla ja windows/linux/osx-clienteillä
@@ -33,6 +32,9 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 ## Linkkejä
 
 - [Kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
+- Viikoittaiset palautuket
+  - [Harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md)
+  - Laskarit [1](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) [2](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [3](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md)
 - Kurssin referenssisovellus [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
   - Sovelluksen tarkoituksena on demonstroida erästä tapaa tehdä suurin piirtein täysiin pisteisiin riittävä dokumentaatio projektillesi. Itse ohjelma on sen verran suppea, että saadaksesi kurssilta arvosanan 5 joudut tekemään hieman laajemman sovelluksen. Myös testaus on jätetty vajaaksi.
 - [Labtool](https://tktl-labtool.herokuapp.com/)
@@ -43,9 +45,6 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - [Maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
   - [Checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
   - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
-- Viikoittaiset palautuket
-  - [Harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikkopalautukset.md)
-  - Laskarit [1](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) [2](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) [3](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md)
 - Työkaluja kaavioiden piirtoon
   - <http://yuml.me/> luokkakaaviot
   - <https://www.websequencediagrams.com/> sekvenssikaavioihin
