@@ -84,7 +84,7 @@ _Arkkitehtuurisuunnittelussa_ määritellään ohjelman rakenne karkealla tasoll
 - miten komponentit yhdistetään, eli minkälaisia komponenttien väliset rajapinnat ovat
 - mitä riippuvuuksia ohjelmalla on esim. tietokantoihin ja ulkoisiin rajapintoihin
 
-Arkkitehtuurisuunnittelua tarkentaa _oliosuunnittelu_, missä mietitään ohjelmiston yksittäisten komponenttien rakennetta,  eli minkälaisisista luokista komponentot koostuvat ja miten luokat kutsuvat toistensa metodeja sekä mitä apukirjastoja luokat käyttävät.
+Arkkitehtuurisuunnittelua tarkentaa _oliosuunnittelu_, missä mietitään ohjelmiston yksittäisten komponenttien rakennetta,  eli minkälaisisista luokista komponentit koostuvat ja miten luokat kutsuvat toistensa metodeja sekä mitä apukirjastoja luokat käyttävät.
 
 Myös ohjelmiston suunnittelu, erityisesti sen arkkitehtuuri dokumentoidaan usein jollain tavalla. Joskus tosin dokumentaatio on hyvin kevyt, esim. valkotaululle piirretty kaavio tai se voi jopa puuttua kokonaan ja ajatellaankin että hyvin muotoiltu koodi voi korvata dokumentoinnin.
 
