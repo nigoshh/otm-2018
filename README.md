@@ -37,7 +37,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - ke 10-14
   - pe 14-16
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
-<https://t.me/joinchat/EHqi4kgLX_5HIivn4MgjnA>
+<https://t.me/tktlotm>
   - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen ilmainen keskustelufoorumisovellus jota on mahdollista käyttää selaimella, mobiililaitteilla ja windows/linux/osx-clienteillä
   -  **Huom:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 
