@@ -344,7 +344,7 @@ Laajennetaan Unicafen testaus kattamaan myös kassapääte.
   * jos maksu ei ole riittävä: kassassa oleva rahamäärä ei muutu, kaikki rahat palautetaan vaihtorahana ja myytyjen lounaiden määrässä ei muutosta
 * _seuraavissa testeissä tarvitaan myös Maksukorttia jonka oletetaan toimivan oikein_
 * korttiosto toimii sekä edullisten että maukkaiden lounaiden osalta
-  * jos kortilla on tarpeeksi rahaa, veloitetan summa kortilta ja palautetaan true
+  * jos kortilla on tarpeeksi rahaa, veloitetaan summa kortilta ja palautetaan true
   * jos kortilla on tarpeeksi rahaa, myytyjen lounaiden määrä kasvaa
   * jos kortilla ei ole tarpeeksi rahaa, kortin rahamäärä ei muutu, myytyjen lounaiden määrä muuttumaton ja palautetaan false
   * kassassa oleva rahamäärä ei muutu kortilla ostettaessa

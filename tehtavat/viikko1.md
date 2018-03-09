@@ -62,7 +62,7 @@ Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 
 ## tab complete
 
-Komentoriviä käyttäessä kannattaa ehdottomasti totutella _tab-completen_ käyttöön. _Tab_ on näppäin, joka näyttää suunilleen seuraavalta
+Komentoriviä käyttäessä kannattaa ehdottomasti totutella _tab-completen_ käyttöön. _Tab_ on näppäin, joka näyttää suunnilleen seuraavalta
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/tab.jpg)
 
@@ -129,7 +129,7 @@ Jos katsot hakemiston sisältöä komennolla <code>ls -la</code> huomaat, että 
 
 **HUOM** koska hakemiston nimi (_.git_) alkaa pisteellä, ei komento _ls_ näytä sitä oletusarvoisesti. Parametri _a_ näyttää myös pisteellä alkavat tiedostot ja hakemistot. Kokeile, miten _ls -a_ ja _ls -la_ eroavat toisistaan!
 
-Pysy edelleen repositorion sisältävässä hakemistossasi _ otm_viikko1_.
+Pysy edelleen repositorion sisältävässä hakemistossasi _otm_viikko1_.
 
 Luo hakemistoon tiedosto nimeltään _tiedosto.txt_, esim. komennolla <code>touch</code>. Luotuasi tiedoston, suorita komento <code>git status</code>:
 
@@ -227,7 +227,7 @@ Git ilmoittaa nyt, että uusi tiedosto on _untracked_ ja että aiemmassa tiedost
 
 Toimitaan ohjeen mukaan eli lisätään muutokset ja uusi tiedosto commitoitavien joukkoon. Molempien tiedostojen yhtäaikainen "addaaminen" onnistuu komennolla <code>git add .</code>
 
-Tarkistetaan taas tilanne koennolla <code>git status</code>
+Tarkistetaan taas tilanne komennolla <code>git status</code>
 
 <pre>
 mluukkai@melkinpaasi:~/otm_viikko1$ git status
