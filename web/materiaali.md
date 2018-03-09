@@ -15,7 +15,7 @@ Kurssin suoritusmuoto poikkeaa radikaalisti aiemmasta viikoittaiset luennot ja l
 
 Kurssin ensimmäisen kolmen viikon aikana harjoitellaan versionhallintaa, yksikkötestausta sekä UML-kaavioiden tekemistä. Toisesta viikosta alkaen aloitetaan oman harjoitustyön tekeminen. Harjoitustyön tekemisen ohessa osoitetaan riittävä osaaminen kurssin oppimistavoitteiden suhteen, koetta kurssilla ei ole. Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md).
 
-Tälle sivulle on koottu erinäistä asiaa liittyen kurssin "teoriapuoleen" sekä erinäisiin menetelmiin, kuten UML-kaavioihin. Sivu kannattaa lukea kokonaisuudessaan heti ensimmäisen viikon aikana, tosin luvusta [Työkaluja](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#työkaluja) alkaen olevaa asiaa tarvitaan oikeastaan vasta viikosta 2 eteenpäin.
+Tälle sivulle on koottu erinäistä asiaa liittyen kurssin "teoriaan" sekä erinäisiin menetelmiin, kuten UML-kaavioihin. Sivu kannattaa lukea kokonaisuudessaan heti ensimmäisen viikon aikana, tosin luvusta [Työkaluja](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#työkaluja) alkaen olevaa asiaa tarvitaan oikeastaan vasta viikosta 2 eteenpäin.
 
 Ohjeita työn aloittamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
 
@@ -47,7 +47,7 @@ Vaatimusmäärittelyn tuloksena on useimmiten jonkinlainen dokumentti, johon vaa
 
 ### Todo-sovelluksen vaatimusmäärittely
 
-Esimerkkisovelluksemme on siis klassinen _todoapp_, eli sovellus, jonka avulla käyttäjien on mahdollista pitää kirjaa omista tekemättömistä töistä, eli _todoista_.
+Esimerkkisovelluksemme on siis klassinen _TodoApp_, eli sovellus, jonka avulla käyttäjien on mahdollista pitää kirjaa omista tekemättömistä töistä, eli _todoista_.
 
 Vaatimusmäärittely kannattaa yleensä aloittaa tunnistamalla järjestelmän erityyppiset _käyttäjäroolit_. Sovelluksellamme ei ole toistaiseksi muuta kuin normaaleja käyttäjiä. Jatkossa sovellukseen saatetaan lisätä myös ylläpitäjän oikeuksilla varustettu käyttäjärooli.
 
@@ -90,7 +90,13 @@ Myös ohjelmiston suunnittelu, erityisesti sen arkkitehtuuri dokumentoidaan usei
 
 ## Testaus
 
-Toteutuksen yhteydessä ja sen jälkeen järjestelmää testataan. Testausta on monentasoista. _Yksikkötestauksessa_ (engl. unit testing) tutkitaan yksittäisten metodien ja luokkien toimintaa. Yksikkötestauksen tekee usein testattavan komponentin ohjelmoija. Kun erikseen ohjelmoidut komponentit (eli luokat tai luokkakokoelmat) yhdistetään, suoritetaan _integrointitestaus_ (engl. integration testing), jossa varmistetaan erillisten komponenttien yhteentoimivuus. Integrointitestauksessa testauksen kohteena ovat erityisesti suunnitteluvaiheessa erillisten komponenttien välille määritellyt rajapinnat. _Järjestelmätestauksessa_ (engl. system testing) testataan järjestelmää kokonaisuutena ja verrataan, että se toimii vaatimusdokumentissa sovitun määritelmän mukaisesti.
+Toteutuksen yhteydessä ja sen jälkeen järjestelmää testataan. Testauksessa on monta erilaista näkökulmaa, eli pääasiallista kiinnostuksen kohdetta. Näitä eri näkökulmia nimitetään usein _testaustasoiksi_. Testauksen terminologia vaihtelee hieman mutta yleisimmin puhutaan kolmesta testaustasosta eli yksikkötestauksesta, integraatiotestauksesta ja järjestelmätestauksesta.
+
+_Yksikkötestauksessa_ (engl. unit testing) tutkitaan yksittäisten metodien ja luokkien toimintaa. Yksikkötestauksen tekee usein testattavan luokan ohjelmoija ja hyvä tapa on tehdä luokalle yksikkötestit samalla kun luokka ohjelmoidaan. 
+
+Kun erikseen ohjelmoidut komponentit (eli luokat tai luokkien muodostamat kokoelmat) yhdistetään, suoritetaan integraatiotestaus (engl. integration testing), jossa varmistetaan erillisten komponenttien yhteentoimivuus. ;yös integraatiotestit tehdään useimmiten ohjelmoijien toimesta.
+
+_Järjestelmätestauksessa_ (engl. system testing) testataan järjestelmää kokonaisuutena ja verrataan, että se toimii vaatimusdokumentissa sovitun määritelmän mukaisesti. Järjestelmätestauksessa tesien näkökulma on sama kuin loppukäyttäjän, eli testit suoritetaan ohjelmiston käyttöliittymän kautta. Järjestelmätestauksen suorittavat usein testauksen ammattilaiset.
 
 ## Vesiputousmalli
 
