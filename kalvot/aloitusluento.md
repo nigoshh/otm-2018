@@ -591,7 +591,7 @@ Ohjelman pisteet (yht 23) jakautuvat seuraavasti
   - Luokat tulee jakaa loogisesti pakkauksiin
     - Pakkausten nimet aina pienellä (_lowercase_)
   - Kaikkien pakkausten tulee olla yhden juuripakkauksen alla, esim. fi.omanimi
-    - Sovelluslogiikkapakkaus olisi näin tehtynä siis fi.omanimi.solvelluslogiikka, käyttöliittymä fi.omanimi.gui
+    - Sovelluslogiikkapakkaus olisi näin tehtynä siis fi.omanimi.logics, käyttöliittymä fi.omanimi.gui
   - Yhdessä pakkauksessa yksi kokonaisuus
     - Esim. yhdessä pakkauksessa käyttäjätileihin liittyvät luokat
     - Toisessa muu logiikka

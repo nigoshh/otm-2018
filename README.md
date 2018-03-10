@@ -62,6 +62,9 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - [Maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
   - [Checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
   - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
+  - [koodin laatu]
+(https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md)
+
 - Työkaluja kaavioiden piirtoon
   - <http://yuml.me/> luokkakaaviot
   - <https://www.websequencediagrams.com/> sekvenssikaavioihin
