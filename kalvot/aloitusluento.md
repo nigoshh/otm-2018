@@ -600,7 +600,7 @@ Ohjelman pisteet (yht 23) jakautuvat seuraavasti
 
 # Yleiset laatuvaatimukset
 
-- Liopulliseen arvosteluun palautetun ohjelman tulee toimia oikein
+- Lopulliseen arvosteluun palautetun ohjelman tulee toimia oikein
   - Ohjelma ei saa missään tilanteessa kaatua
   - Ohjelma ei saa printata Exceptioneita (Stack tracea) komentoriville, vaikka virhe ei kaataisi ohjelmaa
 - Varaudu siihen, että käyttäjä yrittää antaa vääriä syötearvoja
