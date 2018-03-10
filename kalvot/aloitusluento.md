@@ -1,7 +1,6 @@
 % Ohjelmistotekniikan menetelmät
 % Matti Luukkainen ja 8 ohjaajaa
 % 9.3.2018
-
 # Ohjelmistotekniikan menetelmät
 
 - Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pieni harjoitustyö
@@ -86,7 +85,7 @@ alku  ma  ti  ke  to  pe
   - tapa on jo vanhahtava ja hylkäämme sen
 - Kurssilla ohjelmistotuotanto tutustumme nykyään yleisesti käytössä oleviin _käyttäjätarinoihin_ (engl. user story)
 - Käytämme tällä kurssilla hieman kevyempää tapaa
-- Krjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana feature-listana
+- Kirjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana feature-listana
 
 # Kurssin referenssisovellus: TodoApp
 
@@ -117,12 +116,12 @@ Katsotaan esimerkkinä Todo-sovelluksen vaatimusmäärittelyä
 # Vaatimusmäärittely: toimintaympäristön rajoitteet, käyttöliittymä
 
 - Ohjelmiston vaatimuksiin kuuluvat myös _toimintaympäristön rajoitteet_ 
-- Todo-sovellusta koskevat seuraavat rajoitteet
+- Todo-sovellusta koskevat seuraavat rajoitteet:
   - ohjelmiston tulee toimia Linux- ja OSX-käyttöjärjestelmillä varustetuissa koneissa
   - käyttäjien ja töiden tiedot talletetaan paikallisen koneen levylle
 - Vaatimusmäärittelyn aikana hahmotellaan yleensä myös sovelluksen käyttöliittymä
 
-Vatimusten kirjaamisesta voi ottaa tarkemmin mallia sovelluksen GitHub-repositoriosta https://github.com/mluukkai/OtmTodoApp
+Vaatimusten kirjaamisesta voi ottaa tarkemmin mallia sovelluksen GitHub-repositoriosta https://github.com/mluukkai/OtmTodoApp
 
 # Suunnittelu
 
