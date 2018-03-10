@@ -616,7 +616,7 @@ Kerrosarkkitehtuurissa ylimpänä on _käyttöliittymästä_ vastaava kerros. K�
 
 Sovelluslogiikka, eli esim. käyttäjän kirjautumisesta huolehtiminen, todojen luominen ja niiden tehdyksi merkkaaminen on käyttöliittymän alapuolella olevan _sovelluslogiikkakerroksen_ vastuulla. Sovelluslogiikkakerroksen koodi on pakkauksessa nimeltään _todoapp.doman_. 
 
-Sovelluslogiikan alapuolella on _datan tallennuksesta vastaava kerros_, jonka käytännössä muodostavat DAO-suunnittelumallin (ks. Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
+Sovelluslogiikan alapuolella on _datan tallennuksesta vastaava kerros_, jonka käytännössä muodostavat DAO-suunnittelumallin (ks. Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)) inspiroimana muodostetut rajapintojen _TodoDao_ ja _UserDao_ toteuttamat luokat.
 
 [Kerrosarkkitehtuuri](https://en.wikipedia.org/wiki/Multitier_architecture) (engl. layered architecture tai multitier architecture) on ehkä eniten käytetty ohjelmistojen [arkkitehtuurimalli](https://en.wikipedia.org/wiki/Software_Architecture_styles_and_patterns), eli yleisesti käytetty tapa ohjelmiston rakenteen strukturointiin. Käytännössä lähes jokainen ohjelmisto noudattaa ainakin jossain määrin kerroksellisuuden periaatetta. On olemassa lukuisia arkkitehtuurimalleja, joihin tutustutaan tarkemmin kursseilla Ohjelmistotuotanto ja Ohjelmistoarkkitehtuurit.
 
@@ -641,7 +641,7 @@ Kerrosarkkitehtuurin voi ajatella ilmentävän tätä periaatetta laajentaen sen
 Todo-sovelluksen suunnittelussa periaatetta on noudatettu suhteellisen hyvin
 - käyttölittymästä on eristetty sovelluslogiikka kokonaan
 - käyttäjä ja tehtävät on talletettu omiin luokkiinsa User ja Todo
-- sovelluslogiikan suorittamisesta, eli User- ja Todo-olioiden manipuloinnista vastaa oma oma luokka _TodoService_
+- sovelluslogiikan suorittamisesta, eli User- ja Todo-olioiden manipuloinnista vastaa oma luokka _TodoService_
 - tietojen talletuksesta levylle vastaavat DAO-oliot, jotka on vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
 	
 ### Program to an interface, not to an Implementation
@@ -707,7 +707,7 @@ Tekniikasta, missä oliolle annetaan sen riippuvuudet ulkopuolelta joko konstruk
 
 ## Riippuvuuksien injektointi ja testaus
 
-Riippuvuuksien injektointi helpottaa erityiseti testaamista, sillä se mahdollistaa, että luokille annetaan niiden normaalien riippuvuuksien sijaan testausta varten luotuja _valekomponentteja_.
+Riippuvuuksien injektointi helpottaa erityisesti testaamista, sillä se mahdollistaa, että luokille annetaan niiden normaalien riippuvuuksien sijaan testausta varten luotuja _valekomponentteja_.
 
 Todo-sovelluksessa on luokkaa _TodoService_ testattu juuri näin. Esim. UserDao:n valekomponentti sisältää alussa yhden käyttäjän:
 
