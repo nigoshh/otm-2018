@@ -22,7 +22,7 @@ Ohjelmakoodin muuttujat, luokat ja metodit kirjoitetaan englanniksi. Dokumentaat
 
 ## Ohjelman toteutus
 
-Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä](https://github.com/mluukkai/otm-2018#aikataulu)
+Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
 
 Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siispä ohjelmakoodille onkin syytä laatia jatkuvasti yksikkötestejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
 
@@ -48,7 +48,7 @@ Toivottava dokumentaation taso käy ilmi [referenssiprojektissa](https://github.
 * "Riittävän laaja"
   * Vältä eeppisiä aiheita, aloita riittävän pienestä. Yksi periodi on yllättävän lyhyt aika
   * Valitse kuitenkin aihe, jonka perustoiminnallisuuden saa toteutettua nopeasti, mutta jota saa myös laajennettua helposti
-  * Hyvässä aiheessa on muutamia logiikkaluokkia, tiedoston. tai tietokannankäsittelyä ja logiikasta eriytetty käyttöliittymä
+  * Hyvässä aiheessa on muutamia logiikkaluokkia, tiedoston tai tietokannankäsittelyä ja logiikasta eriytetty käyttöliittymä
 
 * Kurssilla pääpaino on Ohjelmoinnin Perusteissa ja Jatkokurssilla opituissa asioissa
   * Käytettävyys

@@ -30,9 +30,9 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 ## Ajankohtaista
 
-- Ennakkotiedoista poiketen kurssilla on vain yksi luento, ma 12.3. klo 12-14 A111
+- Ennakkotiedoista poiketen kurssilla on vain yksi luento, ma 12.3. klo 14-16 A111
 - Paja salissa B221
-  - ma 12-16 (ensimmäisellä viikolla 14-16)
+  - ma 12-16 (ensimmäisellä viikolla ei maanantain pajaa)
   - ti 12-18
   - ke 10-14
   - pe 14-16
@@ -75,7 +75,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 Palautuksen deadline ti 20.3. klo 23:59
 
-- Maanantaina 12.3. klo 12-14 kurssin ainoa luento A111
+- Maanantaina 12.3. klo 14-16 kurssin ainoa luento A111
 - Komentorivi- ja Git-harjoittelu (2p)
   - Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
 - Tehtävien palautus tapahtuu tekemällä repositorio githubiin ja rekisteröitymällä labtooliin
