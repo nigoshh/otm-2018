@@ -1,23 +1,24 @@
 % Ohjelmistotekniikan menetelmät
-% Matti Luukkainen ja 7 ohjaajaa
+% Matti Luukkainen ja 8 ohjaajaa
 % 9.3.2018
 
 # Ohjelmistotekniikan menetelmät
 
 - Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pieni harjoitustyö
-- Kurssi nykyään _aineopintoja_
+- Kurssi nykyään osa _aineopintoja_
 - Pakollisina _esitietoina_
   - Ohjelmoinnin jatkokurssi
   - Tietokantojen perusteet
-- Hyödyllinen esitieto. Tietokone työvälineenä
+- Hyödyllinen esitieto: Tietokone työvälineenä
 - Kurssimateriaali https://github.com/mluukkai/otm-2018
-- Ikävä kyllä kurssilla sama nimi kuin "vanhalla" Ohjelmistotekniikan menetelmillä. Sisätö ja suoritusmuoto nyt radikaalisti erilainen
+- Ikävä kyllä kurssilla sama nimi kuin "vanhalla" Ohjelmistotekniikan menetelmillä
+- Sisätö ja suoritusmuoto nyt radikaalisti erilainen
 
 # Suoritusmuoto
 
-- Kolmella ensimmäisellä viikolla ohjauksessa tai omatoimisesti tehtävät laskarit
+- Kolmella ensimmäisellä viikolla ohjauksessa tai omatoimisesti tehtävät **laskarit**
   - palautetaan "internettiin"
-- Viikolla 2 aloitetaan itsenäisesti tehtävä harjoitustyö
+- Viikolla 2 aloitetaan itsenäisesti tehtävä **harjoitustyö**
 - Työtä edistetään pala palalta viikoittaisten tavoitteiden ohjaamana
 - Kurssilla ei ole koetta 
 - Harjoitustyö tulee tehdä kurssin aikataulujen puitteissa
@@ -27,7 +28,7 @@
 # Luento, deadlinet ja ohjaus
 
 - Ennakkotiedoista poiketen kurssilla on vain yksi luento **nyt** eli ma 12.3. klo 14-16 A111
-- Laskareiden ja harjoitustyön välitavoitteiden viikoittaiset deadlinen _tiistaina klo 23:59_
+- Laskareiden ja harjoitustyön välitavoitteiden viikoittaiset deadlinet _tiistaina klo 23:59_
 - Paja salissa B221
 
 alku  ma  ti  ke  to  pe
@@ -37,6 +38,8 @@ alku  ma  ti  ke  to  pe
 14    x   x   x
 16        x           x
 18        x     
+
+- Paja alkaa huomenna
 
 # Arvosteluperusteet
 
@@ -48,58 +51,66 @@ alku  ma  ti  ke  to  pe
   - Lopullinen ohjelma 23p
     - Laajuus, ominaisuudet ja koodin laatu		
 - Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
-- Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta.
+- Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta
 
 #  
 
-TEORIA
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEORIA
 
 # Ohjelmistotuotanto
 
 - Kun ollaan tekemässä suurempaa ohjelmistoa ulkoiselle asiakkaalle, tarvitaan  systemaattinen työskentelymenetelmä
   - muuten riskinä mm. että lopputulos ei vastaa asiakkaan tarvetta 
-- Ohjelmiston systemaattinen kehittäminen, eli ohjelmistotuotanto (engl. Software engineering) sisältää useita erilaisia aktiviteettejä/vaiheita
-  - _vaatimusmäärittely_ selvitetään kuinka ohjelmiston halutaan toimivan
-  - _suunnittelu_ mietitään, miten halutunkaltainen ohjelmisto tulisi rakentaa
+- Sovellettavasta menetelmästä riippumatta ohjelmiston systemaattinen kehittäminen, eli _ohjelmistotuotanto_ (engl. Software engineering) sisältää useita erilaisia aktiviteettejä/vaiheita
+  - _vaatimusmäärittelyssä_ selvitetään kuinka ohjelmiston halutaan toimivan
+  - _suunnittelussa_ mietitään, miten halutun kaltainen ohjelmisto tulisi rakentaa
   - _toteutusvaiheessa_ määritelty ja suunniteltu ohjelmisto koodataan
-  - _testauksen_ tehtävä on varmistaa ohjelmiston laatu, että se ei ole liian buginen ja että se toimii kuten vaatimusmäärittely sanoo
+  - _testauksen_ tehtävä on varmistaa ohjelmiston laatu 
+      - ei ole liian buginen
+      - toimii kuten vaatimusmäärittely sanoo
   - _ylläpitovaiheessa_ ohjelmisto on jo käytössä ja siihen tehdään bugikorjauksia ja mahdollisia laajennuksia
 
 
 # Vaatimusmäärittely
 
-- Kartoitetaan ohjelman tulevien käyttäjien tai tilaajan kanssa se, mitä toiminnallisuutta ohjelmaan halutaan
-- Ohjelman toiminnalle siis asetetaan asiakkaan haluamat vaatimukset.
+- Kartoitetaan ohjelman tulevien käyttäjien tai tilaajan kanssa, mitä toiminnallisuutta ohjelmaan halutaan
+- Ohjelman toiminnalle siis määritellään asiakkaan vaatimukset
 - Tämän lisäksi kartoitetaan ohjelman toimintaympäristön ja toteutusteknologian järjestelmälle asettamia rajoitteita
-- Tuloksena on useimmiten jonkinlainen dokumentti, johon vaatimukset kirjataan.
+- Tuloksena on useimmiten jonkinlainen dokumentti, johon vaatimukset kirjataan
 - Dokumentin muoto vaihtelee suuresti, se voi olla paksu mapillinen papereita tai vaikkapa joukko postit-lappuja
 
 # Vaatimusten kirjaaminen
 
-- On olemassa lähes lukemattomia tapoja dokumentoida vaatimuksen
+- On olemassa lukuisia tapoja dokumentoida vaatimuksen
 - Kurssin aiemmissa versioissa käyttäjien vaatimukset dokumentointiin _käyttötapauksina_ (engl. use case)
   - tapa on jo vanhahtava ja hylkäämme sen
 - Kurssilla ohjelmistotuotanto tutustumme nykyään yleisesti käytössä oleviin _käyttäjätarinoihin_ (engl. user story)
-- Käytämme tällä kurssilla hieman kevyempää tapaa, ja kirjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana feature-listana
+- Käytämme tällä kurssilla hieman kevyempää tapaa
+- Krjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana feature-listana
 
-# Kurssin esimerkkisovellus: TodoApp
+# Kurssin referenssisovellus: TodoApp
+
+Osoitteesta https://github.com/mluukkai/OtmTodoApp löytyy sovellus, joka havainnollistaa monia kurssin asioita ja toimii mallina omalle harjoitustyölle
 
 - _todoapp_ eli sovellus, jonka avulla käyttäjien on mahdollista pitää kirjaa omista tekemättömistä töistä, eli _todoista_
+
+Katsotaan esimerkkinä Todo-sovelluksen vaatimusmäärittelyä
+
 - Vaatimusmäärittely aloitetaan tunnistamalla järjestelmän erityyppiset _käyttäjäroolit_ 
 - Todo-sovelluksesta tunnistetaan kaksi käyttäjäroolia 
-  - normaaleja käyttäjät
+  - normaalit käyttäjät
   - laajemmilla oikeuksilla varustetut ylläpitäjät 
-- kun sovelluksen käyttäjäroolit ovat selvillä, mietitään mitä toiminnallisuuksia kunkin käyttäjäroolin halutaan pystyvän tekemään sovelluksen avulla
+- Kun sovelluksen käyttäjäroolit ovat selvillä, mietitään mitä toiminnallisuuksia kunkin käyttäjäroolin halutaan pystyvän tekemään sovelluksen avulla
 
 # TodoApp:in vaatimusmäärittely
 
-- Todo-sovelluksen normaalien käyttäjien toiminnallisuuksia ovat esim. seuraavat
+- Todo-sovelluksen _normaalien käyttäjien_ toiminnallisuuksia ovat esim. seuraavat
   - käyttäjä voi luoda järjestelmään käyttäjätunnuksen
   - käyttäjä voi kirjautua järjestelmään
   - kirjautumisen jälkeen käyttäjä näkee omat tekemättömät työt eli todot
-  - käyttäjä voi luoda uuden todon
-  - käyttäjä voi merkitä todon tehdyksi, jolloin todo häviää listalta
-- Ylläpitäjän toiminnallisuuksia esim. seuraavat
+  - kirjaantunut käyttäjä voi luoda uuden todon
+  - kirjaantunut käyttäjä voi merkitä todon tehdyksi, jolloin todo häviää listalta
+- _Ylläpitäjän_ toiminnallisuuksia esim. seuraavat
   - ylläpitäjä näkee tilastoja sovelluksen käytöstä
   - ylläpitäjä voi poistaa normaalin käyttäjätunnuksen
 
@@ -121,47 +132,49 @@ Vatimusten kirjaamisesta voi ottaa tarkemmin mallia sovelluksen GitHub-repositor
   - miten komponentit yhdistetään, eli minkälaisia komponenttien väliset rajapinnat ovat
   - mitä riippuvuuksia ohjelmalla on esim. tietokantoihin ja ulkoisiin rajapintoihin
 - Arkkitehtuurisuunnittelua tarkentaa _oliosuunnittelu_, missä mietitään ohjelmiston yksittäisten komponenttien rakennetta
-  - eli minkälaisisista luokista komponentit koostuvat
-  - miten luokat kutsuvat toistensa metodeja sekä mitä apukirjastoja luokat käyttävät.
+  - minkälaisisista luokista komponentit koostuvat
+  - miten luokat kutsuvat toistensa metodeja sekä mitä apukirjastoja ne käyttävät
 - Myös ohjelmiston suunnittelu, erityisesti sen arkkitehtuuri dokumentoidaan usein jollain tavalla
 
 # Testaus
 
-- Toteutuksen yhteydessä ja sen jälkeen järjestelmää testataan. 
-- Testausta on monentasoista. 
-- __Yksikkötestauksessa__  tutkitaan yksittäisten metodien ja luokkien toimintaa. 
-  - Yksikkötestauksen tekee usein testattavan komponentin ohjelmoija. 
-- Kun erikseen ohjelmoidut  komponentit (eli luokat) yhdistetään, suoritetaan __integraatiotestaus__ 
-  - varmistetaan erillisten komponenttien yhteentoimivuus
+- Toteutuksen yhteydessä ja sen jälkeen järjestelmää testataan
+- Testausta on monentasoista
+- _Yksikkötestauksessa_  tutkitaan yksittäisten metodien ja luokkien toimintaa. 
+  - Yksikkötestauksen tekee usein testattavan komponentin ohjelmoija
+- Kun erikseen ohjelmoidut luokat yhdistetään, suoritetaan _integraatiotestaus_
+  - varmistetaan erillisten osien yhteentoimivuus
   - integraatiotestaus tapahtuu useimmiten ohjelmoijien toimesta
-- __Järjestelmätestauksessa__ testataan ohjelmistoa kokonaisuutena ja verrataan, että se toimii vaatimusdokumentissa sovitun määritelmän mukaisesti
+- _Järjestelmätestauksessa_ testataan ohjelmistoa kokonaisuutena ja verrataan, että se toimii vaatimusdokumentissa sovitun määritelmän mukaisesti
   - järjestelmätestaus suoritetaan ohjelman todellisen käyttöliittymän kautta
   - järjestelmätestauksen saattaa tapahtua erillisen laadunhallintatiimin toimesta
 
 # Vesiputousmalli
 
-- Ohjelmistoja on perinteisesti tehty vaihe vaiheelta etenevän _vesiputousmallin_ (engl. waterfall model) mukaan. 
+- Ohjelmistoja on 70-luvulta asti tehty vaihe vaiheelta etenevän _vesiputousmallin_ (engl. waterfall model) mukaan 
 - Vesiputousmallissa edellä esitellyt ohjelmistotuotannon vaiheet suoritetaan peräkkäin
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-1.png){ width=400 }
-- usein eri vaiheet erillisten tiimien tekemiä
-- edellyttää raskasta dokumentaatiota
+- Eri vaiheet ovat yleensä erillisten tiimien tekemiä
+- Edellyttää perusteellista ja raskasta dokumentaatiota
 
 # Vesiputousmallin ongelmat
 
-- Mallin toimivuus perustuu siihen oletukseen, että ohjelman vaatimukset pystytään määrittelemään täydellisesti ennen kuin suunnittelu ja ohjelmointi alkaa
-  - Näin ei useinkaan ole. On lähes mahdotonta, että asiakkaat pystyisivät tyhjentävästi ilmaisemaan kaikki ohjelmalle asettamansa vaatimukset
-  - Vasta käyttäessään valmista ohjelmaa asiakkaat alkavat ymmärtää, mitä he olisivat ohjelmalta halunneet
-  - Vaikka ohjelman vaatimukset olisivat kunnossa vaatimusten laatimishetkellä, muuttuu toimintaympäristö ohjelman kehitysaikana niin ratkaisevasti, että valmistuessaan ohjelma on vanhentunut
-- Toinen suuri ongelma on se, että ohjelmistoa aletaan testata verrattain myöhäisessä vaiheessa
-  - Erityisesti integraatiotestauksessa on tyypillistä että ohjelmasta löydetään pahoja ongelmia, joiden korjaaminen hidastaa ohjelmiston valmistumista paljon ja käy kalliiksi
+- Mallin toimivuus perustuu siihen oletukseen, että vaatimukset pystytään määrittelemään täydellisesti ennen suunnittelun ja ohjelmoinnin aloittamista
+  - Näin ei useinkaan ole. On lähes mahdotonta, että asiakkaat osaisivat tyhjentävästi ilmaista kaikki ohjelmistolle asettamansa vaatimukset
+  - Vasta käyttäessään valmista ohjelmistoa asiakkaat alkavat ymmärtää, mitä he olisivat ohjelmalta halunneet
+  - Vaikka vaatimukset olisivat kunnossa laatimishetkellä, saattaa toimintaympäristö muuttua kehitysaikana niin ratkaisevasti, että valmistuessaan ohjelmisto on vanhentunut
+- Toinen suuri ongelma on myöhään aloitettava testaus
+  - Erityisesti integraatiotestauksessa löytyy usein pahoja ongelmia, joiden korjaaminen on hidasta ja kallista
 
 # Ketterä ohjelmistokehitys
 
-- Vesiputousmallin heikkoudet ovat johtaneet viime vuosina yleistyneiden _ketterien (engl. agile) ohjelmistokehitysmenetelmien_ käyttöönottoon
-- Ketterä ohjelmistokehitys etenee yleensä siten, että ensin kartoitetaan pääpiirteissään ohjelman vaatimuksia ja ehkä hahmotellaan järjestelmän alustava arkkitehtuuri.
-- Tämän jälkeen suoritetaan useita _iteraatioita_ (joista käytetään yleisesti myös nimitystä sprintti), joiden aikana ohjelmaa rakennetaan pala palalta eteenpäin
-- Kussakin iteraatiossa suunnitellaan ja toteutetaan valmiiksi pieni osa ohjelman vaatimuksista
-- Asiakas pääsee kokeilemaan järjestelmää jokaisen iteraation jälkeen. Tällöin voidaan jo aikaisessa vaiheessa todeta, onko kehitystyö etenemässä oikeaan suuntaan ja vaatimuksia voidaan tarvittaessa tarkentaa ja muuttaa
+- Vesiputousmallin heikkoudet ovat johtaneet 2000-luvun alun jälkeen _ketterien (engl. agile) menetelmien_ käyttöönottoon
+- Ketterä ohjelmistokehityksen alussa kartoitetaan pääpiirteissään ohjelmiston vaatimuksia ja hahmotellaan ohjelmiston alustava arkkitehtuuri
+- Tämän jälkeen suoritetaan useita _iteraatioita_ (joista käytetään yleisesti myös nimitystä sprintti), joiden aikana ohjelmistoa rakennetaan pala palalta eteenpäin
+- Kussakin iteraatiossa suunnitellaan ja toteutetaan valmiiksi pieni osa ohjelmiston vaatimuksista
+- Asiakas pääsee kokeilemaan ohjelmistoa jokaisen iteraation jälkeen
+- Voidaan jo aikaisessa vaiheessa todeta, onko kehitystyö etenemässä oikeaan suuntaan 
+- Vaatimuksia voidaan tarvittaessa tarkentaa ja muuttaa
 
 # Ketterä ohjelmistokehitys
 
@@ -171,36 +184,40 @@ Teemme kurssin harjoitustyötä ketterässä hengessä viikon mittaisilla iteraa
 
 #  
 
-TYÖKALUJA
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYÖKALUJA
 
 
 # Työkaluja
 
 - Tarvitsemme ohejelmisokehityksessä suuren joukon käytännön työkaluja. 
 - Komentorivi ja Versionhallinta
-  - Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja git-versionohallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 laskareissa
+  - Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja git-versionohallintaa
+  - molemmat ovat tärkeässä roolissa ohjelmistokehityksessä
+  - harjoitellaan viikon 1 laskareissa
 - Maven
   - Olet todennäköisesti ohjelmoinut Javaa  NetBeansilla ja tottunut painamaan "vihreää nappia" tai "mustaa silmää"
-  - tutkimme kurssilla hieman miten Javalla tehdyn ohjelmiston hallinnointi (esim. koodin kääntäminen, koodin sekä testin suorittaminen ja koodin paketoiminen NetBeansin ulkopuolella suoritettavissa olevaksi jar-paketiksi) tapahtuu NetBeansin "ulkopuolella"
-  - Java-projektien hallinnointiin on olemassa muutama vaihtoehto. Käytämme _mavenia_, joka lienee jo useimmille osittain tuttu esim. Tietokantojen perusteista
+  - tutkimme kurssilla hieman miten Javalla tehdyn ohjelmiston _hallinnointi_ tapahtuu NetBeansin "ulkopuolella"
+    - koodin kääntäminen, koodin sekä testin suorittaminen ja koodin paketoiminen NetBeansin ulkopuolella suoritettavissa olevaksi jar-paketiksi 
+  - Java-projektien hallinnointiin on olemassa muutamaia vaihtoehtoja. Käytämme monille TiKaPesta tuttua _mavenia_
 
 # JUnit
 
 - Ohjelmistojen testaus tapahtuu nykyään ainakin yksikkö- ja integraatiotestien osalta automatisoitujen testityökalujen toimesta
-- Java-maailmassa testausta dominoi lähes yksinvaltiaan tavoin JUnit. Tulet kurssin ja myöhempienkin opintojesi aikana kirjoittamaan paljon JUnit-testejä
-- Viiko 2 laskareissa harjoitellaan JUnitin perusteita
+- Java-maailmassa testausta dominoi lähes yksinvaltiaan tavoin JUnit 
+- Tulet kurssin ja myöhempienkin opintojesi aikana kirjoittamaan paljon JUnit-testejä
+- Viikon 2 laskareissa harjoitellaan JUnitin perusteita
 
 # Checkstyle
 
 - Automaattisten testien lisäksi koodille voidaan määritellä erilaisia automaattisesti tarkastettavia tyylillisiä sääntöjä
-- Näiden avulla on mahdollista ylläpitää koodin luettavuutta ja varmistaa että joka puolella koodia noudatetaan samoja tyylillisiä konventioita
+- Näiden avulla ylläpidetään koodin luettavuutta ja varmistetaan että joka puolella koodia noudatetaan samoja tyylillisiä konventioita
 - Käytämme kurssilla tarkoitukseen Checkstyle-nimistä työkalua
 - Ohjelmoinnin perusteet ja jatkokurssi käyttivät Checkstyleä valvomaan ohjelman sisennystä 
-- Kurssilla kontrolloimme mm. muuttujien nimiä, sulkumerkkien sijoittelua, välilyönnin käytön systemaattisuutta
+- Kurssilla kontrolloimme mm. muuttujien nimentää, sulkumerkkien sijoittelua ja välilyönnin käytön systemaattisuutta
 
 # JavaDoc
 
-- Osa ohjelmiston dokumentointia on lähdekoodinluokkien julkisten metodien kuvaus
+- Osa ohjelmiston dokumentointia on lähdekoodin luokkien julkisten metodien kuvaus
 - Javassa lähdekoodi dokumentoidaan käyttäen JavaDoc-työkalua
 - Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja kommentteja
 
@@ -214,14 +231,22 @@ Sovelluksen JavaDocia voi tarkastella selaimen avulla
 
 # JavaDoc
 
-NetBeans osaa näyttää ohjelmoidessa koodiin määritellyn javadocin
+NetBeans osaa näyttää ohjelmoidessa koodiin määritellyn JavaDocin
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-14.png)
 
 
 #
 
-UML
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UML
+
+# UML ja dokumentointi
+
+- Ohjelmistojen dokumentoinnissa ja suunnittelun tukena tarvitaan usein jonkinlaisia ohjelman rakennetta ja toimintaa havainnollistavia kaavioita
+- UML eli Unified Modeling Language on 1997 standardoitu Olio-ohjelmistojen mallintamiseen tarkoitettu mallinnuskieli
+- UML sisältää 13 erilaista kaaviotyyppiä
+- UML oli aikoinaan todella suosittu, nyt sen suosio on hiipumaan päin, muutama tärkein kaaviotyyppi kannattaa kuitenkin osata
+- Käytämme kurssilla luokka-, pakkaus- ja sekvenssikaavioita
 
 # Luokkakaaviot
 
@@ -248,12 +273,21 @@ public class Todo {
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-3a.png){ width=450 }
 
-
 # Todo-sovelluksen tietosisällön luokkakaavio
 
 Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavioihin riittää merkitä luokan nimi
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-4.png){ width=300 }
+
+Kaaviota parempi paikka metodien kuvaamiselle on koodiin liittyvä JavaDoc-dokumentaatio 
+
+# Rajapinnan toteutus ja perintä luokkakaaviossa
+
+- Jos Todo-sovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_, merkattaisiin se luokkakaavioon seuraavasti
+
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png){ width=300 }
+
+Rajapinnan toteutus merkitään samalla tavalla eli valkoisella nuolenpäällä
 
 # Riippuvuus
 
@@ -262,7 +296,7 @@ Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaav
 - Kassapääte _käyttää_ hetkellisesti _maksukorttia_ lounaiden maksuun
 - Kasspäätteen ja maksukortin välillä ei kuitenkaan ole pidempiaikaista suhdetta
 
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-18.png){ width=300 }
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-18.png){ width=400 }
 
 # Maksukortti ja kassapääte
 
@@ -282,15 +316,6 @@ public class Kassapaate {
     }
 }
 ```
-
-# Rajapinnan toteutus ja perintä luokkakaaviossa
-
-- Jos Todo-sovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_, merkattaisiin se luokkakaavioon seuraavasti
-
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png){ width=300 }
-
-Rajapinnan toteutus merkitään samalla tavalla valkoisella nuolenpäällä
-
 
 # Pakkauskaavio
 
@@ -324,20 +349,20 @@ Pakkausten välille on merkitty riippuvuus jos pakkauksen luokat käyttävät to
 
 - Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta
 - Ohjelman toimita ei kuitenkaan tule niistä ilmi millään tavalla. 
-- Esim. ohpen Unicafe-tehtävä
-![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png){ width=250 }
-- Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka
-- esim. mitä tapahtuu kun kortilla ostataan edullinen lounas, selviä kaaviosta millään tavalla
+- Esim. Ohpen Unicafe-tehtävä
+![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png){ width=400 }
+- Vaikka kaavioon on nyt merkitty metodien nimet, ei ohjelman toimintalogiikka selviä kaaviosta
+- Esim. mitä tapahtuu kun maksukortilla jolla on rahaa 3 euroa ostataan edullinen lounas?
 
 # Sekvenssikaavio
 
 - Tietokantojen perusteiden viikolla 4 on lyhyt maininta sekvenssikaavioista. 
 - Sekvenssikaaviot on alunperin kehitetty kuvaamaan verkossa olevien ohjelmien keskinäisen kommunikoinnin etenemistä 
-- Sekvenssikaaviot sopivat kohtuullisen hyvin kuvaamaan myös sitä, miten ohjelman oliot kutsuvat toistensa metodeja suorituksen aikana
+- Sekvenssikaaviot sopivat jossain määrin myös kuvaamaan myös sitä, miten ohjelman oliot kutsuvat toistensa metodeja suorituksen aikana
 
 # Sekvenssikaavio
 
-Koodia katsomalla näemme, että lounaan maksaminen tapahtuu siten, että ensin kassapääte kysyy kortin saldoa ja jos se on riittävä, vähentää kassapääte lounaan hinnan kortilta ja palauttaa _true_: 
+Koodia katsomalla näemme, että lounaan maksaminen tapahtuu siten, että ensin kassapääte kysyy kortin saldoa ja jos se on riittävä, vähentää kassapääte lounaan hinnan kortilta ja palauttaa _true_
 
 ```java
 public boolean syoEdullisesti(Maksukortti kortti) {
@@ -355,12 +380,14 @@ public boolean syoEdullisesti(Maksukortti kortti) {
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-16.png){ width=300 }
 
-- Sekvenssikaaviossa oliot laatikoita, joista lähtee alaspäin olion "elämänlanka"
+- Sekvenssikaaviossa oliot ovat laatikoita, joista lähtee alaspäin olion "elämänlanka"
 - Aika etenee ylhäältä alas
-- Metodikutsut nuolia joka yhdistävää kutsujan ja kutsutun olion elämänlangat
-- Paluuarvo merkitään katkoviivalla.
+- Metodikutsut ovat nuolia, jotka yhdistävää kutsuvan ja kutsutun olion elämänlangat
+- Paluuarvo merkitään katkoviivalla
 
-# eåäonnistunut ostos sekvenssikaaviona
+# Epäonnistunut ostos sekvenssikaaviona
+
+Mitä tapahtuu jos maksukortin saldo on 2 euroa eli vähemmän kuin lounaan hinta:
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-17.png){ width=300 }
 
@@ -369,7 +396,7 @@ public boolean syoEdullisesti(Maksukortti kortti) {
 
 #
 
-HARJOITUSTYÖ
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HARJOITUSTYÖ
 
 # Yleistä
 
@@ -380,7 +407,7 @@ HARJOITUSTYÖ
 
 # Työn eteneminen
 
-- Edettävä viikottaisten tavoitteiden mukaan 
+- Edetään viikottaisten tavoitteiden mukaan 
 - Työ on saatava valmiiksi kurssin aikana ja sitä on toteutettava tasaisesti, muuten kurssi katsotaan keskeytetyksi
 - Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli keväällä 2019), vaan työ on aloitettava uudella aiheella alusta
 - Koko kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin 
@@ -394,28 +421,29 @@ HARJOITUSTYÖ
 - Ohjaajat saattavat suostua muihinkin kieliin, asia on syytä sopia kurssin ensimmäisen viikon aikana
   - Javascript, Ruby ja C++ ainakin käyvät
 - Web-sovelluksia kurssilla ei sallita
-  - Sovelluksissa sallitaan toki webissä olevat komponentit, mutta sovelluksen käyttöliittymän tulee olla ns desktop-sovellus
+  - Sovelluksessa voi toki olla webissä toimivia komponentteja, mutta sovelluksen käyttöliittymän tulee olla ns. desktop-sovellus
   - Javascriptillä hyvä valinta desktop-sovelluksiin on Electron
 - Muuta kuin Javaa käytettäessä ohjaus saattaa olla "huonompaa"
-- Muita kieliä valitessa on myös syytä pitää mielessä, että kieleltä on syytä löytyä Javan Mavenia, Junitia, jacocoa, checkstyleä ja JavaDocia vastaavat asiat
+- Muita kieliä valitessa on syytä pitää mielessä, että kieleltä täytyy löytyä Javan Mavenia, Junitia, Jacocoa, Checkstyleä ja JavaDocia vastaavat työkalut
 
 # Ohjelman toteutus
 
 - Toteutus etenee "iteratiivisesti ja inkrementaalisesti"  
-  - heti toteutetaan pieni osa toiminnallisuudesta
-  - ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu 
-- Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssista sekä kurssisivuilta käytyvistä vihjeistä 
+  - Heti ensimmäisellä viikolla toteutetaan pieni osa toiminnallisuudesta
+  - ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu laajuus on saavutettu 
+- Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia Ohjelmoinnin jatkokurssilta sekä kurssisivuilta löytyvistä vihjeistä 
 - Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus
 - Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen
 - Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa ei kirjoiteta käyttöliittymän sekaan
 - Graafiseen käyttöliittymään suositellaan JavaFX:ää
-- Tiedon talletus joko tiedostoon tai tietokantaan
+- Tiedon talletus joko tiedostoon tai tietokantaan suositeltavaa
 
 # Ohjelman toteutus
 
-- tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi
+- Tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi
+  - koodin on siis oltava ymmärrettävää ja jatkokehitityksen mahdollistavaa
 - Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit sekä jar-tiedosto, joka mahdollistaa ohjelman suorittamisen NetBeansin ulkopuolella.
-- Toivottava dokumentaation taso käy ilmi kurssin referenssisovelluksesta https://github.com/mluukkai/OtmTodoApp
+- Toivottava dokumentaation taso käy ilmi referenssisovelluksesta https://github.com/mluukkai/OtmTodoApp
 
 # Hyvän aiheen ominaisuudet
 
@@ -423,8 +451,8 @@ HARJOITUSTYÖ
 - Riittävän mutta ei liian laaja
   - Vältä eeppisiä aiheita, aloita riittävän pienestä
   - Valitse aihe, jonka perustoiminnallisuuden saa toteutettua nopeasti, mutta jota saa myös laajennettua helposti
-  - Hyvässä aiheessa on muutamia logiikkaluokkia, tiedoston tai tietokannankäsittelyä ja logiikasta eriytetty käyttöliittymä
-- Kurssilla pääpaino on Ohpessa ja Ohjassa
+  - Hyvässä aiheessa on muutamia logiikkaluokkia, tiedostojen tai tietokannan käsittelyä ja sovelluslogiikasta eriytetty käyttöliittymä
+- Kurssilla pääpaino on
   - Toimivuus ja varautuminen virhetilanteisiin
   - Luokkien vastuut
   - Ohjelman selkeä rakenne
@@ -446,7 +474,7 @@ HARJOITUSTYÖ
 - Hyötyohjelmat
   - Aritmetiikan harjoittelua
   - Tehtävägeneraattori, joka antaa käyttäjälle tehtävän sekä mallivastauksen (esim. matematiikkaa, fysiikkaa, kemiaa, ...)
-  - telegram- tai Slack-botti
+  - Telegram- tai Slack-botti
   - Code Snippet Manageri
   - Laskin, funktiolaskin, graafinen laskin
   - Budjetointi-sovellus
@@ -489,9 +517,23 @@ HARJOITUSTYÖ
   - Keräilykorttien hallintajärjestelmä
   - Fraktaaligeneraattori
 
+# Arvosteluperusteet tarkemmin
+
+- Kurssin maksimi on 60 pistettä 
+- Ennen loppupalautusta jaossa 20 pistettä
+  - Viikkodeadlinet 17p
+  - Koodikatselmointi 3p
+- Loppupalautus ratkaise 40 kohtalon
+  - Dokumentaatio	10p   
+  - Testaus	7p	
+  - Lopullinen ohjelma 23p
+    - Laajuus, ominaisuudet ja koodin laatu		
+- Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä
+- Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta
+
 # Harjoitustyön vaikutus kurssipisteisiin
 
-Loppupalautuksen pisteet (yht 23) jakautuvat seuraavasti
+Ohjelman pisteet (yht 23) jakautuvat seuraavasti
 
 - käyttöliittymä 4p
   - 0p yksinkertainen tekstikäyttöliittymä
@@ -499,10 +541,10 @@ Loppupalautuksen pisteet (yht 23) jakautuvat seuraavasti
   - 2-3p yksinkertainen graafinen käyttöliittymä
   - 4p laaja graafinen käyttöliittymä
 - tiedon pysyväistalletus 4p
-  -	ei pysyväistallennusta
-  - 1-2p	tiedosto 
-  - 3-4p	tietokanta
-  - 3-4p	internet
+  -	ei pysyväistalletusta
+  - 1-2p tiedosto 
+  - 3-4p tietokanta
+  - 3-4p internet
 - sovelluslogiikan kompleksisuus 3p
 - ohjelman lajuus 5p
 - suorituskelpoinen jar-tiedosto  1p
@@ -511,24 +553,23 @@ Loppupalautuksen pisteet (yht 23) jakautuvat seuraavasti
 # Koodin laatuvaatimukset
 
 - Kurssin tavoitteena on, että tuotoksesi voisi ottaa kuka tahansa kaverisi tai muu opiskelija ylläpidettäväksi ja laajennettavaksi
-- Lopullisessa palautuksessa yavoitteena on _Clean code_ - selkeää, ylläpidettävää ja toimivaksi testattua koodia
-- **nimentä**
+- Lopullisessa palautuksessa tavoitteena on _Clean code_ eli selkeä, ylläpidettävä ja toimivaksi testattu koodi
+- **Nimentä**
   - Käytä mahdollisimman kuvaavia nimiä kaikkialla 
   - Luokkien nimet aina isolla alkukirjaimella
   - Metodit, attribuutit, parametrit ja muuttujat aina _camelCase_
   - Muuttujat, joilla on iso käyttöalue, tulee olla erittäin selkeästi (vaikka pitkästi) nimettyjä. 
-  - Lyhyen metodin sisäisille muuttujille riittää yleensä lyhyt nimi. 
-  - Jos metodia käytetään vähän, tulee nimen olla mahdollisimman kuvaava. 
+  - Lyhyen metodin sisäisille muuttujille riittää yleensä lyhyt nimi
+  - Jos metodia käytetään vähän, tulee nimen olla mahdollisimman kuvaava 
   - Jos metodia käytetään useassa kohdassa koodia, voi sen nimi olla lyhyt ja ytimekäs
 
 # Koodin laatuvaatimukset
 
 - **Ei pitkiä metodeja**
-  - Sovelluslogiikan metodin pituuden tulee ilman erittäin hyvää syytä olla korkeintaan 10 riviä, mieluiten 5.
-  - Pitkät metodit tulee jakaa useampiin metodeihin. 
-  - Yksi metodi - yksi pieni tehtävä. (Single Responsibility)
+  - Sovelluslogiikan metodin pituuden tulee ilman erittäin hyvää syytä olla korkeintaan 10 riviä
+  - Pitkät metodit tulee jakaa useampiin metodeihin
+  - Yksi metodi - yksi pieni tehtävä (Single Responsibility)
     - Helpottaa myös testaamista
-  - Jos metodin voi jakaa useampaan metodiin, niin silloinhan se jo tekee useamman metodin hommat.
 - **Ei copy-pastea**
   - Toistuvan koodin saa lähes aina hävitettyä
   - Tapauksesta riippuen luo metodi tai yliluokka, joka sisältää toistuvan koodin
@@ -537,9 +578,9 @@ Loppupalautuksen pisteet (yht 23) jakautuvat seuraavasti
 
 - **Luokkien Single Responsibility**
   - Luokkien tulisi hoitaa vain yhtä asiaa
-  - Eriytä käyttöliittymä ja sovelluslogiikka
+  - Erityisen tärkeää on erottaa käyttöliittymä ja sovelluslogiikka
     - Kaikki tulostaminen tulisi tapahtua käyttöliittymässä
-    - Sovelluslogiikkaan liittyviä laskuja ja tapahtumia ei tehdä käyttöliittymässä
+    - Sovelluslogiikkaan liittyviä operaatioita ei tehdä käyttöliittymässä
   - Toisaalta tiettyä asiaa ei pidä hoitaa useissa eri luokissa
   - Esimerkiksi tiedoston lukemista tai -kirjoittamista EI tulisi löytyä useasta luokasta
     - Tee oma luokka tiedostojen käsittelylle
@@ -560,15 +601,15 @@ Loppupalautuksen pisteet (yht 23) jakautuvat seuraavasti
 
 # Yleiset laatuvaatimukset
 
-- Lisäksi lopulliseen arvosteluun palautetun ohjelman tulee toimia oikein.
+- Liopulliseen arvosteluun palautetun ohjelman tulee toimia oikein
   - Ohjelma ei saa missään tilanteessa kaatua
   - Ohjelma ei saa printata Exceptioneita (Stack tracea) komentoriville, vaikka virhe ei kaataisi ohjelmaa
 - Varaudu siihen, että käyttäjä yrittää antaa vääriä syötearvoja
   - Esim. ohjelmasi haluaa numeron, tyhmä käyttäjä syöttää tekstiä
 - Pelien sääntöjen tulisi toimia oikein
- - Esim. muistipelissä ei saa kääntää jo käännettyä palaa
- - Ristinollassa ei saa asettaa merkkiä ruutuun, jossa on jo merkki
+  - Esim. muistipelissä ei saa kääntää jo käännettyä palaa
+  - Ristinollassa ei saa asettaa merkkiä ruutuun, jossa on jo merkki
 - Jos ohjelmassasi tapahtuu vakava virhe, ohjelmasi voi esimerkiksi
- - näyttää käyttäjäystävällisen virheilmoituksen
- - ja sulkea ohjelman
+  - näyttää käyttäjäystävällisen virheilmoituksen
+  - ja sulkea ohjelman
 - Ohjelmaan jäävät tunnetut ongelmat dokumentoidaan testausdokumenttiin
