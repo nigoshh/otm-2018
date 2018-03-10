@@ -1,6 +1,6 @@
 % Ohjelmistotekniikan menetelmät
 % Matti Luukkainen ja 8 ohjaajaa
-% 9.3.2018
+% 12.3.2018
 # Ohjelmistotekniikan menetelmät
 
 - Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pieni harjoitustyö

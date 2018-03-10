@@ -614,3 +614,10 @@ public void init() throws Exception {
 Lisää konfiguraatioiden käsittelyyn Property-olioiden avulla esim. [täällä](https://www.mkyong.com/java/java-properties-file-examples/) tai [täällä](https://docs.oracle.com/javase/tutorial/essential/environment/properties.html)
 
 Toinen hyvä paikka konfiguraatioille ovat [ympäristömuuttujat](https://docs.oracle.com/javase/tutorial/essential/environment/env.html).
+
+## Uuden tekniikan harjoittelu ja käyttöönotto
+
+Kun olet toteuttamassa jotain itsellesi uudella tekniikalla, esim. JavaFX:llä, _sqlite_-tietokantaa hyödyntäen, tai teet ohjelmaasi laajennuksen hyödyntämällä kirjastoa, jota et vielä tunne kannattaa ehdottomasti tehdä tekniikalla erillisiä kokeiluja varsinaisen ohjelmasi ulkopuolella omassa pienessä koesovelluksessa.
+
+Jos yrität "montaa asiaa yhtäaikaa" eli ottaa esim. FXML-tekniikan käyttöön omassa jo pitkälle edenneessä ohjelmassasi, on aika varmaa, että saat ainoastaan aikaan suuren määrän ongelmia. Silloin kun koodia ja liikkuvia osia on paljon, ei ole koskaan varmuutta missä ongelma on, ja sen takia on erittäin hyödyllistä että teet harjoittelun ja kokeilut erillisessä "proof of concept"-sovelluksessa ja kun saat esim. FXML:n toimimaan kokeilusovelluksessa, on usein sen jälkeen helppoa "copypasteta" koodi varsinaiseen sovellukseen.
+
