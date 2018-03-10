@@ -188,7 +188,7 @@ Teemme kurssin harjoitustyötä ketterässä hengessä viikon mittaisilla iteraa
 
 # Työkaluja
 
-- Tarvitsemme ohejelmisokehityksessä suuren joukon käytännön työkaluja. 
+- Tarvitsemme ohjelmisokehityksessä suuren joukon käytännön työkaluja. 
 - Komentorivi ja Versionhallinta
   - Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja git-versionohallintaa
   - molemmat ovat tärkeässä roolissa ohjelmistokehityksessä
@@ -209,7 +209,7 @@ Teemme kurssin harjoitustyötä ketterässä hengessä viikon mittaisilla iteraa
 # Checkstyle
 
 - Automaattisten testien lisäksi koodille voidaan määritellä erilaisia automaattisesti tarkastettavia tyylillisiä sääntöjä
-- Näiden avulla ylläpidetään koodin luettavuutta ja varmistetaan että joka puolella koodia noudatetaan samoja tyylillisiä konventioita
+- Näiden avulla ylläpidetään koodin luettavuutta ja varmistetaan, että joka puolella koodia noudatetaan samoja tyylillisiä konventioita
 - Käytämme kurssilla tarkoitukseen Checkstyle-nimistä työkalua
 - Ohjelmoinnin perusteet ja jatkokurssi käyttivät Checkstyleä valvomaan ohjelman sisennystä 
 - Kurssilla kontrolloimme mm. muuttujien nimentää, sulkumerkkien sijoittelua ja välilyönnin käytön systemaattisuutta
@@ -291,9 +291,9 @@ Rajapinnan toteutus merkitään samalla tavalla eli valkoisella nuolenpäällä
 # Riippuvuus
 
 - UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä _pysyvää yhteyttä_
-- Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli _riippiipuvuus_.
+- Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli _riippiipuvuus_
 - Kassapääte _käyttää_ hetkellisesti _maksukorttia_ lounaiden maksuun
-- Kasspäätteen ja maksukortin välillä ei kuitenkaan ole pidempiaikaista suhdetta
+- Kassapäätteen ja maksukortin välillä ei kuitenkaan ole pidempiaikaista suhdetta
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-18.png){ width=400 }
 
@@ -347,15 +347,15 @@ Pakkausten välille on merkitty riippuvuus jos pakkauksen luokat käyttävät to
 # Toiminnan kuvaaminen
 
 - Luokka- ja pakkauskaaviot kuvaavat ohjelman rakennetta
-- Ohjelman toimita ei kuitenkaan tule niistä ilmi millään tavalla. 
+- Ohjelman toiminta ei kuitenkaan tule niistä ilmi millään tavalla. 
 - Esim. Ohpen Unicafe-tehtävä
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png){ width=400 }
 - Vaikka kaavioon on nyt merkitty metodien nimet, ei ohjelman toimintalogiikka selviä kaaviosta
-- Esim. mitä tapahtuu kun maksukortilla jolla on rahaa 3 euroa ostataan edullinen lounas?
+- Esim. mitä tapahtuu, kun maksukortilla jolla on rahaa 3 euroa, ostataan edullinen lounas?
 
 # Sekvenssikaavio
 
-- Tietokantojen perusteiden viikolla 4 on lyhyt maininta sekvenssikaavioista. 
+- Tietokantojen perusteiden viikolla 4 on lyhyt maininta sekvenssikaavioista
 - Sekvenssikaaviot on alunperin kehitetty kuvaamaan verkossa olevien ohjelmien keskinäisen kommunikoinnin etenemistä 
 - Sekvenssikaaviot sopivat jossain määrin myös kuvaamaan myös sitä, miten ohjelman oliot kutsuvat toistensa metodeja suorituksen aikana
 
@@ -386,7 +386,7 @@ public boolean syoEdullisesti(Maksukortti kortti) {
 
 # Epäonnistunut ostos sekvenssikaaviona
 
-Mitä tapahtuu jos maksukortin saldo on 2 euroa eli vähemmän kuin lounaan hinta:
+Mitä tapahtuu, jos maksukortin saldo on 2 euroa, eli vähemmän kuin lounaan hinta:
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-17.png){ width=300 }
 
