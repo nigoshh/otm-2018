@@ -279,7 +279,7 @@ Luokkien tarkemmat detaljit selviävät koodia katsomalla tai JavaDoc:ista.
 
 #### Riippuvuus
 
-UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä _pysyvää yhteyttä_. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli  _riippiipuvuus_.
+UML-kaavioissa olevat "viivat" kuvaavat luokkien olioiden välistä _pysyvää yhteyttä_. Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli _riippuvuus_.
 
 Eräs tälläinen tilanne on Ohjelmoinnin perusteiden Unicafe-tehtävän luokkien _Maksukortti_ ja _Kassapääte_ suhde. Maksukortin koodi  on seuraava: 
 
@@ -291,7 +291,7 @@ public class Maksukortti {
         this.saldo = saldo;
     }
  
-    public double saldo() {
+    public double saldo() {iip
         return this.saldo;
     }
  
