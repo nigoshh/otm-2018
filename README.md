@@ -51,11 +51,12 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - viikko 4 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md)
   - viikko 5 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md)
   - viikko 6 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md)
-  - viikko 7 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko7.md)         
+  - viikko 7 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko7.md)   
 - Kurssin referenssisovellus [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
   - Sovelluksen tarkoituksena on demonstroida erästä tapaa tehdä suurin piirtein täysiin pisteisiin riittävä dokumentaatio projektillesi. Itse ohjelma on sen verran suppea, että saadaksesi kurssilta arvosanan 5 joudut tekemään hieman laajemman sovelluksen. Myös testaus on jätetty vajaaksi.
 - [Labtool](https://tktl-labtool.herokuapp.com/)
 - Ohjeita 
+  - Kaikki ohjeista eivät kurssin alussa ajankohtaisia. Kaikkeen tärkeään tulee aikanaan linkki laskareihin tai harjoitustöiden viikkotavoitteisiin
   - [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
   - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) 
   - [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
