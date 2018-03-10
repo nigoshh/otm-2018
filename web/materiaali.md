@@ -707,7 +707,7 @@ Tekniikasta, missä oliolle annetaan sen riippuvuudet ulkopuolelta joko konstruk
 
 ## Riippuvuuksien injektointi ja testaus
 
-Riippuvuuksien injektointi helpottaa erityiseti testaamista, sillä se mahdollistaa, että luokille annetaan niiden normaalien riippuvuuksien sijaan testausta varten luotuja _valekomponentteja_.
+Riippuvuuksien injektointi helpottaa erityisesti testaamista, sillä se mahdollistaa, että luokille annetaan niiden normaalien riippuvuuksien sijaan testausta varten luotuja _valekomponentteja_.
 
 Todo-sovelluksessa on luokkaa _TodoService_ testattu juuri näin. Esim. UserDao:n valekomponentti sisältää alussa yhden käyttäjän:
 
