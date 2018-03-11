@@ -21,7 +21,7 @@ Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
 
 Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta.
 
-# #Lopullisesta ohjelmasta annettavat pisteet
+## Lopullisesta ohjelmasta annettavat pisteet
 
 Pisteet (yht 23) jakautuvat seuraavasti
 - käyttöliittymä 4p
@@ -29,7 +29,7 @@ Pisteet (yht 23) jakautuvat seuraavasti
   - 1-2p monimutkainen tekstikäyttöliittymä
   - 2-3p yksinkertainen graafinen käyttöliittymä
   - 4p laaja graafinen käyttöliittymä
-- tiedon pysyväistalletus 4p
+- tiedon pysyväistallennusta 4p
   -	ei pysyväistallennusta
   - 1-2p	tiedosto 
   - 3-4p	tietokanta
@@ -37,7 +37,7 @@ Pisteet (yht 23) jakautuvat seuraavasti
 	- Pisteytys riippuu käsiteltävän tiedon monimutkaisuudesta
 	- Täydet pisteet kussakin kategorioissa edellyttävät järkevien abstraktioiden, esim. DAO-suunnittelumallin käyttöä
 - sovelluslogiikan kompleksisuus 3p
-- ohjelman lajuus 5p
+- ohjelman laajuus 5p
 - suorituskelpoinen jar-tiedosto  1p
 - koodin laatu 6p
   - 5p hyvät abstraktiot (esim. Design patternien hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava

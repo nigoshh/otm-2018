@@ -53,26 +53,23 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - viikko 6 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md)
   - viikko 7 [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko7.md)   
 - Kurssin referenssisovellus [OtmTodoApp](https://github.com/mluukkai/OtmTodoApp)
-  - Sovelluksen tarkoituksena on demonstroida erästä tapaa tehdä suurin piirtein täysiin pisteisiin riittävä dokumentaatio projektillesi. Itse ohjelma on sen verran suppea, että saadaksesi kurssilta arvosanan 5 joudut tekemään hieman laajemman sovelluksen. Myös testaus on jätetty vajaaksi.
+  - Sovelluksen tarkoituksena on demonstroida erästä tapaa tehdä suurin piirtein täysiin pisteisiin riittävä dokumentaatio ja testaus projektillesi. Itse ohjelma on sen verran suppea, että saadaksesi kurssilta arvosanan 5 joudut tekemään hieman laajemman sovelluksen. 
 - [Labtool](https://tktl-labtool.herokuapp.com/)
 - Ohjeita 
-  - Kaikki ohjeista eivät kurssin alussa ajankohtaisia. Kaikkeen tärkeään tulee aikanaan linkki laskareihin tai harjoitustöiden viikkotavoitteisiin
+  - Kaikki ohjeista eivät ole kurssin alussa vielä ajankohtaisia. Kaikkeen tärkeään tulee aikanaan linkki laskareihin tai harjoitustöiden viikkotavoitteisiin
   - [Aiheideoita ja ohjeita työn harjoitustyön aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md)
   - [JUnit-ohje](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md) 
   - [Käyttöliittymän ja tietojen tallettamisen toteuttamiseen sekä sovelluksen konfigurointiin liittyviä vihjeitä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
   - [Maven](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
   - [Checkstyle](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)  
   - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)
-  - [koodin laatu]
-(https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md)
+  - [koodin laatu](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md)
 - Työkaluja kaavioiden piirtoon
   - <http://yuml.me/> luokkakaaviot
   - <https://www.websequencediagrams.com/> sekvenssikaavioihin
   - <https://draw.io/> kaikki kaaviot
 
 ## Aikataulu 
-
-**aikataulu on vielä keskeneräinen!**
 
 ### viikko 1
 
