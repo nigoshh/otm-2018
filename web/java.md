@@ -432,6 +432,10 @@ FXML-muotoiset käyttöliittymien näkymät on mahdollista tehdä käsin editoim
 
 Scenebuilder integroitui ainakin OSX:ssä automaattisessti NetBeansiin.
 
+### Riippuvuuksien injektointi JavaFX-kontrollereille
+ 
+[Täällä](https://github.com/mluukkai/FxmlTodoApp) muutama vihje tilanteeseen, jossa FXML:llä luotujen näkymien kontrollereille pitää injektoida riippuvuuksia, esim. sovelluslogiikkaolio. Linkin takaa näet myös erään tavan, miten FXML:llä tehtyjä näkymiä on mahdollista vaihtaa.
+
 ### JavaFX-aiheisia linkkejä
 
 Ohjelmoinnin jatkokurssilla tehdään JavaFX:n ainoastaan matala pintaraapaisu, jatkokurssin materiaali kannattaa kuitenkin ehdottomasti kerrata jos olet aikeissa käyttää JavaFX:ää. 
@@ -447,7 +451,6 @@ Jos käyttöliittymäsi on vähänkin epätriviaali, joudut suurella todennäkö
   - [FXML](https://docs.oracle.com/javafx/2/get_started/fxml_tutorial.htm)
 - [FXML getting started](https://docs.oracle.com/javafx/2/fxml_get_started/jfxpub-fxml_get_started.htm)  
 - [Scenebuilder](http://gluonhq.com/products/scene-builder/)
-- [Riippuvuuksien injektio FXML-kontrollereille](https://stackoverflow.com/questions/30814258/javafx-pass-parameters-while-instantiating-controller-class)
 - [JavaFX dialogit](http://code.makery.ch/blog/javafx-dialogs-official/)
 
 Youtubesta löytyy runsaasti vaihtelevanlaatuisia videoita aihepiiristä.
