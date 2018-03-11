@@ -372,7 +372,7 @@ Kontrollerin metodi _handleButtonAction_ toimii näkymän napin tapahtumankuunte
 
 ```xml
 <Button fx:id="button" onAction="#handleButtonAction" text="roll" .../>
-```xml
+```
 
 Sovelluslogiikkaa, eli nopan toiminnallisuutta mallintava luokka näyttää seuraavalta:
 
