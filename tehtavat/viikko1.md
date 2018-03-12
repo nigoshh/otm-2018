@@ -622,7 +622,7 @@ Nyrkkisääntönä kannattaa pitää aina sitä, että kun rupeat työskentelem�
 
 ## Labtool
 
-Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://tktl-labtool.herokuapp.com/register)
+Rekisteröi nyt omat tietosi ja luomasi repositorio [Labtooliin](https://tktl-labtool.herokuapp.com/register). Valitse kurssiksi _OTM-2018-4 4/18_.
 
 Labtool kysyy myös harjoitustyön aihetta (=topic). Voit jättää kohdan tyhjäksi, jos et ole vielä päättänyt mitä aiot tehdä.
 
