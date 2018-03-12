@@ -3,7 +3,7 @@
 % 12.3.2018
 # Ohjelmistotekniikan menetelmät
 
-- Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pieni harjoitustyö
+- Kurssilla tutustutaan ohjelmistokehityksen periaatteisiin sekä menetelmiin ja sovelletaan niitä toteuttamalla pienehkö harjoitustyö
 - Kurssi nykyään osa _aineopintoja_
 - Pakollisina _esitietoina_
   - Ohjelmoinnin jatkokurssi
@@ -20,9 +20,13 @@
 - Viikolla 2 aloitetaan itsenäisesti tehtävä **harjoitustyö**
 - Työtä edistetään pala palalta viikoittaisten tavoitteiden ohjaamana
 - Kurssilla ei ole koetta 
+
+. . .
+
 - Harjoitustyö tulee tehdä kurssin aikataulujen puitteissa
 - Kesken jäänyttä harjoitustyötä ei voi jatkaa seuraavalla kurssilla (keväällä 2019)
 -  Muista siis varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi!
+
 
 # Luento, deadlinet ja ohjaus
 
@@ -34,8 +38,8 @@ alku  ma  ti  ke  to  pe
 ----  --- --- --- --- ---
 10            x
 12    x   x   x
-14    x   x   x
-16        x           x
+14    x   x   x       x
+16        x           
 18        x     
 
 - Paja alkaa huomenna
@@ -60,6 +64,9 @@ alku  ma  ti  ke  to  pe
 
 - Kun ollaan tekemässä suurempaa ohjelmistoa ulkoiselle asiakkaalle, tarvitaan  systemaattinen työskentelymenetelmä
   - muuten riskinä mm. että lopputulos ei vastaa asiakkaan tarvetta 
+
+. . .
+
 - Sovellettavasta menetelmästä riippumatta ohjelmiston systemaattinen kehittäminen, eli _ohjelmistotuotanto_ (engl. Software engineering) sisältää useita erilaisia aktiviteettejä/vaiheita
   - _vaatimusmäärittelyssä_ selvitetään kuinka ohjelmiston halutaan toimivan
   - _suunnittelussa_ mietitään, miten halutun kaltainen ohjelmisto tulisi rakentaa
@@ -84,6 +91,9 @@ alku  ma  ti  ke  to  pe
 - Kurssin aiemmissa versioissa käyttäjien vaatimukset dokumentointiin _käyttötapauksina_ (engl. use case)
   - tapa on jo vanhahtava ja hylkäämme sen
 - Kurssilla ohjelmistotuotanto tutustumme nykyään yleisesti käytössä oleviin _käyttäjätarinoihin_ (engl. user story)
+
+. . .
+
 - Käytämme tällä kurssilla hieman kevyempää tapaa
 - Kirjaamme järjestelmältä toivotun toiminnallisuuden vapaamuotoisena ranskalaisista viivoista koostuvana feature-listana
 
@@ -94,6 +104,8 @@ Osoitteesta https://github.com/mluukkai/OtmTodoApp löytyy sovellus, joka havain
 - _todoapp_ eli sovellus, jonka avulla käyttäjien on mahdollista pitää kirjaa omista tekemättömistä töistä, eli _todoista_
 
 Katsotaan esimerkkinä Todo-sovelluksen vaatimusmäärittelyä
+
+. . .
 
 - Vaatimusmäärittely aloitetaan tunnistamalla järjestelmän erityyppiset _käyttäjäroolit_ 
 - Todo-sovelluksesta tunnistetaan kaksi käyttäjäroolia 
@@ -130,6 +142,9 @@ Vaatimusten kirjaamisesta voi ottaa tarkemmin mallia sovelluksen GitHub-reposito
   - mistä suuremmista rakennekomponenteista ohjelma koostuu
   - miten komponentit yhdistetään, eli minkälaisia komponenttien väliset rajapinnat ovat
   - mitä riippuvuuksia ohjelmalla on esim. tietokantoihin ja ulkoisiin rajapintoihin
+
+. . .
+
 - Arkkitehtuurisuunnittelua tarkentaa _oliosuunnittelu_, missä mietitään ohjelmiston yksittäisten komponenttien rakennetta
   - minkälaisisista luokista komponentit koostuvat
   - miten luokat kutsuvat toistensa metodeja sekä mitä apukirjastoja ne käyttävät
@@ -141,9 +156,15 @@ Vaatimusten kirjaamisesta voi ottaa tarkemmin mallia sovelluksen GitHub-reposito
 - Testausta on monentasoista
 - _Yksikkötestauksessa_  tutkitaan yksittäisten metodien ja luokkien toimintaa. 
   - Yksikkötestauksen tekee usein testattavan komponentin ohjelmoija
+
+. . .
+
 - Kun erikseen ohjelmoidut luokat yhdistetään, suoritetaan _integraatiotestaus_
   - varmistetaan erillisten osien yhteentoimivuus
   - integraatiotestaus tapahtuu useimmiten ohjelmoijien toimesta
+
+. . .
+
 - _Järjestelmätestauksessa_ testataan ohjelmistoa kokonaisuutena ja verrataan, että se toimii vaatimusdokumentissa sovitun määritelmän mukaisesti
   - järjestelmätestaus suoritetaan ohjelman todellisen käyttöliittymän kautta
   - järjestelmätestauksen saattaa tapahtua erillisen laadunhallintatiimin toimesta
@@ -162,6 +183,9 @@ Vaatimusten kirjaamisesta voi ottaa tarkemmin mallia sovelluksen GitHub-reposito
   - Näin ei useinkaan ole. On lähes mahdotonta, että asiakkaat osaisivat tyhjentävästi ilmaista kaikki ohjelmistolle asettamansa vaatimukset
   - Vasta käyttäessään valmista ohjelmistoa asiakkaat alkavat ymmärtää, mitä he olisivat ohjelmalta halunneet
   - Vaikka vaatimukset olisivat kunnossa laatimishetkellä, saattaa toimintaympäristö muuttua kehitysaikana niin ratkaisevasti, että valmistuessaan ohjelmisto on vanhentunut
+
+. . .
+
 - Toinen suuri ongelma on myöhään aloitettava testaus
   - Erityisesti integraatiotestauksessa löytyy usein pahoja ongelmia, joiden korjaaminen on hidasta ja kallista
 
@@ -193,6 +217,9 @@ Teemme kurssin harjoitustyötä ketterässä hengessä viikon mittaisilla iteraa
   - Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja git-versionohallintaa
   - molemmat ovat tärkeässä roolissa ohjelmistokehityksessä
   - harjoitellaan viikon 1 laskareissa
+
+. . .
+
 - Maven
   - Olet todennäköisesti ohjelmoinut Javaa  NetBeansilla ja tottunut painamaan "vihreää nappia" tai "mustaa silmää"
   - tutkimme kurssilla hieman miten Javalla tehdyn ohjelmiston _hallinnointi_ tapahtuu NetBeansin "ulkopuolella"
@@ -210,7 +237,7 @@ Teemme kurssin harjoitustyötä ketterässä hengessä viikon mittaisilla iteraa
 
 - Automaattisten testien lisäksi koodille voidaan määritellä erilaisia automaattisesti tarkastettavia tyylillisiä sääntöjä
 - Näiden avulla ylläpidetään koodin luettavuutta ja varmistetaan, että joka puolella koodia noudatetaan samoja tyylillisiä konventioita
-- Käytämme kurssilla tarkoitukseen Checkstyle-nimistä työkalua
+- Käytämme kurssilla tarkoitukseen *Checkstyle*-nimistä työkalua
 - Ohjelmoinnin perusteet ja jatkokurssi käyttivät Checkstyleä valvomaan ohjelman sisennystä 
 - Kurssilla kontrolloimme mm. muuttujien nimentää, sulkumerkkien sijoittelua ja välilyönnin käytön systemaattisuutta
 
@@ -270,15 +297,18 @@ public class Todo {
 
 # Todo-sovelluksen tietosisällön luokkakaavio
 
+- Yhdellä käyttäjällä voi olla montoa Todoa
+- Todo liittyy aina yhteen käyttäjään
+
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-3a.png){ width=450 }
 
 # Todo-sovelluksen tietosisällön luokkakaavio
 
-Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavioihin riittää merkitä luokan nimi
+- Yleensä ei ole mielekästä kuvata luokkia tällä tarkkuudella, eli luokkakaavioihin riittää merkitä luokan nimi
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-4.png){ width=300 }
 
-Kaaviota parempi paikka metodien kuvaamiselle on koodiin liittyvä JavaDoc-dokumentaatio 
+- Kaaviota parempi paikka metodien kuvaamiselle on koodiin liittyvä JavaDoc-dokumentaatio 
 
 # Rajapinnan toteutus ja perintä luokkakaaviossa
 
@@ -286,7 +316,7 @@ Kaaviota parempi paikka metodien kuvaamiselle on koodiin liittyvä JavaDoc-dokum
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png){ width=300 }
 
-Rajapinnan toteutus merkitään samalla tavalla eli valkoisella nuolenpäällä
+- Rajapinnan toteutus merkitään samalla tavalla eli valkoisella nuolenpäällä
 
 # Riippuvuus
 
@@ -294,6 +324,8 @@ Rajapinnan toteutus merkitään samalla tavalla eli valkoisella nuolenpäällä
 - Joissain tilanteissa on mielekästä merkata kaavioihin myös ei-pysyvää suhdetta kuvaava katkoviiva, eli _riippiipuvuus_
 - Kassapääte _käyttää_ hetkellisesti _maksukorttia_ lounaiden maksuun
 - Kassapäätteen ja maksukortin välillä ei kuitenkaan ole pidempiaikaista suhdetta
+
+. . .
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-18.png){ width=400 }
 
@@ -318,7 +350,7 @@ public class Kassapaate {
 
 # Pakkauskaavio
 
-Todo-sovelluksen koodi on sijoitettu _pakkauksiin_ seuraavasti:
+- Todo-sovelluksen koodi on sijoitettu _pakkauksiin_ seuraavasti:
 
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
@@ -331,7 +363,7 @@ Todo-sovelluksen koodi on sijoitettu _pakkauksiin_ seuraavasti:
 
 # Pakkauskaavio
 
-Pakkausrakenne voidaan kuvata UML:ssä pakkauskaaviolla
+- Pakkausrakenne voidaan kuvata UML:ssä pakkauskaaviolla
 
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
@@ -342,7 +374,7 @@ Pakkausrakenne voidaan kuvata UML:ssä pakkauskaaviolla
 :::
 ::::::::::::::
 
-Pakkausten välille on merkitty riippuvuus jos pakkauksen luokat käyttävät toisen pakkauksen luokkia
+- Pakkausten välille on merkitty riippuvuus jos pakkauksen luokat käyttävät toisen pakkauksen luokkia
 
 # Toiminnan kuvaaminen
 
@@ -419,6 +451,9 @@ Mitä tapahtuu, jos maksukortin saldo on 2 euroa, eli vähemmän kuin lounaan hi
 - Dokumentaatio voidaan kirjoittaa joko suomeksi tai englanniksi
 - Ohjaajat saattavat suostua muihinkin kieliin, asia on syytä sopia kurssin ensimmäisen viikon aikana
   - Javascript, Ruby ja C++ ainakin käyvät
+
+. . .
+
 - Web-sovelluksia kurssilla ei sallita
   - Sovelluksessa voi toki olla webissä toimivia komponentteja, mutta sovelluksen käyttöliittymän tulee olla ns. desktop-sovellus
   - Javascriptillä hyvä valinta desktop-sovelluksiin on Electron
@@ -431,9 +466,15 @@ Mitä tapahtuu, jos maksukortin saldo on 2 euroa, eli vähemmän kuin lounaan hi
   - Heti ensimmäisellä viikolla toteutetaan pieni osa toiminnallisuudesta
   - ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu laajuus on saavutettu 
 - Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia Ohjelmoinnin jatkokurssilta sekä kurssisivuilta löytyvistä vihjeistä 
+
+. . .
+
 - Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus
-- Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen
+- Uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen
 - Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa ei kirjoiteta käyttöliittymän sekaan
+
+. . .
+
 - Graafiseen käyttöliittymään suositellaan JavaFX:ää
 - Tiedon talletus joko tiedostoon tai tietokantaan suositeltavaa
 
@@ -522,7 +563,7 @@ Mitä tapahtuu, jos maksukortin saldo on 2 euroa, eli vähemmän kuin lounaan hi
 - Ennen loppupalautusta jaossa 20 pistettä
   - Viikkodeadlinet 17p
   - Koodikatselmointi 3p
-- Loppupalautus ratkaise 40 kohtalon
+- Loppupalautus ratkaise 40 pisteen kohtalon
   - Dokumentaatio	10p   
   - Testaus	7p	
   - Lopullinen ohjelma 23p
