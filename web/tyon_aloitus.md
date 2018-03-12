@@ -2,7 +2,7 @@
 
 ## Yleistä
 
-Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on runsaasti pajaohjausta. 
+Kurssin pääpainon muodostaa viikolla 2 aloitettava harjoitustyö. Harjoitustyössä toteutetaan itsenäisesti ohjelmisto omavalintaisesta aiheesta. Tavoitteena on soveltaa ja syventää ohjelmoinnin perus- ja jatkokursseilla opittuja taitoja ja harjoitella tiedon omatoimista etsimistä. Harjoitustyötä tehdään itsenäisesti, mutta tarjolla on runsaasti [pajaohjausta](https://github.com/mluukkai/otm-2018#ajankohtaista). 
 
 Harjoitustyön on edettävä [viikottaisten tavoitteiden mukaan](https://github.com/mluukkai/otm-2018#aikataulu). Työ on saatava valmiiksi kurssin aikana ja sitä on toteutettava tasaisesti, muuten kurssi katsotaan keskeytetyksi. Samaa ohjelmaa ei voi jatkaa seuraavalla kurssilla (eli keväällä 2019), vaan työ on aloitettava uudella aiheella alusta.  Muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi.
 
@@ -14,27 +14,27 @@ Harjoitustyön ohjelmointikieli on pääsääntöisesti Java. Ohjaajat saattavat
 
 Näyttää sitä, että Javan lisäksi mahdollisia ovat myös Javascript, Ruby ja C++. Myös muita kieliä voi ehdottaa, mutta takeita niiden kelpaamisesta ei ole.
 
-Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olevat komponentit, mutta sovelluksen käyttöliittymän tulee olla ns desktop-sovellus. Javascriptillä hyvä valinta desktop-sovelluksiin on [Electron](https://electronjs.org).
+Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olevat komponentit, mutta sovelluksen käyttöliittymän tulee olla ns. desktop-sovellus. Javascriptillä hyvä valinta desktop-sovelluksiin on [Electron](https://electronjs.org).
 
 Muuta kuin Javaa käytettäessä ohjaus saattaa olla "huonompaa", sillä kurssihenkilökunnan kokemus vaihtoehtoisilla kielillä tehtävistä desktop-sovelluksista on rajallinen.
 
-Muita kieliä valitessa on myös syytä pitää mielessä, että kieleltä on syytä löytyä Javan [Mavenia](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md), [JUnitia](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md), [jacocoa](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#3-testauskattavuus) [checkstyeä](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md), [JavaDocia](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) vastaavat menetelmät.
+Muita kieliä valitessa on myös syytä pitää mielessä, että kieleltä täytyy löytyä Javan [Mavenia](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md), [JUnitia](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md), [Jacocoa](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#3-testauskattavuus) [Checkstyeä](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md), [JavaDocia](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) vastaavat menetelmät.
 
 Ohjelmakoodin muuttujat, luokat ja metodit kirjoitetaan englanniksi. Dokumentaatio voidaan kirjoittaa joko suomeksi tai englanniksi. 
 
 ## Ohjelman toteutus
 
-Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+Toteutus etenee "iteratiivisesti ja inkrementaalisesti". Tämä tarkoittaa, että heti alussa toteutetaan pieni osa ohjelman toiminnallisuudesta. Ohjelman ydin pidetään koko ajan toimivana, uutta toiminnallisuutta lisäten, kunnes tavoiteltu ohjelman laajuus on saavutettu. Ohjelman rakenteeseen kannattaa kysyä vinkkejä pajasta, sekä ottaa mallia ohjelmoinnin jatkokurssin harjoitustehtävistä ja materiaalista. Muutamia vihjeitä on myös kurssin [referenssiprojektissa](https://github.com/mluukkai/OtmTodoApp) sekä [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md).
 
-Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siispä ohjelmakoodille onkin syytä laatia jatkuvasti yksikkötestejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
+Iteratiiviseen tapaan tehdä ohjelma liittyy kiinteästi automatisoitu testaus. Aina uutta toiminnallisuutta lisättäessä ja vanhaa muokatessa täytyy varmistua, että kaikki vanhat ominaisuudet toimivat edelleen. Kaiken testaaminen käsin uudelleen ja uudelleen ei ole ajankäytöllisesti järkevää, ja siksi ohjelmakoodille onkin syytä laatia jatkuvasti testejä ohjelmoinnin edetessä. Testit on syytä pitää kattavina ja ajan tasalla.
 
 Jotta ohjelmaa pystyisi testaamaan, on tärkeää että sovelluslogiikkaa [ei kirjoiteta käyttöliittymän sekaan](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)!
 
 Eräs mahdollisuus on tehdä aluksi tekstikäyttöliittymän ja vasta saatuasi ohjelman perustoiminnallisuuden toteutettua voit siirtyä graafisen käyttöliittymän toteutukseen. Graafinen käyttöliittymä on mahdollista myös jättää pois, mutta tämä [vaikuttaa arvosanaan](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md). 
 
-Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/). Muutamia vihjeitä liittyen JavaFX:ään [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+Graafisen käyttöliittymän toteuttamiseen kannattaa oletusarvoisesti käyttää JavaFX:ää, jonka käytön perusteet esitellään [Ohjelmoinnin jatkokurssilla](https://materiaalit.github.io/ohjelmointi-s17/part11/). Muutamia vihjeitä liittyen JavaFX:ään [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md).
 
-On myös ja [arvosanan kannalta kannattavaa](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md) suositeltavaa, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md)
+[Arvosanan kannalta kannattavaa](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md) suositeltavaa on, että ohjelmasi tallettaa dataa joko tiedostoon tai tietokantaan. Vihjeitä tiedon tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md).
 
 Harjoitustyön tavoitteena on tuottaa ohjelma, joka voitaisiin antaa toiselle opiskelijalle ylläpidettäväksi ja täydennettäväksi. Lopullisessa palautuksessa on oltava lähdekoodin lisäksi dokumentaatio ja automaattiset testit sekä jar-tiedosto, joka mahdollistaa ohjelman suorittamisen NetBeansin ulkopuolella.
 
@@ -75,10 +75,10 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
   * Aritmetiikan harjoittelua
   * Tehtävägeneraattori, joka antaa käyttäjälle tehtävän sekä mallivastauksen (esim. matematiikkaa, fysiikkaa, kemiaa, ...)
   * Opintojen seurantajärjestelmä
-  * telegram- tai Slack-botti
+  * Telegram- tai Slack-botti
   * Code Snippet Manageri
   * Laskin, funktiolaskin, graafinen laskin
-  * Budjetointi-sovellus
+  * Budjetointisovellus
   * Opintojen seurantasovellus
   * HTML WYSIWYG-editor (What you see is what you get)
 
@@ -115,7 +115,9 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
 
 ## Harjoitustyön aloitus
 
-Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt viikon 1 laskareiden palautuksen.
+Harjoitustyö siis aloitetan kurssin [toisella viikolla](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md).
+
+Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt [viikon 1 laskareiden](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) palautuksen.
 
 ### GitHubissa olevan repositorion kloonaaminen
 
@@ -124,7 +126,7 @@ Jos haluat tehdä harjoitustyötä eri koneella, kuin mille teit repositoriosi a
 Koneeseesi täytyy luonnollisesti [ensin asentaa](https://git-scm.com/downloads) git jos se ei ole jo koneellasi.
 * Muista myös [oleellisten konfiguraatioiden](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#konfiguraatioita) tekeminen
 
-Talleta koneesi julkinen avain talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#julkinen-avain)
+Koneesi julkinen avain talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#julkinen-avain).
 
 Kloonaus tapahtuu seuraavasti
 * mene sopivaan hakemistoon koneellasi
