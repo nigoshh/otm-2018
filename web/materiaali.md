@@ -639,7 +639,7 @@ Toinen jo [ohjelmoinnin perusteista](https://materiaalit.github.io/ohjelmointi-1
 Kerrosarkkitehtuurin voi ajatella ilmentävän tätä periaatetta laajentaen sen yksittäisten luokkien ja olioiden tasolta sovellusten suurempiin kokonaisuuksiin.
 
 Todo-sovelluksen suunnittelussa periaatetta on noudatettu suhteellisen hyvin
-- käyttölittymästä on eristetty sovelluslogiikka kokonaan
+- käyttöliittymästä on eristetty sovelluslogiikka kokonaan
 - käyttäjä ja tehtävät on talletettu omiin luokkiinsa User ja Todo
 - sovelluslogiikan suorittamisesta, eli User- ja Todo-olioiden manipuloinnista vastaa oma luokka _TodoService_
 - tietojen talletuksesta levylle vastaavat DAO-oliot, jotka on vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
