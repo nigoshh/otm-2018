@@ -94,7 +94,7 @@ Toteutuksen yhteydessä ja sen jälkeen järjestelmää testataan. Testauksessa 
 
 _Yksikkötestauksessa_ (engl. unit testing) tutkitaan yksittäisten metodien ja luokkien toimintaa. Yksikkötestauksen tekee usein testattavan luokan ohjelmoija ja hyvä tapa on tehdä luokalle yksikkötestit samalla kun luokka ohjelmoidaan. 
 
-Kun erikseen ohjelmoidut komponentit (eli luokat tai luokkien muodostamat kokoelmat) yhdistetään, suoritetaan integraatiotestaus (engl. integration testing), jossa varmistetaan erillisten komponenttien yhteentoimivuus. Myös integraatiotestit tehdään useimmiten ohjelmoijien toimesta.
+Kun erikseen ohjelmoidut komponentit (eli luokat tai luokkien muodostamat kokoelmat) yhdistetään, suoritetaan integraatiotestaus (engl. integration testing), jossa varmistetaan erillisten komponenttien yhteentoimivuus. ;yös integraatiotestit tehdään useimmiten ohjelmoijien toimesta.
 
 _Järjestelmätestauksessa_ (engl. system testing) testataan järjestelmää kokonaisuutena ja verrataan, että se toimii vaatimusdokumentissa sovitun määritelmän mukaisesti. Järjestelmätestauksessa tesien näkökulma on sama kuin loppukäyttäjän, eli testit suoritetaan ohjelmiston käyttöliittymän kautta. Järjestelmätestauksen suorittavat usein testauksen ammattilaiset.
 
@@ -146,11 +146,11 @@ Tämän kurssin harjoitustyö pyritään tekemään osittain ketterien menetelmi
 
 # Työkaluja
 
-Tarvitsemme ohejelmisokehityksessä suuren joukon käytännön työkaluja. 
+Tarvitsemme ohjelmisokehityksessä suuren joukon käytännön työkaluja. 
 
 ## Komentorivi ja Versionhallinta
 
-Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionohallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md). 
+Olet jo ehkä käyttänyt muilla kursseilla komentoriviä ja versionhallintaa, molemmat ovat tärkeässä roolissa ohjelmistokehityksessä ja niiden harjoittelu on aiheena viikon 1 [tehtävissä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md). 
 
 ## Maven
 
@@ -351,7 +351,7 @@ public class Kassapaate {
 }
 ```
 
-Kassapääte käyttää maksukortteja hetkellisesti lounaiden maksamisen ja rahan lataamisen yhteydessä. Kassapääte ei kuitenkaan muista pysyvästi yksittäisiä maksukortteja. Tämän takia kassapäätteellä on riippuvuus matkakortteihin, mutta ei kuitenkaan normaalia yhteyttä sillä UML-kaavioon merkattu yhteys viittaa pysyvään, ajallisesti pidempikestoiseen suhteeseen.
+Kassapääte käyttää maksukortteja hetkellisesti lounaiden maksamisen ja rahan lataamisen yhteydessä. Kassapääte ei kuitenkaan muista pysyvästi yksittäisiä maksukortteja. Tämän takia kassapäätteellä on riippuvuus matkakortteihin, mutta ei kuitenkaan normaalia yhteyttä, sillä UML-kaavioon merkattu yhteys viittaa pysyvään, ajallisesti pidempikestoiseen suhteeseen.
 
 Tilannetta kuvaava luokkakaavio on seuraava:
 
@@ -399,7 +399,7 @@ Riippuvuuksien merkitseminen luokkakaavioihin ei ole välttämättä kovin oleel
 
 #### Rajapinta ja perintä
 
-TodoService siis tuntee _TodoDao_-olion (jos unohdit mikä on DAO kertaa Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)), jonka avulla se pääsee _todo_-olioihin. _TodoDao_ ei ole itseasiassa luokka vaan _rajapinta_: 
+TodoService siis tuntee _TodoDao_-olion (jos unohdit mikä on DAO, kertaa Tietokantojen perusteiden viikon 3 luku [2.4](https://materiaalit.github.io/tikape-k18/part3/)), jonka avulla se pääsee _todo_-olioihin. _TodoDao_ ei ole itseasiassa luokka vaan _rajapinta_: 
 
 ```java
 public interface TodoDao {
@@ -582,7 +582,7 @@ Sekvenssikaavio on seuraavassa:
  
 Kaavio alkaa tilanteesta, jossa _Henkilostorekisteri_ on jo luotu, mutta henkilöolioita ei vielä ole olemassa.
 
-Toiminta alkaa siitä kun pääohjelma eli main luo henkilön nimeltä _arto_. Seuraavaksi _main_ kutsuu rekisterin metodia _lisaa_ ja antaa parametriksi luodun henkilöolion.
+Toiminta alkaa siitä, kun pääohjelma eli main luo henkilön nimeltä _arto_. Seuraavaksi _main_ kutsuu rekisterin metodia _lisaa_ ja antaa parametriksi luodun henkilöolion.
 
 Vastaava toistuu kun main luo uuden henkilön ja lisää sen rekisteriin.
 
@@ -639,7 +639,7 @@ Toinen jo [ohjelmoinnin perusteista](https://materiaalit.github.io/ohjelmointi-1
 Kerrosarkkitehtuurin voi ajatella ilmentävän tätä periaatetta laajentaen sen yksittäisten luokkien ja olioiden tasolta sovellusten suurempiin kokonaisuuksiin.
 
 Todo-sovelluksen suunnittelussa periaatetta on noudatettu suhteellisen hyvin
-- käyttöliittymästä on eristetty sovelluslogiikka kokonaan
+- käyttölittymästä on eristetty sovelluslogiikka kokonaan
 - käyttäjä ja tehtävät on talletettu omiin luokkiinsa User ja Todo
 - sovelluslogiikan suorittamisesta, eli User- ja Todo-olioiden manipuloinnista vastaa oma luokka _TodoService_
 - tietojen talletuksesta levylle vastaavat DAO-oliot, jotka on vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
@@ -760,7 +760,7 @@ public class TodoServiceUserTest {
 }
 ```
 
-Toisin kuin todelliset DAO:t, testeissä käytettävät valekomponentit eivät tallenna dataa levylle, tämä tekee testaamisesta helpompaa.
+Toisin kuin todelliset DAO:t, testeissä käytettävät valekomponentit eivät tallenna dataa levylle. Tämä tekee testaamisesta helpompaa.
 
 Katso lisää Todo-sovelluksen [arkkitehtuurikuvauksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md) ja [testausdokumentista](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/testaus.md).
 
