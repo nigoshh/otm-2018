@@ -450,7 +450,7 @@ Mitä tapahtuu, jos maksukortin saldo on 2 euroa, eli vähemmän kuin lounaan hi
 - Ohjelmakoodin muuttujat, luokat ja metodit kirjoitetaan englanniksi 
 - Dokumentaatio voidaan kirjoittaa joko suomeksi tai englanniksi
 - Ohjaajat saattavat suostua muihinkin kieliin, asia on syytä sopia kurssin ensimmäisen viikon aikana
-  - Javascript, Ruby ja C++ ainakin käyvät
+  - Javascript, Ruby, Python ja C++ ainakin käyvät
 
 . . .
 
