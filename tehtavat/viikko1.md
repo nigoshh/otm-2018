@@ -403,7 +403,7 @@ Tiedosto ei siis enää ole _staged_-tilassa, muutokset ovat kuitenkin _working 
 * pääset perumaan muutokset kokonaan antamalla komennon <code>git checkout -- kolmas.txt</code>
 * varmista, että tiedosto on palannut muutoksia edeltävään tilaan
 
-Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on lisätty committoitavaksi, eli se on  _staged_, voidaan muutos perua komennolla _git reset HEAD_. Tällöin muutokset kuitenkin vielä jäävät tiedostoon, eli ovat _working directoryssä. Tiedosto saadaan palautettua repositoriossa olevaan edellisen commitin tilaan komennolla _git checkout_.
+Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on lisätty committoitavaksi, eli se on  _staged_, voidaan muutos perua komennolla _git reset HEAD_. Tällöin muutokset kuitenkin vielä jäävät tiedostoon, eli ovat _working directoryssä_. Tiedosto saadaan palautettua repositoriossa olevaan edellisen commitin tilaan komennolla _git checkout_.
 
 ![](https://github.com/mluukkai/otm2016/raw/master/img/lh3-3.png)
 
@@ -427,7 +427,7 @@ Internetin johtava paikka etärepositorioiden tallettamiseen on [GitHub](https:/
 
 Ennen GitHubin käytöönottoa, tee uusi git-repositorio paikalliselle koneelle, seuraavassa oletetaan että hakemiston nimi on _otm-harjoitustyo_. 
 
-**HUOM:** älä luo uutta repositorioa aiemmin tekemäsi harjoitusrepositorion sisälle!
+**HUOM:** älä luo uutta repositoriota aiemmin tekemäsi harjoitusrepositorion sisälle!
 
 Seuraavat komennot siirtyvät kotihakemistoon, luovat sen alle hakemiston _otm-harjoitustyo_, siirtyvät hakemistoon, alustavat sen git-repositorioksi sekä lisäävät ja commitoivat yhden tiedoston repositorioon:
 
@@ -536,13 +536,13 @@ Branch master set up to track remote branch master from origin.
 
 * tee repositorion sisälle hakemisto _laskarit_
   * ja sen sisälle hakemisto _viikko1_
-  * Komentorivitehtävien lopussa oli kehoitus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
+  * Komentorivitehtävien lopussa oli kehoitus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
   * Mene edellisen tehtäväsarjan git-harjoitusrepositorioon ja anna siellä komento _git log --stat | cat_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne edellisen bulletin komennon tulos
 * Kirjoita jotain tekstiä hakemiston juuressa olevaan tiedostoon README.md
   * muotoile tekstisi [markdown-notaatiota](https://guides.github.com/features/mastering-markdown/) käyttäen
-  * tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää boldattuja ja vinonnettuja osuuksia
+  * tee tiedostoon esim. jokin otsikko, tavallista tekstiä, joka sisältää lihavoituja ja kursivoituja osuuksia
   * näemme pian tekstin ruudulla muotoiltuna
 * commitoi muutokset
   * muista aina commitoinnin yhteydessä _lisätä_ tiedosto/muutokset commitoitavaksi

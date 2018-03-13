@@ -44,7 +44,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 ## Linkkejä
 
 - [Kurssimateriaali](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md)
-- Viikoittaiset palautuket
+- Viikoittaiset palautukset
   - viikko 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) 
   - viikko 2 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) ja [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md) 
   - viikko 3 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md) ja [harjoitustyö](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko3.md)
