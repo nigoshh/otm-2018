@@ -38,7 +38,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - tiiistai 
     - 12 Markus Holopainen
     - 14 Heikki Ahonen
-    - 18 Ville-Veikko Saari
+    - 16 Ville-Veikko Saari
   - keskiviikko 
     - 10 Saara Peltomäki
     - 12 Olli Keski-Hynnilä
