@@ -32,10 +32,18 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 - Ennakkotiedoista poiketen kurssilla on vain yksi luento, ma 12.3. klo 14-16 A111
 - Paja salissa B221
-  - ma 12-16 (ensimmäisellä viikolla ei maanantain pajaa)
-  - ti 12-18
-  - ke 10-14
-  - pe 14-16
+  - maaanantai 
+    - 12 Olli Tanttu
+    - 14 Matti Luukkainen
+  - tiiistai 
+    - 12 Markus Holopainen
+    - 14 Heikki Ahonen
+    - 18 Ville-Veikko Saari
+  - keskiviikko 
+    - 10 Saara Peltomäki
+    - 12 Olli Keski-Hynnilä
+  - peerjantai
+    - 14 Terho Uotila
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
 <https://t.me/tktlotm>
   - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen ilmainen keskustelufoorumisovellus jota on mahdollista käyttää selaimella, mobiililaitteilla ja windows/linux/osx-clienteillä
