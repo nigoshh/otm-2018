@@ -92,7 +92,7 @@ Nykyään suosituin versionhallintaohjelmisto on [git](https://git-scm.com). Tut
 
 ### konfiguraatioita
 
-Avaa terminaali. 
+Avaa terminaali omalla koneellasi. **seuraavat tehtävät tehdään paikallisesti, ei melkillä*. 
 
 Määrittele gitille **oma nimesi** sekä **käyttämäsi email-osoite** antamalla komennot:
 
