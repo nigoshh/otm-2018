@@ -13,6 +13,7 @@ Graafisten käyttöliittymien olemassaolosta huolimatta ohjelmistoalalla on edel
 ## osa 1
 
 Opettele käyttämään "riittävästi" komentoriviä (ks. alla oleva lista). Opettelu käy ehkä helpoiten tekemällä osoitteessa [https://www.codecademy.com/learn/learn-the-command-line](https://www.codecademy.com/learn/learn-the-command-line) olevan onlinekurssin kaksi ensimmäistä osaa _Navigating the File System_ ja _Viewing and Changing the File System_ (maksullisista pro-episodeista ei kannata välittää).
+**HUOM. Codecademy vaatii kirjautumisen Facebook, Google tai GitHub -tunnuksella. Kurssilla käytetään muutenkin GitHubia, niin se tunnus pitäisi kaikilla olla vähintään olla olemassa, jotta pääsee kirjautumaan.**
 
 Tämän tehtävän jälkeen sinun tulisi hallita seuraavat asiat:
 * käsitteet
