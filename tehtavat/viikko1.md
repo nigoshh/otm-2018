@@ -174,10 +174,10 @@ Git kertoo nyt, että _tiedosto.txt_ on niiden muutosten joukossa, jotka voidaan
 
 Commitoimisella tarkoitetaan tiedostojen ja hakemistojen sekä niihin liittyvien muutosten tallentamista _git-repositorioon_.
 
-Suoritetaan commitointi antamalla komento <code>git commit -m"tiedosto.txt luotu"</code>
+Suoritetaan commitointi antamalla komento <code>git commit -m "tiedosto.txt luotu"</code>
 
 <pre>
-mluukkai@melkinpaasi:~/otm_viikko1$ git commit -m"tiedosto.txt luotu"
+mluukkai@melkinpaasi:~/otm_viikko1$ git commit -m "tiedosto.txt luotu"
 [master (root-commit) 0e12cfa] tiedosto.txt luotu
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 tiedosto.txt
