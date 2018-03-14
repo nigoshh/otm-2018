@@ -1,6 +1,6 @@
 # Viikon 2 tehtävät
 
-Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on ma 26.3. klo 23:59
+Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on tiistaina 27.3. klo 23:59
 
 Tehtävät palautetaan Githubin avulla Labtoolin rekisteröimääsi repositorioon.
 
