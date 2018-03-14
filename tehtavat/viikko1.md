@@ -42,6 +42,7 @@ Ota ssh-yhteys linuxpalvelimeen _melkki.cs.helsinki.fi_, _melkinpaasi.cs.helsink
 
 Kirjauduttuasi laitoksen palvelimelle, tee seuraavat toimenpiteet:
 * luo kotihakemistoosi hakemisto _kurssit_
+  * **HUOM** joidenkin kohdalla melkillä on ollut ongelmia kotihakemiston asetuksissa ja esim. hakemiston luomisen seurauksena on virhe 'permission denied'. Jos törmäät ongelmaan, lähetä viesti osoitteeseen _it-support@cs.helsinki.fi_ ja raportoi ongelmaksi "ei oikeuksia kotihakemistoon melkillä"
 * luo hakemistolle _kurssit_ alihakemisto _otm2018_
 * ja luomallesi hakemistolle alihakemisto _viikko1_
 * mene kotihakemistoosi ja luo sen alle hakemisto _temp_
@@ -107,6 +108,14 @@ Varmista komennolla <code>git config -l</code>, että määrittelyt menivät oik
 
 Määritellään vielä git käyttämään sopivia värejä komennolla <code>git config --global color.ui</code> ja **vaihdetaan gitin käyttämäksi oletuseditoriksi** _nano_ komennolla <code>git config --global core.editor nano</code>
 * jos käytät vimiä, voit jättää oletuseditorin muuttamatta
+
+Tee vielä seuraava konfiguraatio
+
+```
+git config --global push.default matching
+```
+
+Tämä liittyy _git push_ -komennon oletusarvoiseen toiminnallisuuteen. Komennosta lisää myöhemmin.
 
 ### repositorio
 
