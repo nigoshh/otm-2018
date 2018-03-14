@@ -42,6 +42,8 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - keskiviikko 
     - 10 Saara Peltomäki
     - 12 Olli Keski-Hynnilä
+  - torsta
+    - 12 Aleksi Huotala
   - perjantai
     - 14 Terho Uotila
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
