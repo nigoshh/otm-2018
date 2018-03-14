@@ -87,9 +87,69 @@ Yksittäisen pakkauksen koodit on helppo poistaa raportin alaisuudesta lisääm�
 
 Excludesin alle voi lisätä tarvittaessa myös useampia excludeja. Lisää tietoa exclude-syntaksista internetissä, esim. [täältä](https://stackoverflow.com/questions/27799419/maven-jacoco-configuration-exclude-classes-packages-from-report-not-working).
 
-## maven-komentojen suorittaminen NetBeansista
+## Maven-komentojen suorittaminen NetBeansista
 
 Ohje [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#maven-komentojen-suorittaminen-netbeansista).
+
+## Ulkoisten kirjastojen käyttäminen Mavenin avulla
+
+Mavenin avulla omassa koodissa on erittäin helppo ottaa käyttöön muiden ohjelmoijien toteuttamia apukirjastoja.
+
+Internet on "täynnä" erilaisiin tilanteisiin sopivia apukirjastoja. 
+
+Oletetaan, että haluamme tehdä sovelluksessa tilastotieteellistä analyysiä. Googlella 
+Löydämme [Apache Commons](https://commons.apache.org) -projektista löytyvän[matematiikkakirjaston](http://commons.apache.org/proper/commons-math/) jonka tarjoamat [tilastotieteen työvälineet](http://commons.apache.org/proper/commons-math/userguide/stat.html) vaikuttavat lupaavalta.
+
+Apache Commonsin dokumentaatio ei suoraan kerro, miten koodi saadaan liitettyä Maven-muotoiseen projektiin. Se on kuitenkin helppoa, tarvitsemme tiedon siitä miten projekti löytyy Mavenin repositorioista eli "koodisäiliöistä".
+
+Googlaamalla "Apache Commons Math Maven" löytyy sivu <https://mvnrepository.com/artifact/org.apache.commons/commons-math3/3.6> joka näyttää seuraavalta
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-4.png" width="700">
+
+Saamme liitettyä kirjaston projektiimme, kopioimalla sivulla olevan _dependency_-määritelmän projektin _pom.xml_-tiedoston osan _dependencies_ alle:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-5.png" width="700">
+
+Kirjastosta on nyt otettu uusin versio 3.6.1, minkä olemassaolosta _mvnrepository.com_ antoi vihjeen.
+
+Suorittamalla NetBeansissa _clean and build_ lataa Maven kirjaston koodin. 
+NetBeans-projektin _Dependencies_-kansio varmistaa asian:
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-6.png" width="400">
+
+Voimme nyt käyttää kirjaston luokkia koodissamme:
+
+```java
+package pokemontietokanta.ui;
+
+import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
+import pokemontietokanta.domain.Pokemon;
+
+public class Main {
+    public static void main(String[] args) {
+        Pokemon p = new Pokemon("arto");
+        p.go();
+        
+        DescriptiveStatistics stats = new DescriptiveStatistics();
+
+        int[] strengthOfPokemons = { 58, 5, 10, 45, 17};
+
+        for( int i = 0; i < strengthOfPokemons.length; i++) {
+            stats.addValue(strengthOfPokemons[i]);
+        }
+
+        double mean = stats.getMean();
+        double std = stats.getStandardDeviation();
+        double median = stats.getPercentile(50);
+        
+        System.out.println("mean "+mean);
+        System.out.println("standar deviation "+std);
+        System.out.println("median "+median);
+    }
+}
+```
+
+Apache Commonsissa olevat kirjastot ovat varsin hyvin dokumentoituja. Jos ja kun löydät googlaamalla projektiisi sopivia kirjastoja, niiden dokumentaation taso vaihtelee. Sekään ei ole ennenkuulumatonta, että kirjastojen koodissa on bugeja. Nykyään melkein kaikkien kirjastojen koodi löytyy GitHubista. Kirjastojen GitHub-sivuilta selviää mm. se onko kirjasto edelleen aktiivisen ylläpidon alaisena. Jos kirjaston GitHubissa ei ole ollut päivityksiä pitkään aikaan, esim. vuoteen, kannattaa kirjastoon suhtautua suurella skeptisyydellä. Useimpien kirjastojen dokumentaatiotkin ovat GitHubissa. Apache Commons on tämän suhteen poikkeus, sen kirjastojen koodia ei edes hallinnoida gitin vaan jo hieman esihistoriallisen svn-versionhallintajärjestelmän avulla.
 
 ## Checkstyle
 
