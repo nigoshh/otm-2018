@@ -95,24 +95,24 @@ Ohje [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikk
 
 Mavenin avulla omassa koodissa on erittäin helppo ottaa käyttöön muiden ohjelmoijien toteuttamia apukirjastoja.
 
-Internet on "täynnä" erilaisiin tilanteisiin sopivia apukirjastoja. 
+Internet on täynnä erilaisiin tilanteisiin sopivia apukirjastoja. 
 
 Oletetaan, että haluamme tehdä sovelluksessa tilastotieteellistä analyysiä. Googlella 
-Löydämme [Apache Commons](https://commons.apache.org) -projektista löytyvän[matematiikkakirjaston](http://commons.apache.org/proper/commons-math/) jonka tarjoamat [tilastotieteen työvälineet](http://commons.apache.org/proper/commons-math/userguide/stat.html) vaikuttavat lupaavalta.
+Löydämme [Apache Commons](https://commons.apache.org) -projektista löytyvän [matematiikkakirjaston](http://commons.apache.org/proper/commons-math/), jonka tarjoamat [tilastotieteen työvälineet](http://commons.apache.org/proper/commons-math/userguide/stat.html) vaikuttavat lupaavalta.
 
 Apache Commonsin dokumentaatio ei suoraan kerro, miten koodi saadaan liitettyä Maven-muotoiseen projektiin. Se on kuitenkin helppoa, tarvitsemme tiedon siitä miten projekti löytyy Mavenin repositorioista eli "koodisäiliöistä".
 
 Googlaamalla "Apache Commons Math Maven" löytyy sivu <https://mvnrepository.com/artifact/org.apache.commons/commons-math3/3.6> joka näyttää seuraavalta
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-4.png" width="700">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-4.png" width="950">
 
 Saamme liitettyä kirjaston projektiimme, kopioimalla sivulla olevan _dependency_-määritelmän projektin _pom.xml_-tiedoston osan _dependencies_ alle:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-5.png" width="700">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-5.png" width="800">
 
 Kirjastosta on nyt otettu uusin versio 3.6.1, minkä olemassaolosta _mvnrepository.com_ antoi vihjeen.
 
-Suorittamalla NetBeansissa _clean and build_ lataa Maven kirjaston koodin. 
+Suorittamalla NetBeansissa _Clean and Build_ lataa Maven kirjaston koodin. 
 NetBeans-projektin _Dependencies_-kansio varmistaa asian:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-6.png" width="400">
@@ -120,8 +120,6 @@ NetBeans-projektin _Dependencies_-kansio varmistaa asian:
 Voimme nyt käyttää kirjaston luokkia koodissamme:
 
 ```java
-package pokemontietokanta.ui;
-
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 import pokemontietokanta.domain.Pokemon;
 
