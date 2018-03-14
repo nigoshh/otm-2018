@@ -492,16 +492,6 @@ origin	git@github.com:mluukkai/otm-harjoitustyo.git (push)
 - kokeillaan
 
 ```bash
-mluukkai@melkki:~/otm-harjoitustyo$ git push
-fatal: The current branch master has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin master
-```
-
-Tulee pieni valitus ja git (eivät tosin kaikki gitin versiot!) ehdottaa komennon parametrillista versiota. Kokeillaan sitä:
-
-```bash
 mluukkai@melkki:~/otm-harjoitustyo$ git push --set-upstream origin master
 Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
 Permission denied (publickey).
@@ -515,7 +505,7 @@ and the repository exists.
 
 Jos olet jo asettanut julkisen avaimen esim. Tietokantojen perusteissa, pushauksen pitäisi toimia ja voit siirtyä [seuraavaan kohtaan](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#kertausta).
 
-Pushaus ei edelleenkään toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen avaimen](https://the.earth.li/~sgtatham/putty/0.55/htmldoc/Chapter8.html) autentikoinnin. Se ei kuitenkaan onnistu koska emme ole kertoneet gitille julkista salausavaintamme.
+Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen avaimen](https://the.earth.li/~sgtatham/putty/0.55/htmldoc/Chapter8.html) autentikoinnin. Se ei kuitenkaan onnistu koska emme ole kertoneet gitille julkista salausavaintamme.
 
 * luo salausavain antamalla komentoriviltä komento _ssh-keygen_
   * voit vastata kaikkiin kysymyksiin enterillä
