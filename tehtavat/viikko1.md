@@ -490,6 +490,7 @@ origin	git@github.com:mluukkai/otm-harjoitustyo.git (push)
 
 - _origin_ on etärepositorion oletusarvoinen nimi. Nimi voi olla mikä tahansa ja etärepositorioitakin voi olla useita
 - voimme siirtää paikallisen repositoriomme tilan etärepositorioon komennolla _git push_
+  - saatat joutua tekemään ensimmäisen pushin pidemmässä muodossa _--set-upstream origin master_
 - kokeillaan
 
 ```bash
@@ -522,13 +523,13 @@ Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen ava
 * Suorita uudelleen push:
 
 ```
-mluukkai@melkki:~/otm-harjoitustyo$ git push --set-upstream origin master
+mluukkai@melkki:~/otm-harjoitustyo$ git push
 Counting objects: 8, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (4/4), done.
 Writing objects: 100% (8/8), 714 bytes | 0 bytes/s, done.
 Total 8 (delta 0), reused 0 (delta 0)
-To git@github.com:mluukkai-cs/otm2016-viikko5.git
+To git@github.com:mluukkai/otm-harjoitustyo.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ``` 
