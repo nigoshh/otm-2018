@@ -514,10 +514,11 @@ Pushaus ei toimi. Nyt kyse on siitä, että git haluaisi suorittaa [julkisen ava
 * mene hakemistoon ja katso hakemiston sisältöä
 * tiedosto _id_rsa.pub_ sisältää julkisen avaimen, se on tarkoitus kopioida githubiin jotta avaimeen perustuva kirjautuminen onnistuisi
   * näet tiedoston sisällön komennolla _cat id_rsa.pub_
+* anna komentoriviltä komento _ssh-add_  
 * mene GitHubin asetussivulle klikkaamalla oikean yläkulman symbolista ja valitsemalla _settings_
 * valitse settingseistä _SSH and GPG keys_
 * luo uusi _SSH-avain_ 
-  * anna avaimelle joku _title_ (esim. laitos) ja kopioi tiedoston id_rsa.pub sisältö kohtaan _key_
+  * anna avaimelle joku _title_ (esim. laitos) ja kopioi tiedoston id_rsa.pub sisältö kohtaan _key_  
 * Suorita uudelleen push:
 
 ```
