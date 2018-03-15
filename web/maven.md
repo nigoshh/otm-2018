@@ -199,5 +199,5 @@ Huomaa, että kohdan _mainClass_ on oltava **täsmälleen sama** kuin pääohjel
 * komento luo hakemiston _target_ sisälle kaksi jar-päätteistä tiedostoa, niistä oikea on se, jonka nimessä *ei* ole sanaa original
 * ohjelman voi nyt suorittaa komennolla <code>java -jar jartiedoston_nimi.jar</code>
 
-Jar-tiedosto on madollista suorittaa millä tahansa koneella, olettaen että koneelle on asennettu Javan versio 1.8
+Jar-tiedosto on mahdollista suorittaa millä tahansa koneella, olettaen että koneelle on asennettu Javan versio 1.8
 
