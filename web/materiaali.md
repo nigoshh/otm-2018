@@ -622,7 +622,7 @@ Sovelluslogiikan alapuolella on _datan tallennuksesta vastaava kerros_, jonka k√
 
 ## Oliosuunnittelun periaatteita
 
-Ohjelmistojen suunnitteluun on aikojen saatossa muodostunut joukko periaatteita, joiden noudattamisen on todettu parantavan koodien laatua. 
+Ohjelmistojen suunnitteluun on aikojen saatossa muodostunut joukko periaatteita, joiden noudattamisen on todettu parantavan koodin laatua.
 
 ### DRY eli Don't repeat yourself
 
