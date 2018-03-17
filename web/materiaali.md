@@ -658,7 +658,7 @@ Todo-sovelluksessa sovelluslogiikka ei käytä suoraan konkreettisia DAO-olioita
 
 ### Riippuvuuksien minimointi
 	
-Minimoi riippuvuudet , eli älä tee _spagettikoodia_, jossa kaikki oliot tuntevat toisensa. Pyri eliminoimaan riippuvuudet siten, että luokat tuntevat mahdollisimman vähän muita luokkia, ja mielellään nekin vain rajapintojen kautta.
+Minimoi riippuvuudet, eli älä tee _spagettikoodia_, jossa kaikki oliot tuntevat toisensa. Pyri eliminoimaan riippuvuudet siten, että luokat tuntevat mahdollisimman vähän muita luokkia, ja mielellään nekin vain rajapintojen kautta.
 
 Kerrosarkkitehtuuri tähtää osaltaan riippuvuuksien eliminointiin, esim. käyttöliittymä on nyt riippuvainen ainoastaan sovelluslogiikkakerroksen luokista _TodoService_ ja _Todo_, mutta ei millään tavalla tietojen talletuksesta vastaavista DAO-luokista.
 
