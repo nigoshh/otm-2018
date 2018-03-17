@@ -26,7 +26,7 @@ Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/bl
 
 ## Kirjoitusvirheitä 
 
-Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GihHubiin ja toimi [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/typokorjaukset.md) olevan ohjeen mukaan.
+Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GitHubiin ja toimi [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/typokorjaukset.md) olevan ohjeen mukaan.
 
 ## Ajankohtaista
 
@@ -44,6 +44,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
     - 12 Olli Keski-Hynnilä
   - torstai
     - 12 Aleksi Huotala
+    - 14 Sasu Mäkinen
   - perjantai
     - 14 Terho Uotila
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
