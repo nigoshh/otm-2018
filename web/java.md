@@ -325,7 +325,7 @@ Käyttöliittymän rakenteen määrittelee tiedosto _Scene.fxml_:
 </AnchorPane>
 ```
 
-Layout on nyt muodostettu [AnchorPanen](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/AnchorPane.html) avulla. Toisin kuin muissa layouteissa, AnchorPanessa jokaiselle siihen sijoitettavalle komponentille annetaan absoluuttinen sijainti. Käyttöliittymä siis koostuu kahdesta komponentista, Labelista ja Buttonista. Molemilla on joukko _attribuutteja_, joista osa liittyy komponentin sijainnin määrittelemiseen, ja osa taas on oleellinen ohjelman toiminnallisuuden kannalta. 
+Layout on nyt muodostettu [AnchorPanen](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/AnchorPane.html) avulla. Toisin kuin muissa layouteissa, AnchorPanessa jokaiselle siihen sijoitettavalle komponentille annetaan absoluuttinen sijainti. Käyttöliittymä siis koostuu kahdesta komponentista, Labelista ja Buttonista. Molemmilla on joukko _attribuutteja_, joista osa liittyy komponentin sijainnin määrittelemiseen, ja osa taas on oleellinen ohjelman toiminnallisuuden kannalta. 
 
 AnchorPanen attribuuteista erityisen mielenkiintoinen on _fx:controller_, se määrittelee luokan, joka toimii näkymän _kontrollerina_. Luokka on määritelty seuraavasti:
 
@@ -538,7 +538,7 @@ public class FileUserDao implements UserDao {
 }
 ```
 
-TodoDao:n toteutukseen liittyy pieni mielenkiintoinen detalji. Koska Todo tuntee käyttäjänsä, tarvtsee _FileTodoDao_ linkitystä varten _UserDao_:n:
+TodoDao:n toteutukseen liittyy pieni mielenkiintoinen detalji. Koska Todo tuntee käyttäjänsä, tarvitsee _FileTodoDao_ linkitystä varten _UserDao_:n:
 
 ```java
 public class FileTodoDao implements TodoDao {
@@ -586,7 +586,7 @@ public void init() {
 
 Sovelluksen koodiin ei ole syytä kovakoodata mitään konfiguraatioita, kuten sen käyttämien tiedostojen tai tietokantojen nimiä. Edellä esitetyssä alustusmetodissa _init_ syyllistytään juuri tähän. Eräs syy tähän on se, että jos konfiguraatiot ovat koodissa, ei ohjelman normaalin käyttäjän (jolla ei ole pääsyä koodiin) ole mahdollista tehdä muutoksia konfiguraatioihin.
 
-Konfuguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisessä konfiguraatiotiedostoissa. 
+Konfiguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisissä konfiguraatiotiedostoissa.
 
 Esimerkkisovelluksen konfiguraatiot on määritelty sovelluksen juuressa olevaan tiedostoon 
 _config.properties_:
