@@ -10,17 +10,18 @@ Aihetta miettiessäsi kannattaa ehdottomasti lukea [ohjeet työn aloittamiseen](
 
 Mikään ei tietenkään estä että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Viikon 2 deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
 
-Palautus tapahtuu lisämällä oman aiheen alustava _määrittelydokumentti_ palautusrepositorioon
+Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ palautusrepositorioon.
 
-Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektista](https://github.com/mluukkai/OtmTodoApp) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentointi_ ja siihen tulee olla linkki repositorion README.md:stä
+Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektista](https://github.com/mluukkai/OtmTodoApp) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentointi_ ja siihen tulee olla linkki repositorion README.md:stä.
 
-Määrittelydokumenttiin voi ottaa mallia [referenssiprojektista](https://github.com/mluukkai/OtmTodoApp), eli sen tulee sisältää
+Määrittelydokumenttiin kanattaa ottaa mallia [referenssiprojektista](https://github.com/mluukkai/OtmTodoApp), eli sen tulee sisältää
 
 - _Soveluksen tarkoitus_ eli pieni tekstuaalinen yleiskuvaus sovelluksesta
 - _Käyttäjät_ eli tieto erilaisista _käyttäjärooleista_, joita järjestelmässä on
+  - Tosin jos järjestelmässäsi on vain yhdenlaisia käyttäjiä, ei kohtaa tarvita. Näin lienee tilanne monissa harjoitustyöiden aiheissa kuten peleissä.
 - Suunnitellut toiminnallisuudet
   - toiminnallisuudet voi kuvata ranskalaisina viivoina samaan tapaan kuin referenssiprojektissa
-  - referenssiprojektissa on kuvattu perusversion eli jo "kurssin alkupuolella" valmiiksi saatavan ydintoiminnallisuuden toiminnallisuudet tarkemmin
+  - referenssiprojektissa on kuvattu perusversion eli jo "kurssin alkupuolella" toteutettavan ydintoiminnallisuuden toiminnallisuudet tarkemmin
   - perusversiota laaajentavat jatkokehitysideat ovat omassa listassaan
 
 Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se ei ole kuitenkaan pakollinen.
