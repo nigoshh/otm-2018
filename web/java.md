@@ -586,7 +586,7 @@ public void init() {
 
 Sovelluksen koodiin ei ole syytä kovakoodata mitään konfiguraatioita, kuten sen käyttämien tiedostojen tai tietokantojen nimiä. Edellä esitetyssä alustusmetodissa _init_ syyllistytään juuri tähän. Eräs syy tähän on se, että jos konfiguraatiot ovat koodissa, ei ohjelman normaalin käyttäjän (jolla ei ole pääsyä koodiin) ole mahdollista tehdä muutoksia konfiguraatioihin.
 
-Konfuguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisessä konfiguraatiotiedostoissa. 
+Konfiguraatiot on syytä määritellä ohjelman ulkopuolella, esim. erillisissä konfiguraatiotiedostoissa.
 
 Esimerkkisovelluksen konfiguraatiot on määritelty sovelluksen juuressa olevaan tiedostoon 
 _config.properties_:
