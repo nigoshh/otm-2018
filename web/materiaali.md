@@ -21,7 +21,7 @@ Ohjeita työn aloittamiseen [täällä](https://github.com/mluukkai/otm-2018/blo
 
 # Kirjoitusvirheitä 
 
-Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GihHubiin ja toimi [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/typokorjaukset.md) olevan ohjeen mukaan.
+Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu GitHubiin ja toimi [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/typokorjaukset.md) olevan ohjeen mukaan.
 
 # Ohjelmistotuotanto
 
