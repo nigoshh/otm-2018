@@ -325,7 +325,7 @@ Käyttöliittymän rakenteen määrittelee tiedosto _Scene.fxml_:
 </AnchorPane>
 ```
 
-Layout on nyt muodostettu [AnchorPanen](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/AnchorPane.html) avulla. Toisin kuin muissa layouteissa, AnchorPanessa jokaiselle siihen sijoitettavalle komponentille annetaan absoluuttinen sijainti. Käyttöliittymä siis koostuu kahdesta komponentista, Labelista ja Buttonista. Molemilla on joukko _attribuutteja_, joista osa liittyy komponentin sijainnin määrittelemiseen, ja osa taas on oleellinen ohjelman toiminnallisuuden kannalta. 
+Layout on nyt muodostettu [AnchorPanen](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/AnchorPane.html) avulla. Toisin kuin muissa layouteissa, AnchorPanessa jokaiselle siihen sijoitettavalle komponentille annetaan absoluuttinen sijainti. Käyttöliittymä siis koostuu kahdesta komponentista, Labelista ja Buttonista. Molemmilla on joukko _attribuutteja_, joista osa liittyy komponentin sijainnin määrittelemiseen, ja osa taas on oleellinen ohjelman toiminnallisuuden kannalta. 
 
 AnchorPanen attribuuteista erityisen mielenkiintoinen on _fx:controller_, se määrittelee luokan, joka toimii näkymän _kontrollerina_. Luokka on määritelty seuraavasti:
 
