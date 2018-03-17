@@ -7,6 +7,7 @@ Palautuksen deadline ti 27.3. klo 23:59
 Harjoitustyön tekeminen aloitetaan päättämällä aihe ja kuvaamalla se _alustavassa määrittelydokumentissa_, eli työlle tehdään [vaatimusmäärittely](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#vaatimusmäärittely).
 
 Aihetta miettiessäsi kannattaa ehdottomasti lukea [ohjeet työn aloittamiseen](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md).
+- Huomaa, että harjoitustyön koodi tulee toteuttaa [maven](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md#maven-projektin-luominen)-muotoisena projektina
 
 Mikään ei tietenkään estä että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Viikon 2 deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
 
@@ -28,5 +29,5 @@ Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se e
 
 **JOS teet työn jollain muulla kielellä kuin Javalla**
 - Kerro käyttämäsi kieli repostitoriosi README.md:ssä
-- Huomaa, että kielen käyttöön tulee olla lupa tai sen pitää löytyä sallittujen kielten [listalla](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md#harjoitustyön-kieli-ja-ohjelmointikieli)
+- Huomaa, että kielen käyttöön tulee olla lupa tai sen pitää löytyä sallittujen kielten [listalta](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md#harjoitustyön-kieli-ja-ohjelmointikieli)
 
