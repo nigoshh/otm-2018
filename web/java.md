@@ -538,7 +538,7 @@ public class FileUserDao implements UserDao {
 }
 ```
 
-TodoDao:n toteutukseen liittyy pieni mielenkiintoinen detalji. Koska Todo tuntee käyttäjänsä, tarvtsee _FileTodoDao_ linkitystä varten _UserDao_:n:
+TodoDao:n toteutukseen liittyy pieni mielenkiintoinen detalji. Koska Todo tuntee käyttäjänsä, tarvitsee _FileTodoDao_ linkitystä varten _UserDao_:n:
 
 ```java
 public class FileTodoDao implements TodoDao {
