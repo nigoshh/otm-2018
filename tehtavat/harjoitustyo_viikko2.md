@@ -11,7 +11,7 @@ Aihetta miettiessäsi kannattaa ehdottomasti lukea [ohjeet työn aloittamiseen](
 
 Mikään ei tietenkään estä että aloitat jo ohjelmoinnin tai vaikkapa koodaat koko työn valmiiksi. Viikon 2 deadlinen pisteytyksessä ollaan kiinnostuneita ainoastaan määrittelydokumentista.
 
-Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen  viikon laskareiden päätteeksi [labtooliin](http://tktl-labtool.herokuapp.com) rekisteröimääsi palautusrepositorioon.
+Palautus tapahtuu lisäämällä oman aiheen _alustava määrittelydokumentti_ ensimmäisen viikon [laskareiden](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#labtool) päätteeksi [labtooliin](http://tktl-labtool.herokuapp.com) rekisteröimääsi palautusrepositorioon.
 
 Määrittelydokumentti tehdään samaan tapaan kuin [referenssiprojektista](https://github.com/mluukkai/OtmTodoApp) eli [markdown](https://guides.github.com/features/mastering-markdown/)-muodossa, sijoitetaan repositorion hakemistoon _dokumentointi_ ja siihen tulee olla linkki repositorion README.md:stä.
 
