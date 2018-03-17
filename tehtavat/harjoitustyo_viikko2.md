@@ -18,14 +18,15 @@ Määrittelydokumenttiin kanattaa ottaa mallia [referenssiprojektista](https://g
 
 - _Soveluksen tarkoitus_ eli pieni tekstuaalinen yleiskuvaus sovelluksesta
 - _Käyttäjät_ eli tieto erilaisista _käyttäjärooleista_, joita järjestelmässä on
-  - Tosin jos järjestelmässäsi on vain yhdenlaisia käyttäjiä, ei kohtaa tarvita. Näin lienee tilanne monissa harjoitustyöiden aiheissa kuten peleissä.
+  - Tosin jos sovelluksessasi on vain yhdenlaisia käyttäjiä, ei kohtaa tarvita. Näin lienee tilanne monissa harjoitustyöiden aiheissa kuten peleissä.
 - Suunnitellut toiminnallisuudet
-  - toiminnallisuudet voi kuvata ranskalaisina viivoina samaan tapaan kuin referenssiprojektissa
-  - referenssiprojektissa on kuvattu perusversion eli jo "kurssin alkupuolella" toteutettavan ydintoiminnallisuuden toiminnallisuudet tarkemmin
-  - perusversiota laaajentavat jatkokehitysideat ovat omassa listassaan
+  - Toiminnallisuudet voi kuvata ranskalaisina viivoina samaan tapaan kuin referenssiprojektissa
+  - Referenssiprojektissa on kuvattu perusversion eli jo "kurssin alkupuolella" toteutettavan ydintoiminnallisuuden toiminnallisuudet tarkemmin
+  - Perusversiota laajentavat jatkokehitysideat ovat omassa listassaan
 
 Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se ei ole kuitenkaan pakollinen.
 
 **JOS teet työn jollain muulla kielellä kuin Javalla**
-- tulee kielen käyttöön olla lupa tai sen tulee olla sallittujen [listalla](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md#harjoitustyön-kieli-ja-ohjelmointikieli)
 - Kerro käyttämäsi kieli repostitoriosi README.md:ssä
+- Huomaa, että kielen käyttöön tulee olla lupa tai sen pitää löytyä sallittujen kielten [listalla](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md#harjoitustyön-kieli-ja-ohjelmointikieli)
+
