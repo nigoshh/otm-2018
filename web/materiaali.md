@@ -642,7 +642,7 @@ Todo-sovelluksen suunnittelussa periaatetta on noudatettu suhteellisen hyvin
 - käyttöliittymästä on eristetty sovelluslogiikka kokonaan
 - käyttäjä ja tehtävät on talletettu omiin luokkiinsa User ja Todo
 - sovelluslogiikan suorittamisesta, eli User- ja Todo-olioiden manipuloinnista vastaa oma luokka _TodoService_
-- tietojen talletuksesta levylle vastaavat DAO-oliot, jotka on vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaon ja todoista vastaavaan TodoDaoon.
+- tietojen talletuksesta levylle vastaavat DAO-oliot, jotka on vielä jaettu kahteen vastuualueeseen eli käyttäjistä vastaavaan UserDaoon ja todoista vastaavaan TodoDaoon.
 	
 ### Program to an interface, not to an Implementation
 	
