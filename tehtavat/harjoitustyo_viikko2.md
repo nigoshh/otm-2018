@@ -33,6 +33,6 @@ Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se e
 
 ## Työaikakirjanpito
 
-Lisää työsi työsi repositorioon myös linkki  harjoitustyösi [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md). Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
+Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
 
-Eli muista pitää säännöllisesti kirjaa käyttämistäsi työtunneista.
+Lisää repositorioon linkki [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md). 

@@ -233,8 +233,6 @@ Pääset oletusarvoisella konfiguraatiolla alkuun. Lisää ohjeita mavenin konfi
 
 ## Työaikakirjanpito
 
-Lisää työsi työsi repositorioon linkki harjoitustyösi [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md). 
+Pidä säännöllisesti kirjaa käyttämistäsi työtunneista. Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
 
-Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
-
-Muista siis pitää säännöllisesti kirjaa käyttämistäsi työtunneista.
+Lisää repositorioon linkki [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md). 
