@@ -37,8 +37,8 @@
 alku  ma  ti  ke  to  pe
 ----  --- --- --- --- ---
 10            x
-12    x   x   x
-14    x   x   x       x
+12    x   x   x   x
+14    x   x   x   x   x
 16        x           
 18        x     
 
@@ -48,10 +48,10 @@ alku  ma  ti  ke  to  pe
 
 - Jaossa 60 pistettä jotka jakautuvat seruaavasti
   - Viikkodeadlinet 17p
-  - Koodikatselmointi 3p
+  - Koodikatselmointi 2p
   - Dokumentaatio	10p   
   - Testaus	7p	
-  - Lopullinen ohjelma 23p
+  - Lopullinen ohjelma 24p
     - Laajuus, ominaisuudet ja koodin laatu		
 - Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
 - Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta ohjelmasta
@@ -573,7 +573,7 @@ Mitä tapahtuu, jos maksukortin saldo on 2 euroa, eli vähemmän kuin lounaan hi
 
 # Harjoitustyön vaikutus kurssipisteisiin
 
-Ohjelman pisteet (yht 23) jakautuvat seuraavasti
+Ohjelman pisteet (yht 43) jakautuvat seuraavasti
 
 - käyttöliittymä 4p
   - 0p yksinkertainen tekstikäyttöliittymä
@@ -587,6 +587,7 @@ Ohjelman pisteet (yht 23) jakautuvat seuraavasti
   - 3-4p internet
 - sovelluslogiikan kompleksisuus 3p
 - ohjelman lajuus 5p
+- ulkoisten kirjastojen hyödyntäminen 5p
 - suorituskelpoinen jar-tiedosto  1p
 - koodin laatu 6p
 
