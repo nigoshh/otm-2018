@@ -540,7 +540,7 @@ Branch master set up to track remote branch master from origin.
 
 * tee repositorion sisälle hakemisto _laskarit_
   * ja sen sisälle hakemisto _viikko1_
-  * Komentorivitehtävien lopussa oli kehoitus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
+  * Komentorivitehtävien lopussa oli kehotus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
   * Mene edellisen tehtäväsarjan git-harjoitusrepositorioon ja anna siellä komento _git log --stat | cat_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne edellisen bulletin komennon tulos
