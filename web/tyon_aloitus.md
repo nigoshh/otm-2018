@@ -12,7 +12,7 @@ Koko kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteis
 
 Harjoitustyön ohjelmointikieli on pääsääntöisesti Java. Ohjaajat saattavat suostua muihinkin kieliin, mutta asia on syytä sopia kurssin ensimmäisen viikon aikana. 
 
-Näyttää sitä, että Javan lisäksi mahdollisia ovat myös Javascript, Ruby, Python, C# ja C++. Myös muita kieliä voi ehdottaa, mutta takeita niiden kelpaamisesta ei ole.
+Näyttää sitä, että Javan lisäksi mahdollisia ovat myös JavaScript, Ruby, Python, C# ja C++. Myös muita kieliä voi ehdottaa, mutta takeita niiden kelpaamisesta ei ole.
 
 Web-sovelluksia kurssilla ei sallita. Sovelluksissa sallitaan toki webissä olevat komponentit, mutta sovelluksen käyttöliittymän tulee olla ns. desktop-sovellus. Javascriptillä hyvä valinta desktop-sovelluksiin on [Electron](https://electronjs.org).
 
