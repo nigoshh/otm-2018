@@ -33,12 +33,13 @@ Pisteet (yht 23) jakautuvat seuraavasti
   -	ei pysyväistallennusta
   - 1-2p	tiedosto 
   - 3-4p	tietokanta
-  - 3-4p	internet
+  - 3-4p	internet (esim. google docs tai joku muu talletusratkaisu)
 	- Pisteytys riippuu käsiteltävän tiedon monimutkaisuudesta
 	- Täydet pisteet kussakin kategorioissa edellyttävät järkevien abstraktioiden, esim. DAO-suunnittelumallin käyttöä
 - sovelluslogiikan kompleksisuus 3p
 - ohjelman laajuus 5p
 - ulkoisten kirjastojen hyödyntäminen 1p
+  - ks https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#ulkoisten-kirjastojen-k%C3%A4ytt%C3%A4minen-mavenin-avulla
 - suorituskelpoinen jar-tiedosto  1p
 - koodin laatu 6p
   - 5p hyvät abstraktiot (esim. Design patternien hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
