@@ -50,7 +50,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
 <https://t.me/tktlotm>
   - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen keskustelufoorumisovellus jota on mahdollista käyttää selaimella, mobiililaitteilla ja Windows/Linux/OSX-clienteillä
-  - Telegram-kanava on sillattu irc-kanavaan #otm
+  - Telegram-kanava on sillattu IRC-kanavaan #otm
   - **Huom:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
 
 ## Linkkejä
