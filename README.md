@@ -8,7 +8,7 @@
 - Pidä huoli että teet jokaisen viikon laskarit ja harjoitustyöhön liittyvät tavoitteet
   - viikko 1: [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
   - viikon 2: [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) ja harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md)
-- Tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 12-16, pe 14-16
+- Tule [pajaan](https://github.com/mluukkai/otm-2018#opetus)
 - Liity telegramiin <https://t.me/tktlotm>
 - Kysy heti jos joku epäselvää
 
@@ -30,27 +30,30 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 ## Ajankohtaista
 
-- Paja salissa B221
-  - maaanantai 
-    - 12 Olli Tanttu
-    - 14 Matti Luukkainen
-  - tiiistai 
-    - 12 Markus Holopainen
-    - 14 Heikki Ahonen
-    - 16 Ville-Veikko Saari
-  - keskiviikko 
-    - 10 Saara Peltomäki
-    - 12 Olli Keski-Hynnilä
-  - torstai
-    - 12 Aleksi Huotala
-    - 14 Sasu Mäkinen
-  - perjantai
-    - 14 Terho Uotila
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
 <https://t.me/tktlotm>
   - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen keskustelufoorumisovellus jota on mahdollista käyttää selaimella, mobiililaitteilla ja Windows/Linux/OSX-clienteillä
   - Telegram-kanava on sillattu IRC-kanavaan #otm
   - **Huom:** kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tälläisten kommenttien esittäjät poistetaan kanavalta
+
+## Opetus
+
+Paja salissa B221
+- maaanantai 
+  - 12 Olli Tanttu
+  - 14 Matti Luukkainen
+- tiiistai 
+  - 12 Markus Holopainen
+  - 14 Heikki Ahonen
+  - 16 Ville-Veikko Saari
+- keskiviikko 
+  - 10 Saara Peltomäki
+  - 12 Olli Keski-Hynnilä
+- torstai
+  - 12 Aleksi Huotala
+  - 14 Sasu Mäkinen
+- perjantai
+  - 14 Terho Uotila
 
 ## Linkkejä
 
