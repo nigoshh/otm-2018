@@ -3,7 +3,7 @@
 Kurssilla jaossa 60 pistettä. Pisteet jakautuvat alustavan suunnitelman mukaan seuraavasti
 
 - Viikkodeadlinet 17p
-- Koodikatselmointi 3p
+- Koodikatselmointi 2p
 - Dokumentaatio	10p   
   - Määrittely		
   - Arkkitehtuuri		
@@ -13,7 +13,7 @@ Kurssilla jaossa 60 pistettä. Pisteet jakautuvat alustavan suunnitelman mukaan 
 - Testaus	7p	
   - Testit			
   - Testidokumentti	
-- Lopullinen ohjelma 23p
+- Lopullinen ohjelma 24p
   - Featuret		
   - Koodin laatu 		
 
@@ -38,6 +38,7 @@ Pisteet (yht 23) jakautuvat seuraavasti
 	- Täydet pisteet kussakin kategorioissa edellyttävät järkevien abstraktioiden, esim. DAO-suunnittelumallin käyttöä
 - sovelluslogiikan kompleksisuus 3p
 - ohjelman laajuus 5p
+- ulkoisten kirjastojen hyödyntäminen 1p
 - suorituskelpoinen jar-tiedosto  1p
 - koodin laatu 6p
   - 5p hyvät abstraktiot (esim. Design patternien hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
@@ -51,4 +52,3 @@ Täysien pisteiden (5p) edellytys:
 - Testaus riittävää sekä yksikkö- että integraatiotasolla
 - Sovelluslogiikkaa testataan realistisilla skenaarioilla
 - Riippuvuudet mockattu järkevästi
-
