@@ -5,7 +5,7 @@
 - Varaa aikaa 10-15h joka viikko
 - Lue __heti__ ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
 - Tutustu [arvosteluperusteisiin](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
-- Pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
+- Pidä huoli että teet jokaisen viikon laskarit ja harjoitustyöhön liittyvät tavoitteet
   - viikko 1: [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
   - viikon 2: [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) ja harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md)
 - Tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 12-14, pe 14-16
@@ -30,7 +30,6 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 ## Ajankohtaista
 
-- Ennakkotiedoista poiketen kurssilla on vain yksi luento, ma 12.3. klo 14-16 A111
 - Paja salissa B221
   - maaanantai 
     - 12 Olli Tanttu
