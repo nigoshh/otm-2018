@@ -31,3 +31,8 @@ Voit myös tehdä referenssiprojektin tapaan _käyttöliittymäluonnoksen_, se e
 - Kerro käyttämäsi kieli repostitoriosi README.md:ssä
 - Huomaa, että kielen käyttöön tulee olla lupa tai sen pitää löytyä sallittujen kielten [listalta](https://github.com/mluukkai/otm-2018/blob/master/web/tyon_aloitus.md#harjoitustyön-kieli-ja-ohjelmointikieli)
 
+## Työaikakirjanpito
+
+Lisää työsi työsi repositorioon myös linkki  harjoitustyösi [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md). Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
+
+Eli muista pitää säännöllisesti kirjaa käyttämistäsi työtunneista.

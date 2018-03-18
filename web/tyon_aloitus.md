@@ -119,6 +119,8 @@ Harjoitustyö siis aloitetan kurssin [toisella viikolla](https://github.com/mluu
 
 Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt [viikon 1 laskareiden](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) palautuksen.
 
+
+
 ### GitHubissa olevan repositorion kloonaaminen
 
 Jos haluat tehdä harjoitustyötä eri koneella, kuin mille teit repositoriosi alunperin, saat koodin siirrettyä toiselle koneelle kloonaamalla repositorion.
@@ -228,3 +230,11 @@ Pokemontietokanta/target
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/a-5.png" width="600">
 
 Pääset oletusarvoisella konfiguraatiolla alkuun. Lisää ohjeita mavenin konfigurointiin [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md)
+
+## Työaikakirjanpito
+
+Lisää työsi työsi repositorioon linkki harjoitustyösi [työaikakirjanpitoon](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/tuntikirjanpito.md). 
+
+Käytettyjen työtuntien määrä ei vaikuta arvosanaan, _mutta_ vajavaisesti pidetty työaikakirjanpito alentaa työn arvosanaa.
+
+Muista siis pitää säännöllisesti kirjaa käyttämistäsi työtunneista.

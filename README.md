@@ -6,7 +6,8 @@
 - Lue __heti__ ainakin [kurssimateriaalin](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md) alku
 - Tutustu [arvosteluperusteisiin](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
 - Pidä huoli että teet jokaisen viikon laskarit ja harjoitustehtävään liittyvät toimenpiteet
-  - viikon 1 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
+  - viikko 1: [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md)
+  - viikon 2: [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) ja harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md)
 - Tule pajaan, eli saliin B221 ma 12-16, ti 12-18, ke 10-14, to 12-14, pe 14-16
 - Liity telegramiin <https://t.me/tktlotm>
 - Kysy heti jos joku epäselvää
@@ -22,7 +23,6 @@ Kurssin arvostelu perustuu pääasiassa harjoitustyöstä saataviin pisteisiin. 
 Kurssilla ei ole koetta. Harjoitustyö tulee tehdä kurssin aikataulujen puitteissa. Kesken jäänyttä harjoitustyötä ei voi jatkaa seuraavalla kurssilla (keväällä 2019), joten **muista varata riittävästi aikaa (10-15h viikossa) koko periodin ajaksi!**
 
 Tarkemmat arvosteluperusteet [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md).
-
 
 ## Kirjoitusvirheitä 
 
