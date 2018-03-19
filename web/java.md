@@ -453,7 +453,9 @@ Jos käyttöliittymäsi on vähänkin epätriviaali, joudut suurella todennäkö
 - [Scenebuilder](http://gluonhq.com/products/scene-builder/)
 - [JavaFX dialogit](http://code.makery.ch/blog/javafx-dialogs-official/)
 
-Youtubesta löytyy runsaasti vaihtelevanlaatuisia videoita aihepiiristä.
+Youtubesta löytyy runsaasti vaihtelevanlaatuisia videoita aihepiiristä. Hyväksi havaittuja:
+
+- [Bucky Robertsin JavaFX-videosarja (lopussa myös FXML ja Scene Builder)](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGBzfXLWLSYVy8EbTdpGbUIG)
 
 ## Tietojen talletus
 
