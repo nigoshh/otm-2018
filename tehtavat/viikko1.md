@@ -421,7 +421,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 ## Harjoittelua
 
-- luo hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
+- luo repositiosi sisälle hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
 - commitoi muutokset
   - muista miten pystyt lisäämään kokonaisen hakemiston sisällön committoitavaksi yhdellä komennolla
 - muuta tiedoston _file1_ sisältöä ja poista tiedosto _file2_
