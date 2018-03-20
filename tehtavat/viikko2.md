@@ -8,6 +8,8 @@ Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uus
 
 Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen laadun perusteella.
 
+Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md)
+
 ## 1 
 
 * tutustu [JUnit-ohjeeseen](https://github.com/mluukkai/otm-2018/blob/master/web/junit.md)
