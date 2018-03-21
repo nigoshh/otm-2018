@@ -111,7 +111,7 @@ Palautuksen deadline ti 10.4. klo 23:59
 
 - Harjoitustyön koodin runko valmiina (2p)
   - katso tarkemmin [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko3.md) 
-- Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md) Luokka- ja sekvenssikaaviosta (1p)
+- Pajassa tehtävät tai omatoimiset [tehtävät](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md) Luokka- ja sekvenssikaaviosta (1p)
 
 ### viikko 4
 
@@ -152,4 +152,4 @@ Palautuksen deadline ke 2.5. klo 23:59
 Lopullisen palautuksen deadline pe 11.5. klo 23:59
 
 - Demot
-- [loppupalautuksen ohjeet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md) 
+- [loppupalautuksen ohjeet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko7.md) 
