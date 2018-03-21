@@ -24,6 +24,10 @@ Viikon palautuksista on tarjolla 2 pistettä. Pisteytys arvioidaan palautuksen l
 
 ## 2 Maksukortti ja kassapääte: testit kortille
 
+**HUOM** tämä tehtävä tehdään **eri projektiin** kuin edellinen, ja vaikka molemmissa tehtävissä on saman niminen luokka, eli _Matkakortti_ ovat luokat erilaiset, eli **älä** copypastaa edellisen tehtävän koodia tai tehtäviä tähän tehtävään.
+
+Tämän tehtävän projekti _ladataan internetistä_ hieman alempana olevan ohjeen mukaan.
+
 Ohjelmoinnin perusteiden viikolla [5 tehtävissä 101](https://www.cs.helsinki.fi/group/java/s16-materiaali/viikko5/#101maksukortti_ja_kassapaate) toteutettiin "tyhmä" Maksukortti ja Kassapääte. 
 
 Rahan käsittely double-tyyppisenä on hiukan ongelmallista. Seuraavassa rahaa käsitellän kokonaislukuna ja kaikki rahamäärät talletetaan eurojen sijasta sentteinä.
@@ -140,6 +144,8 @@ public class Kassapaate {
 }
 ```
 
+**Hae nyt projektin koodi koneellesi**.
+
 Avaa terminaali, mene palautusrepositoriosi hakemistoon _laskarit/viikko2_ ja suorita seuraavat komennot:
 
 ```bash
@@ -147,6 +153,8 @@ wget https://raw.githubusercontent.com/mluukkai/otm-2018/master/misc/Unicafe.zip
 unzip Unicafe.zip
 rm Unicafe.zip
 ```
+
+**HUOM** jos käytät Windowsia ja koneellasi ei ole käytössä komentoa _wget_ lataa tehtävän koodi klikkaamalla yo. linkkiä. Muista siirtää projekti repositorion alle oikeaan hakemistoon!
 
 Lisää ja commitoi hakemisto repositorioon.
 
@@ -228,7 +236,8 @@ Eli vaikka hakemistossa _/laskarit/viikko2/Unicafe_  on alihakemisto _target_, e
 
 Avaa nyt projekti NetBeansilla.
 
-* Tee valmiiseen testiluokkaan _MaksukorttiTest_ testit, jotka testaavat ainakin seuraavia asioita:
+*Tee valmiiseen testiluokkaan _MaksukorttiTest_ testit, jotka testaavat ainakin seuraavia asioita*:
+
 * kortin saldo alussa oikein
 * rahan lataaminen kasvattaa saldoa oikein
 * rahan ottaminen toimii
@@ -355,3 +364,7 @@ Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun
 ## 6
 
 Varmista jacocon avulla, että kassapäätteen teksteillä on 100% lause- ja haarautumakattavuus.
+
+## 7 
+
+Talleta yllä olevan kuvan tyylinen [screenshot](https://www.take-a-screenshot.org/) projektisi kattavuusraportista palautusrepositoriosi hakemistoon _laskarit/viikko2_. 
