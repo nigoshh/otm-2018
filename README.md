@@ -51,8 +51,9 @@ Paja salissa B221
   - 12 Olli Keski-Hynnilä
 - torstai
   - 12 Aleksi Huotala
-  - 14 Sasu Mäkinen
+  - 14 Jouni Winter
 - perjantai
+  - 12 Sasu Mäkinen
   - 14 Terho Uotila
 
 ## Linkkejä

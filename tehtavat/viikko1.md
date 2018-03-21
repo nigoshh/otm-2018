@@ -421,7 +421,7 @@ Seuraavassa tiedoston tilaa kuvaava kaavio täydennettynä, eli jos tiedosto on 
 
 ## Harjoittelua
 
-- luo hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
+- luo repositiosi sisälle hakemisto _tiedostoja_ ja hakemiston sisälle tiedostot _file1_, _file2_ ja _file3_
 - commitoi muutokset
   - muista miten pystyt lisäämään kokonaisen hakemiston sisällön committoitavaksi yhdellä komennolla
 - muuta tiedoston _file1_ sisältöä ja poista tiedosto _file2_
@@ -540,7 +540,7 @@ Branch master set up to track remote branch master from origin.
 
 * tee repositorion sisälle hakemisto _laskarit_
   * ja sen sisälle hakemisto _viikko1_
-  * Komentorivitehtävien lopussa oli kehoitus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
+  * Komentorivitehtävien lopussa oli kehotus: Mene tämän jälkeen kotihakemistoon ja anna komento tree kurssit. _Copypastea komennon tulostus talteen, tarvitset sitä myöhemmin_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _komentorivi.txt_ ja kopioi sinne komennon _tree_ tulos
   * Mene edellisen tehtäväsarjan git-harjoitusrepositorioon ja anna siellä komento _git log --stat | cat_
   * Tee hakemiston _laskarit/viikko1_ sisälle tiedosto _gitlog.txt_ ja kopioi sinne edellisen bulletin komennon tulos
