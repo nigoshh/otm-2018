@@ -369,6 +369,6 @@ Varmista jacocon avulla, että kassapäätteen teksteillä on 100% lause- ja haa
 
 ## 7 
 
-Talleta yllä olevan kuvan tyylinen [screenshot](https://www.take-a-screenshot.org/) projektisi kattavuusraportista palautusrepositoriosi hakemistoon _laskarit/viikko2_. 
+Talleta kohdassa [testikattavuus](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#3-testauskattavuus) olevan kuvan tyylinen [screenshot](https://www.take-a-screenshot.org/) projektisi kattavuusraportista palautusrepositoriosi hakemistoon _laskarit/viikko2_. 
 
 **Muista tallentaa tekemäsi muutokset Gitiin (_git push_).**
