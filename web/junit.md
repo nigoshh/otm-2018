@@ -125,7 +125,7 @@ public class MaksukorttiTest {
 
 ```
 
-Kyseessä on testi joka ei testaa mitään. Ajetaan kuitenkin testi valitsemalla _Run > Test project_ (tai alt F6). Jotain tapahtuu ja NetBeansin alareunaan tulee joko vihreä palkki joka ilmaisee että kaikki testit menevät läpi. Jos palkki ei ole näkyvissä  saat sen esiin valitsemalla NB:stä _Window > IDE Tools > Test results_.
+Kyseessä on testi joka ei testaa mitään. Ajetaan kuitenkin testi valitsemalla _Run > Test project_ (tai alt F6). Jotain tapahtuu ja NetBeansin alareunaan tulee vihreä palkki joka ilmaisee että kaikki testit menevät läpi. Jos palkki ei ole näkyvissä  saat sen esiin valitsemalla NB:stä _Window > IDE Tools > Test results_.
 
 Kirjoitetaan ensimmäinen oikea testi. Testit ovat testiluokan sisällä olevia metodeja, joiden yläpuolella/edessä on annotaatio eli merkintä @Test. Metodien paluuarvon tyyppi on yleensä void. Tehdään testi, eli kirjoitetaan seuraava koodinpätkä hello():n alapuolelle:
 
