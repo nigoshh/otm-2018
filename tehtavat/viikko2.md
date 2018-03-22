@@ -171,6 +171,8 @@ nothing to commit, working tree clean
 
 Olemme tähän asti suorittaneet testit NetBeansilla. Kokeillaan nyt miten testit voidaan suorittaa _komentoriviltä_.
 * mene hakemistoon, jossa projekti sijaitsee
+  * **Huom** seuraavassa oletetaan että koneellesi on asennettu [maven](https://maven.apache.org/), laitoksen koneilla ja fuksikannettavissa maven löytyy valmiiksi, Linuxiin sekä OSX:n se on helppo asentaa, kenties myös Windowsiin
+  * jos et jostain syystä saa mavenia toimimaan komentoriviltä, niin voit käyttää sitä NetBeansin kautta [tämän](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#maven-komentojen-suorittaminen-netbeansista) ohjeen avulla
 * suorita testit antamalla komento _mvn test_
   * huomaa, että komento _mvn_ tulee antaa aina projektin juurihakemistossa, eli samassa hakemistossa, jossa sijaitsee tiedosto _pom.xml_
   * muista, että näet hakemiston sisällön komennolla _ls_
