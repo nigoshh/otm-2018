@@ -26,7 +26,7 @@ Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteit
 
 ## 2 Maksukortti ja kassapääte: testit kortille
 
-**HUOM** tämä tehtävä tehdään **eri projektiin** kuin edellinen, ja vaikka molemmissa tehtävissä on saman niminen luokka, eli _Matkakortti_ ovat luokat erilaiset, eli **älä** copypastaa edellisen tehtävän koodia tai tehtäviä tähän tehtävään.
+**HUOM** tämä tehtävä tehdään **eri projektiin** kuin edellinen, ja vaikka molemmissa tehtävissä on saman niminen luokka, eli _Maksukortti_ ovat luokat erilaiset, eli **älä** copypastaa edellisen tehtävän koodia tai tehtäviä tähän tehtävään.
 
 Tämän tehtävän projekti _ladataan internetistä_ hieman alempana olevan ohjeen mukaan.
 
