@@ -2,7 +2,7 @@
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on tiistaina 27.3. klo 23:59
 
-Tehtävät palautetaan Githubin avulla Labtoolin rekisteröimääsi repositorioon.
+Tehtävät palautetaan GitHubin avulla Labtoolin rekisteröimääsi repositorioon.
 
 Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko2_.
 
