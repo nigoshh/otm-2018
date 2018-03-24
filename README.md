@@ -119,7 +119,7 @@ Palautuksen deadline ti 17.4. klo 23:59
 - Harjoitustyö (3p)
   - Ohjelman perustoiminnallisuus 
   - Testien aloitus 
-  - Alustava rakenne luokkakaavona 
+  - Alustava rakenne luokkakaaviona 
   - Checkstyle otettu käyttöön
 - Tarkemat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md) 
 
