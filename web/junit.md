@@ -312,11 +312,11 @@ Yllä jo mainittiin että testit ovat toisistaan riippumattomia eli molemmat tes
 
 Maksukorttia testataan usealla pienellä testimetodilla joista jokaisen alussa on annotaatio @Test. Jokainen erillinen testi testaa yhtä pientä asiaa, esim. että kortin saldo vähenee lounaan hinnan verran. On tarkoituksena, että jokainen testi aloittaa "puhtaalta pöydältä", eli ennen jokaista testiä luodaan alustuksen tekevässä _setUp_-metodissa uusi kortti.
 
-Jokainen testi siis alkaa tilanteesta jossa kortti on juuri luotu. Tämän jälkeen testi joko kutsuu suoraan testattavaa metodia tai ensin saa aikaan sopivan alkutilanteen  ja tämän jälkeen kutsuu testattavaa metodia (näin tapahtui testimetodissa _syoEdullisestiEiVieSaldoaNegatiiviseksi_, maukkaastisyömisellä saldo väheni 2 euroon jonka jälkeen testattiin ettei edullisestisyöminen vie saldoa negatiiviseksi).
+Jokainen testi siis alkaa tilanteesta jossa kortti on juuri luotu. Tämän jälkeen testi joko kutsuu suoraan testattavaa metodia tai ensin saa aikaan sopivan alkutilanteen  ja tämän jälkeen kutsuu testattavaa metodia (näin tapahtui testimetodissa _syoEdullisestiEiVieSaldoaNegatiiviseksi_, maukkaasti syömisellä saldo väheni 2 euroon jonka jälkeen testattiin ettei edullisesti syöminen vie saldoa negatiiviseksi).
 
 ### Onko jo testattu tarpeeksi?
 
-Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi NetBeansissa on työkalu, jolla voidaan tarkastaa testien _rivikattavuus_, eli se mitä koodirivejä testien suorittaminen on tutkinut. Tutstumme testien rivikattavuuden mittaamiseen myöhemmin pian.
+Olemme tyytyväisiä, uskomme että testitapauksia on nyt tarpeeksi. Onko tosiaan näin? Onneksi NetBeansissa on työkalu, jolla voidaan tarkastaa testien _rivikattavuus_, eli se mitä koodirivejä testien suorittaminen on tutkinut. Tutustumme testien rivikattavuuden mittaamiseen myöhemmin pian.
 
 Testikattavuuden mittaus paljastaa että koodi on melko kattavasti testattu. Ainoa testien tutkimatta jättämä asia on tilanne, jossa kortille yritetään ladata negatiivinen saldo.
 
