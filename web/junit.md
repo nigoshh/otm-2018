@@ -312,7 +312,7 @@ Yllä jo mainittiin että testit ovat toisistaan riippumattomia eli molemmat tes
 
 Maksukorttia testataan usealla pienellä testimetodilla joista jokaisen alussa on annotaatio @Test. Jokainen erillinen testi testaa yhtä pientä asiaa, esim. että kortin saldo vähenee lounaan hinnan verran. On tarkoituksena, että jokainen testi aloittaa "puhtaalta löydältä", eli ennen jokaista testiä luodaan alustuksen tekevässä _setUp_-metodissa uusi varasto.
 
-Jokainen testi siis alkaa tilanteesta jossa kortti on juuri luotu. Tämän jälkeen testi joko kutsuu suoraan testattavaa metodia tai ensin saa aikaan sopivan alkutilanteen  ja tämän jälkeen kutsuu testattavaa metodia (näin tapahtui testimetodissa _syoEdullisestiEiVieSaldoaNegatiiviseksi_, maukkaastisyömisellä saldo väheni 2 euroon jonka jälkeen testattiin ettei edullisestisyöminen vie saldoa negatiiviseksi).
+Jokainen testi siis alkaa tilanteesta jossa kortti on juuri luotu. Tämän jälkeen testi joko kutsuu suoraan testattavaa metodia tai ensin saa aikaan sopivan alkutilanteen  ja tämän jälkeen kutsuu testattavaa metodia (näin tapahtui testimetodissa _syoEdullisestiEiVieSaldoaNegatiiviseksi_, maukkaasti syömisellä saldo väheni 2 euroon jonka jälkeen testattiin ettei edullisesti syöminen vie saldoa negatiiviseksi).
 
 ### Onko jo testattu tarpeeksi?
 
