@@ -4,13 +4,17 @@ Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palaut
 
 Tehtävät palautetaan Githubin avulla Labtoolin rekisteröimääri repositorioon.
 
-Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko3_.
+Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko3_. Kukin tehtävä palautetaan lisäämällä hakemiston sisälle sopivasti nimettyjä kuvia.
 
 Viikon palautuksista on tarjolla yksi kurssipiste. Pisteytys arvioidaan palautuksen laadun perusteella.
+
+Huomaa, että tällä viikolla on myös harjoitustyöhön liittyviä [tavoitteita](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko3.md)
 
 ## Luokkakaaviot
 
 Kertaa luokkakaavioihin liittyvät asiat [kurssimateriaalista](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#luokkakaaviot).
+
+Luokkakaavioiden piirtoon helpoin työkalu on <http://yuml.me/>, jos haluat  ammattimaisempaa jälkeä on <https://draw.io/> hyvä (tätä tehtävää varten se ei kuitenkaan liene vaivan arvoista). Myös valokuva käsin piirretyistä kaavioista riittää.
 
 ### 1
 
@@ -46,6 +50,8 @@ Normaaleille kaduille voi rakentaa korkeintaan 4 taloa tai yhden hotellin. Kadun
 ## Sekvenssikaaviot
 
 Kertaa sekvenssikaavioihin liittyvät asiat [kurssimateriaalista](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#sekvenssikaaviot).
+
+Sekvenssikaavioiden piirtoon paras työkalu lienee <https://www.websequencediagrams.com/>. Myös valokuva käsin piirretyistä kaavioista riittää.
 
 ### 3
 
