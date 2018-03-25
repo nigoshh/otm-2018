@@ -2,6 +2,10 @@
 
 Palautuksen deadline tiistaina 27.3. klo 23:59
 
+Muista pushata  harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
+- Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
+- Klo 07 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
+
 ## Alustava määrittelydokumentti
 
 Harjoitustyön tekeminen aloitetaan päättämällä aihe ja kuvaamalla se _alustavassa määrittelydokumentissa_, eli työlle tehdään [vaatimusmäärittely](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#vaatimusmäärittely).

@@ -4,6 +4,11 @@ Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palaut
 
 Tehtävät palautetaan Githubin avulla Labtoolin rekisteröimääri repositorioon.
 
+Muista pushata tehtävät GitHubiin ennen viikkodeadlinea.
+  
+- Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
+- Klo 07 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
+
 Tee palautuksia varten repositorion sisällä olevaan hakemistoon _laskarit_ uusi alihakemisto _viikko3_. Kukin tehtävä palautetaan lisäämällä hakemiston sisälle sopivasti nimettyjä kuvia.
 
 Viikon palautuksista on tarjolla yksi kurssipiste. Pisteytys arvioidaan palautuksen laadun perusteella.
