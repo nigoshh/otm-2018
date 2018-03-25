@@ -367,7 +367,7 @@ Huomaat että kassapääte sisältää melkoisen määrän "copypastea". Nyt kun
 
 ## 6
 
-Varmista jacocon avulla, että kassapäätteen teksteillä on 100% lause- ja haarautumakattavuus.
+Varmista jacocon avulla, että kassapäätteen testeillä on 100% lause- ja haarautumakattavuus.
 
 ## 7 
 
