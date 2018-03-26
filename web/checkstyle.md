@@ -67,7 +67,7 @@ Avaa tiedosto ja korvaa tiedoston sisältö seuraavalla:
         <module name='Indentation' />
         <module name="OneStatementPerLine"/>
 
-        <!--- Naming Conventions -->
+        <!-- Naming Conventions -->
 
         <module name='ClassTypeParameterName' />
         <module name='ConstantName' />
