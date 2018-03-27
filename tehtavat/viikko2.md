@@ -1,4 +1,4 @@
-# Viikon 2 tehtävät
+# Viikon 2 laskarit
 
 Tehtävät on tarkoitus tehdä joko pajassa tai omatoimisesti. Tehtävien palautuksen deadline on tiistaina 27.3. klo 23:59
 
