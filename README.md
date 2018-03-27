@@ -38,7 +38,7 @@ Paja salissa B221
   - 12 Olli Tanttu
   - 14 Matti Luukkainen (JavaScript, Ruby)
 - tiiistai 
-  - 12 Markus Holopainen
+  - 12 Markus Holopainen (Unity, C++)
   - 14 Heikki Ahonen
   - 16 Ville-Veikko Saari
 - keskiviikko 
