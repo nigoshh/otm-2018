@@ -115,7 +115,7 @@ Oman aiheen ei ole pakko olla allaolevasta listasta. Listassa on kuitenkin erila
 
 ## Harjoitustyön aloitus
 
-Harjoitustyö siis aloitetan kurssin [toisella viikolla](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md).
+Harjoitustyö siis aloitetaan kurssin [toisella viikolla](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko2.md).
 
 Työ tehdään samaan repositorioon, jonka olet rekisteröinyt Labtooliin ja johon olet jo tehnyt [viikon 1 laskareiden](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md) palautuksen.
 
@@ -126,7 +126,7 @@ Jos haluat tehdä harjoitustyötä eri koneella, kuin mille teit repositoriosi a
 Koneeseesi täytyy luonnollisesti [ensin asentaa](https://git-scm.com/downloads) git jos se ei ole jo koneellasi.
 * Muista myös [oleellisten konfiguraatioiden](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#konfiguraatioita) tekeminen
 
-Koneesi julkinen avain talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#julkinen-avain).
+Koneesi julkinen avain on talletettava GitHubiin. Ohje avaimen generointiin ja tallettamiseen [täällä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#julkinen-avain).
 
 Kloonaus tapahtuu seuraavasti
 * mene sopivaan hakemistoon koneellasi
@@ -188,7 +188,7 @@ Ikävä seuraus tästä on se, että GitHub kysyy jokaisen pushaamisen yhteydess
 
 Jos työskentelet monella koneella niin huomioi seuraavat
 - GitHubissa oleva repositorion tulee olla kloonattuna kaikille koneille
-- Oletusarvoisesti kaikkien koneiden julkiset avaimet kanattaa olla määritelty GitHubiin
+- Oletusarvoisesti kaikkien koneiden julkiset avaimet kannattaa olla määritelty GitHubiin
 -  [oleelliset konfiguraatiot](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko1.md#konfiguraatioita) kannattaa olla tehtynä kaikilla koneilla
 - **TÄRKEÄÄ** aina kun lopetat työskentelyn koneella, pushaa muutokset githubiin
 - kun aloitat työskentelyn koneelta, pullaa muutokset githubista
