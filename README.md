@@ -36,7 +36,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 Paja salissa B221
 - maaanantai 
   - 12 Olli Tanttu
-  - 14 Matti Luukkainen
+  - 14 Matti Luukkainen (JavaScript, Ruby)
 - tiiistai 
   - 12 Markus Holopainen
   - 14 Heikki Ahonen
