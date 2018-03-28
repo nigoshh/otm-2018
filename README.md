@@ -39,7 +39,7 @@ Paja salissa B221
   - 14 Matti Luukkainen (JavaScript, Ruby)
 - tiiistai 
   - 12 Markus Holopainen (Unity, C++)
-  - 14 Heikki Ahonen
+  - 14 Heikki Ahonen (Ruby)
   - 16 Ville-Veikko Saari
 - keskiviikko 
   - 10 Saara Peltomäki
