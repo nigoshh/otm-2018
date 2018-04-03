@@ -45,7 +45,7 @@ Paja salissa B221
   - 12 Olli Keski-Hynnilä
 - torstai
   - 12 Aleksi Huotala
-  - 14 Jouni Winter
+  - 14 Jouni Winter (Python, JavaScript)
 - perjantai
   - 12 Sasu Mäkinen (JavaScript, Python, Unity, C#)
   - 14 Terho Uotila
