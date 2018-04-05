@@ -221,9 +221,9 @@ public class HKLLaitehallinto {
         ArrayList<Lataajalaite> lataajat = new ArrayList();
         ArrayList<Lukijalaite> lukijat = new ArrayList();
 
-        lisaaLataaja(Lataajalaite lataaja){ lataajat.add(lataaja); }
+        void lisaaLataaja(Lataajalaite lataaja){ lataajat.add(lataaja); }
 
-        lisaaLukija(Lukijalaite lukija){ lukijat.add(lukija); }
+        void lisaaLukija(Lukijalaite lukija){ lukijat.add(lukija); }
 }
 
 public class Main {
