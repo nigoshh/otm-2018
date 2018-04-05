@@ -426,7 +426,7 @@ Rajapinta ja sen toteuttavat luokat kuvataan luokkakaaviossa seuraavasti:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-6.png" width="650">
 
-Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos Todo-sovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivä ylläpitäjää kuvaava luokka _SuperUser_, merkattaisiin se luokkakaavioon seuraavasti:
+Samaa merkintätapaa eli valkoisen nuolenpään sisältävää viivaa käytetään perinnän merkitsemiseen. Esim. jos Todo-sovelluksessa olisi normaalin käyttäjän eli luokan _User_ perivää ylläpitäjää kuvaava luokka _SuperUser_, merkattaisiin se luokkakaavioon seuraavasti:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-9.png" width="350">
 
@@ -458,7 +458,7 @@ Esim. ohjelmoinnin perusteiden Unicafe-tehtävää kuvaava luokkakaavio näyttä
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png" width="550">
 
-Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka, esim. mitä tapahtuu kun kortilla ostataan edullinen lounas, selviä kaaviosta millään tavalla.
+Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka, esim. mitä tapahtuu kun kortilla ostetaan edullinen lounas, selviä kaaviosta millään tavalla.
 
 Tietokantojen perusteiden [viikolla 4](https://materiaalit.github.io/tikape-k18/part4/) on lyhyt maininta sekvenssikaavioista. 
 
