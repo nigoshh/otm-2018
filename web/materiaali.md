@@ -458,7 +458,7 @@ Esim. ohjelmoinnin perusteiden Unicafe-tehtävää kuvaava luokkakaavio näyttä
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-15.png" width="550">
 
-Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka, esim. mitä tapahtuu kun kortilla ostataan edullinen lounas, selviä kaaviosta millään tavalla.
+Vaikka kaavioon on merkitty metodien nimet, ei ohjelman toimintalogiikka, esim. mitä tapahtuu kun kortilla ostetaan edullinen lounas, selviä kaaviosta millään tavalla.
 
 Tietokantojen perusteiden [viikolla 4](https://materiaalit.github.io/tikape-k18/part4/) on lyhyt maininta sekvenssikaavioista. 
 
