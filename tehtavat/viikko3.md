@@ -81,7 +81,7 @@ public class Machine {
   void drive() {
       engine.start();
       boolean running = engine.isRunning();
-      if { running } engine.useEnergy();          
+      if ( running ) engine.useEnergy();          
   }
 }
 
