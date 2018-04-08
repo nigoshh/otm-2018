@@ -12,7 +12,7 @@ Palautuksesta on tarjolla 3 kurssipistettä.
 
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
-- Ohjelma on kasvanut edellisest viikosta (1p)
+- Ohjelma on kasvanut edellisest viikosta (0.75p)
   - Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla <code>mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma</code>
   - Ohjelmasta on olemassa suoritettava versio, joka on kasvanut edellisestä viikosta _ja_ toteuttaa ainakin osan jostain viikolla 2 tekemäsi määrittelydokumentin toiminnallisuudesta
 - Testaus on edennyt (0.5p)
@@ -22,7 +22,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 - Koodin laatu (1p)
   - Sovelluslogiikka on riittämässä määrin eriytetty käyttöliittymästä
     - Vihjeitä [https://github.com/mluukkai/otm-2018/blob/master/web/java.md](täällä) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
-  - Ohjelman pakkausrakenne heijastaa ohjelman loogista rakennetta
+  - Ohjelman [pakkausrakenne](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md#5-pakkaukset) heijastaa ohjelman loogista rakennetta ja nimennältään järkevä
   - Checkstyle on otettu käyttöön 
     - Ohje Checkstylen käyttöönottoon [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)
     - Täydet pisteet Checkstylestä ainoastaan jos ohjelmassa on alle 10 Checkstyle-virhettä
