@@ -40,7 +40,7 @@ Lisää tiedostoon _pom.xml_ seuraavat
 
 Huomaa, että määrittelyt on lisättävä _Project_-tagien sisälle:
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-1.png" width="700">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/m-0.png" width="700">
 
 Voit nyt suorittaa testauskattavuuden mittaamisen komennolla
 
