@@ -64,10 +64,16 @@ Avaa tiedosto ja korvaa tiedoston sisältö seuraavalla:
         <module name="NestedTryDepth"/>
 
         <!-- Miscellaneous -->
+
         <module name='Indentation' />
         <module name="OneStatementPerLine"/>
+        <module name="MethodLength">
+            <property name="tokens" value="METHOD_DEF"/>
+            <property name="max" value="20"/>
+            <property name="countEmpty" value="false"/>
+        </module>
 
-        <!-- Naming Conventions -->
+        <!--- Naming Conventions -->
 
         <module name='ClassTypeParameterName' />
         <module name='ConstantName' />
@@ -109,25 +115,27 @@ Avaa tiedosto ja korvaa tiedoston sisältö seuraavalla:
             <property name='allowEmptyConstructors' value='true' />
             <property name='allowEmptyMethods' value='true' />
         </module>
-
     </module>
 
     <!-- File Length -->
 
     <module name='FileLength'>
-        <property name='max' value='200' />
+        <property name='max' value='500' />
     </module>
+
 
 </module>
 ```
 
 Voit suorittaa Checkstylen komentoriviltä komennolla <code>mvn jxr:jxr checkstyle:checkstyle</code>
 
+Muista, että maven-komentoja on mahdollista suorittaa myös suoraan [NetBeansista](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko2.md#maven-komentojen-suorittaminen-netbeansista).
+
 Generoituasi Checkstyle-raportin löydät sen polusta **/target/site/checkstyle.html**.
 
 Käytetyistä tarkistuksista löydät tarkempaa tietoa [täältä](http://checkstyle.sourceforge.net/checks.html). 
 
-## Luokkien jättäminen checkstylen ulkopuolelle
+## Luokkien jättäminen Checkstylen ulkopuolelle
 
 Kurssilla ei ole tarpeen kirjoittaa ehdottoman siistiä käyttöliittymäkoodia, ja siksi emme vaadikaan että käyttöliittymäluokkia testataan ollenkaan Checkstylen avulla. Muutetaan siis vielä raportointi niin, että tietyt tiedostot jätetään pois. 
 
@@ -151,18 +159,19 @@ Seuraavassa siis esimerkikki checkstyle.xml-tiedostosta:
 
         <property name='tabWidth' value='4' />
 	      
-	      <!-- Paljon moduuleja välissä -->
+	    <!-- Paljon moduuleja välissä -->
         
     </module>
 
     <!-- File Length -->
 
-    <module name="SuppressionFilter">
-    	<property name="file" value="skipped_files.xml" />
-    </module>
 
     <module name='FileLength'>
         <property name='max' value='200' />
+    </module>
+
+    <module name="SuppressionFilter">
+    	<property name="file" value="skipped_files.xml" />
     </module>
 
 </module>
