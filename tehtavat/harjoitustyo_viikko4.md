@@ -1,6 +1,4 @@
-# KESKEN
-
-## harjoitustyö, viikko 4
+# Harjoitustyö, viikko 4
 
 Palautuksen deadline ti 17.4. klo 23:59
 
@@ -19,6 +17,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla <code>mvn test jacoco:report</code>
   - Käyttöliittymän rakentava koodi [jätetään pois](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#koodin-huomiotta-jättäminen-kattavuusraportissa) testikattavuusraportista
   - Sovelluksen testien rivikattavuuden tulee olla vähintään 20%
+  - Jos teet projektisi jollain muulla kielellä kuin Javalla, lisää README-tiedostoon ohje testien suorittamiselle ja kattavuusraportin generoimiselle
 - Koodin laatu (1p)
   - Sovelluslogiikka on riittämässä määrin eriytetty käyttöliittymästä
     - Vihjeitä [https://github.com/mluukkai/otm-2018/blob/master/web/java.md](täällä) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
@@ -27,7 +26,9 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     - Ohje Checkstylen käyttöönottoon [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)
     - Täydet pisteet Checkstylestä ainoastaan jos ohjelmassa on alle 10 Checkstyle-virhettä
     - Käyttöliittymän rakentavan koodin ei tarvitse olla Checkstyle-tarkastelun alla
+    - Jos teet projektisi jollain muulla kielellä kuin Javalla, ota käyttöön kielen _Checkstyleä_ vastaava työkalu, määrittele se järkevästi ja laita README-tiedostoon ohje tyylitarkastusten suorittamisele
 - Ohjelman alustava rakenne luokka/pakkauskaavona (0.75p) 
+vastaavalla mekanismilla
   - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
   - Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#pakkauskaavio)
   - Mallia voi ottaa [referenssisovelluksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
