@@ -459,7 +459,7 @@ Youtubesta löytyy runsaasti vaihtelevanlaatuisia videoita aihepiiristä. Hyväk
 
 ## Tietojen talletus
 
-Arvosteluperusteet [kannustavat](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md) siihen, että ohjelmasti käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
+Arvosteluperusteet [kannustavat](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md) siihen, että ohjelmasi käsittelisi johonkin muotoon pysyväistalletettua tietoa. Kannattaa kuitenkin pitää talletettavan tiedon määrä kohtuullisena, eeppisimmät tietoa käsittelevät aiheet sopivat paremmin kurssille [Tietokantasovellus](https://courses.helsinki.fi/fi/tkt20011).
 
 ### DAO-suunnittelumalli
 
