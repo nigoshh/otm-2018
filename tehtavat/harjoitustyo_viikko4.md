@@ -10,7 +10,7 @@ Palautuksesta on tarjolla 3 kurssipistettä.
 
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
-- Ohjelma on kasvanut edellisest viikosta (0.75p)
+- Ohjelma on kasvanut edellisestä viikosta (0.75p)
   - Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla _tai/ja_ komennolla <code>mvn compile exec:java -Dexec.mainClass=pakkaus.Paaohjelma</code>
   - Ohjelmasta on olemassa suoritettava versio, joka on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuudesta
 - Testaus on edennyt (0.5p)
