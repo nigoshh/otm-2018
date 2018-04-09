@@ -21,7 +21,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 - Koodin laatu (1p)
   - Sovelluslogiikka on riittämässä määrin eriytetty käyttöliittymästä
     - Vihjeitä [https://github.com/mluukkai/otm-2018/blob/master/web/java.md](täällä) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
-  - Ohjelman [pakkausrakenne](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md#5-pakkaukset) heijastaa ohjelman loogista rakennetta ja nimennältään järkevä
+  - Ohjelman [pakkausrakenne](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md#5-pakkaukset) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
   - Checkstyle on otettu käyttöön 
     - Ohje Checkstylen käyttöönottoon [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/checkstyle.md)
     - Täydet pisteet Checkstylestä ainoastaan jos ohjelmassa on alle 10 Checkstyle-virhettä
