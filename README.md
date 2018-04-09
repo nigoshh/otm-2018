@@ -18,9 +18,10 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 ## Ajankohtaista
 
-- Viikon 1 arvostelu valmiina, ja löytyy labtoolista, viikon 2 arvostelu valmistuu _viimeistään_ 9.4. klo 23:59
+- Viikon 2 arvostelu valmiina, ja löytyy labtoolista, viikon32 arvostelu valmistuu _viimeistään_ 15.4. klo 23:59
 - Pääsiäisloman to 29.3 - ke 4.4.  aikana ei pajaa
 - Viikon 3 [laskarit](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/viikko3.md) ja harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko3.md), deadline tiistaina 10.4. klo 23:59
+- Viikon 4 harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md), deadline tiistaina 17.4. klo 23:59
 - Muista pushata tehtävät ja harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlineja!
   - Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
   - Klo 07 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
