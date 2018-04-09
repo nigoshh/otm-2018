@@ -27,7 +27,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     - Täydet pisteet Checkstylestä ainoastaan jos ohjelmassa on alle 10 Checkstyle-virhettä
     - Käyttöliittymän rakentavan koodin ei tarvitse olla Checkstyle-tarkastelun alla
     - Jos teet projektisi jollain muulla kielellä kuin Javalla, ota käyttöön kielen _Checkstyleä_ vastaava työkalu, määrittele se järkevästi ja laita README-tiedostoon ohje tyylitarkastusten suorittamisele
-- Ohjelman alustava rakenne luokka/pakkauskaavona (0.75p) 
+- Ohjelman alustava rakenne luokka/pakkauskaaviona (0.75p)
 vastaavalla mekanismilla
   - Kaavion ei tarvitse merkitä kuin sovelluslogiikan kannalta oleelliset luokat
   - Voit tarvittaessa tehdä kaavion, josta ilmenee myös sovelluksen [pakkausrakenne](https://github.com/mluukkai/otm-2018/blob/master/web/materiaali.md#pakkauskaavio)
