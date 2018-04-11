@@ -34,10 +34,10 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 Paja salissa B221
 - maaanantai 
   - 12 Olli Tanttu
-  - 14 Matti Luukkainen (JavaScript, Ruby)
+  - 14 Matti Luukkainen (JavaScript)
 - tiiistai 
   - 12 Markus Holopainen (Unity, C++)
-  - 14 Heikki Ahonen (Ruby)
+  - 14 Heikki Ahonen
   - 16 Ville-Veikko Saari
 - keskiviikko 
   - 10 Saara Peltomäki
