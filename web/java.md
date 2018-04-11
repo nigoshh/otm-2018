@@ -308,6 +308,8 @@ Tarkastellaan yksinkertaista esimerkkiä, graafista noppaa:
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/j-2.png" width="400">
 
+Esimerkin koodi on kokonaisuudessaan GitHubissa <https://github.com/mluukkai/FXMLExample>
+
 Käyttöliittymän rakenteen määrittelee tiedosto _Scene.fxml_:
 
 ```xml
