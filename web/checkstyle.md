@@ -148,7 +148,7 @@ tagin alaisuudessa:
 </module>
 ```
 
-Seuraavassa siis esimerkikki checkstyle.xml-tiedostosta: 
+Seuraavassa siis esimerkki checkstyle.xml-tiedostosta: 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -196,7 +196,7 @@ Luo siis samaan kansioon missä checkstyle.xml-tiedostosi sijaitsee tiedosto `sk
 
 Korvaamalla `todoapp.ui.TodoUi.java` ja `todoapp.ui.GuiHelper.java` niiden tiedostojen nimillä (huomaa, että nimet ovat täydellisiä, pakkauksen sisältäviä nimiä!), joita et halua checkstylen huomioivan. 
 
-Älä jätä huomioimatta mitään muita kuin JavaFX-läyttöliittymän komponenttien rakentamisessa käyttämiäsi tiedostoja!
+Älä jätä huomioimatta mitään muita kuin JavaFX-käyttöliittymän komponenttien rakentamisessa käyttämiäsi tiedostoja!
 
 Korjaa ohjelmastasi kaikki checkstylen ilmoittavat virheet.
 
