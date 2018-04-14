@@ -14,7 +14,7 @@ joka Ruutu-luokan sekä Kortti-luokan pitäisi toteuttaa.
 
 Tässä ei luotu erikseen hotelli ja talo – luokkia, vaan ajateltiin niiden olevan kadun attribuutti. Jos kadulla on 5 taloa, piirretään hotelli, muuten piirretään talot.
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-12.png" width="650">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-12.png" width="750">
 
 # 3
 
@@ -22,4 +22,4 @@ Tässä ei luotu erikseen hotelli ja talo – luokkia, vaan ajateltiin niiden ol
 
 # 4
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-4.png" width="650">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-4.png" width="750">
