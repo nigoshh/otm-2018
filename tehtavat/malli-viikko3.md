@@ -18,7 +18,7 @@ Tässä ei luotu erikseen hotelli ja talo – luokkia, vaan ajateltiin niiden ol
 
 # 3
 
-<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-3.png" width="650">
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-3.png" width="500">
 
 # 4
 
