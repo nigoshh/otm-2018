@@ -2,7 +2,7 @@
 
 ## 1 ja 2
 
-Tehtääävn monia toimivia vastauksia, alla vain yksi. Esimerkiksi toiminnot voitaisiin toteuttaa niin, että määriteltäisiin rajapinta Toiminto:
+Tehtävään on monia toimivia vastauksia, alla vain yksi. Esimerkiksi toiminnot voitaisiin toteuttaa niin, että määriteltäisiin rajapinta Toiminto:
 
 ```java
 Interface Toiminto {
@@ -12,7 +12,7 @@ Interface Toiminto {
 
 joka Ruutu-luokan sekä Kortti-luokan pitäisi toteuttaa.
 
-Tässä ei luotu erikseen hotelli ja talo – luokkia, vaan ajateltiin niiden olevan kadun attribuutti. Jos kadulla on 5 taloa, piirretään hotelli, muuten piirretään talot.
+Tässä ei luotu erikseen hotelli ja talo –luokkia, vaan ajateltiin niiden olevan kadun attribuutti. Jos kadulla on 5 taloa, piirretään hotelli, muuten piirretään talot.
 
 <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-12.png" width="750">
 
