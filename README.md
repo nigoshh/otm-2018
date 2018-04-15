@@ -116,7 +116,7 @@ Palautuksen deadline ti 17.4. klo 23:59
   - Testien aloitus 
   - Alustava rakenne luokkakaaviona 
   - Checkstyle otettu käyttöön
-- Tarkemat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md) 
+- Tarkemmat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md) 
 
 ### viikko 5
 
@@ -126,7 +126,7 @@ Palautuksen deadline ti 24.4. klo 23:59
   - Release 1 
   - Testikattavuus nousee 
   - Jotain päätoiminnallisuutta kuvaava sekvenssikaavio 
-- Tarkemat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md) 
+- Tarkemmat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md) 
 - Koodikatselmointi (2p)
   - ohjeet myöhemmin
 
@@ -139,7 +139,7 @@ Palautuksen deadline ke 2.5. klo 23:59
   - Testikattavuus nousee 
   - JavaDoc aloitettu 
   - Alustava versio arkkitehtuuridokumentista 
-- Tarkemat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md) 
+- Tarkemmat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md) 
 
 ### viikko 7
 
