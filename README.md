@@ -21,7 +21,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 - [Esimerkkivastauksia](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/malli-viikko3.md) viikon 3 tehtäviin
 - Viikon 4 harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md), deadline tiistaina 17.4. klo 23:59
 - Viikon 5 harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md), deadline tiistaina 22.4. klo 23:59
-  - **Jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä), tulee viikon 5 deadlinen jälkeen palautusrepositoriosta löytyä sellainen toimiva versio harjoitustyöstä, joka toteuttaa mielekkään osan määrittelydokumentissa listatusta toiminnallisuudesta**
+  - **Jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä), tulee viikon 5 deadlinen jälkeen palautusrepositoriosta löytyä harjoitustyöstä suoritettavissa oleva versio, joka toteuttaa mielekkään osan määrittelydokumenttiin listatusta toiminnallisuudesta**
 - Muista pushata tehtävät ja harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlineja!
   - Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
   - Klo 07 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
