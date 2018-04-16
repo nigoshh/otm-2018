@@ -1,5 +1,3 @@
-# KESKEN
-
 # Github release
 
 Yksi mahdollisuus on luoda GitHubiin release, eli julkaistu versio.
