@@ -19,7 +19,6 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 ## Ajankohtaista
 
 - [Esimerkkivastauksia](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/malli-viikko3.md) viikon 3 tehtäviin
-- Viikon 3 arvostelu valmistuu _viimeistään_ 15.4. klo 23:59
 - Viikon 4 harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md), deadline tiistaina 17.4. klo 23:59
 - Muista pushata tehtävät ja harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlineja!
   - Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 

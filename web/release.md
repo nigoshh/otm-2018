@@ -1,6 +1,7 @@
 # Github release
 
-Yksi mahdollisuus on luoda GitHubiin release, eli julkaistu versio.
+Eräs tapa julkaista ohjelmasta stabiili versio on tehdä GitHubiin release, eli julkaistu versio.
+
 * klikkaa repositorion GitHub-sivulta kohtaa "0 releases"
 * valitse *Draft a new release*
 * määrittele julkaisun tiedot 

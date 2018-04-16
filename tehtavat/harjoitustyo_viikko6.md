@@ -12,5 +12,7 @@ Palautuksen deadline tiistai 1.5. klo 23:59
 - JavaDoc aloitettu (0.5p)
 - Alustava versio arkkitehtuuridokumentista (1p)
 
+- koodikatselmointi
+
 Ohjeita
 - [JavaDoc](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md)

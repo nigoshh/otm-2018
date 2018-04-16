@@ -19,7 +19,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Sovelluksen testien rivikattavuuden tulee olla vähintään 20%
   - Jos teet projektisi jollain muulla kielellä kuin Javalla, lisää README-tiedostoon ohje testien suorittamiselle ja kattavuusraportin generoimiselle
 - Koodin laatu (1p)
-  - Sovelluslogiikka on riittämässä määrin eriytetty käyttöliittymästä
+  - Sovelluslogiikka on riittävissä määrin eriytetty käyttöliittymästä
     - Vihjeitä [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/java.md) ja [referenssisovelluksessa](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md)
   - Ohjelman [pakkausrakenne](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md#5-pakkaukset) heijastaa ohjelman loogista rakennetta ja on nimennältään järkevä
   - Checkstyle on otettu käyttöön 
