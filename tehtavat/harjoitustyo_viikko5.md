@@ -32,7 +32,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Checkstyle on käytössä
     - Täydet pisteet Checkstylestä ainoastaan jos ohjelmassa on alle 5 Checkstyle-virhettä
     - Käyttöliittymän rakentavan koodin ei tarvitse olla Checkstyle-tarkastelun alla
-    - Jos teet projektisi jollain muulla kielellä kuin Javalla, tulee olla käytössä kielen _Checkstyleä_ vastaava työkalu, määrittele se järkevästi ja laita README-tiedostoon ohje tyylitarkastusten suorittamisele 
+    - Jos teet projektisi jollain muulla kielellä kuin Javalla, tulee olla käytössä kielen _Checkstyleä_ vastaava työkalu, määrittele se järkevästi ja laita README-tiedostoon ohje tyylitarkastusten suorittamiselle
   - Ohjelma ei sisällä suurta määrää toisteista koodia
     - Ohjelman dokumentaatiossa on ainakin yksi sen jotain oleellista toiminnallisuutta kuvaava sekvenssikaavio (0.5p)
   - Mallia voi ottaa [referenssisovelluksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
