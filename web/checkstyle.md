@@ -144,7 +144,7 @@ tagin alaisuudessa:
 
 ```xml
 <module name="SuppressionFilter">
-  <property name="file" value="mysuppressions.xml" />
+  <property name="file" value="skipped_files.xml" />
 </module>
 ```
 

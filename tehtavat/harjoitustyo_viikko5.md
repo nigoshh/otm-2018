@@ -2,10 +2,14 @@
 
 Palautuksen deadline tiistai 24.4. klo 23:59
 
+<<<<<<< HEAD
 **HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
 - viikon 5 deadlinen jälkeen tulee palautusrepositoriosta löytyä osan määrittelydokumentin toiminnallisuutta toteuttava toimiva versio harjoitustyöstä 
 - viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
 - Palautusrepositorioistasi on GitHub issuet saalittuna, ks. [ohje]() 
+=======
+**Jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä), tulee viikon 5 deadlinen jälkeen palautusrepositoriosta löytyä harjoitustyöstä suoritettavissa oleva versio, joka toteuttaa mielekkään osan määrittelydokumenttiin listatusta toiminnallisuudesta.**
+>>>>>>> 0b91ba0490065cad5559633a791b697018ab8b1f
 
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 - Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
@@ -35,9 +39,9 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Checkstyle on käytössä
     - Täydet pisteet Checkstylestä ainoastaan jos ohjelmassa on alle 5 Checkstyle-virhettä
     - Käyttöliittymän rakentavan koodin ei tarvitse olla Checkstyle-tarkastelun alla
-    - Jos teet projektisi jollain muulla kielellä kuin Javalla, tulee olla käytössä kielen _Checkstyleä_ vastaava työkalu, määrittele se järkevästi ja laita README-tiedostoon ohje tyylitarkastusten suorittamisele 
+    - Jos teet projektisi jollain muulla kielellä kuin Javalla, tulee olla käytössä kielen _Checkstyleä_ vastaava työkalu, määrittele se järkevästi ja laita README-tiedostoon ohje tyylitarkastusten suorittamiselle
   - Ohjelma ei sisällä suurta määrää toisteista koodia
-- Ohjelman ssa on ainakin yksi sen jotain oleellista toiminnallisuutta kuvaava sekvenssikaavio (0.5p)
+    - Ohjelman dokumentaatiossa on ainakin yksi sen jotain oleellista toiminnallisuutta kuvaava sekvenssikaavio (0.5p)
   - Mallia voi ottaa [referenssisovelluksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
   - Lisää kaavio [edellisellä viikolla](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko4.md) tehtyyn dokumenttiin _arkkitehtuuri.md_ 
   - Tiedostoon _arkkitehtuuri.md_ tulee olla linkki repositorion README:stä [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) tavoin
@@ -57,7 +61,10 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - ei ylimääräistä tavaraa (mm. hakemistoa target)
   - laskarit jätetään hakemiston _laskarit_ alle
   - järkevä .gitignore-tiedosto olemassa
+<<<<<<< HEAD
 
   # Issueiden salliminen
 
   <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-12.png" width="750">
+=======
+>>>>>>> 0b91ba0490065cad5559633a791b697018ab8b1f
