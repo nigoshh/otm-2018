@@ -2,9 +2,12 @@
 
 Palautuksen deadline tiistai 24.4. klo 23:59
 
-**HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä), tulee viikon 5 deadlinen jälkeen palautusrepositoriosta löytyä osan määrittelydokumentin toiminnallisuutta toteuttava toimiva versio harjoitustyöstä. 
+**HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
+- viikon 5 deadlinen jälkeen tulee palautusrepositoriosta löytyä osan määrittelydokumentin toiminnallisuutta toteuttava toimiva versio harjoitustyöstä 
+- viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
+- Palautusrepositorioistasi on GitHub issuet saalittuna, ks. [ohje]() 
 
-Muista pushata  harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
+Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 - Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
 - Klo 07 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
 
@@ -41,6 +44,9 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
  
 **Seuraavien kohtien puutteet vähentävät pisteitä**
 
+- Koodin laatu
+  - Pakkausrakenne ei ole järkevä (esim. kaikki koodi oletuspakkauksessa)
+  - Sovelluslogiikkaa ei ole eriytetty riittävästi käyttöliittymästä
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
@@ -51,3 +57,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - ei ylimääräistä tavaraa (mm. hakemistoa target)
   - laskarit jätetään hakemiston _laskarit_ alle
   - järkevä .gitignore-tiedosto olemassa
+
+  # Issueiden salliminen
+
+  <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-12.png" width="750">
