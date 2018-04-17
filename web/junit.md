@@ -324,6 +324,8 @@ Testikattavuuden mittaus paljastaa että koodi on melko kattavasti testattu. Ain
 
 Kortin alkusaldo on kaikissa testeissä 10. Varmempaa olisi testata myös muutamaa muuta alkusaldoa.
 
+JUnitin versioon 4.4 lisättiin metodi `assertThat`, jonka avulla on helppo kirjoittaa monimutkaisempiakin testejä ja lopputulos on luettava myös asiaan vähemmän perehtyneelle. Lyhyt opas `assertThat`:n käyttöön löytyy [täältä](https://objectpartners.com/2013/09/18/the-benefits-of-using-assertthat-over-other-assert-methods-in-unit-tests/).
+
 **Kerrataan vielä testien toiminnan kannalta erittäin tärkeä asia: testiluokan nimen on päätyttävä sanaan Test**
 
 ### Testiluokka vielä kokonaisuudessaan
