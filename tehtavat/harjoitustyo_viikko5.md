@@ -2,14 +2,10 @@
 
 Palautuksen deadline tiistai 24.4. klo 23:59
 
-<<<<<<< HEAD
 **HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
 - viikon 5 deadlinen jälkeen tulee palautusrepositoriosta löytyä osan määrittelydokumentin toiminnallisuutta toteuttava toimiva versio harjoitustyöstä 
 - viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
-- Palautusrepositorioistasi on GitHub issuet saalittuna, ks. [ohje]() 
-=======
-**Jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä), tulee viikon 5 deadlinen jälkeen palautusrepositoriosta löytyä harjoitustyöstä suoritettavissa oleva versio, joka toteuttaa mielekkään osan määrittelydokumenttiin listatusta toiminnallisuudesta.**
->>>>>>> 0b91ba0490065cad5559633a791b697018ab8b1f
+- palautusrepositorioistasi on GitHub-issuet saalittuna, ks. [ohje](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md#issueiden-salliminen) 
 
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 - Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
@@ -54,6 +50,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
+- Palautusrepositorioosi voi tehdä GitHub-issuieta, ks [ohje](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md#issueiden-salliminen)   
 - Repositorion README.md kunnossa
   - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md
   - kaikki ylimääräinen, mm. linkit laskareihin on poistettu 
@@ -61,10 +58,9 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - ei ylimääräistä tavaraa (mm. hakemistoa target)
   - laskarit jätetään hakemiston _laskarit_ alle
   - järkevä .gitignore-tiedosto olemassa
-<<<<<<< HEAD
 
-  # Issueiden salliminen
+# Issueiden salliminen
 
-  <img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/malli3-12.png" width="750">
-=======
->>>>>>> 0b91ba0490065cad5559633a791b697018ab8b1f
+Varmista, että palautusrepositorioosi on mahdollista tehdä issueita, eli repositorion _Settings_ näyttää seuraavalta
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/issuet.png" width="750">
