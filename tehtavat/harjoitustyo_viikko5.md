@@ -52,8 +52,11 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Palautusrepositorioosi voi tehdä GitHub-issuieta, ks [ohje](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md#issueiden-salliminen)   
 - Repositorion README.md kunnossa
-  - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md
-  - kaikki ylimääräinen, mm. linkit laskareihin on poistettu 
+  - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md, eli se sisältää ainakin
+    - harjoitustyön aiheen lyhyt kuvas
+    - linkit vaatimusmäärittelyyn, arkkitehtuuridokumenttiin ja tuntikirjanpitoon 
+    - linkki releaseen
+    - ohjeet komentoriviltä suoritettaviin toimenpiteisiin (testaus, testiraporsin suoritus, suoritettavan jarin generointi, checkstyleraportin suorittaminen)
 - Repositorio siisti
   - ei ylimääräistä tavaraa (mm. hakemistoa target)
   - laskarit jätetään hakemiston _laskarit_ alle
