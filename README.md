@@ -20,7 +20,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 - Viikon 4 pisteytys labtoolissa viimeistään sunnuntaina klo 22.4. 23:59
 - [Esimerkkivastauksia](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/malli-viikko3.md) viikon 3 tehtäviin
-- Viikon 5 harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md), deadline tiistaina 22.4. klo 23:59
+- Viikon 5 harjoitustyön [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md), deadline tiistaina 24.4. klo 23:59
 - **HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
   - viikon 5 deadlinen jälkeen tulee palautusrepositoriosta löytyä osan määrittelydokumentin toiminnallisuutta toteuttava toimiva versio harjoitustyöstä 
   - viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
