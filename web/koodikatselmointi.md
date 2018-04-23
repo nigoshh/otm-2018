@@ -6,18 +6,22 @@
 
 Katselmoinnista voi saada maksimissaan 2 pistettä.
 
-Kurssilla tapahtuvan katselmoinnin perimmäinen tarkoitus on oppia hahmottamaan toisen henkilön kirjoittamaa koodia ja kokonaista ohjelmointiprojektia. Toisten koodia luetaan kursseilla toistaiseksi valitettavan vähän, vaikka sujuva koodinlukutaito on välttämätön taito ohjelmoijan työssä. Hyvin suoritettu katselmointi on tehokas tapa havaita koodista ongelmakohtia ka virheitä sekä parantaa koodin laatua.
+Kurssilla tapahtuvan katselmoinnin perimmäinen tarkoitus on oppia hahmottamaan toisen henkilön kirjoittamaa koodia ja kokonaista ohjelmointiprojektia. Sujuva koodinlukutaito on välttämätön taito ohjelmoijan työssä. Toisten koodia luetaan kuitenkin laitoksen kursseilla toistaiseksi valitettavan vähän. Hyvin suoritettu katselmointi on tehokas tapa havaita koodista ongelmakohtia ja virheitä sekä parantaa koodin laatua.
 
 ## Ohjeet
 
 Katselmointi alkaa torstaina 26.4. klo 23:59, jonka jälkeen näet sinulle osoitetun katselmointikohteen repositoriolinkin labtoolista http://tktl-labtool.herokuapp.com/mypage.
 
-Sinun tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä rakentavaa palautetta. Ohjelmaa kannattaa kokeilla myös suorittaa.
+Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä rakentavaa palautetta. Ohjelmaa kannattaa kokeilla myös suorittaa.
 
-* Lataa zip-pakattu projekti koneellesi annetun repositorion *ZIP* -painikkeesta
+* Lataa katselmointikohteesi zip-pakattu projekti koneellesi
   * Ota talteen kellonaika ja päivä, jolloin latasit projektin
   * Pura projekti
   * Voit halutessasi kloonata repositorion koneellesi
+
+<img src="https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/review1.png" width="600">
+
+
 * Lue ensimmäiseksi projektin aihemäärittely
 * Tutustu mahdollisimman kattavasti ohjelmakoodiin sekä testeihin
   * Kokeile myös avata projekti Netbeansissa ja suorita testit
