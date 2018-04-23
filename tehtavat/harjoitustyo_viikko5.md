@@ -56,7 +56,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     - harjoitustyön aiheen lyhyt kuvas
     - linkit vaatimusmäärittelyyn, arkkitehtuuridokumenttiin ja tuntikirjanpitoon 
     - linkki releaseen
-    - ohjeet komentoriviltä suoritettaviin toimenpiteisiin (testaus, testiraporsin suoritus, suoritettavan jarin generointi, checkstyleraportin suorittaminen)
+    - ohjeet komentoriviltä suoritettaviin toimenpiteisiin (testaus, testiraportin suoritus, suoritettavan jarin generointi, checkstyleraportin suorittaminen)
 - Repositorio siisti
   - ei ylimääräistä tavaraa (mm. hakemistoa target)
   - laskarit jätetään hakemiston _laskarit_ alle

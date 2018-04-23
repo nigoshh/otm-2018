@@ -57,11 +57,11 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
 - Repositorion README.md kunnossa
-  - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md, eli siellä on ainakin seuraavat
+  - Tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md, eli se sisältää ainakin seuraavat
     - harjoitustyön aiheen lyhyt kuvas
     - linkit vaatimusmäärittelyyn, arkkitehtuuridokumenttiin, käyttöohjeeseen ja tuntikirjanpitoon 
     - linkki releaseihin
-    - ohjeet komentoriviltä suoritettaviin toimenpiteisiin (testaus, testiraporsin suoritus, suoritettavan jarin generointi, checkstyleraportin suorittaminen, JavaDocin generointi)
+    - ohjeet komentoriviltä suoritettaviin toimenpiteisiin (testaus, testiraportin suoritus, suoritettavan jarin generointi, checkstyletarkastuksen suorittaminen, JavaDocin generointi)
 - Repositorio siisti
   - ei ylimääräistä tavaraa (mm. hakemistoa target)
   - laskarit jätetään hakemiston _laskarit_ alle
