@@ -2,8 +2,6 @@
 
 Osa ohjelmiston dokumentointia on lähdekoodin API:n eli käytännössä luokkien julkisten metodien kuvaus. Javassa lähdekoodi dokumentoidaan käyttäen JavaDoc-työkalua. 
 
-Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja kommentteja.
-
 Sovelluksen JavaDocia voi tarkastella selaimen avulla
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-7.png)
@@ -13,6 +11,8 @@ Myös NetBeans osaa näyttää ohjelmoidessa koodiin määritellyn javadocin:
 
 ![](https://raw.githubusercontent.com/mluukkai/otm-2018/master/web/images/l-14.png)
 
+
+Dokumentointi tapahtuu kirjoittamalla koodin yhteyteen sopivasti muotoiltuja kommentteja.
 
 Seuraava metodi on kommentoitu vapaamuotoisesti.  Kommentista käy ilmi mitä metodi tekee, mutta muotoiltua dokumentointisivua siitä ei saa tehtyä automaattisesti.
 ``` java
