@@ -23,7 +23,7 @@ Läpipääsyyn vaatimuksena on lisäksi vähintään 10 pistettä lopullisesta o
 
 ## Lopullisesta ohjelmasta annettavat pisteet
 
-Pisteet (yht 23) jakautuvat seuraavasti
+Pisteet (yht 24) jakautuvat seuraavasti
 - käyttöliittymä 4p
   - 0p yksinkertainen tekstikäyttöliittymä
   - 1-2p monimutkainen tekstikäyttöliittymä
@@ -44,7 +44,7 @@ Pisteet (yht 23) jakautuvat seuraavasti
 - koodin laatu 6p
   - 5p hyvät abstraktiot (esim. Design patternien hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
   - 3p ei ilmeistä copypastea, ok luokkarakenne
-  - +1p checkstylesäännöt kunnossa
+  - +1p checkstylesäännöt kunnossa  
   
 ## Testauksesta annettavat pisteet
 
