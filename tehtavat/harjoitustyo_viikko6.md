@@ -2,35 +2,39 @@
 
 ## harjoitustyö, viikko 6
 
-Palautuksen deadline keskiviikko 2.5. klo 23:59
+Palautuksen deadline poikkeuksellisesti **keskiviikko 2.5. klo 23:59**. 
 
-HUOM
-- koodikatselmointi, deadline ...
-- loppudeadline ... vaatimukset
+**Muutama huomio**
+- Maanantaina 30.5. pajaa ainoastaan klo 12-14.
+- Viikon 6 aikana tapahtuu myös koodikatselmointi, tarkemmat ohjeet katselmointiin [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/koodikatselmointi.md)
+- Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä, loppupalautuksen deadline on pe 11.5. klo 23:59
+
 
 
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)
-  - Ohjelman suoritettavissa olevasta versiosta on tehty uudi [GitHub-release](https://github.com/mluukkai/otm-2018/blob/master/web/release.md), joka sisältää suoritettavan version jar-tiedoston ja muut mahdolliset ohjelman suorituksessa tarvittavat tiedostot
+  - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](https://github.com/mluukkai/otm-2018/blob/master/web/release.md), joka sisältää suoritettavan version jar-tiedoston ja muut mahdolliset ohjelman suorituksessa tarvittavat tiedostot
   - Ohjelmasta pystyy tekemään suorituskelpoisen [jar](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#jarin-generointi)-tiedoston komennolla _mvn package_
   - Ohjelman suoritettavissa oleva versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuudesta
 - Koodin laatu (0.5p)
-  - Ohjelma ei sisällä suurta määrää toisteista koodia
+  - Ohjelma ei sisällä suurta määrää toisteista koodia eli copy pastea
   - Ohjelman luokkarakenne on järkevä
-    - luokkien tulee pyrkiä noudattamaan ns. [single responsibility] (https://materiaalit.github.io/ohjelmointi-s17/part6/) -periaatetta, eli yhden luokan ei tulisi tehdä liian montaa asiaa
-  - Metodit ovat järkevän pituisia ja myös yhteen asiaan keskittyviä  
+    - luokkien tulee pyrkiä noudattamaan ns. [single responsibility](https://materiaalit.github.io/ohjelmointi-s17/part6/) -periaatetta, eli yhden luokan ei tulisi tehdä liian montaa asiaa
+    - liian suuret luokat tulee siis jakaa useiksi luokiksi
+  - Metodit ovat järkevän pituisia ja yhteen asiaan keskittyviä 
+    - myös liian suuret metodit tulee jakaa useiksi metodeiksi 
 - Testaus on edennyt (0.5p)
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla <code>mvn test jacoco:report</code>
     - Käyttöliittymän rakentava koodi [jätetään pois](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#koodin-huomiotta-jättäminen-kattavuusraportissa) testikattavuusraportista
   - Sovelluksen testien rivikattavuuden tulee olla vähintään 50%
   - Testien tulee testata järkevällä tavalla ohjelman toiminnallisuutta
-    - jos testit on tehty pelkästään rivikattavuuden saatuttamiseksi, ei testeistä saa pisteitä
+    - jos testit on tehty pelkästään rivikattavuuden saavuttamiseksi, ei testeistä saa pisteitä
 - JavaDoc aloitettu (0.5p)
-  - [ohje](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) JavaDocin käyttöön
   - ainakin osalle ohjelman luokista ja niiden metodeista on tehty JavaDoc-kuvaukset
   - JavaDoc tulee olla generoitavissa komennolla _mvn javadoc:javadoc_
   - edellytyksenä pisteille on vähintään 5 luokan ja sen julkisten metodien dokumentointi
+  - [Ohje](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) JavaDocin käyttöön
 - Alustava arkkitehtuurikuvaus (0.5p)
   - Dokumentti sisältää sovelluksen korkean tason (esim. pakkausten tasolla) rakenteen kuvauksen, sekä alustavan kuvauksen sovelluslogiikasta
   - Dokumentissa kannattaa hyödyntää edellisten viikkojen kaavioita
