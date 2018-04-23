@@ -1,4 +1,4 @@
-# harjoitustyö, viikko 6
+# Harjoitustyö, viikko 6
 
 Palautuksen deadline poikkeuksellisesti **keskiviikko 2.5. klo 23:59**. 
 
@@ -29,9 +29,9 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - Testien tulee testata järkevällä tavalla ohjelman toiminnallisuutta
     - jos testit on tehty pelkästään rivikattavuuden saavuttamiseksi, ei testeistä saa pisteitä
 - JavaDoc aloitettu (0.5p)
-  - ainakin osalle ohjelman luokista ja niiden metodeista on tehty JavaDoc-kuvaukset
   - JavaDoc tulee olla generoitavissa komennolla _mvn javadoc:javadoc_
-  - edellytyksenä pisteille on vähintään 5 luokan ja sen julkisten metodien dokumentointi
+  - ainakin osalle ohjelman luokista ja niiden metodeista on tehty JavaDoc-kuvaukset
+    - edellytyksenä pisteille on vähintään 5 luokan ja niiden julkisten metodien dokumentointi
   - [Ohje](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) JavaDocin käyttöön
   - Jos teet projektisi jollain muulla kielellä kuin Javalla, tulee olla käytössä kielen _JavaDocia_ vastaava työkalu, README:ssä tulee olla ohje API-dokumentaation suorittamiseen
 - Alustava arkkitehtuurikuvaus (0.5p)
