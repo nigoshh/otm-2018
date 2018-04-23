@@ -30,18 +30,18 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     - jos testit on tehty pelkästään rivikattavuuden saavuttamiseksi, ei testeistä saa pisteitä
 - JavaDoc aloitettu (0.5p)
   - JavaDoc tulee olla generoitavissa komennolla _mvn javadoc:javadoc_
-  - ainakin osalle ohjelman luokista ja niiden metodeista on tehty JavaDoc-kuvaukset
+  - Ainakin osalle ohjelman luokista ja niiden metodeista on tehty JavaDoc-kuvaukset
     - edellytyksenä pisteille on vähintään 5 luokan ja niiden julkisten metodien dokumentointi
   - [Ohje](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) JavaDocin käyttöön
   - Jos teet projektisi jollain muulla kielellä kuin Javalla, tulee olla käytössä kielen _JavaDocia_ vastaava työkalu, README:ssä tulee olla ohje API-dokumentaation suorittamiseen
 - Alustava arkkitehtuurikuvaus (0.5p)
   - Dokumentti sisältää sovelluksen korkean tason (esim. pakkausten tasolla) rakenteen kuvauksen, sekä alustavan kuvauksen sovelluslogiikasta
-  - Dokumentissa kannattaa hyödyntää edellisten viikkojen kaavioita
+  - Dokumentissa voi hyödyntää edellisten viikkojen luokka- ja sekvenssikaavioita
   - Mallia voi ottaa [referenssisovelluksesta](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/arkkitehtuuri.md#sovelluslogiikka)
-  - Dokumentin alustavan version sopiva pituus tässä vaiheessa on noin 1-2 sivua
+  - Dokumentin alustavan version sopiva pituus on noin 1-2 sivua
 - Alustava käyttöohje (0.25p)
-  - Dokumentin alustavan version sopiva pituus tässä vaiheessa on noin sivu
   - Ohje voi olettaa, että sovellusta suoritetaan palautusrepositoriosta käsin, eli asentamiseen ja konfigurointiin ei ole vielä tarvetta ottaa kantaa
+  - Alustavan käyttöohjeen sopiva pituus on noin sivu
   - Mallina voi jälleen toimia [referenssisovellus](https://github.com/mluukkai/OtmTodoApp/blob/master/dokumentaatio/kayttoohje.md)
 
 **Seuraavien kohtien puutteet vähentävät pisteitä**
