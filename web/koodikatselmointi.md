@@ -4,9 +4,9 @@
 
 **Deadline torstaina 3.5. klo 23:59** 
 
-Koodikatselmointi on osa Ohjelmoinnin harjoitustyötä. Katselmoinnista voi saada maksimissaan 2 pistettä.
+Katselmoinnista voi saada maksimissaan 2 pistettä.
 
-Tämän katselmoinnin perimmäinen tarkoitus on oppia hahmottamaan toisen henkilön kirjoittamaa koodia ja kokonaista ohjelmointiprojektia. Toisten koodia luetaan kursseilla toistaiseksi valitettavan vähän, vaikka sujuva koodinlukutaito on välttämätön taito ohjelmoijan työssä. Hyvin suoritettu katselmointi on tehokas tapa havaita koodista ongelmakohtia ka virheitä sekä parantaa koodin laatua.
+Kurssilla tapahtuvan katselmoinnin perimmäinen tarkoitus on oppia hahmottamaan toisen henkilön kirjoittamaa koodia ja kokonaista ohjelmointiprojektia. Toisten koodia luetaan kursseilla toistaiseksi valitettavan vähän, vaikka sujuva koodinlukutaito on välttämätön taito ohjelmoijan työssä. Hyvin suoritettu katselmointi on tehokas tapa havaita koodista ongelmakohtia ka virheitä sekä parantaa koodin laatua.
 
 ## Ohjeet
 
