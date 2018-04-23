@@ -5,7 +5,7 @@ Palautuksen deadline tiistai 24.4. klo 23:59
 **HUOM** jotta voisit osallistua viikolla 6 pidettävään koodikatselmointiin (josta tarjolla 2 kurssipistettä)
 - viikon 5 deadlinen jälkeen tulee palautusrepositoriosta löytyä osan määrittelydokumentin toiminnallisuutta toteuttava toimiva versio harjoitustyöstä 
 - viikon 5 palautuksesta tulee saada enemmän kuin 0 pistettä
-- palautusrepositorioistasi on GitHub-issuet saalittuna, ks. [ohje](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md#issueiden-salliminen) 
+- palautusrepositorioistasi on GitHub-issuet sallittuna, ks. [ohje](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md#issueiden-salliminen) 
 
 Muista pushata harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlinea.
 - Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
@@ -50,7 +50,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 - Tuntikirjanpito on ajantasalla
   - **Tuntien summan tulee olla merkittynä**
   - Tuntikirjanpitoon ei merkitä laskareihin käytettyä aikaa
-- Palautusrepositorioosi voi tehdä GitHub-issuieta, ks [ohje](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md#issueiden-salliminen)   
+- Palautusrepositorioosi voi tehdä GitHub-issueita, ks [ohje](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko5.md#issueiden-salliminen)   
 - Repositorion README.md kunnossa
   - tiedosto on kurssin tämän vaiheen osalta relevantin sisällön suhteen samankaltainen kuin [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) README.md, eli siellä on ainakin seuraavat
     - harjoitustyön aiheen lyhyt kuvas
