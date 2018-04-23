@@ -1,6 +1,4 @@
-# KESKEN
-
-## harjoitustyö, viikko 6
+# harjoitustyö, viikko 6
 
 Palautuksen deadline poikkeuksellisesti **keskiviikko 2.5. klo 23:59**. 
 
@@ -14,9 +12,9 @@ Palautuksen deadline poikkeuksellisesti **keskiviikko 2.5. klo 23:59**.
 Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
 
 - Ohjelma on kasvanut edellisestä viikosta (0.75p)
-  - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](https://github.com/mluukkai/otm-2018/blob/master/web/release.md), joka sisältää suoritettavan version jar-tiedoston ja muut mahdolliset ohjelman suorituksessa tarvittavat tiedostot
   - Ohjelmasta pystyy tekemään suorituskelpoisen [jar](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#jarin-generointi)-tiedoston komennolla _mvn package_
-  - Ohjelman suoritettavissa oleva versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuudesta
+   - Ohjelman suoritettavissa oleva versio on kasvanut edellisestä viikosta _ja_ toteuttaa edellisen viikon versiota suuremman osan määrittelydokumentin toiminnallisuudesta eli jotain käyttäjälle näkyvää hyödyllistä toiminnallisuutta
+  - Ohjelman suoritettavissa olevasta versiosta on tehty uusi [GitHub-release](https://github.com/mluukkai/otm-2018/blob/master/web/release.md), joka sisältää suoritettavan version jar-tiedoston ja muut mahdolliset ohjelman suorituksessa tarvittavat tiedostot
 - Koodin laatu (0.5p)
   - Ohjelma ei sisällä suurta määrää toisteista koodia eli copy pastea
   - Ohjelman luokkarakenne on järkevä
@@ -26,8 +24,8 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     - myös liian suuret metodit tulee jakaa useiksi metodeiksi 
 - Testaus on edennyt (0.5p)
   - Sovellukselle tulee pystyä generoimaan testikattavuusraportti komennolla <code>mvn test jacoco:report</code>
-    - Käyttöliittymän rakentava koodi [jätetään pois](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#koodin-huomiotta-jättäminen-kattavuusraportissa) testikattavuusraportista
-  - Sovelluksen testien rivikattavuuden tulee olla vähintään 50%
+    - käyttöliittymän rakentava koodi [jätetään pois](https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#koodin-huomiotta-jättäminen-kattavuusraportissa) testikattavuusraportista
+  - Sovelluksen testien rivikattavuuden tulee olla vähintään 60%
   - Testien tulee testata järkevällä tavalla ohjelman toiminnallisuutta
     - jos testit on tehty pelkästään rivikattavuuden saavuttamiseksi, ei testeistä saa pisteitä
 - JavaDoc aloitettu (0.5p)
@@ -35,6 +33,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - JavaDoc tulee olla generoitavissa komennolla _mvn javadoc:javadoc_
   - edellytyksenä pisteille on vähintään 5 luokan ja sen julkisten metodien dokumentointi
   - [Ohje](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) JavaDocin käyttöön
+  - Jos teet projektisi jollain muulla kielellä kuin Javalla, tulee olla käytössä kielen _JavaDocia_ vastaava työkalu, README:ssä tulee olla ohje API-dokumentaation suorittamiseen
 - Alustava arkkitehtuurikuvaus (0.5p)
   - Dokumentti sisältää sovelluksen korkean tason (esim. pakkausten tasolla) rakenteen kuvauksen, sekä alustavan kuvauksen sovelluslogiikasta
   - Dokumentissa kannattaa hyödyntää edellisten viikkojen kaavioita
@@ -62,7 +61,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
     - harjoitustyön aiheen lyhyt kuvas
     - linkit vaatimusmäärittelyyn, arkkitehtuuridokumenttiin, käyttöohjeeseen ja tuntikirjanpitoon 
     - linkki releaseihin
-    - ohjeet komentoriviltä suoritettaviin toimenpiteisiin (testaus, testiraporsin suoritus, suoritettavan jarin generointi, checkstyleraportin suorittaminen)
+    - ohjeet komentoriviltä suoritettaviin toimenpiteisiin (testaus, testiraporsin suoritus, suoritettavan jarin generointi, checkstyleraportin suorittaminen, JavaDocin generointi)
 - Repositorio siisti
   - ei ylimääräistä tavaraa (mm. hakemistoa target)
   - laskarit jätetään hakemiston _laskarit_ alle
