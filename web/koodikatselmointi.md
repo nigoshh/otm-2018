@@ -1,5 +1,3 @@
-# KESKEN
-
 # Koodikatselmointi
 
 **Deadline torstaina 3.5. klo 23:59** 
