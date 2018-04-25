@@ -32,6 +32,7 @@ Arvostelussa kiinnitetään huomiota seuraaviin seikkoihin
   - JavaDoc tulee olla generoitavissa komennolla _mvn javadoc:javadoc_
   - Ainakin osalle ohjelman luokista ja niiden metodeista on tehty JavaDoc-kuvaukset
     - edellytyksenä pisteille on vähintään 5 luokan ja niiden julkisten metodien dokumentointi
+      - gettereitä ja settereitä (jotka eivät tee mitään muuta kuin asettavat/palauttavat oliomuuttujan arvon) ei tarvitse dokumentoida
   - [Ohje](https://github.com/mluukkai/otm-2018/blob/master/web/javadoc.md) JavaDocin käyttöön
   - Jos teet projektisi jollain muulla kielellä kuin Javalla, tulee olla käytössä kielen _JavaDocia_ vastaava työkalu, README:ssä tulee olla ohje API-dokumentaation suorittamiseen
 - Alustava arkkitehtuurikuvaus (0.5p)
