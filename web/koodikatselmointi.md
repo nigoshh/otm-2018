@@ -8,7 +8,8 @@ Kurssilla tapahtuvan katselmoinnin perimmäinen tarkoitus on oppia hahmottamaan 
 
 ## Ohjeet
 
-Katselmointi alkaa torstaina 26.4. klo 23:59, jonka jälkeen näet sinulle osoitetun katselmointikohteen repositoriolinkin labtoolista http://tktl-labtool.herokuapp.com/mypage.
+Katselmointi alkaa torstaina 26.4. klo 23:59, jonka jälkeen _viimeistään_ näet sinulle osoitetun katselmointikohteen repositoriolinkin labtoolista http://tktl-labtool.herokuapp.com/mypage
+- jos katselmointikohteesi näkyy jo aiemmin, voit aloittaa katselmoinnin vaikka heti
 
 Tehtävänäsi on lukea läpi toisen opiskelijan harjoitustyö ja antaa siitä rakentavaa palautetta. Ohjelmaa kannattaa kokeilla myös suorittaa.
 
