@@ -3,7 +3,7 @@
 Palautuksen deadline poikkeuksellisesti **keskiviikko 2.5. klo 23:59**. 
 
 **Muutama huomio**
-- Maanantaina 30.5. pajaa ainoastaan klo 12-14.
+- Maanantaina 30.4. ei pajaa
 - **Viikon 6 aikana tapahtuu myös koodikatselmointi**, tarkemmat ohjeet katselmointiin [täällä](https://github.com/mluukkai/otm-2018/blob/master/web/koodikatselmointi.md)
 - Kannattaa pitää mielessä, että kurssin loppu alkaa lähestyä, loppupalautuksen deadline on pe 11.5. klo 23:59.
   - Nyt kannattaakin kerrata loppupalautuksen [arvosteluperusteet](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
