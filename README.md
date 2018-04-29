@@ -20,6 +20,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 - Viikon 5 pisteet labtoolissa viimeistään sunnuntaina 29.4. klo 23:59:59
 - **Maanantaina 30.4. ei pajaa**
+- **Tiistaina 1.5. ei pajaa**
 - Harjoitustyön viikon 6 [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md), deadline **keskiviikkona 2.5. klo 23:59**  
 - [Koodikatselmointi](https://github.com/mluukkai/otm-2018/blob/master/web/koodikatselmointi.md) alkaa viimeistään torstaina 26.4. klo 23:59
   - voit aloittaa katselmoinnin vaikka heti, jos näet katselmoinnin kohteen labtoolissa
