@@ -18,12 +18,13 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 ## Ajankohtaista
 
+- Loppupalautuksen deadline pe 11.5. klo 23:59:59
+  - [arvosteluperusteet](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
 - viimeisen viikon pajat hieman poikkeaviin aikoihin, kaikki salissa BK107
   - ma 15-17
   - ti 11-13
   - ke 15-17
   - pe 12-16
-- Harjoitustyön viikon 6 [tavoitteet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md), deadline **keskiviikkona 2.5. klo 23:59**  
 - [Koodikatselmointi](https://github.com/mluukkai/otm-2018/blob/master/web/koodikatselmointi.md) alkaa viimeistään torstaina 26.4. klo 23:59
   - voit aloittaa katselmoinnin vaikka heti, jos näet katselmoinnin kohteen labtoolissa
   - katselmoinnin deadline **torstaina 3.5. klo 23:59**
