@@ -45,6 +45,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - 5p hyvät abstraktiot (esim. Design patternien hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
   - 3p ei ilmeistä copypastea, ok luokkarakenne
   - +1p checkstylesäännöt kunnossa  
+  - poiskommentoitu koodi, jota sovellus -1 tai -2p riippuen määrästä
   
 Laajuus ja sovellusogiikan kompleksisuus
 - Miten laaja on laaja?
