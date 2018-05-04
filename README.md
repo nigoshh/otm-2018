@@ -25,13 +25,8 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
   - ti 11-13
   - ke 15-17
   - pe 12-16
-- [Koodikatselmointi](https://github.com/mluukkai/otm-2018/blob/master/web/koodikatselmointi.md) alkaa viimeistään torstaina 26.4. klo 23:59
-  - voit aloittaa katselmoinnin vaikka heti, jos näet katselmoinnin kohteen labtoolissa
-  - katselmoinnin deadline **torstaina 3.5. klo 23:59**
+- [Koodikatselmointi](https://github.com/mluukkai/otm-2018/blob/master/web/koodikatselmointi.md) päättynyt
 - [Esimerkkivastauksia](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/malli-viikko3.md) viikon 3 tehtäviin  
-- Muista pushata tehtävät ja harjoitustyöhön liittyvät asiat GitHubiin ennen viikkodeadlineja!
-  - Jos pushaus tapahtuu myöhässä, mutta deadlinea seuraavaan aamuun klo 07 mennessä, saat viikkopisteet vähennettynä yhdellä. 
-  - Klo 07 jälkeen tulevia repositorion päivityksiä ei huomioida pisteytyksessä, eli ne tuovat 0 pistettä.
 - Kurssilla on [Telegram](https://telegram.org/)-kanava 
 <https://t.me/tktlotm>
   - [Telegram](https://telegram.org/) on whatsappin/messengerin tyylinen keskustelufoorumisovellus jota on mahdollista käyttää selaimella, mobiililaitteilla ja Windows/Linux/OSX-clienteillä
