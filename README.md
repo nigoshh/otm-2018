@@ -40,23 +40,11 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 ## Opetus
 
-Paja salissa B221
-- maaanantai 
-  - 12 Olli Tanttu
-  - 14 Matti Luukkainen (JavaScript)
-- tiiistai 
-  - 12 Markus Holopainen (Unity, C++)
-  - 14 Heikki Ahonen
-  - 16 Ville-Veikko Saari
-- keskiviikko 
-  - 10 Saara Peltomäki
-  - 12 Olli Keski-Hynnilä
-- torstai
-  - 12 Aleksi Huotala
-  - 14 Jouni Winter (Python, JavaScript)
-- perjantai
-  - 12 Sasu Mäkinen (JavaScript, Python, Unity, C#)
-  - 14 Terho Uotila
+Koeviikon pajat hieman poikkeaviin aikoihin, kaikki salissa BK107
+- ma 15-17
+- ti 11-13
+- ke 15-17
+- pe 12-16
 
 ## Linkkejä
 
