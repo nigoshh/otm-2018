@@ -20,7 +20,7 @@ Jos huomaat tehtävissä tai muussa materiaalissa kirjoitusvirheitä, kirjaudu G
 
 - Loppupalautuksen deadline pe 11.5. klo 23:59:59
   - [arvosteluperusteet](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md)
-- viimeisen viikon pajat hieman poikkeaviin aikoihin, kaikki salissa BK107
+- Koeviikon pajat hieman poikkeaviin aikoihin, kaikki salissa BK107
   - ma 15-17
   - ti 11-13
   - ke 15-17
