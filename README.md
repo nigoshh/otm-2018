@@ -147,11 +147,10 @@ Palautuksen deadline ke 2.5. klo 23:59
   - Alustava versio arkkitehtuuridokumentista 
 - Tarkemmat ohjeet [täältä](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko6.md) 
 - Koodikatselmointi (2p)
-  - ohjeet myöhemmin
+  - [Koodikatselmointi](https://github.com/mluukkai/otm-2018/blob/master/web/koodikatselmointi.md)
 
 ### viikko 7
 
-Lopullisen palautuksen deadline pe 11.5. klo 23:59
+Lopullisen palautuksen deadline perjantai 11.5. klo 23:59
 
-- Demot
 - [loppupalautuksen ohjeet](https://github.com/mluukkai/otm-2018/blob/master/tehtavat/harjoitustyo_viikko7.md) 
