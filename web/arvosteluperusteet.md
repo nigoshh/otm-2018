@@ -33,7 +33,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - 1-2p tiedosto (1p jos ohjelma ainoastaan lukee tiedostoja)
   - 3-4p tietokanta (3p jos ohjelma ainoastaan lukee tietokannasta dataa)
   - 3-4p internet (esim. google docs tai joku muu talletusratkaisu)
-	- Pisteytys riippuu käsiteltävän tiedon monimutkaisuudesta
+  - Pisteytys riippuu käsiteltävän tiedon monimutkaisuudesta
 - Sovelluslogiikan kompleksisuus 3p
 - Ohjelman laajuus 5p
 - Ulkoisten kirjastojen hyödyntäminen 1p
@@ -47,7 +47,8 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä
     - jos jätät, vähenevät koodin laadun pisteet -1 tai -2p riippuen kommentoidun/turhan koodi määrästä
 
-Laajuus ja sovellusogiikan kompleksisuus
+### Laajuus ja sovellusogiikan kompleksisuus
+
 - Miten laaja on laaja?
 - Kurssin [referenssisovellus](https://github.com/mluukkai/OtmTodoApp) olisi laajuudeltaan 3 pisteen arvoinen, sovelluslogiikaltaan se on aika suoraviivainen ja ansaitsisi vain yhden pisteen
 - Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä parametrein konfiguroitava ja laajennettava, esim:
