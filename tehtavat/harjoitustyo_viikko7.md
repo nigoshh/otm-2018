@@ -1,7 +1,7 @@
 # Harjoitustyö, loppupalautus
 
 **Loppupalautuksen deadline perjantaina 11.5. klo 23:59. Älä palauta myöhässä, deadline on ehdoton!** 
-- Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä ajoissa, eli viimeistään alkuviikosta.
+- Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä ajoissa, eli viimeistään alkuviikosta niin voit saada lisäaikaa.
 
 Loppupalautuksen oletetaan sisältävän toimivan ohjelman, testien, konfiguraatioiden ja JavaDocin lisäksi myös dokumentaation, eli
 - käyttöohjeen
