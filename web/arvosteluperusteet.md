@@ -10,11 +10,10 @@ Kurssilla jaossa 60 pistettä. Pisteet jakautuvat seuraavasti
   - Käyttö/asennusohje	
   - Testidokumentti	
   - JavaDoc	
-  - Repositorio	
 - Testaus	5p	
   - Testit			
 - Lopullinen ohjelma 24p
-  - Featuret		
+  - Toiminnallisuus		
   - Koodin laatu 		
 
 Arvosanaan 1 riittää 30 pistettä, arvosanaan 5 tarvitaan noin 55 pistettä.
@@ -29,13 +28,12 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - 1-2p monimutkainen tekstikäyttöliittymä
   - 2-3p yksinkertainen graafinen käyttöliittymä
   - 4p laaja graafinen käyttöliittymä
-- Tiedon pysyväistallennusta 4p
+- Talletetun tiedon käyttö ja tiedon tallettaminen 4p
   -	ei pysyväistallennusta
-  - 1-2p tiedosto 
-  - 3-4p tietokanta
+  - 1-2p tiedosto (1p jos ohjelma ainoastaan lukee tiedostoja)
+  - 3-4p tietokanta (3p jos ohjelma ainoastaan lukee tietokannasta dataa)
   - 3-4p internet (esim. google docs tai joku muu talletusratkaisu)
 	- Pisteytys riippuu käsiteltävän tiedon monimutkaisuudesta
-	- Täydet pisteet kussakin kategorioissa edellyttävät järkevien abstraktioiden, esim. DAO-suunnittelumallin käyttöä
 - Sovelluslogiikan kompleksisuus 3p
 - Ohjelman laajuus 5p
 - Ulkoisten kirjastojen hyödyntäminen 1p
@@ -43,7 +41,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
 - Suorituskelpoinen jar-tiedosto  1p
 - Koodin laatu 6p
   - Kooste [laatuvaatimuksista](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md)
-  - 5p hyvät abstraktiot (esim. Design patternien hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
+  - 5p hyvät abstraktiot (esim. Design patternien kuten DAO hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
   - 3p ei ilmeistä copypastea, ok luokkarakenne
   - +1p checkstylesäännöt kunnossa  
   - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä

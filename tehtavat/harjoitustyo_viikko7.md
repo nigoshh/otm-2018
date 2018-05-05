@@ -1,4 +1,4 @@
-# Harjoitustyö, viikko 7
+# Harjoitustyö, loppupalautus
 
 **Loppupalautuksen deadline perjantaina 11.5. klo 23:59. Älä palauta myöhässä, deadline on ehdoton!** 
 - Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä ajoissa, eli viimeistään alkuviikosta.
