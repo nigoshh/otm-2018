@@ -38,7 +38,8 @@ Pisteet (yht 24) jakautuvat seuraavasti
 - Ohjelman laajuus 5p
 - Ulkoisten kirjastojen hyödyntäminen 1p
   - ks https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#ulkoisten-kirjastojen-k%C3%A4ytt%C3%A4minen-mavenin-avulla
-- Suorituskelpoinen jar-tiedosto  1p
+- Suorituskelpoinen jar-tiedosto 1p
+  - Tiedosto generoitavissa tai löytyy repositoriosta _loppupalautus_-nimisestä releasesta
 - Koodin laatu 6p
   - Kooste [laatuvaatimuksista](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md)
   - 5p hyvät abstraktiot (esim. Design patternien kuten DAO hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
@@ -52,38 +53,41 @@ Pisteet (yht 24) jakautuvat seuraavasti
 - Miten laaja on laaja?
 - Kurssin [referenssisovellus](https://github.com/mluukkai/OtmTodoApp) olisi laajuudeltaan juuri ja juuri 3 pisteen arvoinen, sovelluslogiikaltaan se on aika suoraviivainen ja ansaitsisi vain yhden pisteen
 - Laajuutta ei voida määritellä tarkasti esim. luokkien tai metodien määrällä, laajuus on aina suhteellinen sovelluksen tyyppiin ja kompleksisuuteenkin
-- Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä parametrein konfiguroitava ja laajennettava, esim:
+- Eräs tapa laajentaa sovellusta ja lisätä sen kompleksisuutta on tehdä siitä _parametrein konfiguroitava ja laajennettava_, esim:
   - Sovelluksen käyttämän tietokantatiedoston nimi ei ole kirjoitettu koodiin vaan on käyttäjän määriteltävissä
   - Pelissä eri vaikueustasojen pelimaailmat eivät ole määritelty koodissa vaan luodaan erillisten tiedostojen perusteella
-  - Pacmanissa hirviöiden määrä ei ole ohjelmakoodiin kovakoodattuvakio vaan valittavissa käyttöliittymästä
+  - Pacmanissa hirviöiden määrä ei ole ohjelmakoodiin kovakoodattu vakio vaan valittavissa käyttöliittymästä
   - Konfiguroitavuus voidaan toteuttaa joko käyttöliittymän tai [konfiguraatiotiedostojen](https://github.com/mluukkai/otm-2018/blob/master/web/java.md#sovelluksen-konfiguraatiot) avulla
   
   
 ## Testauksesta annettavat pisteet
 
 Täysien pisteiden (5p) edellytys:
-- Testattu kattavasti, rivi- ja haarautumakattavuus korkea
+- Testattu kattavasti: rivi- ja haarautumakattavuus korkea
 - Testaus riittävää sekä yksikkö- että integraatiotasolla
+  - eli yksittäisten luokkien lisäksi on testattava myös monen luokan yhdistelmän tuottavaa toiminnallisuutta 
 - Sovelluslogiikkaa testataan realistisilla skenaarioilla
-- Testit testaava mielekkäitä asioita (eli niitä ei ole tehty ainoastaan testauskattavuuden kasvattamiseksi)
-- Riippuvuudet käsiteltuyjärkevästi
+- Testit testaava mielekkäitä asioita
+  - jos testit on tehty ainoastaan testauskattavuuden kasvattamiseksi, ei pisteitä ole montaa odotettavissa
+- Riippuvuudet käsitelty järkevästi
   - tietokantaa käyttävissä sovelluksissa testeissä käytössä "testitietokanta"
   - myös valekomponentit ovat hyviä joissain tilanteissa, ks. esim [referenssisovellus](https://github.com/mluukkai/OtmTodoApp/blob/master/src/test/java/todoapp/domain/TodoServiceUserTest.java#L8)
 
 ## Dokumentaation pisteet
 
-Dokumentaatio tuo yhteensä maksimissaan 10+2 pistettä, jotka jakautuvat seuraavasti
+Dokumentaatio tuo yhteensä maksimissaan 12 pistettä, jotka jakautuvat seuraavasti
 
 - Määrittelydokumentti 2p
   - **päivitetty vastaamaan lopullisen ohjelman toiminnallisuutta**
   - päivittämätön määrittelydokumentti tuo 0 pistettä
-- Arkkitehtuurikuvaus 5p
+- Arkkitehtuurikuvaus 4p
 - Käyttö/asennusohje 1p
-  - arvostelijan tulee pystyä asentamaan ohejlma ja käyttämään sitä ohjeen avulla
+  - arvostelijan tulee pystyä asentamaan ohjelma ja käyttämään sitä ohjeen avulla
 - Testausdokumentti 2p
 - JavaDoc 2p
   - Suoraviivaisia gettereitä, settereitä ja konstruktoreja ei tarvitse dokumentoida
+- Repositorio ja README 1p
+  - Repositorion ja README:n oletetaan olevan aiempien viikkojen vaatimusten mukainen
+  - Repositoriossa on _loppupalautus_-niminen release, joka sisältää suoritettavissa olevan jar-tiedoston ja muut ohjelman mahdollisesti tarvitsevat tiedostot
 
 [Referenssisovellus](https://github.com/mluukkai/OtmTodoApp) toimii hyvänä esikuvana dokumentaation suhteen. JavaDoc tosin on sovelluksessa osittain puutteelinen.
-
-Repositorion ja README:n oletetaan olevan siisti ja aiempien viikkojen tavoitteiden mukainen. Ylimääräinen sotku vähentää kurssipisteitä maksimissaan yhdellä. 
