@@ -75,8 +75,11 @@ Täysien pisteiden (5p) edellytys:
 Dokumentaatio tuo yhteensä maksimissaan 10+2 pistettä, jotka jakautuvat seuraavasti
 
 - Määrittelydokumentti 2p
+  - **päivitetty vastaamaan lopullisen ohjelman toiminnallisuutta**
+  - päivittämätön määrittelydokumentti tuo 0 pistettä
 - Arkkitehtuurikuvaus 5p
 - Käyttö/asennusohje 1p
+  - arvostelijan tulee pystyä asentamaan ohejlma ja käyttämään sitä ohjeen avulla
 - Testausdokumentti 2p
 - JavaDoc 2p
   - Suoraviivaisia gettereitä, settereitä ja konstruktoreja ei tarvitse dokumentoida
