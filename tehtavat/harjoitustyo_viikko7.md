@@ -1,6 +1,7 @@
 # Harjoitustyö, viikko 7
 
-**Loppupalautuksen deadline perjantaina 11.5. klo 23:59.** Älä palauta myöhässä, deadline on ehdoton! Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä ajoissa, eli viimeistään alkuviikosta.
+**Loppupalautuksen deadline perjantaina 11.5. klo 23:59. Älä palauta myöhässä, deadline on ehdoton!** 
+- Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä ajoissa, eli viimeistään alkuviikosta.
 
 Loppupalautuksen oletetaan sisältävän toimivan ohjelman lisäksi myös dokumentaation, eli
 - käyttöohjeen
