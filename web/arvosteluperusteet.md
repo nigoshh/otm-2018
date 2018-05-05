@@ -88,6 +88,6 @@ Dokumentaatio tuo yhteensä maksimissaan 12 pistettä, jotka jakautuvat seuraava
   - Suoraviivaisia gettereitä, settereitä ja konstruktoreja ei tarvitse dokumentoida
 - Repositorio ja README 1p
   - Repositorion ja README:n oletetaan olevan aiempien viikkojen vaatimusten mukainen
-  - Repositoriossa on _loppupalautus_-niminen release, joka sisältää suoritettavissa olevan jar-tiedoston ja muut ohjelman mahdollisesti tarvitsevat tiedostot
+  - Repositoriossa on _loppupalautus_-niminen release, joka sisältää suoritettavissa olevan jar-tiedoston ja muut ohjelman mahdollisesti tarvitsemat tiedostot
 
 [Referenssisovellus](https://github.com/mluukkai/OtmTodoApp) toimii hyvänä esikuvana dokumentaation suhteen. JavaDoc tosin on sovelluksessa osittain puutteelinen.
