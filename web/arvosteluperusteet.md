@@ -46,7 +46,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - 3p ei ilmeistä copypastea, ok luokkarakenne
   - +1p checkstylesäännöt kunnossa  
   - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä
-    - jos jätät, vähenevät koodin laadun pisteet -1 tai -2p riippuen kommentoidun/turhan koodi määrästä
+    - jos jätät, vähenevät koodin laadun pisteet -1 tai -2p riippuen kommentoidun/turhan koodin määrästä
 
 ### Laajuus ja sovellusogiikan kompleksisuus
 
