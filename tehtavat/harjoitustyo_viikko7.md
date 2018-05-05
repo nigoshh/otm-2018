@@ -3,7 +3,7 @@
 **Loppupalautuksen deadline perjantaina 11.5. klo 23:59. Älä palauta myöhässä, deadline on ehdoton!** 
 - Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä ajoissa, eli viimeistään alkuviikosta.
 
-Loppupalautuksen oletetaan sisältävän toimivan ohjelman lisäksi myös dokumentaation, eli
+Loppupalautuksen oletetaan sisältävän toimivan ohjelman, testien, konfiguraatioiden ja JavaDocin lisäksi myös dokumentaation, eli
 - käyttöohjeen
 - vaatimusmäärittelyn
 - arkkitehtuurikuvauksen
