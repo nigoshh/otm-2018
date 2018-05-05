@@ -1,8 +1,15 @@
 # Harjoitustyö, viikko 7
 
-Palautuksen deadline pe 11.5. klo 23:59
+**Loppupalautuksen deadline perjantaina 11.5. klo 23:59.** Älä palauta myöhässä, deadline on ehdoton! Jos sinulla on joku erittäin hyvä syy palautuksen myöhästymiseen, ota yhteyttä ajoissa, eli viimeistään alkuviikosta.
 
-Katso
-[arvosteluperusteista](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md) mitä loppupalautuksen oletetaan sisältävän
+Loppupalautuksen oletetaan sisältävän toimivan ohjelman lisäksi myös dokumentaation, eli
+- käyttöohjeen
+- vaatimusmäärittelyn
+- arkkitehtuurikuvauksen
+- testausdokumentin
 
-Ota dokumentteihin mallia [referenssisovelluksesta](https://github.com/mluukkai/OtmTodoApp).
+Päivitä viikolla 2 tehty alustava vaatimusmäärittely vastaamaan ohjelman lopullisen version toiminnallisuutta.
+
+Lue huolellisesti [arvosteluperusteista](https://github.com/mluukkai/otm-2018/blob/master/web/arvosteluperusteet.md) mitä loppupalautuksen oletetaan sisältävän dokumentaation ja ohjelmiston osalta!
+
+Dokumentteihin kannattaa ottaa mallia [referenssisovelluksen](https://github.com/mluukkai/OtmTodoApp) dokumenteista.

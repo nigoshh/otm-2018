@@ -4,15 +4,15 @@ Kurssilla jaossa 60 pistettä. Pisteet jakautuvat seuraavasti
 
 - Viikkodeadlinet 17p
 - Koodikatselmointi 2p
-- Dokumentaatio	10p   
+- Dokumentaatio	12p   
   - Määrittely		
   - Arkkitehtuuri		
   - Käyttö/asennusohje	
-  - Repositorio	
-  - JavaDoc	
-- Testaus	7p	
-  - Testit			
   - Testidokumentti	
+  - JavaDoc	
+  - Repositorio	
+- Testaus	5p	
+  - Testit			
 - Lopullinen ohjelma 24p
   - Featuret		
   - Koodin laatu 		
@@ -31,9 +31,9 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - 4p laaja graafinen käyttöliittymä
 - Tiedon pysyväistallennusta 4p
   -	ei pysyväistallennusta
-  - 1-2p	tiedosto 
-  - 3-4p	tietokanta
-  - 3-4p	internet (esim. google docs tai joku muu talletusratkaisu)
+  - 1-2p tiedosto 
+  - 3-4p tietokanta
+  - 3-4p internet (esim. google docs tai joku muu talletusratkaisu)
 	- Pisteytys riippuu käsiteltävän tiedon monimutkaisuudesta
 	- Täydet pisteet kussakin kategorioissa edellyttävät järkevien abstraktioiden, esim. DAO-suunnittelumallin käyttöä
 - Sovelluslogiikan kompleksisuus 3p
@@ -42,11 +42,13 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - ks https://github.com/mluukkai/otm-2018/blob/master/web/maven.md#ulkoisten-kirjastojen-k%C3%A4ytt%C3%A4minen-mavenin-avulla
 - Suorituskelpoinen jar-tiedosto  1p
 - Koodin laatu 6p
+  - Kooste [laatuvaatimuksista](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md)
   - 5p hyvät abstraktiot (esim. Design patternien hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
   - 3p ei ilmeistä copypastea, ok luokkarakenne
   - +1p checkstylesäännöt kunnossa  
-  - poiskommentoitu koodi, jota sovellus -1 tai -2p riippuen määrästä
-  
+  - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä
+    - jos jätät, vähenevät koodin laadun pisteet -1 tai -2p riippuen kommentoidun/turhan koodi määrästä
+
 Laajuus ja sovellusogiikan kompleksisuus
 - Miten laaja on laaja?
 - Kurssin [referenssisovellus](https://github.com/mluukkai/OtmTodoApp) olisi laajuudeltaan 3 pisteen arvoinen, sovelluslogiikaltaan se on aika suoraviivainen ja ansaitsisi vain yhden pisteen
@@ -63,4 +65,22 @@ Täysien pisteiden (5p) edellytys:
 - Testattu kattavasti, rivi- ja haarautumakattavuus korkea
 - Testaus riittävää sekä yksikkö- että integraatiotasolla
 - Sovelluslogiikkaa testataan realistisilla skenaarioilla
-- Riippuvuudet mockattu järkevästi
+- Testit testaava mielekkäitä asioita (eli niitä ei ole tehty ainoastaan testauskattavuuden kasvattamiseksi)
+- Riippuvuudet käsiteltuyjärkevästi
+  - tietokantaa käyttävissä sovelluksissa testeissä käytössä "testitietokanta"
+  - myös valekomponentit ovat hyviä joissain tilanteissa, ks. esim [referenssisovellus](https://github.com/mluukkai/OtmTodoApp/blob/master/src/test/java/todoapp/domain/TodoServiceUserTest.java#L8)
+
+## Dokumentaation pisteet
+
+Dokumentaatio tuo yhteensä maksimissaan 10+2 pistettä, jotka jakautuvat seuraavasti
+
+- Määrittelydokumentti 2p
+- Arkkitehtuurikuvaus 5p
+- Käyttö/asennusohje 1p
+- Testausdokumentti 2p
+- JavaDoc 2p
+  - Suoraviivaisia gettereitä, settereitä ja konstruktoreja ei tarvitse dokumentoida
+
+[Referenssisovellus](https://github.com/mluukkai/OtmTodoApp) toimii hyvänä esikuvana dokumentaation suhteen. JavaDoc tosin on sovelluksessa osittain puutteelinen.
+
+Repositorion ja README:n oletetaan olevan siisti ja aiempien viikkojen tavoitteiden mukainen. Ylimääräinen sotku vähentää kurssipisteitä maksimissaan yhdellä. 
