@@ -44,8 +44,8 @@ Pisteet (yht 24) jakautuvat seuraavasti
   - Kooste [laatuvaatimuksista](https://github.com/mluukkai/otm-2018/blob/master/web/koodin_laatuvaatimukset.md)
   - 5p hyvät abstraktiot (esim. Design patternien kuten DAO hyödynnys), hyvä luokkarakenne, helposti testattava ja laajennettava
   - 3p ei ilmeistä copypastea, ok luokkarakenne
-  - +1p checkstylesäännöt kunnossa  
-  - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä
+  - +1p checkstylesäännöt kunnossa (muutama checkstyletyylin rikkomus saatetaan katsoa läpi sormien, jos tyylirikon poisto esim. huonontaisi muuten koodin laatua)
+  - **Älä jätä sovellukseesi poiskommentoitua koodia**, tai koodia jota sovellus ei käytä (esim. refaktoroinnin myötä turhaksi muuttuneet metodit/luokat)
     - jos jätät, vähenevät koodin laadun pisteet -1 tai -2p riippuen kommentoidun/turhan koodin määrästä
 
 ### Laajuus ja sovellusogiikan kompleksisuus
