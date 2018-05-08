@@ -64,6 +64,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
 
 Täysien pisteiden (5p) edellytys:
 - Testattu kattavasti: rivi- ja haarautumakattavuus korkea (noin 70%)
+  - Testien pitää testata hyödyllisiä asioita, pelkät testikattavuutta nostavat hyödyttömät (esim. assert-komentoja sisältämättömät) testit eivät tuo pisteitä
 - Testaus riittävää sekä yksikkö- että integraatiotasolla
   - eli yksittäisten luokkien lisäksi on testattava myös monen luokan yhdistelmän tuottavaa toiminnallisuutta 
 - Sovelluslogiikkaa testataan realistisilla skenaarioilla
