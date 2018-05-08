@@ -63,7 +63,7 @@ Pisteet (yht 24) jakautuvat seuraavasti
 ## Testauksesta annettavat pisteet
 
 Täysien pisteiden (5p) edellytys:
-- Testattu kattavasti: rivi- ja haarautumakattavuus korkea
+- Testattu kattavasti: rivi- ja haarautumakattavuus korkea (noin 70%)
 - Testaus riittävää sekä yksikkö- että integraatiotasolla
   - eli yksittäisten luokkien lisäksi on testattava myös monen luokan yhdistelmän tuottavaa toiminnallisuutta 
 - Sovelluslogiikkaa testataan realistisilla skenaarioilla
