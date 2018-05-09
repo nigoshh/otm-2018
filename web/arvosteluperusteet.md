@@ -68,7 +68,7 @@ Täysien pisteiden (5p) edellytys:
 - Testaus riittävää sekä yksikkö- että integraatiotasolla
   - eli yksittäisten luokkien lisäksi on testattava myös monen luokan yhdistelmän tuottavaa toiminnallisuutta 
 - Sovelluslogiikkaa testataan realistisilla skenaarioilla
-- Testit testaava mielekkäitä asioita
+- Testit testaavat mielekkäitä asioita
   - jos testit on tehty ainoastaan testauskattavuuden kasvattamiseksi, ei pisteitä ole montaa odotettavissa
 - Riippuvuudet käsitelty järkevästi
   - tietokantaa käyttävissä sovelluksissa testeissä käytössä "testitietokanta"
